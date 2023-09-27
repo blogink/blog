@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://b.sakurink.eu.org/posts/1477501590/</loc>
+    
+    <lastmod>2023-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://b.sakurink.eu.org/friends/index.html</loc>
+    
+    <lastmod>2023-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://b.sakurink.eu.org/posts/2845603730/</loc>
     
     <lastmod>2023-09-26</lastmod>
@@ -14,24 +32,6 @@
     <loc>https://b.sakurink.eu.org/posts/721094206/</loc>
     
     <lastmod>2023-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://b.sakurink.eu.org/posts/1477501590/</loc>
-    
-    <lastmod>2023-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://b.sakurink.eu.org/friends/index.html</loc>
-    
-    <lastmod>2023-09-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
