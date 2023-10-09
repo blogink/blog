@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.sakurink.eu.org/posts/1808223324/</loc>
+    
+    <lastmod>2023-10-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sakurink.eu.org/posts/3995821213/</loc>
     
     <lastmod>2023-10-09</lastmod>
@@ -68,15 +77,6 @@
     <loc>https://blog.sakurink.eu.org/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/posts/1808223324/</loc>
-    
-    <lastmod>2023-09-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -248,15 +248,6 @@
     <loc>https://blog.sakurink.eu.org/posts/2287214869/</loc>
     
     <lastmod>2023-08-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/posts/2472035702/</loc>
-    
-    <lastmod>2023-08-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
