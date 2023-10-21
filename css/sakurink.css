@@ -155,13 +155,13 @@
     background: var(--trans-light);
     border: var(--border-style);
     border-radius: 20px;
-    --border-style: 2px solid rgba(57, 197, 187, 0.85);
+    --border-style: 2px solid rgba(57, 197, 187, 0.9);
   }
 
   
   /* 导航栏 */
   #page-header.nav-fixed #nav {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
   }
   
   [data-theme="dark"] #page-header.nav-fixed #nav {
