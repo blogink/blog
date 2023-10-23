@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2023-10-09T14:54:36.000Z</updated>
+  <updated>2023-10-23T14:53:11.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【音乐】Perfect Day - Seven24</title>
+    <link href="https://blog.sakurink.eu.org/posts/2853259138/"/>
+    <id>https://blog.sakurink.eu.org/posts/2853259138/</id>
+    <published>2023-10-23T14:53:06.000Z</published>
+    <updated>2023-10-23T14:53:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;audio src=&quot;https://cdn.jsdelivr.net/gh/blogink/api@main/files/Perfect%20Day%20-%20Seven24.mp3&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="分享" scheme="https://blog.sakurink.eu.org/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>国产自研多环境开发软件 CEC-IDE 问世,“卡脖子”问题完美解决！</title>
@@ -330,29 +353,6 @@
         
     <summary type="html">&lt;p&gt;自某次与同学交谈时，讨论到“科学上网”相关。不想对方来了句：“代理和VPN不是一个东西吗”，emmm&lt;/p&gt;
 &lt;p&gt;起码对国内大部分用户来说，这二者确实不易区分——甚至很多服务商自己都分不清楚。</summary>
-        
-      
-    
-    
-    
-    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>层层包裹，触探深渊——粗讲Tor浏览器的安装</title>
-    <link href="https://blog.sakurink.eu.org/posts/3085606162/"/>
-    <id>https://blog.sakurink.eu.org/posts/3085606162/</id>
-    <published>2023-08-12T04:52:06.000Z</published>
-    <updated>2023-08-12T04:52:10.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Tor是什么&quot;&gt;&lt;a href=&quot;#Tor是什么&quot; class=&quot;headerlink&quot;</summary>
         
       
     
