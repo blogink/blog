@@ -61,7 +61,6 @@ https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/
 https://blog.sakurink.eu.org/tags/Hexo/
 https://blog.sakurink.eu.org/tags/Waline/
 https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/
-https://blog.sakurink.eu.org/tags/%E5%8D%9A%E5%AE%A2/
 https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/
 https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/
 https://blog.sakurink.eu.org/tags/%E6%90%AC%E8%BF%90/
