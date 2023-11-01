@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>雨梦清欢</title>
+  <icon>https://blog.sakurink.eu.org/icon.png</icon>
+  <subtitle>不受律束，笔随兴至</subtitle>
+  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://blog.sakurink.eu.org/"/>
+  <updated>2023-10-26T08:52:42.000Z</updated>
+  <id>https://blog.sakurink.eu.org/</id>
+  
+  <author>
+    <name>Ranmo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vercel无服务器部署php程序</title>
+    <link href="https://blog.sakurink.eu.org/posts/2223589302/"/>
+    <id>https://blog.sakurink.eu.org/posts/2223589302/</id>
+    <published>2023-10-26T08:52:37.000Z</published>
+    <updated>2023-10-26T08:52:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h1&gt;&lt;p&gt;vercel</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【音乐】Perfect Day - Seven24</title>
+    <link href="https://blog.sakurink.eu.org/posts/2853259138/"/>
+    <id>https://blog.sakurink.eu.org/posts/2853259138/</id>
+    <published>2023-10-23T14:53:06.000Z</published>
+    <updated>2023-10-23T14:53:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;audio src=&quot;https://cdn.jsdelivr.net/gh/blogink/api@main/files/Perfect%20Day%20-%20Seven24.mp3&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="分享" scheme="https://blog.sakurink.eu.org/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="音乐" scheme="https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>国产自研多环境开发软件 CEC-IDE 问世,“卡脖子”问题完美解决！</title>
+    <link href="https://blog.sakurink.eu.org/posts/3995821213/"/>
+    <id>https://blog.sakurink.eu.org/posts/3995821213/</id>
+    <published>2023-10-09T14:54:34.000Z</published>
+    <updated>2023-10-09T14:54:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="乱评" scheme="https://blog.sakurink.eu.org/categories/%E4%B9%B1%E8%AF%84/"/>
+    
+    
+    <category term="评论" scheme="https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿巴町手表折腾记录</title>
+    <link href="https://blog.sakurink.eu.org/posts/3185181503/"/>
+    <id>https://blog.sakurink.eu.org/posts/3185181503/</id>
+    <published>2023-09-30T09:56:50.000Z</published>
+    <updated>2023-09-30T09:57:06.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;前排提示：新版手表我没试过，而且据闻新版采用了AliOS无法破解。&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="折腾" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="硬件" scheme="https://blog.sakurink.eu.org/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奇怪的梦</title>
+    <link href="https://blog.sakurink.eu.org/posts/721094206/"/>
+    <id>https://blog.sakurink.eu.org/posts/721094206/</id>
+    <published>2023-09-21T15:47:13.000Z</published>
+    <updated>2023-09-21T15:47:15.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;奇怪的梦&lt;/p&gt;
+&lt;p&gt;我自认为写此文时我的状态是即将睡觉且头已经开始昏沉的，所以&lt;strong&gt;语言组织可能很奇怪&lt;/strong&gt;，而且颇有种自言自语之感，还请各位看完即忘却，无需多加思考；</summary>
+        
+      
+    
+    
+    
+    <category term="随写" scheme="https://blog.sakurink.eu.org/categories/%E9%9A%8F%E5%86%99/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Waline解决国内访问</title>
+    <link href="https://blog.sakurink.eu.org/posts/2845603730/"/>
+    <id>https://blog.sakurink.eu.org/posts/2845603730/</id>
+    <published>2023-09-13T15:35:25.000Z</published>
+    <updated>2023-09-26T13:21:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;【更新】Vercel直接绑定域名&quot;&gt;&lt;a href=&quot;#【更新】Vercel直接绑定域名&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="Waline" scheme="https://blog.sakurink.eu.org/tags/Waline/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo自定义记录</title>
+    <link href="https://blog.sakurink.eu.org/posts/1477501590/"/>
+    <id>https://blog.sakurink.eu.org/posts/1477501590/</id>
+    <published>2023-09-02T03:00:24.000Z</published>
+    <updated>2023-10-04T08:00:09.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="折腾" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我们奇怪的审核</title>
+    <link href="https://blog.sakurink.eu.org/posts/104092554/"/>
+    <id>https://blog.sakurink.eu.org/posts/104092554/</id>
+    <published>2023-08-25T02:37:34.000Z</published>
+    <updated>2023-08-25T02:37:40.000Z</updated>
+    
+    
+    <summary type="html">有东西被加密了, 请输入密码查看.</summary>
+    
+    
+    
+    <category term="乱评" scheme="https://blog.sakurink.eu.org/categories/%E4%B9%B1%E8%AF%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有关地球Online和生物的系统更新</title>
+    <link href="https://blog.sakurink.eu.org/posts/1412730729/"/>
+    <id>https://blog.sakurink.eu.org/posts/1412730729/</id>
+    <published>2023-08-24T12:26:52.000Z</published>
+    <updated>2023-08-24T12:26:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;audio src=&quot;https://cdn.jsdelivr.net/gh/blogink/api@main/files/Silence%20-%20Kai%20Engel.mp3&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="乱评" scheme="https://blog.sakurink.eu.org/categories/%E4%B9%B1%E8%AF%84/"/>
+    
+    
+    <category term="评论" scheme="https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【整活】一把来自然日卡的利剑——《Nayanion》</title>
+    <link href="https://blog.sakurink.eu.org/posts/3188599471/"/>
+    <id>https://blog.sakurink.eu.org/posts/3188599471/</id>
+    <published>2023-08-23T04:24:50.000Z</published>
+    <updated>2023-08-23T04:24:53.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;前摇&quot;&gt;&lt;a href=&quot;#前摇&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="整活" scheme="https://blog.sakurink.eu.org/categories/%E6%95%B4%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简洁安全的评论系统——Valine/Waline折腾笔记</title>
+    <link href="https://blog.sakurink.eu.org/posts/439348253/"/>
+    <id>https://blog.sakurink.eu.org/posts/439348253/</id>
+    <published>2023-08-20T04:53:58.000Z</published>
+    <updated>2023-08-20T04:55:25.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于Hexo一类静态博客的自身限制，最终生成的东西本身是无法有过多交互的，不论后端，评论都需要外接。在这之前，我曾见有giscus、Gittalk等程序，虽国内也可使用，可需要GitHub账户，</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="Waline" scheme="https://blog.sakurink.eu.org/tags/Waline/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客评论说明</title>
+    <link href="https://blog.sakurink.eu.org/posts/814127131/"/>
+    <id>https://blog.sakurink.eu.org/posts/814127131/</id>
+    <published>2023-08-20T03:29:28.000Z</published>
+    <updated>2023-09-13T03:29:34.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;更新：&lt;/p&gt;
+&lt;p&gt;评论系统现可正常使用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;由于众所周知的原因导致的技术原因，Hexo站点的评论系统暂不对中国大陆访客开放。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="日志" scheme="https://blog.sakurink.eu.org/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客主站将使用Hexo</title>
+    <link href="https://blog.sakurink.eu.org/posts/3758027416/"/>
+    <id>https://blog.sakurink.eu.org/posts/3758027416/</id>
+    <published>2023-08-19T08:55:16.000Z</published>
+    <updated>2023-08-19T04:55:44.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;好吧，我自己也难以忍受免费主机的速度与稳定性。稍微费了亿点点时间研究了Hexo，同步了目前所能找到的文章。以后这个博客将会以Hexo为主，PHP版的我将留作备份使用，本地也会备份。&lt;/p&gt;
+&lt;p</summary>
+        
+      
+    
+    
+    
+    <category term="日志" scheme="https://blog.sakurink.eu.org/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开销几乎为零静态博客——Hexo折腾记录</title>
+    <link href="https://blog.sakurink.eu.org/posts/2127331844/"/>
+    <id>https://blog.sakurink.eu.org/posts/2127331844/</id>
+    <published>2023-08-19T03:28:30.000Z</published>
+    <updated>2023-08-19T03:28:53.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="折腾" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简析不同的代理协议</title>
+    <link href="https://blog.sakurink.eu.org/posts/1544165171/"/>
+    <id>https://blog.sakurink.eu.org/posts/1544165171/</id>
+    <published>2023-08-13T04:52:46.000Z</published>
+    <updated>2023-08-13T04:52:49.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;打开电脑，蓝V（指V2Ray）启动，滑到左侧，只见SS、SSR、vmess、trojan、VLESS“大杂居、小聚居、交错杂居”，眼花缭乱——谁告诉我这有什么区别！谁更安全？谁能给我GitHub</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="网络" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+</feed>
