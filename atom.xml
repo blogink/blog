@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2023-11-05T13:11:17.000Z</updated>
+  <updated>2023-11-10T06:36:50.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WindowsMobile 的前世今生</title>
+    <link href="https://blog.sakurink.eu.org/posts/4068197923/"/>
+    <id>https://blog.sakurink.eu.org/posts/4068197923/</id>
+    <published>2023-11-10T06:36:46.000Z</published>
+    <updated>2023-11-10T06:36:50.000Z</updated>
+    
+    
+    <summary type="html">永恒的经典，时代的眼泪，十年的悲歌。是时候该道别了。</summary>
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="随写" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%8F%E5%86%99/"/>
+    
+    <category term="硬件" scheme="https://blog.sakurink.eu.org/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Clash删库停更事件</title>
@@ -148,14 +171,7 @@
     <updated>2023-09-21T15:47:15.000Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;奇怪的梦&lt;/p&gt;
-&lt;p&gt;我自认为写此文时我的状态是即将睡觉且头已经开始昏沉的，所以&lt;strong&gt;语言组织可能很奇怪&lt;/strong&gt;，而且颇有种自言自语之感，还请各位看完即忘却，无需多加思考；</summary>
-        
-      
+    <summary type="html">有东西被加密了, 请输入密码查看.</summary>
     
     
     
@@ -237,13 +253,7 @@
     <updated>2023-08-24T12:26:55.000Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;audio src=&quot;https://cdn.jsdelivr.net/gh/blogink/api@main/files/Silence%20-%20Kai%20Engel.mp3&quot;</summary>
-        
-      
+    <summary type="html">日本不顾国际舆论乱排核污水这档事，必定会将其钉在人类的耻辱柱上</summary>
     
     
     
@@ -352,27 +362,6 @@
     
     <category term="日志" scheme="https://blog.sakurink.eu.org/categories/%E6%97%A5%E5%BF%97/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>开销几乎为零的静态博客——Hexo折腾记录</title>
-    <link href="https://blog.sakurink.eu.org/posts/2127331844/"/>
-    <id>https://blog.sakurink.eu.org/posts/2127331844/</id>
-    <published>2023-08-19T03:28:30.000Z</published>
-    <updated>2023-08-19T03:28:53.000Z</updated>
-    
-    
-    <summary type="html">记录Hexo博客的搭建过程</summary>
-    
-    
-    
-    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
-    
-    
-    <category term="折腾" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
   </entry>
   
