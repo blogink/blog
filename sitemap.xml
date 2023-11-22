@@ -254,15 +254,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/posts/4233974909/</loc>
-    
-    <lastmod>2023-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sakurink.eu.org/posts/348141877/</loc>
     
     <lastmod>2023-08-05</lastmod>
@@ -629,6 +620,13 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2023-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/web/</loc>
     <lastmod>2023-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

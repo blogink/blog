@@ -26,7 +26,6 @@ https://blog.sakurink.eu.org/posts/3085606162/
 https://blog.sakurink.eu.org/posts/763639381/
 https://blog.sakurink.eu.org/posts/952207792/
 https://blog.sakurink.eu.org/posts/2933412209/
-https://blog.sakurink.eu.org/posts/4233974909/
 https://blog.sakurink.eu.org/posts/348141877/
 https://blog.sakurink.eu.org/posts/2728617580/
 https://blog.sakurink.eu.org/posts/712548944/
@@ -71,6 +70,7 @@ https://blog.sakurink.eu.org/tags/%E9%9A%8F%E5%86%99/
 https://blog.sakurink.eu.org/tags/%E7%A1%AC%E4%BB%B6/
 https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C/
 https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/
+https://blog.sakurink.eu.org/tags/web/
 https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/
 https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95/
 https://blog.sakurink.eu.org/categories/%E6%97%A5%E5%BF%97/
