@@ -600,13 +600,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sakurink.eu.org/tags/Waline/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -615,6 +608,13 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2023-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
