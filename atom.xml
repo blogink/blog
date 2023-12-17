@@ -109,6 +109,36 @@
   </entry>
   
   <entry>
+    <title>npm install 后缀含义</title>
+    <link href="https://blog.sakurink.eu.org/posts/88276678/"/>
+    <id>https://blog.sakurink.eu.org/posts/88276678/</id>
+    <published>2023-11-03T06:49:57.000Z</published>
+    <updated>2023-11-03T06:50:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;npm install XXX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;npm 5 开始通过 &lt;code&gt;npm install XXX&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="笔记" scheme="https://blog.sakurink.eu.org/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vercel无服务器部署php程序</title>
     <link href="https://blog.sakurink.eu.org/posts/2223589302/"/>
     <id>https://blog.sakurink.eu.org/posts/2223589302/</id>
@@ -338,33 +368,6 @@
     
     <category term="整活" scheme="https://blog.sakurink.eu.org/categories/%E6%95%B4%E6%B4%BB/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>简洁安全的评论系统——Valine/Waline折腾笔记</title>
-    <link href="https://blog.sakurink.eu.org/posts/439348253/"/>
-    <id>https://blog.sakurink.eu.org/posts/439348253/</id>
-    <published>2023-08-20T04:53:58.000Z</published>
-    <updated>2023-08-20T04:55:25.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;由于Hexo一类静态博客的自身限制，最终生成的东西本身是无法有过多交互的，不论后端，评论都需要外接。在这之前，我曾见有giscus、Gittalk等程序，虽国内也可使用，可需要GitHub账户，</summary>
-        
-      
-    
-    
-    
-    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
-    
-    
-    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="Waline" scheme="https://blog.sakurink.eu.org/tags/Waline/"/>
     
   </entry>
   
