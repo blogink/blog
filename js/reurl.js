@@ -7,4 +7,3 @@ pjax.handleResponse = function(responseText, request, href, options){
   });
   pjax.site_handleResponse(responseText,request,href,options);
 }
-
