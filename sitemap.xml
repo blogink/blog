@@ -551,20 +551,6 @@
 
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sakurink.eu.org/tags/Hexo/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -579,7 +565,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/web/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2023-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -593,7 +586,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/web/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -601,6 +594,13 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2023-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -651,7 +651,7 @@
 
   
   <url>
-    <loc>https://blog.sakurink.eu.org/categories/%E4%B9%B1%E8%AF%84/</loc>
+    <loc>https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -665,7 +665,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/</loc>
+    <loc>https://blog.sakurink.eu.org/categories/%E4%B9%B1%E8%AF%84/</loc>
     <lastmod>2023-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
