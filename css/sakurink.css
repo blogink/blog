@@ -225,7 +225,7 @@
     display: none;
 }
 
-/* 顶部胶囊样式加载进度条 */
+/* 顶部胶囊样式加载进度条（已在另外css中使用） 
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -291,6 +291,7 @@
   background-position: 0% 50%;
 }
 }
+*/
 
 /*aplayer美化*/
 /*参考https://blog.saop.cc/p/8dc9/*/
