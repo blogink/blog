@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2023-12-28T12:07:47.000Z</updated>
+  <updated>2023-12-31T01:52:43.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给站点加个说说模块——Artitalk配置方法</title>
+    <link href="https://blog.sakurink.eu.org/posts/1605902499/"/>
+    <id>https://blog.sakurink.eu.org/posts/1605902499/</id>
+    <published>2023-12-31T01:43:20.000Z</published>
+    <updated>2023-12-31T01:52:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;给博客加个说说模块——Artitalk</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Github双因素身份验证2FA</title>
@@ -66,9 +95,9 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
-    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
-    
     <category term="网络安全" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
     <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
     
@@ -119,6 +148,8 @@
     
     <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
   </entry>
   
   <entry>
@@ -142,9 +173,13 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
-    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
     
     <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
     
   </entry>
   
@@ -214,9 +249,11 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
     <category term="笔记" scheme="https://blog.sakurink.eu.org/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    <category term="nodejs" scheme="https://blog.sakurink.eu.org/tags/nodejs/"/>
     
   </entry>
   
@@ -241,36 +278,11 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
-    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
-    
     <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
-    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
     
-  </entry>
-  
-  <entry>
-    <title>《Perfect Day》 - Seven24</title>
-    <link href="https://blog.sakurink.eu.org/posts/2853259138/"/>
-    <id>https://blog.sakurink.eu.org/posts/2853259138/</id>
-    <published>2023-10-23T14:53:06.000Z</published>
-    <updated>2023-10-23T14:53:11.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;audio src=&quot;https://cdn.jsdelivr.net/gh/blogink/api@main/files/Perfect%20Day%20-%20Seven24.mp3&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="分享" scheme="https://blog.sakurink.eu.org/categories/%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="音乐" scheme="https://blog.sakurink.eu.org/tags/%E9%9F%B3%E4%B9%90/"/>
+    <category term="php" scheme="https://blog.sakurink.eu.org/tags/php/"/>
     
   </entry>
   
