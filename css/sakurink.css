@@ -394,3 +394,23 @@
   color: #d4d4d4;
 }
 
+/* Artitalk长代码溢出 */
+/* 字符串强制换行，防止溢出 */
+#artitalk_main #shuoshuo_content{
+  padding:10px !important;
+  word-break: break-all;
+  word-wrap:break-word;
+}
+/* 字符串强制换行，防止溢出 
+#artitalk_main #shuoshuo_content{
+  padding:10px !important;
+  word-break: break-all;
+}*/
+/* 给  pre 代码块加滚动条，防止溢出 
+#artitalk_main span.cbp_tmlabel{
+  max-width: 100%;
+}*/
+/* 超出 max-width 时加滚轮 
+#artitalk_main span.cbp_tmlabel pre {
+  overflow-x: auto; 
+}*/
