@@ -20,7 +20,7 @@
     <title>给站点加个说说模块——Artitalk配置方法</title>
     <link href="https://blog.sakurink.eu.org/posts/1605902499/"/>
     <id>https://blog.sakurink.eu.org/posts/1605902499/</id>
-    <published>2023-12-31T01:43:20.000Z</published>
+    <published>2023-12-31T01:43:00.000Z</published>
     <updated>2023-12-31T01:52:43.000Z</updated>
     
     
@@ -34,14 +34,6 @@
     
     
     
-    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
-    
-    
-    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
-    
-    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
   </entry>
   
@@ -95,11 +87,11 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
-    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
-    
     <category term="网络安全" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
-    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
   </entry>
   
@@ -144,9 +136,9 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
-    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
-    
     <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
     
     <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
     
@@ -173,11 +165,11 @@
     <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
     
     
+    <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
+    
     <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
     <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-    <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
     
     <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
     
@@ -283,6 +275,8 @@
     <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
     <category term="php" scheme="https://blog.sakurink.eu.org/tags/php/"/>
+    
+    <category term="Vercel" scheme="https://blog.sakurink.eu.org/tags/Vercel/"/>
     
   </entry>
   

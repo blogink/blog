@@ -11,22 +11,6 @@
         <content type="html"><![CDATA[<p>给博客加个说说模块——Artitalk 配置方法</p><p>很显然，并非所有博主想记录与分享的东西都适合单独写成文章。大量琐碎短小的“文章”很容易拉低整个站给人的印象，但写一篇完整的文章，于我而言，时间精力压力比较大。而且有很多情绪与想法，并非适合写成长文。</p><p>当然，WP、Typecho 等实现这种功能实在是方便得很，但静态网站不能这么方便╥﹏╥…</p><blockquote><p><a href="https://artitalk.js.org/" rel="noopener external nofollow noreferrer">Artitalk.js</a></p></blockquote><p>在经过对比之后，我选择使用 Artitalk.js 作为说说模块。至于其他的，后续可能会视情况而尝试或更换。</p><p>貌似不方便搞“私密说说”，但有得用就很好了~。</p><h2 id="LeanCloud-的相关准备"><a href="#LeanCloud-的相关准备" class="headerlink" title="LeanCloud 的相关准备"></a>LeanCloud 的相关准备</h2><blockquote><p>如果需要将 Artitalk 与 Valine 在同一个页面使用，可将 Artitalk 与 valine 存放在同一个应用中，有效避免同一个页面使用两个 Leancloud 应用所产生的冲突。【Waline 与 Valine 数据结构比较像，因此前者配置共存方法<del>应该</del>同理，至少我是这么做的】</p><p>建议使用国际版的 LeanCloud，因为相较于国内版，它不需要配置 serverurl，速度没有区别。<font color="red">2022 年 8 月 1 日起国际版域名不对中国大陆提供服务，可自行绑定域名以解决</font></p></blockquote><h3 id="创建-Class"><a href="#创建-Class" class="headerlink" title="创建 Class"></a>创建 Class</h3><p>前往 <a href="https://console.leancloud.app/apps" rel="noopener external nofollow noreferrer">LeanCloud 国际版</a>，注册账号并配置。绑定完成之后点击创建应用，选择开发版足矣，应用名称随意。</p><p>进入该应用，选择左侧<code>数据存储</code>-&gt;<code>结构化数据</code>，点击上方<code>创建 class</code>，命名为<code>shuoshuo</code>。再点击<code>创建 class</code>新建<code>atComment</code>，权限什么的暂时保持默认。</p><p><img src="https://s2.loli.net/2023/12/30/Y2SsTwm35FypUk7.jpg"></p><p><font color="red"><strong>请严格按照官方文档中的要求创建与命名，此处命名最好不要改成其他，以免与 Artitalk 中保留项冲突</strong></font></p><p><del>在你新建的应用中找到结构化数据下的用户。点击添加用户，输入想用的用户名及密码</del>（现在 LeanCloud 好像没有<code>用户</code>这一项了，创建用户需要手动设置）。在<code>结构化数据</code>-&gt;<code>_User</code>中点击上方<code>添加行</code>创建用户，用户名和密码填完后请牢记，其他暂时保持默认。</p><p>【可选】在<code>结构化数据</code>-&gt;<code>_User</code>添加列，列名称为 <code>img</code>，默认值填上你这个账号想要用的发布说说的头像<code>url</code>。这一项不进行配置，说说头像会显示为默认头像（Artitalk 的 logo）。</p><p><img src="https://s2.loli.net/2023/12/30/8PATXW7tKRwqEDn.jpg"></p><h3 id="设置权限"><a href="#设置权限" class="headerlink" title="设置权限"></a>设置权限</h3><p>回到<code>结构化数据</code>中，在 Class 访问权限中将<code>shuoshuo</code>的<code>add_fields</code>和<code>create</code>权限设置为指定用户，输入刚才在<code>_User</code>中创建的用户名会自动匹配。为了安全起见，将<code>delete</code>和 <code>update</code>也设置为跟它们一样的权限。</p><p>最后将<code>_User</code>中的权限全部调为指定用户，或者数据创建者，为了保证不被篡改用户数据以达到强制发布说说。</p><p><img src="https://s2.loli.net/2023/12/30/3FUJAg8LhusXEQG.jpg"></p><p>在最菜单栏中找到<code>设置</code>-&gt;<code>应用凭证</code>，记下来<code>AppID</code>、<code>AppKey</code>和<code>REST API 服务器地址</code>。国际版由于域名访问问题，需在<code>设置</code>-&gt;<code>域名绑定</code>中自行设置<code>API 访问域名</code>，等待生效后复制<code>设置</code>-&gt;<code>应用凭证</code>中更新后的<code>REST API 服务器地址</code>备用。（注：在 DNS 服务商那添加解析可能需要注意下代理或仅 DNS 的问题，例如 Cloudflare 设置解析时需要将<code>代理状态</code>设置为<code>仅 DNS</code>）</p><h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><div class="tabs" id="artitalk-的使用"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="artitalk-的使用-1">单页使用</button><button type="button" class="tab " data-href="artitalk-的使用-2">Hexo 专用</button></ul><div class="tab-contents"><div class="tab-item-content active" id="artitalk-的使用-1"><p>单页中配置：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 引用 artitalk --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/artitalk&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;!-- 存放说说的容器 --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;artitalk_main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">new</span> <span class="title class_">Artitalk</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">appId</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// LeanCloud appId</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">appKey</span>: <span class="string">&#x27;&#x27;</span> <span class="comment">// LeanCloud appKey</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div><div class="tab-item-content" id="artitalk-的使用-2"><p>由于大家的 Hexo 主题五花八门，故无法在此一一提及。这里以 Butterfly 为例</p><p>在【Blogroot】目录下打开终端，输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-artitalk</span><br></pre></td></tr></table></figure><p>在<code>_config.yml</code>或<code>_config.butterfly.yml</code>中添加：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Artitalk</span></span><br><span class="line"><span class="comment"># see https://artitalk.js.org/</span></span><br><span class="line"><span class="attr">artitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否启用</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="comment"># LeanCloud AppId</span></span><br><span class="line">  <span class="attr">appKey:</span> <span class="comment"># LeanCloud appkey</span></span><br><span class="line">  <span class="attr">path:</span> <span class="comment"># 【选】Artitalk 路径，默认为 artitalk，生成的页面为 artitalk/index.html</span></span><br><span class="line">  <span class="attr">js:</span> <span class="comment"># 【选】Artitalk CDN，默认为 https://cdn.jsdelivr.net/npm/artitalk</span></span><br><span class="line">  <span class="attr">option:</span> <span class="comment"># 【选】額外配置。官方插件文档中暂无详细说明，故此项展示为推测</span></span><br><span class="line">  <span class="comment"># serverURL: # LeanCloud REST API</span></span><br><span class="line">  <span class="comment"># lang: #语言</span></span><br><span class="line">  <span class="attr">front_matter:</span> <span class="comment"># Artitalk 页面的 front_matter 设置</span></span><br></pre></td></tr></table></figure><p>若添加至导航，可编辑<code>_config.butterfly.yml</code>中：</p><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目錄</span><br><span class="line">menu:</span><br><span class="line">  主页：/ || fas fa-home</span><br><span class="line">  归档：/archives/ || fas fa-archive</span><br><span class="line">  标签：/tags/ || fas fa-tags</span><br><span class="line">  分类：/categories/ || fas fa-folder-open</span><br><span class="line">  清单||fas fa-list:</span><br><span class="line">    Music: /music/ || fas fa-music</span><br><span class="line">    Movie: /movies/ || fas fa-video</span><br><span class="line"><span class="addition">+  说说：/artitalk/ || fas fa-pen # 示例</span></span><br></pre></td></tr></table></figure></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div><p>Hexo 三连刷新生效。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>进入Artitalk所在页面，在右下方点击登录，之后可以发表说说。点击已发布说说右侧的叉号可以删除。</p><p>注：如果忘记密码了，可以<font color="red"><strong>尝试</strong></font>在 LeanCloud 应用中进入<code>结构化数据</code>-&gt;<code>_User</code>中找到前面创建的那个用户所在行，找到<code>password</code>一项，选中并点击<code>编辑单元格</code>，输入新密码后点击框外，等待刷新。</p>]]></content>
       
       
-      <categories>
-          
-          <category> 科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 程序 </tag>
-            
-            <tag> web </tag>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
       
     </entry>
     
@@ -76,11 +60,11 @@
       
         <tags>
             
-            <tag> web </tag>
-            
             <tag> 网络安全 </tag>
             
-            <tag> 代码 </tag>
+            <tag> Cloudflare </tag>
+            
+            <tag> web </tag>
             
         </tags>
       
@@ -130,9 +114,9 @@
       
         <tags>
             
-            <tag> 代码 </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> 代码 </tag>
             
             <tag> 命令 </tag>
             
@@ -159,11 +143,11 @@
       
         <tags>
             
+            <tag> GitHub </tag>
+            
             <tag> Hexo </tag>
             
             <tag> 命令 </tag>
-            
-            <tag> GitHub </tag>
             
             <tag> git </tag>
             
@@ -261,7 +245,7 @@
       <link href="/posts/2223589302/"/>
       <url>/posts/2223589302/</url>
       
-        <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>vercel 规定了程序没有写入权限，唯一拥有写入权限的只有<code>/tmp</code>这个临时目录。考虑用这种方法的，大多是“实验”或 api 等小 php 项目的（特地弄个服务器不大划算？）。</p><p>你可能见过有人用这样的操作部署了 Typecho 等程序，那是另编写了类似于<code>config.inc.php</code>之类的配置文件实现的——不过按照这个思路实现安装 WordPress 等亦非不可。 </p><p>由于众所周知的原因，请自备：</p><ul><li>域名（前面讲 Waline 配置时介绍过<code>.vercel.app</code>域名的现状，除非你不打算在国内使用）</li><li>能让 github 体验感变好的加速器（如<code>Watt Toolkit</code>，即<code>Steam++</code>。如果你网够好可无视）</li><li>初中英语（再不济翻译软件总有吧？）</li><li>搜索引擎</li></ul><p>本文不介绍如何网站账户注册等问题，不懂请自行搜索。</p><blockquote><p>如果你正好想要部署 Typecho ，GitHub 上已有大佬预配置好了，你可以直接去搜索阅读那个项目的说明。</p></blockquote><hr><p>What？Vercel 什么时候能部署 PHP 程序了？</p><blockquote><p><a href="https://github.com/vercel-community/php" rel="noopener external nofollow noreferrer">Vercel-PHP</a></p></blockquote><p>的确是可行的啊！这对于一些想部署些觉得特地准备服务器不划算的 PHP 项目的用户来说是好消息。</p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>关于部署项目到 Vercel 有两种方式：一种使用 Vercel CLI 进行部署；另一种使用第三方库进行拉取。这里使用后者（因为操作比较偏小白）</p><p>创建个文件夹，命名随意。在该文件夹下，请确保有以下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">project（文件夹）</span><br><span class="line">├── api</span><br><span class="line">│   └── index.php</span><br><span class="line">└── vercel.json</span><br></pre></td></tr></table></figure><p><code>api/index.php</code>中有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$file= __DIR__ . &#x27;/..&#x27;.$_SERVER[&quot;PHP_SELF&quot;];</span><br><span class="line"></span><br><span class="line">if(file_exists($file))</span><br><span class="line">&#123;</span><br><span class="line">   return false;</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">    require_once __DIR__ . &#x27;../index.php&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">#echo $_SERVER[&quot;PHP_SELF&quot;];</span><br></pre></td></tr></table></figure><blockquote><p><code>require_once __DIR__ . &#39;../index.php&#39;;</code>后面这里你可以改成<code>index.html</code>等（但我暂未尝试）（php文件中写纯html貌似也不会有问题）</p></blockquote><p><code>vercel.json</code>中有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;functions&quot;: &#123;</span><br><span class="line">    &quot;api/index.php&quot;: &#123;</span><br><span class="line">      &quot;runtime&quot;: &quot;vercel-php@0.6.0&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123; &quot;src&quot;: &quot;/(.*)&quot;, &quot;dest&quot;: &quot;/api/index.php&quot; &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p><code>&quot;runtime&quot;: &quot;vercel-php@0.6.0&quot;</code>一行， vercel 的 php 环境对应为：</p></blockquote><table><thead><tr><th>vercel-php</th><th>PHP版本</th></tr></thead><tbody><tr><td><a href="mailto:&#118;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#x70;&#x40;&#x30;&#46;&#x36;&#46;&#48;" rel="noopener external nofollow noreferrer">&#118;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#x70;&#x40;&#x30;&#46;&#x36;&#46;&#48;</a></td><td>PHP 8.2.x</td></tr><tr><td><a href="mailto:&#118;&#101;&#114;&#x63;&#101;&#108;&#45;&#x70;&#x68;&#x70;&#64;&#48;&#46;&#53;&#x2e;&#51;" rel="noopener external nofollow noreferrer">&#118;&#101;&#114;&#x63;&#101;&#108;&#45;&#x70;&#x68;&#x70;&#64;&#48;&#46;&#53;&#x2e;&#51;</a></td><td>PHP 8.1.x</td></tr><tr><td><a href="mailto:&#118;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#112;&#64;&#48;&#x2e;&#x34;&#x2e;&#49;" rel="noopener external nofollow noreferrer">&#118;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#112;&#64;&#48;&#x2e;&#x34;&#x2e;&#49;</a></td><td>PHP 8.0.x</td></tr><tr><td><a href="mailto:&#118;&#x65;&#x72;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#x70;&#x40;&#x30;&#46;&#x33;&#x2e;&#51;" rel="noopener external nofollow noreferrer">&#118;&#x65;&#x72;&#x63;&#x65;&#x6c;&#x2d;&#112;&#x68;&#x70;&#x40;&#x30;&#46;&#x33;&#x2e;&#51;</a></td><td>PHP 7.4.x</td></tr></tbody></table><blockquote><p>不过 PHP7.4 在 2022 年 11 月 28 日停止维护，建议还是用<code>0.6.0</code>那个（自己使用时，只有这个版本能部署成功，其他均有报错，可能是 nodejs 版本、安全什么的问题。如果你准备部署的 PHP 程序不支持 PHP8.2 ，那……自求多福吧。</p></blockquote><p>之后将你想要部署的 PHP 程序放到该文件夹根目录（与<code>vercel.json</code>文件同级，<code>index</code>文件所在目录需与<code>api/index.php</code>中<code>require_once __DIR__ . &#39;../index.php&#39;;</code>对应）。</p><h2 id="推送与部署"><a href="#推送与部署" class="headerlink" title="推送与部署"></a>推送与部署</h2><p>进入 GitHub 并登录，创建一个仓库（命名随意），将你刚才那个文件夹里的所有东西推送到这个仓库里（如果你跟着本文的方式进行，推送完后<code>vercel.json</code>文件应在该仓库的根目录下）。</p><p>打开<a href="https://vercel.com" rel="noopener external nofollow noreferrer">vercel.com</a>并使用 GitHub 登录，创建 Vercel 项目（此处项目名可以不与 GitHub 仓库同名）。选择仓库，会提示安装相应组件……这里跟着网页上的指引一步步来即可，最后满屏的烟花（有些网络环境不佳的可能只有“Congratulations”这样的词）会庆祝你部署成功。</p><p>之后按照网页上的提示进入项目页面，它会提供给你一个<code>.vercel.app</code>后缀的域名——不过国内无法访问。这绑定域名应该不需要多说了，实在不行网页翻译一下也是能懂的。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>如果出现问题请自行检查前面的步骤，适当运用搜索引擎解决问题。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>vercel 规定了程序没有写入权限，唯一拥有写入权限的只有<code>/tmp</code>这个临时目录。考虑用这种方法的，大多是“实验”或 api 等小 php 项目的（特地弄个服务器不大划算？）。</p><p>你可能见过有人用这样的操作部署了 Typecho 等程序，那是另编写了类似于<code>config.inc.php</code>之类的配置文件实现的——不过按照这个思路实现安装 WordPress 等亦非不可。 </p><p>由于众所周知的原因，请自备：</p><ul><li>域名（前面讲 Waline 配置时介绍过<code>.vercel.app</code>域名的现状，除非你不打算在国内使用）</li><li>能让 github 体验感变好的加速器（如<code>Watt Toolkit</code>，即<code>Steam++</code>。如果你网够好可无视）</li><li>初中英语（再不济翻译软件总有吧？）</li><li>搜索引擎</li></ul><p>本文不介绍如何网站账户注册等问题，不懂请自行搜索。</p><blockquote><p>如果你正好想要部署 Typecho ，GitHub 上已有大佬预配置好了，你可以直接去搜索阅读那个项目的说明。</p></blockquote><hr><p>What？Vercel 什么时候能部署 PHP 程序了？</p><blockquote><p><a href="https://github.com/vercel-community/php" rel="noopener external nofollow noreferrer">Vercel-PHP</a></p></blockquote><p>的确是可行的啊！这对于一些想部署些觉得特地准备服务器不划算的 PHP 项目的用户来说是好消息。</p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>关于部署项目到 Vercel 有两种方式：一种使用 Vercel CLI 进行部署；另一种使用第三方库进行拉取。这里使用后者（因为操作比较偏小白）</p><p>创建个文件夹，命名随意。在该文件夹下，请确保有以下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">project（文件夹）</span><br><span class="line">├── api</span><br><span class="line">│   └── index.php</span><br><span class="line">└── vercel.json</span><br></pre></td></tr></table></figure><p><code>api/index.php</code>中有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$file= __DIR__ . &#x27;/..&#x27;.$_SERVER[&quot;PHP_SELF&quot;];</span><br><span class="line"></span><br><span class="line">if(file_exists($file))</span><br><span class="line">&#123;</span><br><span class="line">   return false;</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">    require_once __DIR__ . &#x27;../index.php&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">#echo $_SERVER[&quot;PHP_SELF&quot;];</span><br></pre></td></tr></table></figure><blockquote><p><code>require_once __DIR__ . &#39;../index.php&#39;;</code>后面这里你可以改成<code>index.html</code>等（但我暂未尝试）（php文件中写纯html貌似也不会有问题）</p></blockquote><p><code>vercel.json</code>中有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;functions&quot;: &#123;</span><br><span class="line">    &quot;api/index.php&quot;: &#123;</span><br><span class="line">      &quot;runtime&quot;: &quot;vercel-php@0.6.0&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123; &quot;src&quot;: &quot;/(.*)&quot;, &quot;dest&quot;: &quot;/api/index.php&quot; &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p><code>&quot;runtime&quot;: &quot;vercel-php@0.6.0&quot;</code>一行， vercel 的 php 环境对应为：</p></blockquote><table><thead><tr><th>vercel-php</th><th>PHP版本</th></tr></thead><tbody><tr><td><a href="mailto:&#118;&#101;&#x72;&#x63;&#101;&#108;&#x2d;&#x70;&#x68;&#x70;&#x40;&#x30;&#x2e;&#x36;&#x2e;&#x30;" rel="noopener external nofollow noreferrer">&#118;&#101;&#x72;&#x63;&#101;&#108;&#x2d;&#x70;&#x68;&#x70;&#x40;&#x30;&#x2e;&#x36;&#x2e;&#x30;</a></td><td>PHP 8.2.x</td></tr><tr><td><a href="mailto:&#x76;&#x65;&#x72;&#99;&#x65;&#x6c;&#45;&#112;&#x68;&#x70;&#64;&#x30;&#x2e;&#x35;&#46;&#x33;" rel="noopener external nofollow noreferrer">&#x76;&#x65;&#x72;&#99;&#x65;&#x6c;&#45;&#112;&#x68;&#x70;&#64;&#x30;&#x2e;&#x35;&#46;&#x33;</a></td><td>PHP 8.1.x</td></tr><tr><td><a href="mailto:&#x76;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#x70;&#x68;&#112;&#x40;&#x30;&#x2e;&#52;&#x2e;&#49;" rel="noopener external nofollow noreferrer">&#x76;&#101;&#114;&#x63;&#x65;&#x6c;&#x2d;&#x70;&#x68;&#112;&#x40;&#x30;&#x2e;&#52;&#x2e;&#49;</a></td><td>PHP 8.0.x</td></tr><tr><td><a href="mailto:&#118;&#x65;&#114;&#99;&#101;&#108;&#x2d;&#112;&#x68;&#112;&#64;&#x30;&#x2e;&#x33;&#x2e;&#51;" rel="noopener external nofollow noreferrer">&#118;&#x65;&#114;&#99;&#101;&#108;&#x2d;&#112;&#x68;&#112;&#64;&#x30;&#x2e;&#x33;&#x2e;&#51;</a></td><td>PHP 7.4.x</td></tr></tbody></table><blockquote><p>不过 PHP7.4 在 2022 年 11 月 28 日停止维护，建议还是用<code>0.6.0</code>那个（自己使用时，只有这个版本能部署成功，其他均有报错，可能是 nodejs 版本、安全什么的问题。如果你准备部署的 PHP 程序不支持 PHP8.2 ，那……自求多福吧。</p></blockquote><p>之后将你想要部署的 PHP 程序放到该文件夹根目录（与<code>vercel.json</code>文件同级，<code>index</code>文件所在目录需与<code>api/index.php</code>中<code>require_once __DIR__ . &#39;../index.php&#39;;</code>对应）。</p><h2 id="推送与部署"><a href="#推送与部署" class="headerlink" title="推送与部署"></a>推送与部署</h2><p>进入 GitHub 并登录，创建一个仓库（命名随意），将你刚才那个文件夹里的所有东西推送到这个仓库里（如果你跟着本文的方式进行，推送完后<code>vercel.json</code>文件应在该仓库的根目录下）。</p><p>打开<a href="https://vercel.com" rel="noopener external nofollow noreferrer">vercel.com</a>并使用 GitHub 登录，创建 Vercel 项目（此处项目名可以不与 GitHub 仓库同名）。选择仓库，会提示安装相应组件……这里跟着网页上的指引一步步来即可，最后满屏的烟花（有些网络环境不佳的可能只有“Congratulations”这样的词）会庆祝你部署成功。</p><p>之后按照网页上的提示进入项目页面，它会提供给你一个<code>.vercel.app</code>后缀的域名——不过国内无法访问。这绑定域名应该不需要多说了，实在不行网页翻译一下也是能懂的。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>如果出现问题请自行检查前面的步骤，适当运用搜索引擎解决问题。</p>]]></content>
       
       
       <categories>
@@ -278,6 +262,8 @@
             <tag> web </tag>
             
             <tag> php </tag>
+            
+            <tag> Vercel </tag>
             
         </tags>
       
@@ -315,7 +301,7 @@
       <link href="/posts/3995821213/"/>
       <url>/posts/3995821213/</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不久前被这个重磅消息吸引了。继国产自研浏览器、国产自研操作系统、国产自研操作系统后的新产品：国产自研 IDE！</p><p>IDE 是啥？IDE 是集成开发环境（Integrated Development Environment）的缩写，它被用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。常见的有 VisualStudio、Eclipse、AndroidStudio、PyCharm 等。</p><p>如你所见，它们都是外国厂商或团队开发的，话语权在外国人手中，很容易让我们陷入卡脖子的困境。而今天，这个问题得到了解决！</p><p><img src="https://s2.loli.net/2023/10/09/2oXgyhbQEMpDlm1.png" alt="【图 1】" title="【图 1】"></p><h1 id="Logo"><a href="#Logo" class="headerlink" title="Logo"></a>Logo</h1><p>Logo 是产品的理念、特征的体现，开发商精神的象征。一个好的 Logo 能将自己产品的潜在用户转变为真正的用户。</p><p><img src="https://s2.loli.net/2023/10/09/gr6Dkx5pM3ctJQ8.png" alt="【图 2】" title="【图 2】"></p><p>这三个图标分别是 VSCode、VMware、酷安的，非常简洁明了，包含了产品名称、产品功能，很有科技感。而本文的主角——CEC-IDE 也一样，且看：</p><p><img src="https://s2.loli.net/2023/10/09/zAb4YkV2ZxXuWsG.png" alt="【图 3】" title="【图 3】"></p><p>渐变的蓝色，象征着科技潮流；圆弧和直边的结合，象征着尺规结合，天圆地方，融合了科技感与传统文化之美。</p><h1 id="软件界面"><a href="#软件界面" class="headerlink" title="软件界面"></a>软件界面</h1><p>安装界面就不放出来了，但可以说，安装界面非常简洁，没有任何多余的东西，对初次接触电脑的用户来说非常友好。咱们直接欣赏它的运行界面：</p><p><img src="https://s2.loli.net/2023/10/09/wGcpXFOkQ4UL3mC.png" alt="【图 4】" title="【图 4】"><br><img src="https://s2.loli.net/2023/10/09/VTKQGYPlIuchk73.png" alt="【图 5】" title="【图 5】"></p><p>它居然还有登录窗口，实在是非常先进。那什么 vscode 之类的，安装即用，毫无保障，完全不知道别人会用那些编辑器做什么——而这个编辑器不一样，它需要登录。果然，保护用户数据安全，我们义不容辞；防止有人用这款编辑器编写代码后拿去国外项目了，好评，遥遥领先！</p><p>主界面以黑色为主，护眼的同时给人一种神秘感与沉稳感；蓝色的提示框充满活力，不显得突兀。细看功能，十分强大。编辑器最重要的功能之一便是代码编写。为了与国际接轨，整个编辑器也采用有英文界面，让国人无感切换开发工具，摆脱 vscode！当然，你还可以通过左下角齿轮按钮进入设置，配置简体中文，对国人开发者十分友好。</p><p>你可能会说，此等强大的工具，没有插件，实在发挥不出其潜力啊！且慢，它不但有插件市场，而且非常丰富，甚至它创新有其他编辑器所不具备的功能：本土化的插件！什么敏感词工具、数字广东智能网关插件等，很好的适应了在中国本地的开发需求，省时省力，不必为合规、兼容等问题而煞费苦心。</p><h1 id="会员"><a href="#会员" class="headerlink" title="会员"></a>会员</h1><p>开发程序是需要投入大量的金钱与时间的。这款 IDE 的会员服务，完美适应了当下经济复苏的需要。赠人玫瑰，手有余香，今日充会员的钱，明天就能成为我们创新大道上的至关重要的一块“垫脚石”！</p><h1 id="软件信息"><a href="#软件信息" class="headerlink" title="软件信息"></a>软件信息</h1><p><img src="https://s2.loli.net/2023/10/09/R8lLcmIFP4wCy6p.png" alt="【图 6】" title="【图 6】"></p><p>上图为官网所截取，可以看出，它功能强大，支持多种开发环境，并且在此基础上进行创新，增强安全性保护措施，保障开发者的信息安全。而且还有一点，它能够<code>“完全兼容 vscode 的插件”</code>！诶，不对啊，这样兼容，不会被微软告吗？你错了，我们的国产 IDE 与国际大厂微软已达成合作，不信请自行查看软件信息，上面赫然写着的<code>“Copyright(C)2022 Microsoft.Allrights reserved”</code>，便是最好的证明。</p><h1 id="VSCode-插件"><a href="#VSCode-插件" class="headerlink" title="VSCode 插件"></a>VSCode 插件</h1><p>此等强悍的 IDE，如果我们想要体验，还需去特地下载安装吗？不！VSCode 的插件市场上，有开发者已经做出了“国产化”工具，“国产化你的 VSCode, 来源于 CEC-IDE, 有敏感词检测、防沉迷等功能，这下自主创新了！”</p><p><a href="https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide" rel="noopener external nofollow noreferrer" title="https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide">https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide</a></p><p>该插件的作者也有雄心壮志，这位作者也在插件的结尾如是写道：</p><blockquote><p>接下来，本项目将进一步聚焦解决数字产业核心技术的“卡脖子”难题，牵住数字关键核心技术自主创新这个“牛鼻子”，强化自主创新项目整合，善用 GITEE 建设形成的人才聚集效应，切实提高数字关键核心技术创新能力，持续彰显科技创新示范效应。</p></blockquote><h1 id="官网现状"><a href="#官网现状" class="headerlink" title="官网现状"></a>官网现状</h1><p>唉，如此一款强大的 IDE，现状去看，官网已无法访问。不用说，肯定是太平洋彼岸的某个国家干的好事！你看 VSCode 是不是与 CEC-IDE 很像？不用说，肯定是微软抄袭了；不仅抄袭了，它为了让人看不出抄袭痕迹，甚至删去了所有我们辛辛苦苦自主创新的国产化组件，然后将其开源。这是对我们劳动成果的不尊重！为了防止他们继续这种低级的行为，我们的开发者数字广东已对 CEC-IDE 的官网进行了加密验证，现在很多国内的用户都无法访问了，实在让人惋惜。</p><p><img src="https://s2.loli.net/2023/10/09/DCu13d6aAw8RfFO.png" alt="【图 7】" title="【图 7】"></p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>国产产品的成长真的非常多灾多难，从曾经的汉芯芯片遭到某大学论坛的“攻击”，到自研红芯浏览器被人恶意解包，再到如今的 CEC-IDE，不无让漂亮国产生了不安感。</p><p>但我们也没有放弃行动。这不，最近据闻国内部分地区的网络屏蔽了 vscode 官网，甚至将其跳转到防诈骗页面，便是其一。谁让它抄袭了我们自主研发遥遥领先的产品，被封纯属自找啊！</p><p>无论如何，我们坚信，敌人的这种伎俩在我们创新的道路上是不值一提的，我们的创新之路，只会越走越远，越走越开阔！</p><h1 id="真正的结语"><a href="#真正的结语" class="headerlink" title="真正的结语"></a>真正的结语</h1><p>国内无论是软件还是文学音乐创作等方面，人们的版权意识都有待提高。很多东西，你看着是新出的，可没准那是从某个地方“修改”二来——暂不说改得好不好，能按原作者要求注明来源去做的便寥寥无几。</p><p>我觉得，你用了别人开源的东西自己开发，甚至是抄，并不可耻——你不能指望一个临摹楷书都不会的人去写草书。在 GitHub 上，微软甚至将 vscode 的源代码以 MITlicense 发布，够宽松了吧？可用着别人的东西，几乎没修改还号称自主研发，原作者信息遮遮掩掩，最后被揭发后急匆匆道歉说“少量创新”、“遗漏了 MIT 开源协议文件”，这打脸的结局，你在发布会之前可否想过？</p><p>这种做法，吾以为，消耗了国人的创新热情，也给国产软件蒙上了又一层阴影，百害而无一利。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>不久前从群里看到它时，我被这个重磅消息吸引了！这是继国产自研芯片、国产自研浏览器、国产自研系统后的又一新产品：国产自研 IDE！</p><p>IDE 是啥？IDE 是集成开发环境（Integrated Development Environment）的缩写，它被用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。常见的有 VisualStudio、Eclipse、AndroidStudio、PyCharm 等。</p><p>如你所见，它们都是外国厂商或团队开发的，话语权在外国人手中，很容易让我们陷入卡脖子的困境。而今天，这个问题得到了解决！</p><p><img src="https://s2.loli.net/2023/10/09/2oXgyhbQEMpDlm1.png" alt="【图 1】" title="【图 1】"></p><h1 id="Logo"><a href="#Logo" class="headerlink" title="Logo"></a>Logo</h1><p>Logo 是产品的理念、特征的体现，开发商精神的象征。一个好的 Logo 能将自己产品的潜在用户转变为真正的用户。</p><p><img src="https://s2.loli.net/2023/10/09/gr6Dkx5pM3ctJQ8.png" alt="【图 2】" title="【图 2】"></p><p>这三个图标分别是 VSCode、VMware、酷安的，非常简洁明了，包含了产品名称、产品功能，很有科技感。而本文的主角——CEC-IDE 也一样，且看：</p><p><img src="https://s2.loli.net/2023/10/09/zAb4YkV2ZxXuWsG.png" alt="【图 3】" title="【图 3】"></p><p>渐变的蓝色，象征着科技潮流；圆弧和直边的结合，象征着尺规结合，天圆地方，融合了科技感与传统文化之美。</p><h1 id="软件界面"><a href="#软件界面" class="headerlink" title="软件界面"></a>软件界面</h1><p>当时安装时太激动了，以至于忘记截图安装界面，这里大致描述一下：安装界面非常简洁，没有任何多余的东西，对初次接触电脑的用户来说非常友好。咱们直接欣赏它的运行界面：</p><p><img src="https://s2.loli.net/2023/10/09/wGcpXFOkQ4UL3mC.png" alt="【图 4】" title="【图 4】"><br><img src="https://s2.loli.net/2023/10/09/VTKQGYPlIuchk73.png" alt="【图 5】" title="【图 5】"></p><p>登录组件，非常先进！那什么 vscode 之类的，安装即用，毫无保障，完全不知道别人会用那些编辑器做什么——而这个编辑器不一样，它需要登录。果然，保护用户数据安全，我们义不容辞。有些程序员用这款国产编辑器编写代码，之后竟上传到国外平台，实在居心叵测。这个设计好评，遥遥领先！</p><p>主界面以黑色为主，护眼的同时给人一种神秘感与沉稳感；蓝色的提示框充满活力，不显得突兀。细看功能，十分强大。编辑器最重要的功能之一便是代码编写。为了与国际接轨，整个编辑器也采用有英文界面，让国人无感切换开发工具，摆脱 vscode！当然，你还可以通过左下角齿轮按钮进入设置，配置简体中文，对国人开发者十分友好。</p><p>你可能会说，此等强大的工具，没有插件，实在发挥不出其潜力啊！且慢，它不但有插件市场，而且非常丰富，甚至它创新有其他编辑器所不具备的功能：本土化的插件！什么敏感词工具、数字广东智能网关插件等，很好的适应了在中国本地的开发需求，省时省力，不必为合规、兼容等问题而煞费苦心。</p><h1 id="会员"><a href="#会员" class="headerlink" title="会员"></a>会员</h1><p>开发程序是需要投入大量的金钱与时间的。这款 IDE 的会员服务，完美适应了当下经济复苏的需要。赠人玫瑰，手有余香，今日充会员的钱，明天就能成为我们创新大道上的至关重要的一块“垫脚石”！</p><h1 id="软件信息"><a href="#软件信息" class="headerlink" title="软件信息"></a>软件信息</h1><p><img src="https://s2.loli.net/2023/10/09/R8lLcmIFP4wCy6p.png" alt="【图 6】" title="【图 6】"></p><p>上图为官网所截取，可以看出，它功能强大，支持多种开发环境，并且在此基础上进行创新，增强安全性保护措施，保障开发者的信息安全。而且还有一点，它能够<code>“完全兼容 vscode 的插件”</code>！诶，不对啊，这样兼容，不会被微软告吗？你错了，我们的国产 IDE 与国际大厂微软已达成合作，不信请自行查看软件信息，上面赫然写着的<code>“Copyright(C)2022 Microsoft.Allrights reserved”</code>，便是最好的证明。</p><h1 id="VSCode-插件"><a href="#VSCode-插件" class="headerlink" title="VSCode 插件"></a>VSCode 插件</h1><p>此等强悍的 IDE，如果我们想要体验，还需去特地下载安装吗？不！VSCode 的插件市场上，有开发者已经做出了“国产化”工具，“国产化你的 VSCode, 来源于 CEC-IDE, 有敏感词检测、防沉迷等功能，这下自主创新了！”</p><p><a href="https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide" rel="noopener external nofollow noreferrer" title="https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide">https://marketplace.visualstudio.com/items?itemName=qcqx.cec-ide</a></p><p>该插件的作者也有雄心壮志，这位作者也在插件的结尾如是写道：</p><blockquote><p>接下来，本项目将进一步聚焦解决数字产业核心技术的“卡脖子”难题，牵住数字关键核心技术自主创新这个“牛鼻子”，强化自主创新项目整合，善用 GITEE 建设形成的人才聚集效应，切实提高数字关键核心技术创新能力，持续彰显科技创新示范效应。</p></blockquote><h1 id="官网现状"><a href="#官网现状" class="headerlink" title="官网现状"></a>官网现状</h1><p>唉，如此一款强大的 IDE，现状去看，官网已无法访问。不用说，肯定是太平洋彼岸的某个国家干的好事！你看 VSCode 是不是与 CEC-IDE 很像？不用说，肯定是微软抄袭了；不仅抄袭了，它为了让人看不出抄袭痕迹，甚至删去了所有我们辛辛苦苦自主创新的国产化组件，然后将其开源。这是对我们劳动成果的不尊重！为了防止他们继续这种低级的行为，我们的开发者数字广东已对 CEC-IDE 的官网进行了加密验证，现在很多国内的用户都无法访问了，实在让人惋惜。</p><p><img src="https://s2.loli.net/2023/10/09/DCu13d6aAw8RfFO.png" alt="【图 7】" title="【图 7】"></p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>国产产品的成长真的非常多灾多难，从曾经的汉芯芯片遭到某大学论坛的“攻击”，到自研红芯浏览器被人恶意解包，再到如今的 CEC-IDE，不无让漂亮国产生了不安感。</p><p>但我们也没有放弃行动。这不，最近据闻国内部分地区的网络屏蔽了 vscode 官网，甚至将其跳转到防诈骗页面，便是其一。谁让它抄袭了我们自主研发遥遥领先的产品，被封纯属自找啊！</p><p>无论如何，我们坚信，敌人的这种伎俩在我们创新的道路上是不值一提的，我们的创新之路，只会越走越远，越走越开阔！</p><h1 id="真正的结语"><a href="#真正的结语" class="headerlink" title="真正的结语"></a>真正的结语</h1><p>国内无论是软件还是文学音乐创作等方面，人们的版权意识都有待提高。很多东西，你看着是新起的，实则不然——暂不说改得好不好，能注明来源的便寥寥无几（作者另有声明的另说）。这种做法，吾以为，其打击了国内开发者的热情，也给国产软件蒙上了又一层阴影，百害而无一利。</p><p>我觉得，用开源的东西并不可耻，现在很多知名项目就是靠着开源发展壮大的。但就此“自研”编辑器而言，连开源协议都不遵守，还号称自主研发；被揭发后匆匆道歉言“少量创新”“遗漏了 MIT 开源协议文件”，实在滑稽。</p><p>啊，官网活着时首页还赫然几个大字：守正创新。额……</p>]]></content>
       
       
       <categories>
@@ -402,6 +388,10 @@
             
             <tag> 网络安全 </tag>
             
+            <tag> Cloudflare </tag>
+            
+            <tag> Vercel </tag>
+            
             <tag> Waline </tag>
             
         </tags>
@@ -429,9 +419,9 @@
             
             <tag> web </tag>
             
-            <tag> 代码 </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> 代码 </tag>
             
         </tags>
       
@@ -471,12 +461,6 @@
       
         <content type="html"><![CDATA[<h3 id="前摇"><a href="#前摇" class="headerlink" title="前摇"></a>前摇</h3><p>《寒冰（IGS）》一曲已然是一座新的高峰，V在燃烧在睿站的合集《荒谬的诗》中，继此后是《扭曲（Nayanion）》一曲。强烈的说唱如同潮水一般涌入听众的耳朵，带来极强的听感体验；富恰到好处的鼓点带给听众难以言说的兴奋感。循环几次，感觉大不相同。</p><blockquote><p>“冬宫的皇帝一直嘲弄农奴的疾苦。”———这是V在思考中的顿悟。也许，在大雪纷飞的冬夜，只有抽点盐与冰狼才能麻痹农奴的伤痕。</p></blockquote><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>开场低沉的一句“LTC Has Taken the Combat Area”过后，迅速进入正文。</p><blockquote><p>理塘夜店 哥们展现帅气的背影<br>哥们艳丽素颜 像是孔雀在开屏<br>召唤高达 从理塘直接飞到东京<br>我是时代黄金 更是锐利的冰</p></blockquote><p>毫不掩饰，没有修辞，以大白话的形式直接展现丁真成名之后的浮夸心态。夜店中的背影，帅气显尽；不打扮的面孔，碾压万民；仿若飘然欲仙，飞到东京；是时代的明珠，黄金与冰。</p><p>你看丁真他真的能驾驭得了这番名气吗？很显然，以资本为推手，强求一个学历不高、说话不清的人去接受，实在有点“错位”。除了“帅气的背影”、“像是孔雀在开屏”的素颜外，又有什么过人之处呢？德不配位，从而令其产生极大的优越感。</p><blockquote><p>那些rapper都在装傻<br>歌词写的像跟勾八<br>哥们是瓷器真的HipHop<br>跟做题家比我的人生像开了外挂</p></blockquote><p>接上段的“狂”继续，丁真感到其他说唱歌手的作品与自己的相比一无是处，自己是天朝（“瓷器”即china）第一，无人可比。“跟做题家比我的人生像开了外挂”一句可谓将攻击性进行了拔高，令屏幕之外的小镇做题家们心中一惊，随机转为对丁真出名的怨气——不怪他们，也不怪丁真本人。你我这般普通的“做题家”，努力到底能不能改变命运？</p><blockquote><p>欲望和票子都无法定义我的牌面<br>吐得不是烟圈 而是来自然日卡的利剑<br>甩出我的一张名片 专业入殓<br>再给传统派们送个花圈 “I am the criminal”</p></blockquote><p>此段开始，可明显听出吐字密集程度加高，几乎没有换气时间，如行云流水般唱出。欲望与票子这种世俗的东西，配不上我的高贵，你等做题家算什么东西？吸口电子烟，吐出来自然日卡的利剑——这剑，为何出现，又刺痛了谁？“甩”字用得十分巧妙，从十多天前还在领救济物资的贫苦少年到去联合国演讲、被广大官媒包装的“明星”，这是何等大的差距？自然动作也跟着飘了起来，甚至到了给人专业入殓的地步——等等，给谁入殓，给谁的花圈？这“传统派”一词，可能是指丁真从“纯真（传统，藏族孩子）”到了“现代（出名）”后看不起“传统”的“轻狂”，也可能是暗指王源曾经抽（传统）香烟；而联系全曲，则更可能是指你我这种“小镇做题家”，靠自己努力获得成就，实在是太老土了，哪有我这种资本包装来得快？</p><blockquote><p>我给你发货 用的无人机<br>你还在刷题 耍的圆珠笔<br>我喜欢审核 因为她是烧鸡<br>裤裆里塞五根烟杆 是我的小秘密</p></blockquote><p><del>这段词我实在编不出赏析了。。。</del></p><blockquote><p>我在纽约开店收大米<br>卖烟弹和龙狙收入小涨一百亿<br>我的操作和我的烟杆一样硬<br>灭队了帮我拿烟 哥们是理塘收割机</p></blockquote><p>咱不说别的，就说“卖烟弹和龙狙收入小涨一百亿”这句，含义我不作直接解释。讲真，总有种听专家说“谁还每个几百万存款”时表现出的荒诞的美。此段过后，节奏上的高潮出现：</p><blockquote><p>拿烟 拿烟 拿烟 拿烟 拿烟 走上了台阶<br>拿烟 拿烟 拿烟 拿烟 拿烟 再嚼颗槟榔<br>拿烟 拿烟 拿烟 拿烟 拿烟 办场庆功宴<br>拿烟 拿烟<br>拿烟 拿烟<br>拿烟 拿烟 拿烟 拿烟 拿烟 走上了台阶<br>拿烟 拿烟 拿烟 拿烟 拿烟 吐出口浓烟<br>拿烟 拿烟 拿烟 拿烟 拿烟 再嚼颗槟榔<br>拿烟 拿烟<br>拿烟 拿烟</p></blockquote><p>走上了台阶，庆功宴，嚼槟榔，吐浓烟。飘了，实在飘了；狂，实在是狂。做题家们寒窗苦读，一日有幸出人头地，只见别人靠着资本轻松上位，你什么感受？<del>联想下以往和最近的政策和开会……停，就到这里，再说下去，必将触碰到更不可碰的滑梯（doge）。</del></p><blockquote><p>我换上了铁肺吸烟弹 像塞伯坦星人<br>你们的血汗香甜无比 是我新款的香氛<br>理塘的冬夜开了暖气还是那样的冰冷<br>我跳进了烟海里 眼里也慢慢失了神</p></blockquote><p>第二段，语速稍微放慢，语气平稳不少，也低沉了不少。但配合这段歌词，却给人一种平静叙述的感觉，仿佛这一切都是应得的。若没有资本的推手，他可能连做题家都不如；而有了推手，“你们的血汗香甜无比是我新款的香氛”，不禁让人想到“人骨搭台歌功舞，民膏研墨颂德词”。理塘的冬夜，在电子烟中，迷失了自己，再难找回自己的纯真。</p><blockquote><p>在烟雾 呼出的间隙中比个中指<br>我天天抽烟 骑着珍珠 怎么还有近视？<br>做题家都在被迫做着逼事<br>因为天生命贱 全欠收拾<br>把eco人生绝地翻 转这是我的命<br>有人想干我 所以抬高赏金<br>做题家在阴影里发出一声悲鸣<br>没人在意我就扬起镶金的马鞭</p></blockquote><p>这里与IGS有相通之处，但这里明着指出了做题家的痛处。攻击性拉满，全曲在此封神。脚踩做题家铺成的道路，却反过来说他们命贱——何等强的攻击性！“我天天抽烟，骑着珍珠”，闲游四方，坐享其成，“怎么还有近视”？这句话比较含蓄，千言万语汇集于此，不易捉摸。而联合后两句则“茅塞顿开”了——做题家被迫做着逼事，这是他们天生的，活该。“做题家在阴影里发出一声悲鸣”，在丁真乃至千千万如他一般“逆袭”的人眼中，做题家的痛苦，他们无法尝到，便只作娱乐欣赏；而千千万资本家的眼中，则又是类似的嵌套。“没人在意我就扬起镶金的马鞭”，荣华富贵，做题家们，你们配吗？这马鞭，真的是骑马的工具吗？这镶金的马鞭，一顿一顿，抽打在做题家们的心里；而于资本家眼中，不过是贵族观赏斗兽场中的奴隶罢了！矛盾再次于事实陈述中无形地加深。</p><blockquote><p>把玩 过的烟杆已经数不清<br>想再去寻找它们却根本没了影<br>童年买的烟杆还有几成新<br>当我癌症晚期 帮我拿好我的烟</p></blockquote><p>夸张的手法能带给人极强的讽刺感。抽过无数的烟，却再也找不到这些烟杆，也暗喻丁真再也找不回成名前的纯真之心；童年的烟杆还有几成新，再次起伏——或许，丁真内心还残留着一点过往的初心。然而，“当我癌症晚期，帮我拿好我的烟”，让大家彻底“失落”——丁真再也不是原来的丁真了（批：一说指不是成名之前的纯真的丁真；一说指丁真的形象在此已全部展现，他也不过是一个任人操控的工具罢了；还有说指丁真在此升华，超越丁真本人，成为了一个抽象化的符号）。</p><blockquote><p>拿烟 拿烟 拿烟 拿烟 拿烟 走上了台阶<br>拿烟 拿烟 拿烟 拿烟 拿烟 吐出口浓烟<br>拿烟 拿烟 拿烟 拿烟 拿烟 再嚼颗槟榔<br>拿烟 拿烟<br>拿烟 拿烟<br>拿烟 拿烟 拿烟 拿烟 拿烟 学不会巴结<br>拿烟 拿烟 拿烟 拿烟 拿烟 吐出口浓烟<br>拿烟 拿烟 拿烟 拿烟 拿烟 再嚼颗槟榔<br>拿烟？拿烟。<br>拿烟？拿烟！</p></blockquote><p>意犹未尽，全曲于此戛然而止。</p><h3 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h3><p>丁真真的是一个手持利剑、脚踩做题家的“犯罪者”吗？</p><p>他也无非是一个提线木偶罢了，是摆在明面上的化身。</p><p>表面的光鲜亮丽，吸引着众人的目光，也让人难以捉摸其背后的情况。</p><p>而真正的“犯罪者”是谁？在座各位一定已经都有了定论。</p>]]></content>
       
-      
-      <categories>
-          
-          <category> 整活 </category>
-          
-      </categories>
       
       
     </entry>
@@ -565,9 +549,11 @@
       
         <tags>
             
-            <tag> 代码 </tag>
+            <tag> GitHub </tag>
             
             <tag> Hexo </tag>
+            
+            <tag> 代码 </tag>
             
         </tags>
       
@@ -726,33 +712,6 @@
     
     
     <entry>
-      <title>折腾旧手机的经历</title>
-      <link href="/posts/2933412209/"/>
-      <url>/posts/2933412209/</url>
-      
-        <content type="html"><![CDATA[<p>自二年前无意找到了老旧不用的手机后，吾便将其“珍藏”。一日充电，长按电源键，吾仿佛见到十年前的光景。与如今手机相比，这旧手机的配置不可谓不寒酸。2GB运存，16GB储存，稍微好点的MP3都能赶上。现在在二手市场去看，不足100便可购买到，成色没准比我手头这台还好。</p><p>华为P6和P7、诺基亚N8等旧手机几乎是同时被我发现的，充上电好像还能开机，正常使用续航一日多一点，好像还可以。那台诺基亚自然不必说，可惜自发现半年后便不知在什么时候失掉了，实在是遗憾。</p><p>由于联想那台配置实在太低，不满足我的折腾需求，故吾将目光转移到两台旧华为手机身上。两台手机插电均有反应，P6可以正常开机，还能运行些软件——但无法正常启动的软件占多数，毕竟还在用安卓4.2系统的，如今也大多是工控设备或智能柜、无纸化记事本一类的去使用。</p><p>P7情况比较「悲惨」，外观也是比较破的，后盖玻璃已经破碎部分脱落。对其进行充电，结果提示“手机启动异常”。随后我将其连接电脑并使用工具尝试刷机，却无一例外卡在fastboot界面。它提示要我输入解锁码，但我找到并折腾这台手机时，华为官方解锁码通道老早关闭了（心中飘过无数草泥马~）。没办法，线刷双清吧。双清不知道几次后，手机正常开机了！</p><p>满怀激动之心的我打算将其重启——毕竟很久不用的老旧手机，第一次开机难免有未加载好的地方，重启后体验更好——至少重启之前我是这样想的——因为重启后它又不能正常开机了。去网上查阅后，发现那次重启是“回光返照”，因为系统已经有损坏了——但为什么那样还能开机之后不行，吾却未能想通。又折腾几次，终于，它连开机动画都没了Σ( ° △ °|||)︴……</p><p>好吧，虽然P6不能插储存卡，虽然P6只有3G，虽然海思K3V2性能不好发热量大，却也不是不能用，用来听歌看小说还是可以支撑的。几个月后，它的电池排线断了，在一次折腾中——P6-C00不像移动和联通版本，它的后盖不是金属拉丝，是磨砂非金属材质，而且是卡扣形式安装的，可以轻松撬开而不需要热风枪。这就尴尬了，被迫使用诺基亚N8。偶然发现N8可玩性不低，而且塞班系统也不多见了，可以折腾，结果不久后弄丢了╥﹏╥…</p><p>由于aigo的月光宝盒播放器被我刷系统刷坏了，听歌看书备用机只能用联想A500充当了。安卓2.3的系统，自己体会一下。。。好在还是有阅读器可以使用的。断断续续又过了几周，屏幕被我摔碎了……</p><p>我特么欲哭无泪，折腾下来啥也没有了！硬着头皮，找到P7并继续折腾——这是我现在手里有的最好的旧手机了，我甚至还破费弄了个新主板和电池给它换上才终于一睹其芳容。</p><p>配合仅能找到的部分当年华为在巴黎开的AscendP7发布会，此手机确实名副其实——当然放到现在来看性能肯定是别想了。外观“君子如兰”，屏幕——我去屏幕断触了！等我撬开其屏幕尝试修复时，非但触摸没修好，显示都成问题。好吧，再破费一次，换个屏幕( ′ 3`)~</p><p>说回来，有了上回“前车之鉴”，刚测试完正常使用后，我便开始对其进行root，但暂时不太想刷机。虽然这台手机官方适配都到了安卓5.1，但怕它的硬件遭不住；而且EmotionUI2.3有很多设计，比较，嗯，“复古”，差不多是那种Apple带没的东西，而EMUI3.0（此时才开始改名为“EMUI”）之后就扁平化了。root只为解BL锁，以防万一折腾坏了可以刷机解决。</p><p>按照吾爱破解大佬的方法（末尾链接），研究多时，最终获得解锁码。当然，在此之前也尝试救过砖，可惜原来主板的固件，REC也被弄坏了，彻底没救。而且是电信定制版的，不支持储存卡，不如换移动主板。总之，这台手机的补救方法已经提前准备好了。</p><p>等哪天把内网穿透之类解决了，可能会准备另一台类似配置的旧手机，然后博客就迁移到手机上运行，用内网穿透解决外网域名访问。免费机速度实在有点迷。。。</p><p><a href="https://www.52pojie.cn/thread-816065-1-1.html" rel="noopener external nofollow noreferrer">https://www.52pojie.cn/thread-816065-1-1.html</a></p><p><a href="http://mbrcm.22web.org/cloud/blogfiles/%E5%8D%8E%E4%B8%BA%E8%A7%A3%E9%94%81%E5%A5%97%E8%A3%85/%E5%8D%8E%E4%B8%BA%E8%A7%A3%E9%94%81%E5%A5%97%E8%A3%852.zip" rel="noopener external nofollow noreferrer">http://mbrcm.22web.org/cloud/blogfiles/%E5%8D%8E%E4%B8%BA%E8%A7%A3%E9%94%81%E5%A5%97%E8%A3%85/%E5%8D%8E%E4%B8%BA%E8%A7%A3%E9%94%81%E5%A5%97%E8%A3%852.zip</a></p><p>备用链接：<a href="https://www.zjwangpan.com/s/63EfYfvlO3" rel="noopener external nofollow noreferrer">https://www.zjwangpan.com/s/63EfYfvlO3</a>   提取码：tmzz</p><p>压缩包密码均为sakurink</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 随写 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 随写 </tag>
-            
-            <tag> 折腾 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>秋风，唱给田野动听的歌</title>
       <link href="/posts/348141877/"/>
       <url>/posts/348141877/</url>
@@ -843,31 +802,6 @@
     
     
     <entry>
-      <title>kali更换镜像源 | vim编辑器常用命令</title>
-      <link href="/posts/2122152757/"/>
-      <url>/posts/2122152757/</url>
-      
-        <content type="html"><![CDATA[<p>接上回初步配置好kali后，我打算着给它配置中文输入法。但非常不幸的是，kali默认镜像源在国外，咱也不是不知道国内直连国外网站的速度（不清楚的可以尝试在国内不挂加速器去下载github上的东西，概率问题）。更换为国内镜像源速度更快。</p><p>进入kali，打开终端，输入以下内容：</p><blockquote><p>sudo su</p><p>[输入密码，此时终端不会显示内容，回车]</p><p>sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list</p></blockquote><p>此时进入vim模式，可对sources.list进行编辑</p><p>按i进入编辑模式，官方源前加“#”，将国内源粘贴至其下方。完成后按下ESC退出编辑，输入“:wq”保存。</p><p>更新软件源：</p><blockquote><p>apt-get update</p><p>apt-get upgrade</p><p>apt-get dist-upgrade</p><p>apt-get clean</p><p>apt-get autoclean</p></blockquote><p>执行多个命令时，</p><p>使用&amp;&amp;符号则代表前一个命令执行成功，后一个才执行。 </p><p>使用||符号则前一个命令执行失败，后一个才执行。 </p><p>使用;符号则无论前一个命令是否成功，后面均会执行。</p><p>镜像源：</p><blockquote><p>#官方源</p><p>deb http:&#x2F;&#x2F;<span></span>http.kali.org&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>http.kali.org&#x2F;kali kali-rolling main non-free contrib</p><p>#中科大</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib</p><p>#阿里云</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib</p><p>#清华大学</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>deb-src https:&#x2F;&#x2F;<span></span>mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>#浙大</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free</p></blockquote><p>vim常用命令：</p><p>（本人第一次使用vim编辑器，故记录于此）</p><blockquote><p>$：到行尾</p><p>%s&#x2F;#.*&#x2F;&#x2F;g ：删除#之后的字符</p><p>%s&#x2F;$&#x2F;sth&#x2F; ：在行尾追加sth</p><p>%s&#x2F;^M&#x2F;&#x2F;g ：替换掉dos换行符，\^M使用ctrl+v + Enter即可输入</p><p>:g&#x2F;^\s$&#x2F;d* ：删除空行以及只有空格的行</p><p>^：到行首第一个字符，如果前面有空格的话</p><p>0：到行首</p><p>cc：替换整行，即删除游标所在行，并进入插入模式</p><p>ce：使本行文本内容居中</p><p>Ctrl+r：redo，即撤销undo的操作</p><p>cw：替换一个单词，即删除一个单词，并进入插入模式</p><p>d^：删除至行首</p><p>dd：删除一行</p><p>100dd：删除100行</p><p>df”：删除到出现的第一个双引号</p><p>dw：删除一个单词</p><p>G：快速到文件尾</p><p>50G：跳转到第 50 行</p><p>gg：快速到文件头</p><p>h：向左</p><p>j：向下</p><p>20j： 向下移动 20 行</p><p>k：向上</p><p>l：向右</p><p>le：使本行文本内容靠左</p><p>N：查找上一个匹配</p><p>n：查找下一个匹配</p><p>2n：查找下面第二个匹配</p><p>p：粘贴复制或剪切的内容</p><p>5p：将复制或剪切的内容粘贴5次</p><p>q!： 不保存，强制退出</p><p>qa!： 有多个文件被打开，同时退出</p><p>R：连续替换，直到按下Esc</p><p>r+&lt;待替换字母&gt;：将游标所在字母替换为指定字母</p><p>ri：使本行文本内容靠右</p><p>U(大写)：撤销当前行的所有修改</p><p>u{n}：撤销一次或n次操作</p><p>wq：保存当前文件并退出</p><p>wqa：保存所有文件并退出</p><p>x：向后剪切一个一个字符，如果是在行尾，则为向前剪切</p><p>5x：剪切5个</p><p>xp：非行尾交换两个字符，如从bs变成sb</p><p>y$：复制光标到行尾</p><p>y2fA：复制光标到第二个大写A中间的内容</p><p>yfA：复制光标到第一个大写A中间的内容</p><p>yw：复制光标开始的一个单词</p><p>yy：复制一行</p><p>5yy：向下复制5行</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 操作系统 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友情链接说明</title>
       <link href="/posts/1191333692/"/>
       <url>/posts/1191333692/</url>
@@ -887,11 +821,11 @@
     
     
     <entry>
-      <title>博客折腾记录：音乐播放器与 Pjax</title>
+      <title>Pjax实现跳转时音乐播放不中断</title>
       <link href="/posts/3957020503/"/>
       <url>/posts/3957020503/</url>
       
-        <content type="html"><![CDATA[<p>博客折腾记录：音乐播放器</p><p><strong>我仅仅只是想加个不间断的音乐播放器，仅此而已！！！</strong></p><p>在逛网上一些个人博客，或是自定义程度较高的博客平台时，常见一播放器于其中。多数位于屏幕左下，小巧美观，功能丰富，吾甚是羡慕，便着手尝试。</p><p>APlayer 的官方文档还是很详细的，而且引入并不繁琐，只需 jsdelivr 之类 cdn 引入一条，之后使用一 div 及一段 js 即可。阅读文章时还能听点歌曲，确实是不错。然而……</p><p>这播放器好是好，但点击文章时便整个刷新了，包括播放进度什么的。其实这不是播放器的问题，毕竟网页跳转这种，播放器自然跟着刷新。但听得好好的，突然给我断了；而且每点一下，整个页面全部刷新，对于我这种使用免费主机的人来说，实在有点难受（╯‵□′）╯︵┴─┴……</p><p>于是乎吾上网搜索，见到不少解决方案，不过大多都提到了“Pjax”这个技术，遂进一步了解：</p><blockquote><p>AJAX 是异步的 JavaScript 和 XML 的简称……可以在不刷新整个网页的情况下，对网页的某部分进行更新加载。</p><p>pjax &#x3D; pushState + ajax。它在对网页部分刷新的前提下，保持了真实的地址、网页标题，浏览器的后退（前进）按钮也可以正常使用……当然，pjax 也有不依赖 jQuery 的版本。</p></blockquote><p>仔细思索，这恰是我想的效果，顺便还能提高下加载速度（你猜这个博客所在虚拟主机有没有付费）。<br>  我现在没有时间听什么 Pjax 不利于 SEO，我 tm 只想要个不间断的音乐播放器！！！</p><p>虽然不少大佬的网站已经用上 Pjax，但至少目前来看，大多集中于 WP、Hexo、Typecho 等，还没见到 xiuno 使用 pjax 的实例，无论是当做博客还是论坛。无法，只得自行摸索。</p><p>官方文档写得比较简单，而且给的是 jQuery 写法。无 jQ 版本非常精简，并且写法更方便。按照网上的教材来看，大概也能摸索一些。假设一个网页的结构如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html class=&quot;...&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    ...</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;header&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/header&gt;</span><br><span class="line">    &lt;main&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/main&gt;</span><br><span class="line">    &lt;footer&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/footer&gt;</span><br><span class="line">    &lt;div class=&quot;pjax-container&quot;&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>对于博客来说，一般情况下，title 和 meta 标签是会变化的，示例中 main 是网站的主要内容自然要变化，footer 一般情况下保持不变。那么在网页末尾处的 js 可以这样写（已经引入 Pjax）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var pjax = new Pjax(&#123;</span><br><span class="line">        selectors: [</span><br><span class="line">            &quot;title&quot;,</span><br><span class="line">            &quot;meta[name=description]&quot;, </span><br><span class="line">            &quot;main&quot;</span><br><span class="line">            &quot;.pjax-container&quot;</span><br><span class="line">            //按照 CSS 选择器的写法，将需要变化的标签添加至此处</span><br><span class="line">        ],</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>播放器引入位置不在上文 js 的 selectors 中任何标签内即可。非常简单，播放器正常播放，问题解决……</p><p>个鬼！这样写将导致大部分 js 均失效。当前网页的内容已经发生了变化，js 绑定的元素已经消失。而 pjax 只会部分刷新网页，这些 js 没有变化。也就是说，需要通过“重载”再次加载所需 js，方可让这些功能重新出现。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function pjax_reload()&#123;</span><br><span class="line">        //需重新加载的 js 代码</span><br><span class="line">    &#125;</span><br><span class="line">    document.addEventListener(&#x27;pjax:complete&#x27;, function ()&#123;//当 pjax 完成时执行</span><br><span class="line">        pjax_reload();//上方的函数</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>（其实将需重载的 js 包裹在上文示例<div class="pjax-container"></div>中即可，而且貌似无论是否是 script 标签内直接写的，还是第三方引入的，都能重新加载。由于本人较懒，简单粗暴加了个 div 用于刷新，细节方面暂未调整，故还有诸多 js 问题未能解决。这个坑以后慢慢填 (๑´ㅂ`๑)）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    /* 此处可自定义 loading 动画，须与下文 js 所写相同。此处例为。loading */</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    document.addEventListener(&#x27;pjax:send&#x27;, function ()&#123;</span><br><span class="line">        $(&quot;.loading&quot;).css(&quot;display&quot;, &quot;block&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    document.addEventListener(&#x27;pjax:complete&#x27;, function ()&#123;</span><br><span class="line">        $(&quot;.loading&quot;).css(&quot;display&quot;, &quot;none&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>由于本人的主机速度不佳（免费的），点击到加载之间的时间比较久，而且没有任何提示。上述代码将添加一个加载动画，加载时显示，加载完成后消失，避免让访问者以为点击未生效。</p><p>至此，pjax 基本配置完毕。更多配置详见 github 上作者官方文档。<br>顺带提一嘴，看了下 xiuno 的执行流程，个人感觉有点像搭积木，最终呈现出来的才是一个完整的 html 页面。这也是我最开始懒得细细选择的原因之一。</p><p><strong>最后，我真的只是想让音乐播放器在跳转后不间断罢了。</strong></p>]]></content>
+        <content type="html"><![CDATA[<p>现在换 Hexo，能找到比较成熟的预设方案，且目前使用的主题已有预配置 Pjax，（左下角）播放器问题得到解决。</p><hr><p><strong>我仅仅只是想加个不间断的音乐播放器，仅此而已！！！</strong></p><p>在逛网上一些个人博客，或是自定义程度较高的博客平台时，常见一播放器于其中。多数位于屏幕左下，小巧美观，功能丰富，吾甚是羡慕，便着手尝试。</p><p>APlayer 的官方文档还是很详细的，而且引入并不繁琐，只需 jsdelivr 之类 cdn 引入一条，之后使用一 div 及一段 js 即可。阅读文章时还能听点歌曲，确实是不错。然而……</p><p>这播放器好是好，但点击文章时便整个刷新了，包括播放进度什么的。其实这不是播放器的问题，毕竟网页跳转这种，播放器自然跟着刷新。但听得好好的，突然给我断了；而且每点一下，整个页面全部刷新，对于我这种使用免费主机的人来说，实在有点难受（╯‵□′）╯︵┴─┴……</p><p>于是乎吾上网搜索，见到不少解决方案，不过大多都提到了“Pjax”这个技术，遂进一步了解：</p><blockquote><p>AJAX 是异步的 JavaScript 和 XML 的简称……可以在不刷新整个网页的情况下，对网页的某部分进行更新加载。</p><p>pjax &#x3D; pushState + ajax。它在对网页部分刷新的前提下，保持了真实的地址、网页标题，浏览器的后退（前进）按钮也可以正常使用……当然，pjax 也有不依赖 jQuery 的版本。</p></blockquote><p>仔细思索，这恰是我想的效果，顺便还能提高下加载速度（你猜这个博客所在虚拟主机有没有付费）。<br>  我现在没有时间听什么 Pjax 不利于 SEO，我 tm 只想要个不间断的音乐播放器！！！</p><p>官方文档写得比较简单，而且给的是 jQuery 写法。无 jQuery 版本非常精简，并且写法更方便。按照网上的教材来看，大概也能摸索一些。假设一个网页的结构如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html class=&quot;...&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    ...</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;header&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/header&gt;</span><br><span class="line">    &lt;main&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/main&gt;</span><br><span class="line">    &lt;footer&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/footer&gt;</span><br><span class="line">    &lt;div class=&quot;pjax-container&quot;&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>对于博客来说，一般情况下，title 和 meta 标签是会变化的，示例中 main 是网站的主要内容自然要变化，footer 一般情况下保持不变。那么在网页末尾处的 js 可以这样写（已经引入 Pjax）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var pjax = new Pjax(&#123;</span><br><span class="line">        selectors: [</span><br><span class="line">            &quot;title&quot;,</span><br><span class="line">            &quot;meta[name=description]&quot;, </span><br><span class="line">            &quot;main&quot;</span><br><span class="line">            &quot;.pjax-container&quot;</span><br><span class="line">            //按照 CSS 选择器的写法，将需要变化的标签添加至此处</span><br><span class="line">        ],</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>播放器引入位置不在上文 js 的 selectors 中任何标签内即可。非常简单，播放器正常播放，问题解决……</p><p>个鬼！这样写将导致大部分 js 均失效。当前网页的内容已经发生了变化，js 绑定的元素已经消失。而 pjax 只会部分刷新网页，这些 js 没有变化。也就是说，需要通过“重载”再次加载所需 js，方可让这些功能重新出现。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function pjax_reload()&#123;</span><br><span class="line">        //需重新加载的 js 代码</span><br><span class="line">    &#125;</span><br><span class="line">    document.addEventListener(&#x27;pjax:complete&#x27;, function ()&#123;//当 pjax 完成时执行</span><br><span class="line">        pjax_reload();//上方的函数</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>（其实将需重载的 js 包裹在上文示例<div class="pjax-container"></div>中即可，而且貌似无论是否是 script 标签内直接写的，还是第三方引入的，都能重新加载。由于本人较懒，简单粗暴加了个 div 用于刷新，细节方面暂未调整，故还有诸多 js 问题未能解决。这个坑以后慢慢填 (๑´ㅂ`๑)）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    /* 此处可自定义 loading 动画，须与下文 js 所写相同。此处例为。loading */</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    document.addEventListener(&#x27;pjax:send&#x27;, function ()&#123;</span><br><span class="line">        $(&quot;.loading&quot;).css(&quot;display&quot;, &quot;block&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    document.addEventListener(&#x27;pjax:complete&#x27;, function ()&#123;</span><br><span class="line">        $(&quot;.loading&quot;).css(&quot;display&quot;, &quot;none&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>  上述代码将添加一个加载动画，加载时显示，加载完成后消失，避免让访问者以为点击未生效。</p><p>至此，pjax 基本配置完毕。更多配置详见 github 上作者官方文档。 </p>]]></content>
       
       
       <categories>
@@ -904,6 +838,8 @@
         <tags>
             
             <tag> 代码 </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
@@ -1064,31 +1000,6 @@
     
     
     <entry>
-      <title>博客折腾记录：样式修改</title>
-      <link href="/posts/403354561/"/>
-      <url>/posts/403354561/</url>
-      
-        <content type="html"><![CDATA[<p>xiuno 官方文档中有这样一句话：</p><blockquote><p>只需要一个博客插件，它就可以变成一个功能强大的博客。</p></blockquote><p>嗯，这也说明 xiuno 作为博客使用时存在可行性的。但 xuno 本应该是作为论坛使用的，故样式、功能什么也与博客有一定出入。而且 xiuno 论坛的默认主题估计是绝大多数人吐槽的重灾区，原因无他——丑（不够精神）（但是后端很强大）。</p><p>在我还是 xiuno 纯使用者时，我找了很多第三方主题，但能让我满意的寥寥无几，更有些正常使用都成问题（也不能怪那些开发者，毕竟都是摸索过去的，而且也不乏精美作品）；而且用别人主题容易“重样”，使用受欢迎的主题可能无法体现个性。同时为了在实战中学习研究 web 开发，故自行制作主题（因此，汝须知，在汝点击进入此博客开始，汝所做每一步都可能触发 bug，还请谅解Σ( ° △ °|||)︴。</p><p>首先作为一个博客，除非是那种仅追求“能用就行”的，或是因为身体原因避免无障碍工具受干扰的，大抵都会添加些背景、缩略图什么的——起码我见到的个人博客大多都是如此，包括一些博客园的。还有些会修改颜色啦、透明度什么的。更有些玩得花的暂且先不讨论——短期内还是先解决比较基础的东西，咱先不好高骛远了。</p><p>那如此一来修改大方向就有了。2020 年官方关闭，2021 年认识并开始使用，2022 年开始尝试自制插件，两年左右了，热度什么肯定受影响，以至于找个什么教程都得找通用的或其他程序的 o(╥﹏╥)o。别问为什么不换程序，问就是至少目前来看做轻论坛或轻博客就 xiuno 比较和我胃口。</p><p>本人乃一介学生，所以魔改进度可想而知，这方面不展开详记。但不得不说的是，在初版主题基本完工后，后面的便简单了些——算是做了个模子吧，之后做的四个主题都是基于初版修改的（一个装死未来未卜，两个因为 BS4 到 BS5 变化太大导致 bug 太多难以修复、一个“创业未半而中道崩殂（简称：懒）”、一个现在正用着，也就是你现在看到的这个样式，但是 bug 很多）。</p><p>但不管怎么说，比默认模板好看了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 代码 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>双减，但是负负得正</title>
       <link href="/posts/4249530925/"/>
       <url>/posts/4249530925/</url>
@@ -1146,6 +1057,31 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali更换镜像源 | vim编辑器常用命令</title>
+      <link href="/posts/2122152757/"/>
+      <url>/posts/2122152757/</url>
+      
+        <content type="html"><![CDATA[<p>接上回初步配置好kali后，我打算着给它配置中文输入法。但非常不幸的是，kali默认镜像源在国外，咱也不是不知道国内直连国外网站的速度（不清楚的可以尝试在国内不挂加速器去下载github上的东西，概率问题）。更换为国内镜像源速度更快。</p><p>进入kali，打开终端，输入以下内容：</p><blockquote><p>sudo su</p><p>[输入密码，此时终端不会显示内容，回车]</p><p>sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list</p></blockquote><p>此时进入vim模式，可对sources.list进行编辑</p><p>按i进入编辑模式，官方源前加“#”，将国内源粘贴至其下方。完成后按下ESC退出编辑，输入“:wq”保存。</p><p>更新软件源：</p><blockquote><p>apt-get update</p><p>apt-get upgrade</p><p>apt-get dist-upgrade</p><p>apt-get clean</p><p>apt-get autoclean</p></blockquote><p>执行多个命令时，</p><p>使用&amp;&amp;符号则代表前一个命令执行成功，后一个才执行。 </p><p>使用||符号则前一个命令执行失败，后一个才执行。 </p><p>使用;符号则无论前一个命令是否成功，后面均会执行。</p><p>镜像源：</p><blockquote><p>#官方源</p><p>deb http:&#x2F;&#x2F;<span></span>http.kali.org&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>http.kali.org&#x2F;kali kali-rolling main non-free contrib</p><p>#中科大</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib</p><p>#阿里云</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib</p><p>#清华大学</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>deb-src https:&#x2F;&#x2F;<span></span>mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>#浙大</p><p>deb http:&#x2F;&#x2F;<span></span>mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free</p><p>deb-src http:&#x2F;&#x2F;<span></span>mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free</p></blockquote><p>vim常用命令：</p><p>（本人第一次使用vim编辑器，故记录于此）</p><blockquote><p>$：到行尾</p><p>%s&#x2F;#.*&#x2F;&#x2F;g ：删除#之后的字符</p><p>%s&#x2F;$&#x2F;sth&#x2F; ：在行尾追加sth</p><p>%s&#x2F;^M&#x2F;&#x2F;g ：替换掉dos换行符，\^M使用ctrl+v + Enter即可输入</p><p>:g&#x2F;^\s$&#x2F;d* ：删除空行以及只有空格的行</p><p>^：到行首第一个字符，如果前面有空格的话</p><p>0：到行首</p><p>cc：替换整行，即删除游标所在行，并进入插入模式</p><p>ce：使本行文本内容居中</p><p>Ctrl+r：redo，即撤销undo的操作</p><p>cw：替换一个单词，即删除一个单词，并进入插入模式</p><p>d^：删除至行首</p><p>dd：删除一行</p><p>100dd：删除100行</p><p>df”：删除到出现的第一个双引号</p><p>dw：删除一个单词</p><p>G：快速到文件尾</p><p>50G：跳转到第 50 行</p><p>gg：快速到文件头</p><p>h：向左</p><p>j：向下</p><p>20j： 向下移动 20 行</p><p>k：向上</p><p>l：向右</p><p>le：使本行文本内容靠左</p><p>N：查找上一个匹配</p><p>n：查找下一个匹配</p><p>2n：查找下面第二个匹配</p><p>p：粘贴复制或剪切的内容</p><p>5p：将复制或剪切的内容粘贴5次</p><p>q!： 不保存，强制退出</p><p>qa!： 有多个文件被打开，同时退出</p><p>R：连续替换，直到按下Esc</p><p>r+&lt;待替换字母&gt;：将游标所在字母替换为指定字母</p><p>ri：使本行文本内容靠右</p><p>U(大写)：撤销当前行的所有修改</p><p>u{n}：撤销一次或n次操作</p><p>wq：保存当前文件并退出</p><p>wqa：保存所有文件并退出</p><p>x：向后剪切一个一个字符，如果是在行尾，则为向前剪切</p><p>5x：剪切5个</p><p>xp：非行尾交换两个字符，如从bs变成sb</p><p>y$：复制光标到行尾</p><p>y2fA：复制光标到第二个大写A中间的内容</p><p>yfA：复制光标到第一个大写A中间的内容</p><p>yw：复制光标开始的一个单词</p><p>yy：复制一行</p><p>5yy：向下复制5行</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1253,6 +1189,31 @@
     
     
     <entry>
+      <title>折腾旧手机的经历</title>
+      <link href="/posts/2933412209/"/>
+      <url>/posts/2933412209/</url>
+      
+        <content type="html"><![CDATA[<p>自二年前无意找到了老旧不用的手机后，吾便将其“珍藏”。一日充电，长按电源键，吾仿佛见到十年前的光景。与如今手机相比，这旧手机的配置不可谓不寒酸。2GB运存，16GB储存，稍微好点的MP3都能赶上。现在在二手市场去看，不足100便可购买到，成色没准比我手头这台还好。</p><p>华为P6和P7、诺基亚N8等旧手机几乎是同时被我发现的，充上电好像还能开机，正常使用续航一日多一点，好像还可以。那台诺基亚自然不必说，可惜自发现半年后便不知在什么时候失掉了，实在是遗憾。</p><p>由于联想那台配置实在太低，不满足我的折腾需求，故吾将目光转移到两台旧华为手机身上。两台手机插电均有反应，P6可以正常开机，还能运行些软件——但无法正常启动的软件占多数，毕竟还在用安卓4.2系统的，如今也大多是工控设备或智能柜、无纸化记事本一类的去使用。</p><p>P7情况比较「悲惨」，外观也是比较破的，后盖玻璃已经破碎部分脱落。对其进行充电，结果提示“手机启动异常”。随后我将其连接电脑并使用工具尝试刷机，却无一例外卡在fastboot界面。它提示要我输入解锁码，但我找到并折腾这台手机时，华为官方解锁码通道老早关闭了（心中飘过无数草泥马~）。没办法，线刷双清吧。双清不知道几次后，手机正常开机了！</p><p>满怀激动之心的我打算将其重启——毕竟很久不用的老旧手机，第一次开机难免有未加载好的地方，重启后体验更好——至少重启之前我是这样想的——因为重启后它又不能正常开机了。去网上查阅后，发现那次重启是“回光返照”，因为系统已经有损坏了——但为什么那样还能开机之后不行，吾却未能想通。又折腾几次，终于，它连开机动画都没了Σ( ° △ °|||)︴……</p><p>好吧，虽然P6不能插储存卡，虽然P6只有3G，虽然海思K3V2性能不好发热量大，却也不是不能用，用来听歌看小说还是可以支撑的。几个月后，它的电池排线断了，在一次折腾中——P6-C00不像移动和联通版本，它的后盖不是金属拉丝，是磨砂非金属材质，而且是卡扣形式安装的，可以轻松撬开而不需要热风枪。这就尴尬了，被迫使用诺基亚N8。偶然发现N8可玩性不低，而且塞班系统也不多见了，可以折腾，结果不久后弄丢了╥﹏╥…</p><p>由于aigo的月光宝盒播放器被我刷系统刷坏了，听歌看书备用机只能用联想A500充当了。安卓2.3的系统，自己体会一下。。。好在还是有阅读器可以使用的。断断续续又过了几周，屏幕被我摔碎了……</p><p>我特么欲哭无泪，折腾下来啥也没有了！硬着头皮，找到P7并继续折腾——这是我现在手里有的最好的旧手机了，我甚至还破费弄了个新主板和电池给它换上才终于一睹其芳容。</p><p>配合仅能找到的部分当年华为在巴黎开的AscendP7发布会，此手机确实名副其实——当然放到现在来看性能肯定是别想了。外观“君子如兰”，屏幕——我去屏幕断触了！等我撬开其屏幕尝试修复时，非但触摸没修好，显示都成问题。好吧，再破费一次，换个屏幕( ′ 3`)~</p><p>说回来，有了上回“前车之鉴”，刚测试完正常使用后，我便开始对其进行root，但暂时不太想刷机。虽然这台手机官方适配都到了安卓5.1，但怕它的硬件遭不住；而且EmotionUI2.3有很多设计，比较，嗯，“复古”，差不多是那种Apple带没的东西，而EMUI3.0（此时才开始改名为“EMUI”）之后就扁平化了。root只为解BL锁，以防万一折腾坏了可以刷机解决。</p><p>按照吾爱破解大佬的方法（末尾链接），研究多时，最终获得解锁码。当然，在此之前也尝试救过砖，可惜原来主板的固件，REC也被弄坏了，彻底没救。而且是电信定制版的，不支持储存卡，不如换移动主板。总之，这台手机的补救方法已经提前准备好了。</p><p>等哪天把内网穿透之类解决了，可能会准备另一台类似配置的旧手机，然后博客就迁移到手机上运行，用内网穿透解决外网域名访问。免费机速度实在有点迷。。。</p><p><a href="https://www.52pojie.cn/thread-816065-1-1.html" rel="noopener external nofollow noreferrer">https://www.52pojie.cn/thread-816065-1-1.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随写 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科技 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>How To Ask Questions The Smart Way（提问的智慧）</title>
       <link href="/posts/3303390089/"/>
       <url>/posts/3303390089/</url>
@@ -1278,30 +1239,11 @@
     
     
     <entry>
-      <title>免费机速度确实很迷</title>
+      <title>免费机速度很迷</title>
       <link href="/posts/2776437882/"/>
       <url>/posts/2776437882/</url>
       
-        <content type="html"><![CDATA[<p>本人学生党，而且未来可能也不打算在博客的成本上投入太大。再加上本站使用了比较多的 js，所以速度会很慢。</p><p>甚至还（不太熟练地）使用了 Pjax，搞不好还以为网页卡死……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日志 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>站点介绍</title>
-      <link href="/posts/3130116529/"/>
-      <url>/posts/3130116529/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Sakurink-夜雨清欢"><a href="#Sakurink-夜雨清欢" class="headerlink" title="Sakurink 夜雨清欢"></a>Sakurink 夜雨清欢</h3><blockquote><p>不受律束，笔随兴至</p></blockquote><blockquote><p>初次见面，发现本站的你！</p></blockquote><h4 id="这是什么"><a href="#这是什么" class="headerlink" title="这是什么"></a>这是什么</h4><ul><li>一个博客，佛系更新，记录个人所见所感</li></ul><h4 id="站长介绍"><a href="#站长介绍" class="headerlink" title="站长介绍"></a>站长介绍</h4><blockquote><p>是个学生。就这么多了</p></blockquote><blockquote><p>本人擅长Ai、Fw、Fl、Br、Ae、Pr、Id、Ps等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP等系统的开关机</p></blockquote><blockquote><p>由于本人“零氪”，未来即使投入也不会在自己的网站上投入太多，故主机和域名能白票就白票，所以域名名称、访问速度等均为随缘。</p></blockquote><h5 id="现可用网址"><a href="#现可用网址" class="headerlink" title="现可用网址"></a>现可用网址</h5><ul><li>友情提醒：由于使用免费机，域名不固定且不稳定，<strong>若您想收藏本站，请记此引导页（虽然非常简陋）</strong>。可用域名会及时更新或做跳转，发布于此（至少目前是这样的）。</li></ul><table><thead><tr><th>名称</th><th>链接</th><th>简介&amp;描述</th></tr></thead><tbody><tr><td>夜雨〆清欢</td><td><a href="http://sakurink.iblogger.org/" rel="noopener external nofollow noreferrer">点击访问</a></td><td>个人博客，Bug百出，笔随兴至，随缘更新</td></tr><tr><td>Sakurink API</td><td><a href="https://api.sakurink.eu.org/" rel="noopener external nofollow noreferrer">点击访问</a></td><td>下载页面，后续会增加新功能</td></tr></tbody></table><h5 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h5><p>本站不注重seo搜索（如百度）的收录权重状况，且经常折腾，与我交换友链可能不能保证稳定性。如果介意就不要申请。</p><p>对于申请的网站没有什么大要求，不要违法，广告不频繁，就这么多。</p><p>当友链长期无法访问或内容不合要求，我会进行清理。</p><p>请在您的站点添加：夜雨清欢 https:&#x2F;&#x2F;<span><span>sakurink.eu.org或https:&#x2F;&#x2F;<span><span>blogink.github.io&#x2F;， <strong>这是博客引导页，请确保您添加的是引导页域名，并随时关注引导页和博客主站的状态，一般二者不会同时无法访问</strong> ，出现状况会在任意一个网站上更新提示。之后到页面“现可用网址”第一个站点中搜索“友情链接说明”，在下方回复您的站点+您的域名，审核通过会加上（也是在引导页加，博客站点不会加第三方友链）。</p><table><thead><tr><th>名称</th><th>链接</th><th>简介&amp;描述</th></tr></thead><tbody><tr><td>谷豆社区</td><td><a href="https://www.gudou.top/" rel="noopener external nofollow noreferrer">点击访问</a></td><td></td></tr></tbody></table><p>（问就是免费虚拟主机不会绑域名，而且嫌麻烦，否则也不会做这么个引导页~）</p><p><strong>所有第三方友链均更新在引导页上！</strong></p><img height="150" alt="1" src="https://github.com/blogink/blogink.github.io/assets/74526568/35e62624-0256-4295-b055-74538bb1ec6a"><img height="150" alt="2" src="https://github.com/blogink/blogink.github.io/assets/74526568/18e2d60a-7636-4e07-ade5-2ab5296aa604"><img height="150" alt="3" src="https://github.com/blogink/blogink.github.io/assets/74526568/fd4d6aae-8d7a-404f-a777-11bb1db214e0"><h6 id="虽然简陋，但你就说能不能用吧-≧∀≦-ゞ"><a href="#虽然简陋，但你就说能不能用吧-≧∀≦-ゞ" class="headerlink" title="虽然简陋，但你就说能不能用吧(≧∀≦)ゞ"></a>虽然简陋，但你就说能不能用吧(≧∀≦)ゞ</h6>]]></content>
+        <content type="html"><![CDATA[<p>本人学生党，而且未来可能也不打算在博客的成本上投入太大。再加上本站使用了比较多的 js，所以速度会很慢。甚至还（不太熟练地）使用了 Pjax，搞不好还以为网页卡死……</p>]]></content>
       
       
       <categories>
