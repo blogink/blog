@@ -1,5 +1,16 @@
 //部分功能js增强、自定义
 
+// https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md#pjax-%E5%85%BC%E5%AE%B9
+// PJAX 兼容，手动清理 APlayer 全局实例
+/*$(document).on('pjax:start', function () {
+    if (window.aplayers) {
+        for (let i = 0; i < window.aplayers.length; i++) {
+            window.aplayers[i].destroy();
+        }
+        window.aplayers = [];
+    }
+});*/
+
 // Aplayer默认关闭歌词
 function removelrc() {
   // 检测是否存在歌词按钮
