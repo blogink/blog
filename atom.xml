@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>雨梦清欢</title>
+  <icon>https://blog.sakurink.eu.org/icon.png</icon>
+  <subtitle>不受律束，笔随兴至</subtitle>
+  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://blog.sakurink.eu.org/"/>
+  <updated>2024-01-15T07:35:15.000Z</updated>
+  <id>https://blog.sakurink.eu.org/</id>
+  
+  <author>
+    <name>Ranmo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 常用命令速查</title>
+    <link href="https://blog.sakurink.eu.org/posts/966087953/"/>
+    <id>https://blog.sakurink.eu.org/posts/966087953/</id>
+    <published>2024-01-15T07:35:10.000Z</published>
+    <updated>2024-01-15T07:35:15.000Z</updated>
+    
+    
+    <summary type="html">整理常用 Git 命令，（可能）不定时进行更新。</summary>
+    
+    
+    
+    <category term="摘录" scheme="https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95/"/>
+    
+    
+    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给站点加个说说模块——Artitalk配置方法</title>
+    <link href="https://blog.sakurink.eu.org/posts/1605902499/"/>
+    <id>https://blog.sakurink.eu.org/posts/1605902499/</id>
+    <published>2024-01-07T12:15:07.772Z</published>
+    <updated>2023-12-31T01:52:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="Vercel" scheme="https://blog.sakurink.eu.org/tags/Vercel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>申请免费的EU.ORG域名</title>
+    <link href="https://blog.sakurink.eu.org/posts/744863573/"/>
+    <id>https://blog.sakurink.eu.org/posts/744863573/</id>
+    <published>2024-01-07T03:36:21.000Z</published>
+    <updated>2024-01-07T03:36:26.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="域名" scheme="https://blog.sakurink.eu.org/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github双因素身份验证2FA</title>
+    <link href="https://blog.sakurink.eu.org/posts/863373566/"/>
+    <id>https://blog.sakurink.eu.org/posts/863373566/</id>
+    <published>2023-12-28T12:07:43.000Z</published>
+    <updated>2023-12-28T12:07:47.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="网络安全" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare反代jsDelivr</title>
+    <link href="https://blog.sakurink.eu.org/posts/912248532/"/>
+    <id>https://blog.sakurink.eu.org/posts/912248532/</id>
+    <published>2023-12-23T13:11:36.000Z</published>
+    <updated>2023-12-23T13:11:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="网络安全" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 插件及主题的更新</title>
+    <link href="https://blog.sakurink.eu.org/posts/440783934/"/>
+    <id>https://blog.sakurink.eu.org/posts/440783934/</id>
+    <published>2023-12-09T06:39:01.000Z</published>
+    <updated>2023-12-09T06:39:03.000Z</updated>
+    
+    
+    <summary type="html">简单记录更新Hexo及插件、主题的过程</summary>
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 GitHub 备份 Hexo 博客源码</title>
+    <link href="https://blog.sakurink.eu.org/posts/3679713651/"/>
+    <id>https://blog.sakurink.eu.org/posts/3679713651/</id>
+    <published>2023-11-20T09:35:05.000Z</published>
+    <updated>2023-11-20T09:35:07.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WindowsMobile 的前世今生</title>
+    <link href="https://blog.sakurink.eu.org/posts/4068197923/"/>
+    <id>https://blog.sakurink.eu.org/posts/4068197923/</id>
+    <published>2023-11-10T06:36:46.000Z</published>
+    <updated>2023-11-10T06:36:50.000Z</updated>
+    
+    
+    <summary type="html">永恒的经典，时代的眼泪，十年的悲歌。Windows Mobile，感谢你曾经来过。</summary>
+    
+    
+    
+    <category term="随写" scheme="https://blog.sakurink.eu.org/categories/%E9%9A%8F%E5%86%99/"/>
+    
+    
+    <category term="随写" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%8F%E5%86%99/"/>
+    
+    <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Clash删库停更事件</title>
+    <link href="https://blog.sakurink.eu.org/posts/1670947396/"/>
+    <id>https://blog.sakurink.eu.org/posts/1670947396/</id>
+    <published>2023-11-04T02:30:40.000Z</published>
+    <updated>2023-11-05T13:11:17.000Z</updated>
+    
+    
+    <summary type="html">此事件比较魔幻，网络上众说纷纭，具体如何不易得知，在此仅记录些我获知的内容</summary>
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="评论" scheme="https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm install 后缀含义</title>
+    <link href="https://blog.sakurink.eu.org/posts/88276678/"/>
+    <id>https://blog.sakurink.eu.org/posts/88276678/</id>
+    <published>2023-11-03T06:49:57.000Z</published>
+    <updated>2023-11-03T06:50:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="摘录" scheme="https://blog.sakurink.eu.org/tags/%E6%91%98%E5%BD%95/"/>
+    
+    <category term="nodejs" scheme="https://blog.sakurink.eu.org/tags/nodejs/"/>
+    
+  </entry>
+  
+</feed>
