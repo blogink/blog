@@ -64,3 +64,4 @@ document.addEventListener('visibilitychange', function () {
         }, 2000);
     }
 });
+

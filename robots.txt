@@ -1,6 +1,9 @@
 User-agent: GPTBot
 Disallow: /
 
+User-agent: archive.org_bot
+Disallow: /
+
 User-agent: *
 Allow: /
 Disallow: /js/
@@ -9,5 +12,6 @@ Disallow: /img/
 Disallow: /lib/
 Disallow: /live2dw/
 Disallow: /artitalk/
+Disallow: /attach/
 
 Sitemap: http://blog.sakurink.eu.org/sitemap.xml
