@@ -60,9 +60,9 @@
     
     <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
-    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
-    
     <category term="Vercel" scheme="https://blog.sakurink.eu.org/tags/Vercel/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
   </entry>
   
@@ -166,9 +166,9 @@
     
     <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
     
-    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
-    
     <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
     
   </entry>
   
@@ -246,7 +246,7 @@
   </entry>
   
   <entry>
-    <title>npm install 后缀含义</title>
+    <title>npm 常用命令整理</title>
     <link href="https://blog.sakurink.eu.org/posts/88276678/"/>
     <id>https://blog.sakurink.eu.org/posts/88276678/</id>
     <published>2023-11-03T06:49:57.000Z</published>
