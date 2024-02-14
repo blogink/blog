@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2024-02-07T07:23:42.000Z</updated>
+  <updated>2024-02-12T01:28:50.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用小区内的消防栓</title>
+    <link href="https://blog.sakurink.eu.org/posts/3695865278/"/>
+    <id>https://blog.sakurink.eu.org/posts/3695865278/</id>
+    <published>2024-02-12T01:28:42.000Z</published>
+    <updated>2024-02-12T01:28:50.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="分享" scheme="https://blog.sakurink.eu.org/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="技巧" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="生活" scheme="https://blog.sakurink.eu.org/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Node.js 安装教程</title>
@@ -250,27 +277,6 @@
     <category term="随写" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%8F%E5%86%99/"/>
     
     <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Clash删库停更事件</title>
-    <link href="https://blog.sakurink.eu.org/posts/1670947396/"/>
-    <id>https://blog.sakurink.eu.org/posts/1670947396/</id>
-    <published>2023-11-04T02:30:40.000Z</published>
-    <updated>2023-11-05T13:11:17.000Z</updated>
-    
-    
-    <summary type="html">此事件比较魔幻，网络上众说纷纭，具体如何不易得知，在此仅记录些我获知的内容</summary>
-    
-    
-    
-    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
-    
-    
-    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="评论" scheme="https://blog.sakurink.eu.org/tags/%E8%AF%84%E8%AE%BA/"/>
     
   </entry>
   
