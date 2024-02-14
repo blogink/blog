@@ -592,6 +592,20 @@
   </url>
   
   <url>
+    <loc>https://blog.sakurink.eu.org/tags/git/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -607,20 +621,6 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/tags/web/</loc>
-    <lastmod>2024-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/tags/git/</loc>
-    <lastmod>2024-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -655,14 +655,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
