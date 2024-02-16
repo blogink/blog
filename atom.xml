@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2024-02-12T01:28:50.000Z</updated>
+  <updated>2024-02-15T09:20:30.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 安装与配置</title>
+    <link href="https://blog.sakurink.eu.org/posts/3287931156/"/>
+    <id>https://blog.sakurink.eu.org/posts/3287931156/</id>
+    <published>2024-02-15T09:20:26.000Z</published>
+    <updated>2024-02-15T09:20:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.sakurink.eu.org/tags/Linux/"/>
+    
+    <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用小区内的消防栓</title>
@@ -256,27 +283,6 @@
     <category term="GitHub" scheme="https://blog.sakurink.eu.org/tags/GitHub/"/>
     
     <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WindowsMobile 的前世今生</title>
-    <link href="https://blog.sakurink.eu.org/posts/4068197923/"/>
-    <id>https://blog.sakurink.eu.org/posts/4068197923/</id>
-    <published>2023-11-10T06:36:46.000Z</published>
-    <updated>2023-11-10T06:36:50.000Z</updated>
-    
-    
-    <summary type="html">永恒的经典，时代的眼泪，十年的悲歌。Windows Mobile，感谢你曾经来过。</summary>
-    
-    
-    
-    <category term="随写" scheme="https://blog.sakurink.eu.org/categories/%E9%9A%8F%E5%86%99/"/>
-    
-    
-    <category term="随写" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%8F%E5%86%99/"/>
-    
-    <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
