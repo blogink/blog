@@ -11,8 +11,6 @@
     }
 });*/
 
-
-
 // Aplayer默认关闭歌词
 function removelrc() {
   // 检测是否存在歌词按钮
