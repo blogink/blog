@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2024-03-21T10:05:44.000Z</updated>
+  <updated>2024-03-12T08:06:47.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,23 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>未满十八，杀人岂无妨</title>
-    <link href="https://blog.sakurink.eu.org/posts/807967422/"/>
-    <id>https://blog.sakurink.eu.org/posts/807967422/</id>
-    <published>2024-03-21T10:05:39.000Z</published>
-    <updated>2024-03-21T10:05:44.000Z</updated>
-    
-    
-    <summary type="html">全中国的校园霸凌者，都在等着看这三个初中生的处理结果。霸凌者拍着被霸凌者的脸，笑道：看到了吗？我是未成年人，我杀人，有“免死金牌”！而弱者，却只能含恨郁郁终身……</summary>
-    
-    
-    
-    <category term="杂言" scheme="https://blog.sakurink.eu.org/categories/%E6%9D%82%E8%A8%80/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>搭建免费的 New Bing 网站</title>
@@ -257,6 +240,33 @@
     <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
     
     <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>申请免费的EU.ORG域名</title>
+    <link href="https://blog.sakurink.eu.org/posts/744863573/"/>
+    <id>https://blog.sakurink.eu.org/posts/744863573/</id>
+    <published>2024-01-07T03:36:21.000Z</published>
+    <updated>2024-01-07T03:36:26.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科技" scheme="https://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="域名" scheme="https://blog.sakurink.eu.org/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
