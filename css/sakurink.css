@@ -415,3 +415,25 @@
 #artitalk_main span.cbp_tmlabel pre {
   overflow-x: auto; 
 }*/
+
+/* audio标签美化部分 */
+audio {
+    width: 100%; /* 宽度为100% */
+    height: 50px; /* 高度为50px */
+    /* border-radius: 10px; 边框半径为10px */
+}
+
+/* 设置音频播放进度条的颜色
+audio::-webkit-media-controls-progress-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+/* 隐藏音频播放器的背景颜色 */
+audio::-webkit-media-controls-enclosure {
+    background-color: transparent;
+}
+[data-theme=dark] audio::-webkit-media-controls-enclosure {
+    /* background-color: transparent; */
+    background-color: rgba(255,255,255,0.5);
+    color: #FFFFFF;
+    border-radius: 5px;
+}

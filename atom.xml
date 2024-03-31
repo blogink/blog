@@ -237,9 +237,9 @@
     <category term="摘录" scheme="https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95/"/>
     
     
-    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
-    
     <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
