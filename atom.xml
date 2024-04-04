@@ -34,7 +34,7 @@
     
     
     
-    <category term="科技" scheme="http://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    <category term="摘录" scheme="http://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95/"/>
     
     
     <category term="网络安全" scheme="http://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
@@ -111,7 +111,7 @@
     
     
     
-    <category term="科技" scheme="http://blog.sakurink.eu.org/categories/%E7%A7%91%E6%8A%80/"/>
+    <category term="摘录" scheme="http://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95/"/>
     
     
     <category term="AI" scheme="http://blog.sakurink.eu.org/tags/AI/"/>
@@ -225,7 +225,7 @@
   </entry>
   
   <entry>
-    <title>游戏与审核漫谈</title>
+    <title>从游戏说到审核</title>
     <link href="http://blog.sakurink.eu.org/posts/1325306746/"/>
     <id>http://blog.sakurink.eu.org/posts/1325306746/</id>
     <published>2024-01-26T12:43:22.000Z</published>
