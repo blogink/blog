@@ -1,60 +1,105 @@
-function waterfall(a) {
-  function b(a, b) {
-    var c = window.getComputedStyle(b);
-    return parseFloat(c["margin" + a]) || 0;
+/*!
+--------------------------------
+Waterfall.js
+--------------------------------
++ https://github.com/raphamorim/waterfall
++ version 1.0.0
++ Copyright 2015 Raphael Amorim
++ Licensed under the MIT license
++ Documentation: https://github.com/raphamorim/waterfall
+*/
+function waterfall(container) {
+  if (typeof container === "string") container = document.querySelector(container);
+
+  // Freeze the list of nodes
+  var els = [].map.call(container.children, function (el) {
+    el.style.position = "absolute";
+    return el;
+  });
+  container.style.position = "relative";
+
+  function margin(name, el) {
+    var style = window.getComputedStyle(el);
+    return parseFloat(style["margin" + name]) || 0;
   }
-  function c(a) {
-    return a + "px";
+  function px(n) {
+    return n + "px";
   }
-  function d(a) {
-    return parseFloat(a.style.top);
+  function y(el) {
+    return parseFloat(el.style.top);
   }
-  function e(a) {
-    return parseFloat(a.style.left);
+  function x(el) {
+    return parseFloat(el.style.left);
   }
-  function f(a) {
-    return a.clientWidth;
+  function width(el) {
+    return el.clientWidth;
   }
-  function g(a) {
-    return a.clientHeight;
+  function height(el) {
+    return el.clientHeight;
   }
-  function h(a) {
-    return d(a) + g(a) + b("Bottom", a);
+  function bottom(el) {
+    return y(el) + height(el) + margin("Bottom", el);
   }
-  function i(a) {
-    return e(a) + f(a) + b("Right", a);
+  function right(el) {
+    return x(el) + width(el) + margin("Right", el);
   }
-  function j(a) {
-    a = a.sort(function (a, b) {
-      return h(a) === h(b) ? e(b) - e(a) : h(b) - h(a);
+
+  function sort(l) {
+    l = l.sort(function (a, b) {
+      if (bottom(a) === bottom(b)) {
+        return x(b) - x(a);
+      } else {
+        return bottom(b) - bottom(a);
+      }
     });
   }
-  function k(b) {
-    f(a) != t && (b.target.removeEventListener(b.type, arguments.callee), waterfall(a));
+
+  var boundary = [];
+
+  // Deal with the first element.
+  if (els.length) {
+    els[0].style.top = "0px";
+    els[0].style.left = px(margin("Left", els[0]));
+    boundary.push(els[0]);
   }
-  "string" == typeof a && (a = document.querySelector(a));
-  var l = [].map.call(a.children, function (a) {
-    return (a.style.position = "absolute"), a;
-  });
-  a.style.position = "relative";
-  var m = [];
-  l.length && ((l[0].style.top = "0px"), (l[0].style.left = c(b("Left", l[0]))), m.push(l[0]));
-  for (var n = 1; n < l.length; n++) {
-    var o = l[n - 1],
-      p = l[n],
-      q = i(o) + f(p) <= f(a);
-    if (!q) break;
-    (p.style.top = o.style.top), (p.style.left = c(i(o) + b("Left", p))), m.push(p);
+
+  // Deal with the first line.
+  for (var i = 1; i < els.length; i++) {
+    var prev = els[i - 1],
+      el = els[i],
+      thereIsSpace = right(prev) + width(el) <= width(container);
+    if (!thereIsSpace) break;
+    el.style.top = prev.style.top;
+    el.style.left = px(right(prev) + margin("Left", el));
+    boundary.push(el);
   }
-  for (; n < l.length; n++) {
-    j(m);
-    var p = l[n],
-      r = m.pop();
-    (p.style.top = c(h(r) + b("Top", p))), (p.style.left = c(e(r))), m.push(p);
+
+  // Place following elements at the bottom of the smallest column.
+  for (; i < els.length; i++) {
+    sort(boundary);
+    var el = els[i],
+      minEl = boundary.pop();
+    el.style.top = px(bottom(minEl) + margin("Top", el));
+    el.style.left = px(x(minEl));
+    boundary.push(el);
   }
-  j(m);
-  var s = m[0];
-  a.style.height = c(h(s) + b("Bottom", s));
-  var t = f(a);
-  window.addEventListener ? window.addEventListener("resize", k) : (document.body.onresize = k);
+
+  sort(boundary);
+  var maxEl = boundary[0];
+  container.style.height = px(bottom(maxEl) + margin("Bottom", maxEl));
+
+  // Responds to window resize
+  var containerWidth = width(container);
+  function resize(e) {
+    if (width(container) != containerWidth) {
+      e.target.removeEventListener(e.type, resize);
+      waterfall(container);
+    }
+  }
+
+  if (window.addEventListener) {
+    window.addEventListener("resize", resize);
+  } else {
+    document.body.onresize = resize;
+  }
 }

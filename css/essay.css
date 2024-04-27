@@ -64,7 +64,6 @@
 #bber .bber-content-img img {
   object-fit: cover;
   max-height: 100%;
-  border-radius: 12px;
 }
 
 #bber .bber-content-img {
@@ -95,7 +94,7 @@
   max-height: 100%;
 }
 #bber .bber-content-video::after {
-  content: "Video";
+  content: "视频";
   display: inline-block;
   padding: 1px 6px;
   background: var(--blogessay-black-op);
@@ -118,6 +117,7 @@
   margin-bottom: 0.3rem;
   width: 100%;
   height: 250px;
+  /*max-height: 100%;*/
 }
 
 #bber .bber-iframe-bilibili iframe {
@@ -231,8 +231,13 @@
   margin-top: 10px;
 }
 
-#bber .bber-bottom .bber-reply {
-  cursor: pointer;
+.bber-reply {
+  cursor: pointer !important;
+}
+
+.bber-reply:hover {
+  color: var(--anzhiyu-main);
+  max-height: 35px;
 }
 
 #bber .timeline ul li.bber-item:hover {
@@ -332,6 +337,7 @@
     margin-right: 0px;
   }
 }
+
 [data-theme="dark"] #bber .bber-music .aplayer,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {
