@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2024-04-20T04:23:07.000Z</updated>
+  <updated>2024-05-01T08:48:33.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Valaxy 体验：下一代静态博客框架</title>
+    <link href="https://blog.sakurink.eu.org/posts/2450481449/"/>
+    <id>https://blog.sakurink.eu.org/posts/2450481449/</id>
+    <published>2024-05-01T08:48:25.000Z</published>
+    <updated>2024-05-01T08:48:33.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>给 Hexo 添加即刻短文页面</title>
@@ -201,7 +222,7 @@
     
     
     
-    <category term="分享推荐" scheme="https://blog.sakurink.eu.org/categories/%E5%88%86%E4%BA%AB%E6%8E%A8%E8%8D%90/"/>
+    <category term="转载摘录" scheme="https://blog.sakurink.eu.org/categories/%E8%BD%AC%E8%BD%BD%E6%91%98%E5%BD%95/"/>
     
     
     <category term="技巧" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/"/>
@@ -234,29 +255,6 @@
     <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
     
     <category term="nodejs" scheme="https://blog.sakurink.eu.org/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从游戏说到审核</title>
-    <link href="https://blog.sakurink.eu.org/posts/1325306746/"/>
-    <id>https://blog.sakurink.eu.org/posts/1325306746/</id>
-    <published>2024-01-26T12:43:22.000Z</published>
-    <updated>2024-03-09T03:43:27.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="漫谈杂言" scheme="https://blog.sakurink.eu.org/categories/%E6%BC%AB%E8%B0%88%E6%9D%82%E8%A8%80/"/>
-    
     
   </entry>
   
