@@ -504,14 +504,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
