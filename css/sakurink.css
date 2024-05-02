@@ -377,3 +377,35 @@ audio::-webkit-media-controls-enclosure {
     color: #FFFFFF;
     border-radius: 5px;
 }
+
+/*附加按钮美化*/
+.button-bfblue {
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#4C4948;
+  padding:5px 5%;
+  width: 100%;
+  text-decoration:none;
+}
+[data-theme=dark] .button-bfblue {
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#BCBBBA;
+  padding:5px 5%;
+  width: 100%;
+  text-decoration:none;
+}
+.button-bfblue:hover {
+  background-color:#7FC8F8;
+  color:#4C4948;
+}
+[data-theme=dark] .button-bfblue:hover {
+  background-color:#383838;
+  color:#BCBBBA;
+}
+.button-bfblue:active {
+  position:relative;
+  top:1px;
+}
