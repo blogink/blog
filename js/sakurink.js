@@ -34,9 +34,3 @@ document.addEventListener("visibilitychange", function () {
     }, 2000);
   }
 });
-
-pjax.site_handleResponse = pjax.handleResponse;
-pjax.handleResponse = function (responseText, request, href, options) {
-  Object.defineProperty(request, "responseURL", { value: href });
-  pjax.site_handleResponse(responseText, request, href, options);
-};
