@@ -1,11 +1,8 @@
-#footer {
-  background: 0 0!important
+#page-header.nav-fixed #nav {
+  background: rgba(255,255,255,.9)
 }
-[data-theme=dark] #footer {
-  background: 0 0!important
-}
-[data-theme=dark] #footer-warp {
-  color: #fff!important
+[data-theme=dark] #page-header.nav-fixed #nav {
+  background: rgba(0,0,0,.7)!important
 }
 
 #aside_content .card-widget,#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
@@ -32,6 +29,16 @@
   background: rgba(255,255,255,.9)
 }
 
+#footer {
+  background: 0 0!important
+}
+[data-theme=dark] #footer {
+  background: 0 0!important
+}
+[data-theme=dark] #footer-warp {
+  color: #fff!important
+}
+
 :root {
   --trans-light: rgba(255, 255, 255, 0.9);
   --trans-dark: rgba(25, 25, 25, 0.8);
@@ -56,13 +63,6 @@ div#archive,div#page,div#post {
   border: var(--border-style);
   border-radius: 20px;
   --border-style: 2px solid rgba(57, 197, 187, 0.9)
-}
-
-#page-header.nav-fixed #nav {
-  background: rgba(255,255,255,.9)
-}
-[data-theme=dark] #page-header.nav-fixed #nav {
-  background: rgba(0,0,0,.7)!important
 }
 [data-theme=dark] #aside-content .card-widget,[data-theme=dark] #recent-posts>.recent-post-item,[data-theme=dark] div#archive,[data-theme=dark] div#page,[data-theme=dark] div#post {
   background: var(--trans-dark)
@@ -193,12 +193,6 @@ div#archive,div#page,div#post {
   color: #d4d4d4
 }
 
-#artitalk_main #shuoshuo_content {
-  padding: 10px!important;
-  word-break: break-all;
-  word-wrap: break-word
-}
-
 audio {
   width: 100%;
   height: 50px
@@ -244,4 +238,29 @@ audio::-webkit-media-controls-enclosure {
 .button-bfblue:active {
   position: relative;
   top: 1px
+}
+
+#page-header,#web_bg {
+  -webkit-animation: imgblur 10s 1 ease-in-out;
+  animation: imgblur 10s 1 ease-in-out
+}
+
+@keyframes imgblur {
+  0% {
+    filter: blur(5px)
+  }
+
+  100% {
+    filter: blur(0)
+  }
+}
+
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px)
+  }
+
+  100% {
+    -webkit-filter: blur(0)
+  }
 }
