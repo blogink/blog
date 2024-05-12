@@ -45,8 +45,8 @@ div#archive,div#page,div#post{background:var(--trans-light);border:var(--border-
 audio{width:100%;height:50px}
 audio::-webkit-media-controls-enclosure{background-color:transparent}
 [data-theme=dark] audio::-webkit-media-controls-enclosure{background-color:rgba(255,255,255,.5);color:#fff;border-radius:5px}
-.button-bfblue{border-radius:5px;display:inline-block;cursor:pointer;color:#4c4948;padding:5px 5%;width:100%;text-decoration:none}
-[data-theme=dark] .button-bfblue{border-radius:5px;display:inline-block;cursor:pointer;color:#bcbbba;padding:5px 5%;width:100%;text-decoration:none}
+.button-bfblue{border-radius:5px;display:inline-block;cursor:pointer;color:#4c4948;padding:5px 5%;width:100%;text-decoration:none;transition:.4s}
+[data-theme=dark] .button-bfblue{border-radius:5px;display:inline-block;cursor:pointer;color:#bcbbba;padding:5px 5%;width:100%;text-decoration:none;transition:.4s}
 .button-bfblue:hover{background-color:#7fc8f8;color:#4c4948}
 [data-theme=dark] .button-bfblue:hover{background-color:#383838;color:#bcbbba}
 .button-bfblue:active{position:relative;top:1px}
