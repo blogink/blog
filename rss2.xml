@@ -15,8 +15,39 @@
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>学习记录与分享，本网站随缘更新。</description>
-    <pubDate>Fri, 10 May 2024 09:49:14 GMT</pubDate>
+    <pubDate>Fri, 17 May 2024 12:03:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>从零开始搭建Minecraft服务器</title>
+      <link>https://blog.sakurink.eu.org/posts/1628586937/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1628586937/</guid>
+      <pubDate>Fri, 17 May 2024 12:03:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Cloudflare/">Cloudflare</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Minecraft/">Minecraft</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1628586937/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Windows下文件被占用的解决方法</title>
@@ -258,35 +289,6 @@
       
       
       <comments>https://blog.sakurink.eu.org/posts/3695865278/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Node.js 安装教程</title>
-      <link>https://blog.sakurink.eu.org/posts/3902219675/</link>
-      <guid>https://blog.sakurink.eu.org/posts/3902219675/</guid>
-      <pubDate>Wed, 07 Feb 2024 07:23:42 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
-      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/">命令</category>
-      
-      <category domain="https://blog.sakurink.eu.org/tags/nodejs/">nodejs</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/3902219675/#disqus_thread</comments>
       
     </item>
     
