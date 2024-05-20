@@ -411,6 +411,8 @@ audio::-webkit-media-controls-enclosure {
   padding:5px 5%;
   width: 100%;
   text-decoration:none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 [data-theme=dark] .button-bfblue {
@@ -421,6 +423,8 @@ audio::-webkit-media-controls-enclosure {
   padding:5px 5%;
   width: 100%;
   text-decoration:none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 .button-bfblue:hover {
