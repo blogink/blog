@@ -489,13 +489,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/GitHub/</loc>
-    <lastmod>2024-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sakurink.eu.org/tags/git/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -504,6 +497,13 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2024-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sakurink.eu.org/tags/GitHub/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -531,14 +531,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/Linux/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -671,14 +671,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sakurink.eu.org/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <loc>https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -701,6 +701,13 @@
   </url>
   
   <url>
+    <loc>https://blog.sakurink.eu.org/categories/%E8%BD%AC%E8%BD%BD%E6%91%98%E5%BD%95/</loc>
+    <lastmod>2024-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sakurink.eu.org/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -709,13 +716,6 @@
   
   <url>
     <loc>https://blog.sakurink.eu.org/categories/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A/</loc>
-    <lastmod>2024-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sakurink.eu.org/categories/%E8%BD%AC%E8%BD%BD%E6%91%98%E5%BD%95/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
