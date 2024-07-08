@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2024-05-17T12:03:48.000Z</updated>
+  <updated>2024-06-30T07:54:12.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitCode 批量搬运 GitHub 项目</title>
+    <link href="https://blog.sakurink.eu.org/posts/3860265803/"/>
+    <id>https://blog.sakurink.eu.org/posts/3860265803/</id>
+    <published>2024-06-30T07:54:03.000Z</published>
+    <updated>2024-06-30T07:54:12.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="漫谈杂言" scheme="https://blog.sakurink.eu.org/categories/%E6%BC%AB%E8%B0%88%E6%9D%82%E8%A8%80/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>从零开始搭建 Minecraft 服务器</title>
@@ -240,33 +263,6 @@
     <category term="Linux" scheme="https://blog.sakurink.eu.org/tags/Linux/"/>
     
     <category term="操作系统" scheme="https://blog.sakurink.eu.org/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用小区内的消防栓</title>
-    <link href="https://blog.sakurink.eu.org/posts/3695865278/"/>
-    <id>https://blog.sakurink.eu.org/posts/3695865278/</id>
-    <published>2024-02-12T01:28:39.000Z</published>
-    <updated>2024-02-12T01:28:50.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="转载摘录" scheme="https://blog.sakurink.eu.org/categories/%E8%BD%AC%E8%BD%BD%E6%91%98%E5%BD%95/"/>
-    
-    
-    <category term="技巧" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="生活" scheme="https://blog.sakurink.eu.org/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
