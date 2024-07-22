@@ -42,6 +42,31 @@
   </entry>
   
   <entry>
+    <title>PaintsUndo：生成绘画行为，但像糅的</title>
+    <link href="https://blog.sakurink.eu.org/posts/167455342/"/>
+    <id>https://blog.sakurink.eu.org/posts/167455342/</id>
+    <published>2024-07-15T06:19:19.000Z</published>
+    <updated>2024-07-15T06:19:29.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="信息技术" scheme="https://blog.sakurink.eu.org/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 Cloudflare Pages 托管静态网站</title>
     <link href="https://blog.sakurink.eu.org/posts/4242742085/"/>
     <id>https://blog.sakurink.eu.org/posts/4242742085/</id>
@@ -146,7 +171,7 @@
   </entry>
   
   <entry>
-    <title>Valaxy 体验：下一代静态博客框架</title>
+    <title>Valaxy 初体验：速度起飞且易于开发</title>
     <link href="https://blog.sakurink.eu.org/posts/2450481449/"/>
     <id>https://blog.sakurink.eu.org/posts/2450481449/</id>
     <published>2024-05-01T08:48:25.000Z</published>
@@ -244,33 +269,6 @@
     <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
     
     <category term="Vercel" scheme="https://blog.sakurink.eu.org/tags/Vercel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OpenAI Sora 介绍及原理</title>
-    <link href="https://blog.sakurink.eu.org/posts/3791443755/"/>
-    <id>https://blog.sakurink.eu.org/posts/3791443755/</id>
-    <published>2024-02-21T01:35:51.000Z</published>
-    <updated>2024-02-21T01:35:59.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="信息技术" scheme="https://blog.sakurink.eu.org/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    
-    <category term="Sora" scheme="https://blog.sakurink.eu.org/tags/Sora/"/>
     
   </entry>
   
