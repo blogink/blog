@@ -62,9 +62,9 @@
     <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
-    
     <category term="Electron" scheme="https://blog.sakurink.eu.org/tags/Electron/"/>
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
   </entry>
   
@@ -195,9 +195,9 @@
     <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
-    
     <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
     
   </entry>
   
