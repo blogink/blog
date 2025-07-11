@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2025-07-09T10:00:00.000Z</updated>
+  <updated>2025-07-11T11:41:07.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NvidiaApp 如何回退到 GFE</title>
+    <link href="https://blog.sakurink.eu.org/posts/2807863529/"/>
+    <id>https://blog.sakurink.eu.org/posts/2807863529/</id>
+    <published>2025-07-11T11:41:03.000Z</published>
+    <updated>2025-07-11T11:41:07.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 如何实现匿名提交</title>
+    <link href="https://blog.sakurink.eu.org/posts/3659036632/"/>
+    <id>https://blog.sakurink.eu.org/posts/3659036632/</id>
+    <published>2025-07-08T11:38:35.000Z</published>
+    <updated>2025-07-08T11:38:47.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="摘录笔记" scheme="https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>如何从 Hexo 迁移到 Typecho</title>
@@ -217,58 +271,6 @@
     <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
     
     <category term="技巧" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 mklink 将 Chrome 安装到别的磁盘</title>
-    <link href="https://blog.sakurink.eu.org/posts/2138137695/"/>
-    <id>https://blog.sakurink.eu.org/posts/2138137695/</id>
-    <published>2024-11-08T08:31:41.000Z</published>
-    <updated>2024-11-08T08:31:48.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>低显存也能 AI 绘图：SD WebUI Forge 配置与使用</title>
-    <link href="https://blog.sakurink.eu.org/posts/775200063/"/>
-    <id>https://blog.sakurink.eu.org/posts/775200063/</id>
-    <published>2024-11-04T10:09:25.000Z</published>
-    <updated>2025-07-05T14:30:17.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    
-    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
     
   </entry>
   
