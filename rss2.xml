@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>雨梦清欢</title>
+    <link>https://blog.sakurink.eu.org/</link>
+    
+    <image>
+      <url>https://blog.sakurink.eu.org/icon.png</url>
+      <title>雨梦清欢</title>
+      <link>https://blog.sakurink.eu.org/</link>
+    </image>
+    
+    <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>学习记录与分享，本网站随缘更新。</description>
+    <pubDate>Wed, 09 Jul 2025 10:00:00 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何从 Hexo 迁移到 Typecho</title>
+      <link>https://blog.sakurink.eu.org/posts/1183868867/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1183868867/</guid>
+      <pubDate>Sun, 06 Jul 2025 11:28:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Hexo/">Hexo</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/">代码</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/">折腾</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1183868867/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Excalidraw 开源白板工具部署</title>
+      <link>https://blog.sakurink.eu.org/posts/460603327/</link>
+      <guid>https://blog.sakurink.eu.org/posts/460603327/</guid>
+      <pubDate>Fri, 04 Jul 2025 09:08:36 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Cloudflare/">Cloudflare</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/460603327/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>归辙</title>
+      <link>https://blog.sakurink.eu.org/posts/1546774486/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1546774486/</guid>
+      <pubDate>Tue, 10 Jun 2025 12:06:24 GMT</pubDate>
+      
+      <description>孩子们，我“复活”了（？）</description>
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1546774486/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>在本地部署 Deepseek-R1 模型并使用</title>
+      <link>https://blog.sakurink.eu.org/posts/3058912286/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3058912286/</guid>
+      <pubDate>Thu, 06 Feb 2025 09:31:12 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3058912286/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>提示词反推工具 WD-Tagger 本地部署</title>
+      <link>https://blog.sakurink.eu.org/posts/3944900396/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3944900396/</guid>
+      <pubDate>Sun, 02 Feb 2025 04:41:29 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/">AI 绘图</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3944900396/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Stable Diffusion 占 C 盘空间，如何清理缓存文件</title>
+      <link>https://blog.sakurink.eu.org/posts/2316115979/</link>
+      <guid>https://blog.sakurink.eu.org/posts/2316115979/</guid>
+      <pubDate>Mon, 27 Jan 2025 12:16:45 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/">AI 绘图</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/2316115979/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>清空 Git 仓库历史提交记录</title>
+      <link>https://blog.sakurink.eu.org/posts/3956464248/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3956464248/</guid>
+      <pubDate>Fri, 10 Jan 2025 07:21:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/git/">git</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3956464248/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何从 Wayback Machine 中删除你的网站</title>
+      <link>https://blog.sakurink.eu.org/posts/4220845552/</link>
+      <guid>https://blog.sakurink.eu.org/posts/4220845552/</guid>
+      <pubDate>Fri, 06 Dec 2024 08:39:39 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/web/">web</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/">技巧</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/4220845552/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>使用 mklink 将 Chrome 安装到别的磁盘</title>
+      <link>https://blog.sakurink.eu.org/posts/2138137695/</link>
+      <guid>https://blog.sakurink.eu.org/posts/2138137695/</guid>
+      <pubDate>Fri, 08 Nov 2024 08:31:41 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/2138137695/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>低显存也能 AI 绘图：SD WebUI Forge 配置与使用</title>
+      <link>https://blog.sakurink.eu.org/posts/775200063/</link>
+      <guid>https://blog.sakurink.eu.org/posts/775200063/</guid>
+      <pubDate>Mon, 04 Nov 2024 10:09:25 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/">AI 绘图</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/775200063/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

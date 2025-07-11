@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>雨梦清欢</title>
+  <icon>https://blog.sakurink.eu.org/icon.png</icon>
+  <subtitle>不受律束，笔随兴至</subtitle>
+  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://blog.sakurink.eu.org/"/>
+  <updated>2025-07-09T10:00:00.000Z</updated>
+  <id>https://blog.sakurink.eu.org/</id>
+  
+  <author>
+    <name>R҉anm⌬</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何从 Hexo 迁移到 Typecho</title>
+    <link href="https://blog.sakurink.eu.org/posts/1183868867/"/>
+    <id>https://blog.sakurink.eu.org/posts/1183868867/</id>
+    <published>2025-07-06T11:28:58.000Z</published>
+    <updated>2025-07-09T10:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.sakurink.eu.org/tags/Hexo/"/>
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="折腾" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excalidraw 开源白板工具部署</title>
+    <link href="https://blog.sakurink.eu.org/posts/460603327/"/>
+    <id>https://blog.sakurink.eu.org/posts/460603327/</id>
+    <published>2025-07-04T09:08:36.000Z</published>
+    <updated>2025-07-04T09:08:41.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>归辙</title>
+    <link href="https://blog.sakurink.eu.org/posts/1546774486/"/>
+    <id>https://blog.sakurink.eu.org/posts/1546774486/</id>
+    <published>2025-06-10T12:06:24.000Z</published>
+    <updated>2025-06-10T12:06:26.000Z</updated>
+    
+    
+    <summary type="html">孩子们，我“复活”了（？）</summary>
+    
+    
+    
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在本地部署 Deepseek-R1 模型并使用</title>
+    <link href="https://blog.sakurink.eu.org/posts/3058912286/"/>
+    <id>https://blog.sakurink.eu.org/posts/3058912286/</id>
+    <published>2025-02-06T09:31:12.000Z</published>
+    <updated>2025-03-01T09:31:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提示词反推工具 WD-Tagger 本地部署</title>
+    <link href="https://blog.sakurink.eu.org/posts/3944900396/"/>
+    <id>https://blog.sakurink.eu.org/posts/3944900396/</id>
+    <published>2025-02-02T04:41:29.000Z</published>
+    <updated>2025-02-02T04:41:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Stable Diffusion 占 C 盘空间，如何清理缓存文件</title>
+    <link href="https://blog.sakurink.eu.org/posts/2316115979/"/>
+    <id>https://blog.sakurink.eu.org/posts/2316115979/</id>
+    <published>2025-01-27T12:16:45.654Z</published>
+    <updated>2025-01-27T12:17:10.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>清空 Git 仓库历史提交记录</title>
+    <link href="https://blog.sakurink.eu.org/posts/3956464248/"/>
+    <id>https://blog.sakurink.eu.org/posts/3956464248/</id>
+    <published>2025-01-10T07:21:08.000Z</published>
+    <updated>2025-01-10T07:21:13.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何从 Wayback Machine 中删除你的网站</title>
+    <link href="https://blog.sakurink.eu.org/posts/4220845552/"/>
+    <id>https://blog.sakurink.eu.org/posts/4220845552/</id>
+    <published>2024-12-06T08:39:39.000Z</published>
+    <updated>2024-12-06T08:39:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="web" scheme="https://blog.sakurink.eu.org/tags/web/"/>
+    
+    <category term="技巧" scheme="https://blog.sakurink.eu.org/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 mklink 将 Chrome 安装到别的磁盘</title>
+    <link href="https://blog.sakurink.eu.org/posts/2138137695/"/>
+    <id>https://blog.sakurink.eu.org/posts/2138137695/</id>
+    <published>2024-11-08T08:31:41.000Z</published>
+    <updated>2024-11-08T08:31:48.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>低显存也能 AI 绘图：SD WebUI Forge 配置与使用</title>
+    <link href="https://blog.sakurink.eu.org/posts/775200063/"/>
+    <id>https://blog.sakurink.eu.org/posts/775200063/</id>
+    <published>2024-11-04T10:09:25.000Z</published>
+    <updated>2025-07-05T14:30:17.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
+  
+</feed>
