@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2025-07-13T13:08:35.000Z</updated>
+  <updated>2025-07-16T12:24:10.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算术课后</title>
+    <link href="https://blog.sakurink.eu.org/posts/1726040825/"/>
+    <id>https://blog.sakurink.eu.org/posts/1726040825/</id>
+    <published>2025-07-16T12:24:08.000Z</published>
+    <updated>2025-07-16T12:24:10.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用 Kali 进行简单网络攻击实战</title>
@@ -150,23 +173,6 @@
     <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>归辙</title>
-    <link href="https://blog.sakurink.eu.org/posts/1546774486/"/>
-    <id>https://blog.sakurink.eu.org/posts/1546774486/</id>
-    <published>2025-06-10T12:06:24.000Z</published>
-    <updated>2025-06-10T12:06:26.000Z</updated>
-    
-    
-    <summary type="html">孩子们，我“复活”了（？）</summary>
-    
-    
-    
-    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    
     
   </entry>
   
