@@ -1,3 +1,6 @@
+https://blog.sakurink.eu.org/message/index.html
+https://blog.sakurink.eu.org/cookies/index.html
+https://blog.sakurink.eu.org/license/index.html
 https://blog.sakurink.eu.org/update/index.html
 https://blog.sakurink.eu.org/posts/876737918/
 https://blog.sakurink.eu.org/posts/1183868867/
@@ -11,7 +14,6 @@ https://blog.sakurink.eu.org/posts/3058912286/
 https://blog.sakurink.eu.org/music/index.html
 https://blog.sakurink.eu.org/music/index-2.html
 https://blog.sakurink.eu.org/sub/index.html
-https://blog.sakurink.eu.org/license/index.html
 https://blog.sakurink.eu.org/cc/index.html
 https://blog.sakurink.eu.org/posts/3944900396/
 https://blog.sakurink.eu.org/posts/2316115979/
