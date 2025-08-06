@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2025-07-16T12:24:10.000Z</updated>
+  <updated>2025-08-06T12:40:48.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>灵活的 AI 工作流：ComfyUI 上手使用</title>
+    <link href="https://blog.sakurink.eu.org/posts/2709533729/"/>
+    <id>https://blog.sakurink.eu.org/posts/2709533729/</id>
+    <published>2025-08-06T12:40:45.000Z</published>
+    <updated>2025-08-06T12:40:48.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>算术课后</title>
@@ -252,31 +279,6 @@
     <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
     
     <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>清空 Git 仓库历史提交记录</title>
-    <link href="https://blog.sakurink.eu.org/posts/3956464248/"/>
-    <id>https://blog.sakurink.eu.org/posts/3956464248/</id>
-    <published>2025-01-10T07:21:08.000Z</published>
-    <updated>2025-01-10T07:21:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="git" scheme="https://blog.sakurink.eu.org/tags/git/"/>
     
   </entry>
   
