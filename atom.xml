@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2025-09-04T06:00:00.000Z</updated>
+  <updated>2025-09-05T09:15:00.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一图一言生手办：Nano-banana 上手体验</title>
+    <link href="https://blog.sakurink.eu.org/posts/2945624148/"/>
+    <id>https://blog.sakurink.eu.org/posts/2945624148/</id>
+    <published>2025-09-05T09:15:00.000Z</published>
+    <updated>2025-09-05T09:15:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    
+    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>可高度自定义的开源输入法：Rime 配置与使用</title>
@@ -219,7 +246,7 @@
     
     
     
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
     
     
     <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
@@ -250,33 +277,6 @@
     
     
     <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提示词反推工具 WD-Tagger 本地部署</title>
-    <link href="https://blog.sakurink.eu.org/posts/3944900396/"/>
-    <id>https://blog.sakurink.eu.org/posts/3944900396/</id>
-    <published>2025-02-02T04:41:29.000Z</published>
-    <updated>2025-02-02T04:41:32.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    
-    <category term="AI 绘图" scheme="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/"/>
     
   </entry>
   
