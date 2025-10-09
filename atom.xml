@@ -6,7 +6,7 @@
   <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2025-09-05T09:15:00.000Z</updated>
+  <updated>2025-10-09T13:20:19.000Z</updated>
   <id>https://blog.sakurink.eu.org/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>告别繁琐：一键批量更新所有本地 Git 仓库</title>
+    <link href="https://blog.sakurink.eu.org/posts/3883439974/"/>
+    <id>https://blog.sakurink.eu.org/posts/3883439974/</id>
+    <published>2025-10-09T13:20:19.000Z</published>
+    <updated>2025-10-09T13:20:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="代码" scheme="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>一图一言生手办：Nano-banana 上手体验</title>
@@ -252,31 +279,6 @@
     <category term="程序" scheme="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在本地部署 Deepseek-R1 模型并使用</title>
-    <link href="https://blog.sakurink.eu.org/posts/3058912286/"/>
-    <id>https://blog.sakurink.eu.org/posts/3058912286/</id>
-    <published>2025-02-06T09:31:12.000Z</published>
-    <updated>2025-03-01T09:31:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
     
   </entry>
   
