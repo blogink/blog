@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Excalidraw 开源白板工具部署 | 雨梦清欢</title><meta name="author" content="R҉anm⌬"><meta name="copyright" content="R҉anm⌬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有时我需要为文档制作配图，但制作一张演示图就使用专业软件，于我而言有些大材小用。 还有些时候，我有了一个思路，但身边只有移动设备；对于某些思路而言，纯文字不如图像直观。 假如我要与他人协作，如果不用那些比较专业的工具，大多展示起来显得不便。 …… 有没有一个便捷方案可以解决这些问题？ Excalidraw 是什么 Excalidraw 是一款开源的在线白板工具，能够帮助用户快速制作简单的手绘风格的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Excalidraw 开源白板工具部署">
+<meta property="og:url" content="https://blog.sakurink.eu.org/posts/460603327/index.html">
+<meta property="og:site_name" content="雨梦清欢">
+<meta property="og:description" content="有时我需要为文档制作配图，但制作一张演示图就使用专业软件，于我而言有些大材小用。 还有些时候，我有了一个思路，但身边只有移动设备；对于某些思路而言，纯文字不如图像直观。 假如我要与他人协作，如果不用那些比较专业的工具，大多展示起来显得不便。 …… 有没有一个便捷方案可以解决这些问题？ Excalidraw 是什么 Excalidraw 是一款开源的在线白板工具，能够帮助用户快速制作简单的手绘风格的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg">
+<meta property="article:published_time" content="2025-07-04T09:08:36.000Z">
+<meta property="article:modified_time" content="2025-07-04T09:08:41.000Z">
+<meta property="article:author" content="R҉anm⌬">
+<meta property="article:tag" content="Cloudflare">
+<meta property="article:tag" content="程序">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Excalidraw 开源白板工具部署",
+  "url": "https://blog.sakurink.eu.org/posts/460603327/",
+  "image": "//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg",
+  "datePublished": "2025-07-04T09:08:36.000Z",
+  "dateModified": "2025-07-04T09:08:41.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "R҉anm⌬",
+      "url": "https://blog.sakurink.eu.org"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.sakurink.eu.org/posts/460603327/index.html"><link rel="preconnect" href="https://npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@latest/css/all.min.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://npm.elemecdn.com/@egjs/infinitegrid@latest/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Excalidraw 开源白板工具部署',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="robots" content="noarchive"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="referrer" content="no-referrer-when-downgrade" /><noscript>
+  <strong>
+    本站需要启用JavaScript才能运行
+  </strong>
+</noscript>
+<!-- JefCounts 统计代码 -->
+<script>
+(function() {
+    var script = document.createElement('script');
+    script.src = 'https://tj.lolic.dpdns.org/assets/js/analytics.js';
+    script.defer = true;
+    script.setAttribute('data-site-key', 'f6f1efe881864731');
+    script.setAttribute('data-endpoint', 'https://tj.lolic.dpdns.org/api/track.php');
+    document.head.appendChild(script);
+})();
+</script>
+<!-- JefCounts 统计代码结束 -->
+<!-- MS Clarify 统计代码 -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ud49s1v4vh");
+</script>
+<!-- MS Clarify 统计代码结束 -->
+<link rel="stylesheet" href="/css/sakurink.css"/><link rel="stylesheet" href="/css/consolex.css"/><link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/JiangChengYuanTi-400W/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Normal/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSerifSC-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="/css/lanterns.css" media="only x" onload="this.onload=null;this.media='all'"><link rel="stylesheet" href="/css/runtime.css"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="雨梦清欢" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="雨梦清欢" type="application/rss+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/css/pace1.css"/><script src="https://npm.elemecdn.com/pace-js@latest/pace.min.js"></script><div class="bg-animation" id="web_bg" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/background_img.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">雨梦清欢</span></a><a class="nav-page-title" href="/"><span class="site-name">Excalidraw 开源白板工具部署</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Excalidraw 开源白板工具部署</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-04T09:08:36.000Z" title="发表于 2025-07-04 17:08:36">2025-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-04T09:08:41.000Z" title="更新于 2025-07-04 17:08:41">2025-07-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>有时我需要为文档制作配图，但制作一张演示图就使用专业软件，于我而言有些大材小用。</p>
+<p>还有些时候，我有了一个思路，但身边只有移动设备；对于某些思路而言，纯文字不如图像直观。</p>
+<p>假如我要与他人协作，如果不用那些比较专业的工具，大多展示起来显得不便。</p>
+<p>……</p>
+<p>有没有一个便捷方案可以解决这些问题？</p>
+<h3 id="Excalidraw-是什么">Excalidraw 是什么</h3>
+<p>Excalidraw 是一款开源的在线白板工具，能够帮助用户快速制作简单的手绘风格的思维导图——当然，它的用途不止于此，流程图、示意图和开发架构图等常用图像，都可以用它制作。得益于它拥有实时协作、开放源码、易集成等特点，它可以为开发者和用户提供一个简单、直观且功能强大的绘图体验。</p>
+<p>只要你的设备有现代浏览器（IE 之类的旧版浏览器就别凑热闹了）且能连接互联网，那么就可以快速地使用它。官方提供了一个在线程序：<a target="_blank" href="https://excalidraw.com/" rel="external nofollow noreferrer noopener">https://excalidraw.com/</a>。当然，不连接互联网，自己本地部署也可以使用。</p>
+<p><img src="https://s2.loli.net/2024/10/26/mDuatcP2whyON3p.png" alt=""></p>
+<h3 id="搭建准备">搭建准备</h3>
+<p>Docker 部署的优点此处不再赘述，但是我现在没有能用于跑 Docker 的服务器，暂时无法尝试。不过既然 Excalidraw 可以被打包成静态网页，那么没有自己的服务器也可以完成了。</p>
+<p>那么，你只需要准备这些东西就行了：</p>
+<ul>
+<li>域名</li>
+<li>能提供 Node.js 环境的设备</li>
+<li>通畅的网络</li>
+</ul>
+<p>平台账户注册的方法此处不提，请自行百度。</p>
+<p>当然，如果你将其部署在 Vercel、Cloudflare、Netlify 等平台上，甚至域名也不是必须的，只要你能解决它们提供的二级域名在国内抽风的问题（解决不了的话，还是得要一个域名）。</p>
+<p>更极端一点，你可以在本地把编译的工作完成，然后推送到 GitHub 之类的平台上，利用其速度尚可的 GitHub Pages（相比于上面这些平台的）完成整个流程。</p>
+<h3 id="部署过程">部署过程</h3>
+<h4 id="本地部署">本地部署</h4>
+<p>本地部署更加可控，可以很方便地进行自定义设置与组件引用。</p>
+<p>确保设备已安装 Node.js 和 Git。在设备中选择一个目录，打开 Git 终端，执行以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/excalidraw/excalidraw.git</span><br><span class="line">cd excalidraw</span><br></pre></td></tr></table></figure>
+<p>网速不佳可以使用镜像站：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://kkgithub.com/excalidraw/excalidraw.git # 镜像站点</span><br><span class="line">cd excalidraw</span><br></pre></td></tr></table></figure>
+<p>完成后进入目录，在项目根目录中使用终端执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install react react-dom @excalidraw/excalidraw</span><br></pre></td></tr></table></figure>
+<p>或者使用 yarn：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add react react-dom @excalidraw/excalidraw</span><br></pre></td></tr></table></figure>
+<p>随后执行命令启用演示：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run start</span><br></pre></td></tr></table></figure>
+<p>第一次使用可能还需安装组件（时间可能比较漫长），请耐心等待。之后执行命令，等待一会儿会自动打开网页以供在线使用。</p>
+<p>你也可以将其打包为静态文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>然后将项目<code>/excalidraw-app/build/</code>中的资源上传到 GitHub 等平台进行托管（不能放在子目录，否则很可能因相对路径的问题而导致资源无法读取）。</p>
+<h4 id="Cloudflare-Pages">Cloudflare Pages</h4>
+<p>其实就相当于把整个部署的过程移到云上。这样有一个好处，项目更新时只需在自己仓库中点击<code>Sync Fork</code>同步仓库，随后 Pages 会自动触发部署更新（默认启用，可以手动关闭），对于网速不佳或设备不便的用户而言是方便的。</p>
+<p>前往 <a target="_blank" href="https://github.com/excalidraw/excalidraw" rel="external nofollow noreferrer noopener">https://github.com/excalidraw/excalidraw</a> 仓库，并点击<code>Fork</code>按钮，将其 Fork 到自己的账户下。</p>
+<p><img src="https://s2.loli.net/2024/10/26/l6wrDKkUTcx73Qy.png" alt=""></p>
+<p>随后登入 Cloudflare 控制台，在左侧菜单中进入<code>Workers 和 Pages</code>-&gt;<code>概述</code>，在页面中找到<code>创建</code>按钮，在创建应用程序页面选择<code>Pages</code>选项卡，并点击<code>连接到 Git</code>。</p>
+<p><img src="https://s2.loli.net/2024/10/26/UkWmKiocdTNv6aF.png" alt=""></p>
+<p>在 GitHub 选项卡中找到自己的 GitHub 帐户。如果你是首次使用 Workers 和 Pages 功能，GitHub 帐户一栏可能没有出现你的账户名称。此时需要找到<code>添加帐户</code>链接并在“安装 Cloudflare Workers 和 Pages”页面中选择自己的 GitHub 账户（准确来讲是前面你 Fork 时选择的目标账户或组织），跟着页面中的引导完成操作。</p>
+<p>完成后回到控制台页面，如果操作正确，GitHub 帐户一栏中将出现前面 Fork 的仓库，并在“选择一个存储库”中可以找到那个仓库。如果未显示相应仓库，则需要在在 GitHub 上为 Cloudflare Pages 应用配置存储库访问权限。</p>
+<p>等处理好后，选中自己的 GitHub 帐户，并在<code>选择一个存储库</code>中选择刚才 Fork 的仓库。如果没有经过重命名，那么此处你可以在储存库一栏找到一个名为<code>excalidraw</code>的选项卡，点击选中并点击右下角<code>开始设置</code>。</p>
+<p><img src="https://s2.loli.net/2024/10/26/DJR5wlrM4mhXet9.png" alt=""></p>
+<p>在下一步的设置构建和部署页面中有几个参数需要填写。<code>项目名称</code>可以任意命名（自己能辨认出就行），<code>生产分支</code>选择 master（如果是 main 就选 main）。在构建设置中，将<code>框架预设</code>选择为<code>React(Vite)</code>（实际上不选也行）（项目技术栈为 Vite + React + TypeScript + Yarn + Husky），设置构建命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>构建输出目录填写如下（注意斜杠）：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">excalidraw-app/build/</span><br></pre></td></tr></table></figure>
+<p>根目录（高级）和环境变量（高级）两处不用填写。完成后点击右下角<code>保存并部署</code>，等待完成。</p>
+<p><img src="https://s2.loli.net/2024/10/26/S8F3jaW2uthMpHT.png" alt=""></p>
+<p>如果填写无误，最终页面会提示部署成功，并给出<code>.pages.dev</code>域名链接，可以查看效果。</p>
+<p>如果你有域名且托管到 Cloudflare，还可以为项目设置自定义域名。回到<code>Workers 和 Pages</code>页面，选中部署完成的 Pages 项目，在选项卡中选择<code>自定义域</code>，点击<code>设置自定义域</code>按钮，按照页面提示完成绑定，等待 DNS 解析生效后即可使用。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org">R҉anm⌬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org/posts/460603327/">https://blog.sakurink.eu.org/posts/460603327/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.sakurink.eu.org" target="_blank">雨梦清欢</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F/">程序</a><a class="post-meta__tags" href="/tags/Cloudflare/">Cloudflare</a></div><div class="post-share"><div class="social-share" data-image="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/3058912286/" title="在本地部署 Deepseek-R1 模型并使用"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/10.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">在本地部署 Deepseek-R1 模型并使用</div></div><div class="info-2"><div class="info-item-1">今年春节，大伙应该了解到，国产深度学习模型 DeepSeek 话题热度剧增。看看应用市场，其下载量在排行榜上占据靠前的位置，甚至有些占据榜首；各种分析和介绍的视频也是随处可见；NVIDIA 股价当场跳水……单从这些点，便可见其影响力之大，而且至少在接下来一段时间内还会继续上升。原谅我词穷，找不到更好的形容词了。 官方版量大管饱、便宜好用。网页版和 APP 目前是免费的，注册就能用（至少目前我还没找到对话时所谓剩余额度和充值入口）；API 是需要消耗额度的，但有免费赠送的额度，充值额度也很有性价比。 用了下，发现效果很不错。就拿春节期间我和 GPT4o-mini 随意写的“小说”举例：我随...</div></div></div></a><a class="pagination-related" href="/posts/1183868867/" title="如何从 Hexo 迁移到 Typecho"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">如何从 Hexo 迁移到 Typecho</div></div><div class="info-2"><div class="info-item-1">最开始选择用 Hexo 搭建网站，看中的是它可以实现低成本建站的特点。虽然成本是下来了，但修改文章、评论、微调等变得麻烦了。想起来以前注册了个 Serv00 虚拟主机，于是想试试 Typecho。 但问题是，Typecho 还没有一键导入 md 的功能；手动复制粘贴又显得低效。搜寻后，决定使用插件完成。 插件 这里，我们使用 hexo-2-typecho 插件，它可以在执行hexo g命令时生成contents.sql、metas.sql、relationships.sql三张表，将 Typecho 基本要用的数据都转过来了。 在 Hexo 项目根目录中，执行命令安装： 1npm i h...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/1628586937/" title="从零开始搭建 Minecraft 服务器"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-17</div><div class="info-item-2">从零开始搭建 Minecraft 服务器</div></div><div class="info-2"><div class="info-item-1">再也不用担心房主下线后好友无法继续“联机”了</div></div></div></a><a class="pagination-related" href="/posts/1670947396/" title="Clash 删库停更事件"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/7.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-04</div><div class="info-item-2">Clash 删库停更事件</div></div><div class="info-2"><div class="info-item-1">此事件比较魔幻，网络上众说纷纭，具体如何不易得知，在此仅记录些我获知的内容</div></div></div></a><a class="pagination-related" href="/posts/439348253/" title="简洁安全的评论系统 - Valine&#x2F;Waline 折腾笔记"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/6.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-20</div><div class="info-item-2">简洁安全的评论系统 - Valine&#x2F;Waline 折腾笔记</div></div><div class="info-2"><div class="info-item-1">由于 Hexo 一类静态博客的自身限制，最终生成的东西本身是无法有过多交互的，不论后端，评论都需要外接。在这之前，我曾见有 giscus、Gittalk 等程序，虽国内也可使用，可需要 GitHub 账户，很显然不符合“即时评论”的要求，因此我将其归为“备选”。浏览一圈下来，简洁的、稳定的，也就只有 Valine 和 Waline 符合我的要求。 本文对应的环境为  NodeJS -&gt; 18.16.0 hexo-cli -&gt; 4.3.1 hexo-theme -&gt; Butterfly-4.9.0  国内访问，请提前准备没被 墙 的域名 一、应用配置【最好二选一】 Val...</div></div></div></a><a class="pagination-related" href="/posts/2333218969/" title="使用 Spacedesk 将手机或平板作为电脑扩展屏"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/5.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-28</div><div class="info-item-2">使用 Spacedesk 将手机或平板作为电脑扩展屏</div></div><div class="info-2"><div class="info-item-1">有时我需要使用电脑同时查看多个窗口，我会将其平铺在显示器中；窗口数一多，这就变得不太现实。我手头的设备不算少，我就想着能不能利用一下它们，给我的电脑扩展下屏幕。 虽说 Win10 自带一个投屏功能，但是对硬件和驱动有一定的要求（例如 Miracast 支持与否），而且延迟有点高，配置略微繁琐。其他有些软件，甚至还要把数据传到它的中转服务器再传回来，但我想这在内网中使用时应该不用这么麻烦。 Spacedesk 这是一款允许你将电脑屏幕扩展到其他设备上的软件。它可以让你使用手机、平板或其他显示设备作为电脑的第二块屏幕，从而扩大工作区域。它支持有线和无线两种连接方式，在内网中也能使用；有线连接...</div></div></div></a><a class="pagination-related" href="/posts/4242742085/" title="使用 Cloudflare Pages 托管静态网站"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/3.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-08</div><div class="info-item-2">使用 Cloudflare Pages 托管静态网站</div></div><div class="info-2"><div class="info-item-1">这个站点是部署在 GitHub Pages 上的，如你所见，在某些情况下访问速度令人不敢恭维。之前某次因为未知原因 Cloudflare 又一次在国内受到“特别关照”，不得已关了一些功能。最近感觉站点访问速度出奇地慢，换了 CDN 也未见明显好转。 一开始在选择部署平台时便对 CF Pages 有耳闻，由于顾虑而未使用。近日尝试，发现其速度确实不错，但晚上得有点难看。 由于某些原因，写作本文时图床工具出现问题，暂不添加图片，故一些操作流程会写得比较详细（甚至有些多余？）。 区别 注：Pages 首页 和 Pages 页面 -&gt; 限制 有更详细的说明    比较项 GitHub Pa...</div></div></div></a><a class="pagination-related" href="/posts/117984481/" title="Linux 安装 V2-Ray"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/1.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-06</div><div class="info-item-2">Linux 安装 V2-Ray</div></div><div class="info-2"><div class="info-item-1">本文仅供技术研究学习使用，严禁将此类工具和服务用于涉政、暴恐等违法、灰色目的，否则后果自负。 安装 Linux 系统下常用的 V2-Ray 版本是 V2RayA，访问其在 GitHub 上的仓库：https://github.com/v2rayA/v2rayA。 如果你使用了带有图形化界面的 V2-Ray，还可以使用 V2RayN。 安装 V2-Ray 内核 安装 V2-Ray 内核，可使用其提供的镜像脚本 curl -ls https://mirrors.v2raya.org/go.sh | sudo bash 安装后可以关掉服务，V2RayA 不依赖该服务 sudo systemct...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">R҉anm⌬</div><div class="author-info-description">雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://sakurink.eu.org/" target="_blank" title=""><i class="fas fa-feather-alt"></i></a><a class="social-icon" href="https://blog.sakurink.eu.org/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">站点速度较慢，请等待全部加载完成后再进行操作，体验更佳。如果发现页面加载故障，请善用刷新。本站所有内容仅供参考，请谨慎使用，不得将其用于违规行为，否则后果自负。【当前域名请使用"https://"访问，否则大概率要被重置连接】</div></div><div class="card-widget card-ctools" id="card-ctools"><div class="item-headline"><i class="fas fa-tools"></i><span>控制器</span></div><div class="item-content"><span class="button-bfblue" onclick="javascript:location.reload()">刷新页面</span><br> <span class="button-bfblue" onclick="javascript:location.replace(location.href);">强制刷新</span><br> <!--<span class="button-bfblue" onclick="toggleWinbox()">切换背景</span><br>--> <span class="button-bfblue" onclick="openPanel()">控制面板</span></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Excalidraw-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.</span> <span class="toc-text">Excalidraw 是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E5%87%86%E5%A4%87"><span class="toc-number">2.</span> <span class="toc-text">搭建准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">部署过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2"><span class="toc-number">3.1.</span> <span class="toc-text">本地部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cloudflare-Pages"><span class="toc-number">3.2.</span> <span class="toc-text">Cloudflare Pages</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">导航</div><div class="footer-flex-content"><a href="/about/" target="_blank" title="关于我">关于我</a><a href="/essay/" target="_blank" title="即刻短文">即刻短文</a><a href="/message/" target="_blank" title="留言板">留言板</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">服务</div><div class="footer-flex-content"><a href="/sub/" target="_blank" title="RSS 订阅">RSS 订阅</a><a href="/sitemap.xml" target="_blank" title="站点地图">站点地图</a><a href="https://music.lolic.dpdns.org/" target="_blank" title="音乐-测试版">音乐-测试版</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">协议</div><div class="footer-flex-content"><a href="/license/" target="_blank" title="隐私与免责">隐私与免责</a><a href="/cookies/" target="_blank" title="Cookies">Cookies</a><a href="/cc/" target="_blank" title="版权协议">版权协议</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">工具</div><div class="footer-flex-content"><a href="https://excalidraw.lolic.dpdns.org/" target="_blank" title="白板">白板</a><a href="https://nav.lolic.dpdns.org/" target="_blank" title="工具导航">工具导航</a><a href="https://tool.lolic.dpdns.org/" target="_blank" title="实验室">实验室</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">信息</div><div class="footer-flex-content"><div> <div id="ghbdages"> <a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""> <img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""> </a> <a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题为Butterfly" title=""> <img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""> </a> <a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""> <img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""> </a> <a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Gtihub托管" title=""> <img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""> </a> <a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站除特殊说明外采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""> <img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""> </a> </div> </div></div></div></div></div><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"> <div id="workboard" style="padding-bottom:40px"></div> </div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="settingContainer"><div class="sphide" id="settingMask"></div><div class="sphide" id="settingPanel"><div id="settingTopBar"><div class="settingTopBarLeft"><button class="hide" id="settingBackToMain2"><i class="fas fa-chevron-left"></i>返回</button><h3 class="sp-title">控制面板</h3></div><div class="settingTopBarRight"><button class="settingPanelClose" id="settingPanelClose" onclick="closePanel()">✖</button></div></div><div id="settingMain"><!-- Tabs 中的 id 与 Items 中 id 的 "-Content" 之前的部分保持一致方可完成绑定--><div class="fade fade-in" id="settingTabs"><button id="settings-general"><i class="fas fa-layer-group"></i>通用</button><button id="settings-fonts"><i class="fas fa-font"></i>字体</button><button id="settings-background"><i class="far fa-image"></i>背景</button><button id="settings-test"><i class="fas fa-code"></i>测试</button><button id="settings-about"><i class="far fa-star"></i>关于</button><button id="settings-info"><i class="fas fa-circle-info"></i>系统</button></div><div class="hide fade fade-out" id="settingItems"><div id="settings-general-Content"><h3>主题</h3><div class="settingSwitchCheckBox"><div class="settingSwitchCheckBoxMain"><div class="content-text">Aplayer开关</div><input id="aplayerOnOff" onclick="aplayerState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">帧率检测</div><input id="fpsDisplay" onclick="fpsState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">背景流星（夜间模式）</div><input id="universeEffect" onclick="universeState()" type="checkbox"/></div><!--<div class="settingSwitchCheckBoxMain">
+ <div class="content-text">背景透明</div>
+ <input type="checkbox" id="contentInnerTransOnOff" onclick="contentInnerTransState()">
+ </div>--><div class="settingSwitchCheckBoxMain"><div class="content-text">顶部显隐（首页）</div><input id="indexImgDisplay" onclick="indexImgState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">测试按钮【供调试使用】</div><input id="variable1" onclick="switchState1()" type="checkbox"/></div></div><hr/><!--<div class="slider-container">
+ <div class="value-display" id="valueDisplay"></div>
+ <input type="range" id="opacityRange" min="0" max="100" value="95">
+ </div>
+ <div class="slider-container">
+ <div class="value-display" id="valueDisplayStButtons"></div>
+ <input type="range" id="opacityRangeStButtons" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台透明度：<span id="settingBgOp"></span></div><input id="settingBgOpRange" value="95" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">控制台按钮透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台遮罩透明度：<span id="settingBgMaskOp"></span></div><input id="settingBgMaskOpRange" value="30" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">背景遮罩透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="80">
+ </div>--><hr/><div class="settingRadioGroup"><div class="settingRadioGroupMain"><div class="content-text">春节灯笼（PC）</div><div class="settingRadioGroupOption"><input id="lanternState1" onclick="removeLantern()" value="close" name="lanternDisplay" type="radio"/><label for="lanternState1">关</label><input id="lanternState2" onclick="lanternLeft()" value="left" name="lanternDisplay" type="radio"/><label for="lanternState2">左</label><input id="lanternState3" onclick="lanternRight()" value="right" name="lanternDisplay" type="radio"/><label for="lanternState3">右</label></div></div><div class="settingRadioGroupMain"><div class="content-text">内容区域背景</div><div class="settingRadioGroupOption"><input id="contentInnerBgOpState1" onclick="contentInnerBgOp0()" value="op0" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState1">透明</label><input id="contentInnerBgOpState2" onclick="contentInnerBgOp85()" value="op85" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState2">85%</label><input id="contentInnerBgOpState3" onclick="contentInnerBgOp100()" value="op100" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState3">不透明</label></div></div><div class="settingRadioGroupMain"><div class="content-text">aplayer 外观</div><div class="settingRadioGroupOption"><input id="aplayerSkinStyle1" onclick="aplayerSkinStyle1()" value="skin1" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle1">样式1</label><input id="aplayerSkinStyle2" onclick="aplayerSkinStyle2()" value="skin2" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle2">样式2</label></div></div><div class="settingRadioGroupMain"><div class="content-text">测试 Radio【供调试使用】</div><div class="settingRadioGroupOption"><input id="radio2-name1" onclick="radio2Func1()" value="11111" name="drone2" type="radio"/><label for="radio2-name1">Huey-2</label><input id="radio2-name2" onclick="radio2Func2()" value="22222" name="drone2" type="radio"/><label for="radio2-name2">Dewey-2</label><input id="radio2-name3" onclick="radio2Func3()" value="33333" name="drone2" type="radio"/><label for="radio2-name3">Louie-2</label></div></div></div><hr/><h3>清理</h3><div><button id="resetSwitches">还原所有设置开关</button><br/><button id="resetRangeBar">还原所有范围控件</button><button id="resetRangeBar-settingBgOpRange">还原Bg范围控件</button><button id="resetRangeBar-settingBgMaskOpRange">还原控制台遮罩范围控件</button><br/><button id="resetRadio">还原 Radio</button><button id="resetRadio-aplayerSkinStyleDisplay">还原 aplayer 外观</button><button id="resetRadio-drone2">还原 Radio 测2</button></div><hr/><h3>控制</h3><div><button id="clearSessionStorage" style="display: none">清除 SessionStorage</button><button id="clearLocalStorage" style="display: none">清除 LocalStorage（重置设置）</button><button id="clearCookies">清除 Cookies</button><button id="clearServiceWorkers" style="display: none">清除 Service Workers 缓存</button><button id="clearCaches">清除缓存</button><br/><button onclick="javascript:location.reload()">刷新页面</button><button onclick="javascript:location.replace(location.href);">强制刷新</button><br/><button style="display: none" onclick="closePanel()">关闭控制台</button></div></div><div id="settings-fonts-Content"><p><button id="resetFont" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认字体</button></p><h3>字体</h3><div class="settingFontSwitchStyle"><button onclick="setFont('LXGW Wenkai Screen')" style="font-family:'LXGW Wenkai Screen'!important">霞鹜文楷</button><button onclick="setFont('Source Han Serif SC Medium')" style="font-family:'Source Han Serif SC Medium'!important">思源宋体</button><button onclick="setFont('Source Han Sans CN Medium')" style="font-family:'Source Han Sans CN Medium'!important">思源黑体500</button><button onclick="setFont('Source Han Sans CN Normal')" style="font-family:'Source Han Sans CN Normal'!important">思源黑体400</button><button onclick="setFont('JiangChengYuanTi')" style="font-family:'JiangChengYuanTi'!important">江城圆体400</button><button onclick="setFont('main')" style="font-family:-apple-system, IBM Plex Mono, monospace, '微软雅黑', sans-serif;!important">系统默认</button></div></div><div id="settings-background-Content"><div id="article-container"><p><button id="resetBg" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认背景</button></p><h3 id="图片（宽屏）"><a class="headerlink" title="图片（宽屏）" href="#图片（宽屏）"></a>图片（宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（移动端）"><a class="headerlink" title="图片（移动端）" href="#图片（移动端）"></a>图片（移动端）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（随机-宽屏）"><a class="headerlink" title="图片（随机-宽屏）" href="#图片（随机-宽屏）"></a>图片（随机-宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://bing.img.run/1920x1080.php)')" style="background-image: url(https://bing.img.run/1920x1080.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://wp.upx8.com/api.php)')" style="background-image: url(https://wp.upx8.com/api.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://unsplash.it/1280/720?random)')" style="background-image: url(https://unsplash.it/1280/720?random)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.loliapi.com/acg/)')" style="background-image: url(https://www.loliapi.com/acg/)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://api.vvhan.com/api/wallpaper/acg)')" style="background-image: url(https://api.vvhan.com/api/wallpaper/acg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.dmoe.cc/random.php)')" style="background-image: url(https://www.dmoe.cc/random.php)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="渐变色"><a class="headerlink" title="渐变色" href="#渐变色"></a>渐变色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')" style="background: linear-gradient(to right, #eecda3, #ef629f)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)')" style="background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #30cfd0 0%, #330867 100%)')" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)')" style="background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #EAECC6, #2BC0E4)')" style="background: linear-gradient(to right, #EAECC6, #2BC0E4)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)')" style="background: linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="纯色"><a class="headerlink" title="纯色" href="#纯色"></a>纯色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('#eef7f2')" style="background: #eef7f2" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#7D9D9C')" style="background: #7D9D9C" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#C7EDCC')" style="background: #C7EDCC" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#E3DCCF')" style="background: #E3DCCF" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#0F69B8')" style="background: #0F69B8" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#F0AABE')" style="background: #F0AABE" rel="noopener external nofollow" href="javascript:;"></a></div></div></div><div id="settings-test-Content"><h2>什么是Lorem Ipsum?</h2><p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</p><h2>字母测试</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo elit, posuere ac vestibulum at, hendrerit sed lectus. Aliquam hendrerit faucibus odio sed dignissim. Morbi nec nisl non mi tincidunt faucibus id vitae lectus. Etiam scelerisque nisl velit, sed euismod risus congue nec. Quisque hendrerit tortor eu arcu posuere, eu mattis purus egestas. Nulla tincidunt aliquet magna ac scelerisque. Suspendisse sed orci iaculis, elementum elit in, laoreet mi. Praesent mauris lectus, ultricies nec quam sed, pretium tristique diam. Aenean vitae vulputate dui, et elementum erat. Donec eros dui, porta et ipsum id, mattis dapibus turpis. Praesent vel nisi vitae mi faucibus sagittis id eu tortor. Nam dignissim dolor nec odio fringilla vulputate. Morbi vehicula elit at bibendum finibus. Nullam at enim diam. In consectetur urna sit amet ipsum euismod suscipit. Donec nec finibus eros.</p></div><div id="settings-about-Content"><div style="display: flex; justify-content: center; align-items: center; text-align: center;"><div class="highlighter-green" style="display: inline-block;color: white; font-weight: bold; font-style: italic; text-shadow: 1px 1px 5px black;"><b>Sakurink Control Panel</b></div></div><br/><div>Dev version</div></div><div id="settings-info-Content"><h3>部分属性检测</h3><style type="text/css">.hasSupportCheck .hasSupport {
+  display: none;
+  }
+  .hasSupportCheck .hasNonsupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasSupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasNonsupport {
+  display: none;
+  }</style><div class="hasSupportCheck"><div class="hasSupportCheckFlag"></div><p><b>:has() CSS -></b><span class="hasSupport">支持</span><span class="hasNonsupport">不支持，尝试使用兼容方案（效果可能不佳）</span></p></div><br/><h3>系统信息</h3><p><b>UserAgent-></b><span id="userAgent"></span></p><p><b>Language-></b><span id="language"></span></p><p><b>Platform-></b><span id="platform"></span></p><p><b>MaxTouchPoints-></b><span id="maxTouchPoints"></span></p><!-- <p><b>Referrer-></b><span id="referrer"></span></p>--><p><b>Browser-></b><span id="browserName"></span></p><p><b>OSName-></b><span id="osName"></span></p><br/><h3>Chromium</h3><p><b>UserAgentData.brands-></b><span id="userAgentDataBrands"></span></p><p><b>UserAgentData.mobile-></b><span id="userAgentDataMobile"></span></p><p><b>UserAgentData.Platform-></b><span id="userAgentDataPlatform"></span></p></div></div><hr/><div class="fade fade-in" id="settingWidget"><div class="sp-cal-card"><div class="sp-cal-header"><div><i class="fas fa-calendar-alt"></i><span id="sp-cal-monthYear"></span></div><button class="sp-cal-button" id="sp-cal-prevMonth">上个月</button><button class="sp-cal-button" id="sp-cal-nextMonth">下个月</button><button class="sp-cal-button" id="sp-cal-today">回到今日</button></div><div class="sp-calendar" id="sp-cal-calendar"><div class="sp-cal-days-of-week"><div class="sp-cal-day">一</div><div class="sp-cal-day">二</div><div class="sp-cal-day">三</div><div class="sp-cal-day">四</div><div class="sp-cal-day">五</div><div class="sp-cal-day">六</div><div class="sp-cal-day">日</div></div></div></div></div></div><div id="settingBottomBar"><button id="settingScrollToTop"><i class="fas fa-arrow-up"></i>返回顶部</button><button onclick="clearLocalStorage()"><i class="fas fa-arrows-rotate"></i>还原设置</button><button id="settingFullScreen"><i class="fas fa-expand"></i>全屏</button><button id="menu-darkmode"><i class="fas fa-moon"></i>昼夜切换</button></div></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@latest/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://npm.elemecdn.com/katex@latest/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"reaction":false,"search":false}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://apivc-waline.sakurink.eu.org',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.min.css')
+        .then(() => import('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.umd.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !true) {
+    if (true) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script defer src="/js/reurl.js"></script><script defer data-pjax src="/js/sakurink.js"></script><canvas id="universe"></canvas><script defer data-pjax src="/js/universe.js"></script><div th:fragment="lantern" id="lantern" style="display: none;"><div class="lantern-box-1"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">节</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div><div class="lantern-box-2"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">春</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div></div> 
+<script defer src="/js/consolex.js"></script><meting-js class="aplayerBgMusic" server="netease" type="playlist" id="8735348027" fixed="true" mini="true" volume="0.2" listFolded="true" preload="none" autoplay="false" muted></meting-js><link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css" /><script defer src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script><script defer src="/js/Meting-sr.min.js"></script><script async src="/js/runtime.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://npm.elemecdn.com/pjax@latest/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.3"></script></div></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

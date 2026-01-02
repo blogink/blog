@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>WindowsMobile 的前世今生 | 雨梦清欢</title><meta name="author" content="R҉anm⌬"><meta name="copyright" content="R҉anm⌬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="永恒的经典，时代的眼泪，十年的悲歌。Windows Mobile，感谢你曾经来过。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WindowsMobile 的前世今生">
+<meta property="og:url" content="https://blog.sakurink.eu.org/posts/4068197923/index.html">
+<meta property="og:site_name" content="雨梦清欢">
+<meta property="og:description" content="永恒的经典，时代的眼泪，十年的悲歌。Windows Mobile，感谢你曾经来过。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg">
+<meta property="article:published_time" content="2023-11-10T06:36:46.000Z">
+<meta property="article:modified_time" content="2023-11-10T06:36:50.000Z">
+<meta property="article:author" content="R҉anm⌬">
+<meta property="article:tag" content="操作系统">
+<meta property="article:tag" content="闲聊随写">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "WindowsMobile 的前世今生",
+  "url": "https://blog.sakurink.eu.org/posts/4068197923/",
+  "image": "//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg",
+  "datePublished": "2023-11-10T06:36:46.000Z",
+  "dateModified": "2023-11-10T06:36:50.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "R҉anm⌬",
+      "url": "https://blog.sakurink.eu.org"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.sakurink.eu.org/posts/4068197923/index.html"><link rel="preconnect" href="https://npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@latest/css/all.min.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://npm.elemecdn.com/@egjs/infinitegrid@latest/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'WindowsMobile 的前世今生',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="robots" content="noarchive"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="referrer" content="no-referrer-when-downgrade" /><noscript>
+  <strong>
+    本站需要启用JavaScript才能运行
+  </strong>
+</noscript>
+<!-- JefCounts 统计代码 -->
+<script>
+(function() {
+    var script = document.createElement('script');
+    script.src = 'https://tj.lolic.dpdns.org/assets/js/analytics.js';
+    script.defer = true;
+    script.setAttribute('data-site-key', 'f6f1efe881864731');
+    script.setAttribute('data-endpoint', 'https://tj.lolic.dpdns.org/api/track.php');
+    document.head.appendChild(script);
+})();
+</script>
+<!-- JefCounts 统计代码结束 -->
+<!-- MS Clarify 统计代码 -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ud49s1v4vh");
+</script>
+<!-- MS Clarify 统计代码结束 -->
+<link rel="stylesheet" href="/css/sakurink.css"/><link rel="stylesheet" href="/css/consolex.css"/><link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/JiangChengYuanTi-400W/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Normal/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSerifSC-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="/css/lanterns.css" media="only x" onload="this.onload=null;this.media='all'"><link rel="stylesheet" href="/css/runtime.css"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="雨梦清欢" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="雨梦清欢" type="application/rss+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/css/pace1.css"/><script src="https://npm.elemecdn.com/pace-js@latest/pace.min.js"></script><div class="bg-animation" id="web_bg" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/background_img.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">雨梦清欢</span></a><a class="nav-page-title" href="/"><span class="site-name">WindowsMobile 的前世今生</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">WindowsMobile 的前世今生</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-10T06:36:46.000Z" title="发表于 2023-11-10 14:36:46">2023-11-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-10T06:36:50.000Z" title="更新于 2023-11-10 14:36:50">2023-11-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">8.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>26分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="早期微软探索移动平台的历程">早期微软探索移动平台的历程</h2>
+<h3 id="移动设备梦的开始">移动设备梦的开始</h3>
+<p>1996 年 Windows CE 诞生，最初的版本是基于 Windows95 精简开发，适用于移动平台和嵌入式设备，界面继承了微软的经典元素开始菜单。1997 年，微软发布了 Windows CE1.0，于次年升级为 WinCE2.0。到了 2000 年，微软将其升级为 Pocket PC 2000， 2002 年，微软推出了 Pocket PC Phone，同时期还推出 Smartphone 2002 系统。</p>
+<p>为了统一，微软将其更名为 Windows Mobile 2003，也就是 Windows Phone 的前身，不过当时的 WM 还有许多地方不够完善。微软后续升级都是以操作系统的内核版本命名的。</p>
+<p><img src="https://s2.loli.net/2023/11/11/TYSHWJoLlDOVpge.png" alt="【wm 与 wince】" title="【wm 与 wince】"></p>
+<p>微软构想的商业模式也和 PC 一样——微软做操作系统，手机生产商生产硬件，并为每一部搭载 Windows 系统的手机支付授权费。</p>
+<p>那时，比尔·盖茨向诺基亚频频示好，希望这个快速成长的手机巨头加入自己，双方当时还在推进一个名为 Phoenix 的计划。</p>
+<p>然而诺基亚不希望像 PC 厂商给微软当苦力。1998 年 6 月，诺基亚联合当时的手机市场前几名厂商爱立信、松下、摩托罗拉投资了英国 PDA 公司 Psion 拆分出来的软件部门，成立了 Symbian 公司。</p>
+<p>感觉被背叛的盖茨愤怒地在写下那封著名的邮件：“我们很失望，诺基亚从来没有告诉我们他们要联合起来。”“不管 Symbian 做什么，对我们都是有害的。”</p>
+<p>1999 年 3 月，Symbian 5.0 操作系统问世。它能打电话，能上网，能发邮件，还支持 Java 第三方应用，比 Windows CE 好用很多。</p>
+<p>之后，索尼、三洋、富士通等公司也加入了 Symbian 联盟。</p>
+<p>自己不制造硬件，依靠第三方厂商的微软已经无人可以合作了，只好找了当时没人知道，靠代工生意起家的 HTC 公司。但智能手机首先得是一个好的手机、有吸引人的硬件。HTC 明显不是特别擅长这事。</p>
+<p>到 2003 年，全球智能手机市场中，Symbian 占 66.6%，微软只有 22%。</p>
+<p>前 iPhone 时代，微软放弃了正确的路</p>
+<h3 id="Windows-Mobile">Windows Mobile</h3>
+<h4 id="触屏？">触屏？</h4>
+<p>从 PocketPC 2000 开始，微软的手机操作系统就支持触屏。但微软的触屏是为笔设计的，甚至还得去点屏幕左上角的开始菜单。</p>
+<p>不能否认，和键盘手机相比，触屏才是有未来的道路，只是需要大的改进。但当触屏手机卖不下去以后，微软掉头转向键盘设计。</p>
+<p>2005 年，微软和曾经的对手，已经拆分操作系统的 Palm 宣布合作，推出了搭载 Windows Mobile5 的 Treo 700W，它有全键盘也有触屏，操作界面却没有什么大改动，Windows Mobile 就像强行塞进去的。</p>
+<p>2006 年，微软又和摩托罗拉合作，推出了 Q 系列全键盘 Windows Mobile 手机。这次更极端，摩托罗拉 Q9 干脆不支持触屏了。</p>
+<p>这个时候，苹果的 iPhone 已经在研发中了。2007 年 Macworld 大会上，乔布斯把摩托罗拉 Q、Palm Treo、黑莓、和诺基亚 E92 示众了一番，用来衬托 iPhone 的交互方式多么有未来，并嘲笑竞争对手微软没有像苹果一样花几年时间去解决触屏的挑战，而是选择掉头和依赖键盘的传统竞争对手做一样的东西。</p>
+<h4 id="延迟的觉悟">延迟的觉悟</h4>
+<p>微软最重要的合作伙伴 HTC 已经很清楚触屏才是未来，与 iPhone 发布同一年，HTC 在 2007 年 6 月发布了 HTCTouch。这台手机虽然使用了 Windows Mobile，但是第一次有了一个全新的用户界面，更方便手指操作。由于微软自己不为手指操控做优化，HTC 定制了名为 Touch FLO 的界面——这样改进操作系统自身不足的尝试后来被 HTC 沿用到 Android 系统上，推出了 Sense。</p>
+<p>熟悉 HTC 的人肯定知道，HTC 有一台著名的手机：HTC HD2。这台手机使用的 HTC Sense 界面非常精美，使用多点触控的电容屏幕，不需要手写笔，HD2 几乎看不出是使用 Windows 系统的手机。</p>
+<p><img src="https://s2.loli.net/2023/11/11/y3uioAMVlOxpZDC.png" alt="【HTC-HD2】" title="【HTC-HD2】"></p>
+<p>只可惜，它诞生在 2009 年，iPhone 在 2007 年就把手指的问题解决了，而且解决得更好。</p>
+<p>iPhone 的发布刺激到了所有的手机厂商，微软也在内。但 Google 反应很快，有一个故事这样描述了当时 Android 负责人安迪·鲁宾的反应。在 iPhone 发布的当天上午，他正要去 CES 展会上和运营商们见面。他看到电视里乔布斯手中的 iPhone 无比惊讶，当即让司机停车，好在网上看完发布会。他对正在酝酿的 Android 的未来这么评价：“我猜我们的手机不会发布了。”</p>
+<p>后来我们知道了，当时的 Android 使用全键盘设计，原型机看起来很像黑莓。一年之后，用户界面推倒重来的 Android 1.0 亮相了。</p>
+<p><img src="https://s2.loli.net/2023/11/11/6dwKPtLCxevc3rU.png" alt="【Android1.0】" title="【Android1.0】"></p>
+<p>实际上市的第一代 Android 手机 HTC Dream，很明显触屏的重要性被提高了。相对于迅速推倒重来转型的 Google Android，微软在 iPhone 发布之后非常迷茫，继续固守着。</p>
+<p>2007 年 1 月，iPhone 发布。2 月，微软发布了 Windows Mobile 6.0。2008 年 4 月，小修小补的 Windows Mobile6.1 发布。直到 2009 年中，微软还在忙着推进 Windows Mobile6.5 的更新——和 iPhone 相比，依然是小修小补。</p>
+<p>同样在 2007 年，Google 联合 HTC、博通、LG、三星等公司成立开放手持设备联盟，2008 年，第一台消费版 Android 手机 HTCG1 诞生。2009 年，Android 快速迭代到了 1.5 版，支持了虚拟键盘，重力传感器和包括中文在内的多语言。</p>
+<p>这个时候，iPhone 3GS 已经发布，App Store 已经上线了快一年。面对强势的 iPhone，越来越多的运营商、手机厂商选择了友好、开源的 Android。</p>
+<p>讽刺的是，在 Google 内部顶住压力，推动 Android 系统的安迪·鲁宾曾在微软短暂工作——他早年的手机创业公司 Danger 被微软收购，但收购后不久他便离开微软创办 Android，又带着 Android 加入 Google。</p>
+<p>2010 年，为手指操控重新开发的 Windows Phone 7 发布。但就在同年，美国第一大运营商 Verizon 联合摩托罗拉推出 Android 手机 Droid，这是第一部销量超过百万的 Android 手机。之后不久，三星发布 Galaxy S，开启了今天最成功的高端 Android 系列手机。</p>
+<p>事实上，到了 2008 年 Window Mobile 6.1 时，微软在内部就已经将 Window Mobile 系统更名为 Windows Phone，并着手研究新系统，由于研发周期的问题，中间将 Window Mobile 6.5 系统当做过渡版本，直到 2010 年，微软正式将 Window Mobile 系统更名为 Windows Phone，发布了 Windows Phone 7 系统。</p>
+<h3 id="保守的结果">保守的结果</h3>
+<p>我们稍微回顾，就会发现比尔盖兹对 IT 行业的发展是有预见性的。今天很多流行的 IT 产品都是微软先做了雏形。微软做 TablePC 比后来苹果的平板电脑早了好几年，在大家还不知道机顶盒为何物的时候，微软已经在搞维纳斯计划。在智能手机上也是微软在 2003 年就开始正式把 PC 上的体验移植到手机。</p>
+<p>从 2003 年到 2007 年，市面上的智能手机中，微软算是主流产品，拥有多个厂商的支持，拥有最好的产品，颇有后来安卓的意思。当时微软有最好的生态系统，而其他家的所谓智能手机，只是自娱自乐，而诺基亚傻到一个操作系统还要分互不兼容的多个版本，微软占据了先发优势，但是故步自封害了微软。</p>
+<p>在 iPhone 之前，尽管 WM 更新了多个版本，但是整整 4 年的时间，微软的系统几乎没有什么大变化，只能支持 65536 色，一如既往的难看 UI，处理器几乎没有什么大升级，常年的 QVGA 分辨率。当真正的竞争对手 iOS 和安卓来临，微软突然发现自己多年的先发优势一下成了泡影。苹果一出手就用了市面上的最好的硬件，达到了最好的体验。而微软过去 4 年在虚度光阴。</p>
+<p>技术上的保守让微软浪费了先发优势。其实，第一版的 IOS 不过是 Windows XP 级别的水平，微软并非没有能力拿出来，但是保守害了微软。</p>
+<h2 id="全新的开始——Windows-Phone">全新的开始——Windows Phone</h2>
+<blockquote>
+<p>因为一枚铁钉，而丢失了一只马掌；因为一只马掌，而失去了一匹好马；因为失去一匹好马，而使得信使没有及时送达重要的情报；因为没有收到重要的情报，而导致一座城池没能守住；因为丢失了一座城池，而导致最后输掉了整场战争。</p>
+</blockquote>
+<h3 id="前途大好的-WP7">前途大好的 WP7</h3>
+<p>面对苹果的冲击，微软初期还有一战之力，HTC 的几款 WM 机器做得不错，UI 也很漂亮。WM 的生态系统积累多年，相比初出茅庐的苹果还有一些优势。在苹果应用商店出现之前，很多事情是 WM 手机能干而 iPhone 干不了的，而安卓来得更晚。当时 WM 的手机销量还很不错。</p>
+<p>2010 年 2 月，微软展示了自家的 Windows Phone 系统。2010 年 10 月发布的 Windows Phone 7 是一款重要的产品，它的界面设计独具风格，不像 Android 一味模仿 iPhone。超前的设计语言后来也被其他产品模仿。随后发布了安装有该系统的手机，主要有：诺基亚、三星、HTC 等，同时与诺基亚达成了战略性的合作。</p>
+<p>Windows Phone 7，无论是 Panorama 全景式导航的创新，还是对 Back 导航的重新定义、多任务处理，都提供了极具启发性的方案。尤其是多任务处理的“墓碑机制”，在当时 iOS 才刚刚开始尝试支持多任务，Android 因为真后台导致续航一直难看。Windows Phone 的优势是相当明显的。</p>
+<p>然而系统无论怎么好看，最终还是要给用户使用的。可惜，它无法建立起应用生态，甚至连基本的功能都有所缺失。理念超前，生态不好，WP 系统的结局仿佛已可以预见。</p>
+<h3 id="惨不忍睹的决策">惨不忍睹的决策</h3>
+<p>微软这个时候出了一个大昏招。营销出身的鲍尔默恰恰在这个时候接手了微软，此后一系列的决策惨不忍睹。</p>
+<p>客观地说，Windows Phone 7 发布之初被大规模抨击的缺点，比如缺少复制粘贴功能并不算是非常严重。至少，iPhone 初代发布的时候，也没有复制粘贴和多任务。但是，iPhone 在 2007 年可以有这些缺点，迟到 3 年的 Windows Phone 7 不行，因为它是后来者。</p>
+<p>微软选择 iPhone 竞争不只是在消费者面前有问题，也没法说服厂商。第三方厂商使用 Android 不需要缴纳授权费，而微软对每一台 Windows Phone 都收数十美元的授权费。</p>
+<p>同时，厂商不能调整 Windows Phone 的界面——微软将统一的设计作为与 iPhone 竞争的重点。结果是任何品牌的 Windows Phone 7 手机都一个样，几乎没有任何区别。手机厂商不会将无法凸显自己差异化的平台当作主力。</p>
+<p>如果说这些还不至于流失大量用户，那么，2010 年微软发布的基于 Windows<br>
+CE 内核的 Windows Phone 7 便“完美地”补了一刀。它采用了颠覆性的 Metro UI（后称 Modern UI），但由于内核更换，现有的 Windows Mobile 6.5 机型无法升级。</p>
+<p>微软的 WP7 发布之出便抛弃了老用户，而且系统还跟个半成品一样，用户体验很差。在这一时候，微软手机的用户数量开始不断下滑。</p>
+<p>当时的 Android 系统和 iOS 系统在手机市场已经绘声绘色。与此同时，老旧的 Symbian 系统面对 Android 系统以及 iOS 系统颓势尽显，市场份额不断地被挤压。此时的诺基亚似乎也意识到如果继续依靠 Symbian 系统已经无法挽救诺基亚当时的颓势，然而一向高傲的诺基亚却坚持不肯采用作为竞争对手的 Android 系统。</p>
+<p>2010 年 10 月，Android 的市场占有率已经达到 30%。选择和 iPhone 竞争，微软失去了抢夺 Android 客户的机会。</p>
+<h3 id="与-NOKIA-合作的开始">与 NOKIA 合作的开始</h3>
+<p>2011 年 2 月 11 日下午，微软终于拉到了一个全力以赴的重量级合作伙伴——诺基亚。当时微软最新的 Windows Phone 7 系统也成为诺基亚的主要手机操作系统，诺基亚后续机型也将继续使用 Windows Phone 系统。</p>
+<p>即使当时的诺基亚已经在走下坡路，但其市场份额依然是全球第一，凭借着诺基亚强大的品牌影响力，WP 用户迎来了一小波上升。签署合作协议之后，诺基亚很快就发布了 Lumia 800、Lumia 900 等机型。到 2012 年年底，Windows Phone 系统的份额达到 3.9％，虽然与目标的 20% 相距不小，但却是一个好的开端。</p>
+<p><img src="https://s2.loli.net/2023/11/11/VFHtlCfdr5G8juo.png" alt="【Lumia800】" title="【Lumia800】"></p>
+<p>在和微软合作之前，诺基亚曾和 Google 进行过加入 Android 阵营的谈判，但 Google 不愿意给诺基亚特惠。</p>
+<p>遗憾的是，诺基亚当时可能根本没意识到与微软合作不但不会帮它，还会拖慢它的速度。</p>
+<h3 id="WP7-设计团队的昏招">WP7 设计团队的昏招</h3>
+<p>负责 WP7 Metro UI 的是微软设计总监 Flora，选了格子界面的所谓 Metro 风格。不幸的是，使用 Metro 风格的 Zune（微软曾经发布的一款 MP3 播放器），被市场证明是惨败于苹果的。最好的时候，Zune 在美国市场份额是 9%，iPod 当时是 63%，而到了 2011 年 5 月，iPod 的北美市场份额 76%，Zune 还不到 1%。Albert Shum 担任微软移动设计团队主管。他除了负责 WP7 的设计，还负责已经被人遗忘的 KIN 系列手机的设计。</p>
+<p><img src="https://s2.loli.net/2023/11/11/9Slsfx2nmBIKGUQ.jpg" alt="【Zune】" title="【Zune】"></p>
+<p>WP7 项目开始于 2008 年 11 月，新的主管来到，直接废掉了开发了一年多的 Windows Mobile 7，并要求在一年以内拿出产品 这个产品就是 WP7，因为一年时间的紧张限制，微软使用了大量以前的成果。Windows Phone 团队高级体验设计师 MichaelKruzeniski 说：“我们围绕 Kin 打造了很多出色的东西。这款产品虽然已经停售……但它的绝大部分已经被直接或间接地整合进 Windows Phone。”</p>
+<p>就是这样一个被市场证明失败的团队打造了 WP7 系统，打造了 WP7 的体验。所以 WP7 的早期体验非常糟糕，相比 WM 也是一个大倒退。当时 WP7 被吐槽的包括没有流量控制功能、只能用 Zune 同步音乐和图片，没有 USB 传输功能，也没有蓝牙或 WiFi 传输、没有 USB 存储功能、没有第三方中文输入法、重力感应无法关闭、音量无法单独调节等等。WP7 的早期版本基本就是一个半成品。</p>
+<p>而更糟的是微软学习了 iOS 的封闭经验，几乎不允许第三方改动什么东西。让糟糕的原生的体验不能通过第三方开发来弥补。同时，WP7 还废掉了多年积累的 WM 生态体统，需要重建一套自己的生态系统。相比同期的 IOS 和安卓，WP7 的体验差距实在是太大了，营销出身的鲍尔默无论如何努力都难获得销量。</p>
+<h2 id="Windows-Phone-8，生死攸关的决定">Windows Phone 8，生死攸关的决定</h2>
+<h3 id="WP7-不能升级-WP8？！">WP7 不能升级 WP8？！</h3>
+<p><img src="https://s2.loli.net/2023/11/11/LkNK2j7Vuh5dwzX.png" alt="【Win8 与 WP8】" title="【Win8 与 WP8】"></p>
+<p>【注：图中的桌面系统实际上是 Win8.1。Win8 设计超前两步成了先烈，这里就不鞭尸了】</p>
+<p>2011 年合作刚开始，微软的 Windows Phone 系统更新突然停了下来。一直到 2012 年夏天，Windows Phone 8 发布。</p>
+<p>微软骄傲地宣布，Windows Phone 8 是一个全新的开始，放弃了 Windows CE 核心，使用和 Windows8 一样的 Windows NT，未来 Windows 上的应用能直接通用，手机和 PC 能无缝协作。</p>
+<p>但是，由于操作系统的内核改变，WP8 不支持所有的 WP 7.X 升级系统，因为驱动无法兼容。当时消息一传出，各处 WP 用户都在讨论旧机型能不能升级，包括微软在内，给出的结果都是模棱两可的。最终尘埃落定，不能升级，而是给 WP7.X 了一个安慰性更新——WP 7.8。</p>
+<p>当时已有华为、中兴、三星、HTC、LG 等品牌与微软合作推出了搭载 WP7 的手机，这操作下来，等于说它们的心血付之东流，软件开发者更是——谁会买一部一眼望到头的手机呢？值得一提的是，当时第一批 WP7 手机上市不足两年；WP8 开发者大会召开十月前 Lumia900 刚刚发布，国行版更是六月才正式上市。</p>
+<p>WP8 放弃了 WP7 用户，wp7 的粉丝必须购买新设备才能使用当时最前沿的 wp8。这个举动让原本庞大的粉丝群数量骤减，甚至直接导致了 wp8 的衰落。抛弃旧用户，新用户又不买账，这无疑是赔了夫人又折兵。</p>
+<p>当时，搭载 WP7 系统的设备大概有几百万用户。于是，Lumia 820、Lumia 920 先后面世，2.5D 弧面玻璃、卡尔蔡司认证镜头、无线座充等超前的功能设计，把诺基亚多年来沉淀的工艺设计发挥得淋漓尽致。这些操作下来，挽回了一部分用户。之后的 Lumia 720、Lumia 520、Lumia 1020（尤其是其相机）等也受到了不小的好评。</p>
+<h3 id="时局的变换">时局的变换</h3>
+<p>同期的 Android 和 iOS 系统也在不断扩充自己的份额，尽管诺基亚很努力的做手机，却依旧无法挽救 Windows Phone 落败的局面。WP 的口碑和生态继续下滑。</p>
+<p>iPhone 推出之初，诺基亚、黑莓、微软都公开嘲讽这个竞争对手。但背地里，诺基亚和黑莓的管理层已经行动起来。诺基亚提高了触屏 Linux 操作系统 Maemo 的优先级，黑莓也在 2008 年拿出触屏手机 Storm 反击。最终这两个不太会做平台和软件的手机厂商没能追上苹果和 Google。</p>
+<p>而微软有更强大的软件工程能力和平台经验（Windows 就是曾经最大的平台），却不紧不慢地推进着 Windows 手机，甚至让移动系统的研发停下来等 Windows 8。</p>
+<p>诺基亚最讽刺的产品可能是 2012 年推出的拍照手机 Pureview 808——有着 4100 万像素的巨大传感器。在宣布放弃 Symbian、转投 Windows 一年后，诺基亚用 Symbian 系统做了这样一款产品。原因？微软 Windows Phone 8 没来，不支持相机模块所需要的处理器。</p>
+<p><img src="https://s2.loli.net/2023/11/11/iv2lhOoVKycp97I.png" alt="【nokia808】" title="【nokia808】"></p>
+<p>一系列失败，微软失去的机会价值 6000 亿美元</p>
+<h3 id="API-升级，软件更新请重来">API 升级，软件更新请重来</h3>
+<p>在 WP8 更换内核后，WP8.1 又更换了 API，导致第三方应用如果要更新的话，只能重新开发，加大了工作量，而对于 WP 平台而言，第三方开发者多为个人或者小工作室，于是，他们选择离开……</p>
+<h3 id="恶性循环">恶性循环</h3>
+<p>在产品刚刚起步的紧要关头，为什么微软会再一次推倒重来，把重点放在内核上？</p>
+<p>微软公司内部，是按照产品线区分部门，并且每个部门都有自己的市场和销售，有单独的营收数字。这样的结构下，赚钱多的部门话语权自然就大。</p>
+<p>微软的移动业务原本属于 Windows Phone 团队。但当移动成为趋势以后，Windows 部门想要介入。这时，微软做手机的优先级从快速完善产品追赶 Android 和 iPhone，变成了与 PC 业务配合——用一个统一的 Windows8 操作系统覆盖手机和 PC。</p>
+<p>但是，微软却没有对 WP 的体验和生态做出改变，后来的 WP8 居然坚持了 WP7 的设计风格。而这时时间窗口已经开始逐渐关闭。此时，IOS 和安卓开始一统天下。形成良性循环。而 WP 处于恶性循环之中，体验糟糕，销量少，第三方不给开发，生态建立不起来，体验更糟糕。</p>
+<p>而诺基亚等待 Windows Phone 8 的两年里，iPhone 销量翻了三倍、Android 翻了六倍多。</p>
+<h2 id="姗姗来迟的-Windows-10-Mobile">姗姗来迟的 Windows 10 Mobile</h2>
+<h3 id="旗舰机的长期缺失">旗舰机的长期缺失</h3>
+<p>话说自从诺基亚推出 Lumia930 以后，有多久没有发旗舰了，并且这个 Lumia930 还是半年前 Lumia929 的国际版！可以说从 2013 年下半年到 2015 年末，微软竟然没推出一款真正意义上的旗舰！微软意识到低端设备对 WP 系统的意义，可以靠性价比提高出货量，获取更多的用户，这个思路是对的，但是也要适可而止啊，别一条道上走黑啊，说好的旗舰呢？</p>
+<p>别说国内厂商一年 12 场发布会，连一向高傲的苹果都放弃了一年一机的战略，从一年双旗舰变成今年春季就开始一反常态的推出新款机型。微软两年的时间，除了几款不痛不痒的中低端手机，竟然一直保持沉默……</p>
+<h3 id="WP10-全新的功能">WP10 全新的功能</h3>
+<p>2014 年 11 月 11 日，旗舰手机 Lumia 940 发布，微软宣布使用 Windows Phone 10 为该手机的操作系统；12 月 11 日，微软宣布 Windows Phone 10 首个新功能–交互式动态磁贴。2015 年 1 月 22 日，微软将 Windows Phone 10 更名为 Windows 10 for Phone;2 月 13 日，微软正式向部分手机公开推送 Windows 10 Technical Previewfor Phone;5 月 14 日，微软确定将 Windows 10 移动版命名为&quot;Windows 10 Mobile&quot; 。2016 年 3 月 18 日，Windows 10 Mobile 版本 1511 的正式版首次发布 ;8 月 17 日，Windows 10 Mobile 版本 1607 的正式版首次发布 。2017 年 11 月 14 日，Windows 10 Mobile 版本 1709 的正式版首次发布。</p>
+<p>或许是于是 WP 系统应用生态太差的原因，微软为 Windows 10 Mobile 定制了全新的应用商店，与 Windows 10 PC 应用商店统一，开发者可以同时发布智能手机、桌面版 UWP 应用，且 UWP 应用性能更强，使用起来更加顺畅。应用商店也引入了更加直观的应用分类、应用呈现方式，幻灯片滚动推荐最新或优质应用，另外针对已经升级到 UWP 的应用标注&quot;为 Windows 10 生成&quot;，方便用户下载最合适的应用更新版本。</p>
+<p>正如此前微软 Lumia 532 所泄露的信息一样，Windows10 系统手机版本彻底贯彻了微软系统&quot;全平台一体化&quot;的主旨，被正式命名为 Windows10 for Phone 系统。同时新系统相比过去进行了较大的改动，拥有全新的开始屏幕，并采用了整张背景图片设计，而动态磁贴则保留了 WP8.1 上的大部分功能。而如果用户向左滑动开始屏幕，则将出现应用列表新增排序功能，并加入 Win8 系统所具备的最近使用或者按时间排序等功能。</p>
+<p>不仅如此，Win10 手机系统的通知中心与 Win10 电脑版还可以实现无缝链接，并且快速操作也可以折叠或是加入更多选项。至于新系统的设置方面，则相比过去分类更加简洁，可分为折叠和分组管理，用户使用起来可谓一目了然。除此之外，可交互通知操作功能则使得诸如短信操作，可以直接在状态栏接通或者回复，较之过去更快速便捷。至于可缩放的移动键盘和语音输入法，不仅可以解决单手输入的问题，而且使用起来也更方便。</p>
+<p>同时，有消息传出，Windows 10 Mobile 的 10240 固件中有 AOW 环境，其中含有几个配置文件和一个镜像文件。这个镜像文件解包后会得到一个几乎完整的 Android4.4.4 的系统，包含了安卓的大部分核心文件。西班牙一位大神开发了一套工具，可以将安卓的 APK 安装包转换为 APPX 文件，以达到 WP 运行 APK 的目的。</p>
+<h3 id="无法挽回的过失">无法挽回的过失</h3>
+<p>三年过去，微软正式宣布 Windows 10 大一统计划。同年 7 月，Windows 10 桌面版正式发布。在比桌面版晚了近八个月后，Windows 10 Mobile 正式发布。</p>
+<p>Windows 10 Mobile 使用了与桌面版 Windows 10 相同的内核，可以运行一些与 Windows 10 相同的应用。然而，它又一次抛弃了老用户，老机型又是无法升级——大约是所有 WP 的一半。</p>
+<p>此时的 wp 用户已经少之又少，而频繁的内核更换也使软件的开发难上加难。而软件开发的不容易直接导致了软件生态的缺失，微信无法扫码付款，支付宝是最早的版本，无数软件依旧是 Beta 版本，等等。这些致命的软件缺点直接导致了用户的缺失，因此形成恶性循环。</p>
+<p>wp10 也不是 wp10，而是改名成为了 Windows 10 mobile。用户的软件可以和安装 win10 的电脑同步更新，便有了拉 win10 电脑端用户入坑的动力。而且，uwp 软件的出现，使得软件开发变得十分容易，从而一大批优秀 uwp 的软件应运而生。</p>
+<p>但是，wp10 的一些缺点依旧得不到改正，比如大软件的优化和系统流畅度依旧得不到解决。可以说，wp10 就是微软移动的救命稻草了。然而如今，WP 仅仅成为了用户的情怀，小娜仅剩搜索功能，应用商店显示跑路，无不透露着衰败和凄凉。</p>
+<p>当年微软弄出 uwp 时，wp 用户充满希望，因为很快他们手机的生态将起死回生。然而结果，大家也都看到了，依然不行。</p>
+<h3 id="缓慢的更新速度">缓慢的更新速度</h3>
+<p>不过更确信的是 win10 移动版的研发跟不上，研发团队一如既往的保持和蜗牛进行赛跑。直到 2016 年 3 月中旬，windows 10 mobile 正式版才千呼万唤始出来，还 BUG 不断，这离 2012 年 wp8 发布过了近 4 年！</p>
+<p>相比于 iOS 和 Android，WP 在软件应用数量上也屈指可数，更别提更新速度了。你微软系统更新乱七八糟，到头来用户只会骂我们开发者，而且份额做不起来，没盈利，谁还陪你玩？</p>
+<p>这研发速度和水准，简直……即使如此，微软竟一如作死的重蹈 wp7.5 时的坑，除了少部分新机型外，包括 Lumia920 等旗舰机型都不在升级范围呢。这是第几回抛弃老用户了？再忠心的软粉也架不住这样再三折腾啊！于是，他们纷纷选择了“脱坑”。</p>
+<p>研发跟不上导致的后果就是当作为旗舰的 Lumia950 和 Lumia950XL 发布时，搭载的还是预览版的系统，而这台手机明显就是为了撑场面发布的，除了虹膜扫描技术及 Continuum 稍显逼格外，这两部手机无论从做工还是设计，只能用凑合来形容。</p>
+<p><img src="https://s2.loli.net/2023/11/11/NOH4IWYtrSmcKiU.png" alt="【Lumia950XL】" title="【Lumia950XL】"></p>
+<p>凑合，成为 windows 10 手机最大的标记，无论是系统还是硬件——这与当年 Lumia800 惊艳亮相简直不能同日而语！就这样，采用骁龙 808 处理器的 Lumia950 的定价竟然高达 3999，采用骁龙 810 处理器的 Lumia950XL 定价高达 5499。</p>
+<p>后来 Lumia 950 XL 的售价逐渐下降，甚至出现了“买 950XL 送 950”这样的活动。然而这终究没能挽回用户。随后各大平台下架 Lumia，甚至最终微软官网也没有 Lumia 了。谁还记得当年诺基亚宣布与微软达成战略合作关系时给这系列起名的寓意？作为“诺基亚最后的王牌”，其结局落到如此地步，恐怕是诺基亚当年没能想到的。不过这一结局，意料之外，情理之中。</p>
+<h2 id="今天微软的移动市场">今天微软的移动市场</h2>
+<p>2012 年之后，移动市场已经和微软没什么真正的关系，尽管它花费超过 90 亿美元收购诺基亚。到今天，这笔钱已经被彻底浪费，随着诺基亚来到微软的两万多员工已经被全部裁掉，微软之后也放弃了诺基亚品牌。后来，微软便把移动平台的重心寄托于 Surface，并且大获成功。之后微软也发布过 Surface Duo 折叠手机，但却搭载了安卓系统，且 bug 较多。除了这白花的 72 亿美元，微软还丧失了统治智能手机市场的机会。</p>
+<p>从 2019 年 12 月 10 日开始，Windows 10 移动版用户将不能再收到 Microsoft（微软）新的安全更新、非安全修补程序、免费的协助支持选项或联机技术内容更新。微软会在 2019 年 12 月 10 日为 Windows 10 移动版用户推送最后一次更新，只有升级到 Windows 10 移动版 1709（秋季创意者更新）的设备才会收到，而且支持机型少之又少。</p>
+<p>在终止支持以后，接下来 3 个月将继续为设置和部分应用程序自动或手动创建新的设备备份，到 2020 年 3 月 10 日结束。</p>
+<p>微软将在 2021 年 1 月 12 日停止对 Windows 10 Mobile 上的 Office 应用程序的支持，包括 Word、Excel、PowerPoint、OneNote 四大组件。并表示在此之后相关 Office 软件的下载链接将会被删除，用户无法再通过官方渠道获取，而已安装的用户可继续使用，只是不会再得到任何维护支持，风险自负。</p>
+<p><strong>至此，Windows 移动版的一生画上了句号。</strong></p>
+<p>那么，iOS 与 Android 那边又如何？</p>
+<p>从 2007 年 iPhone 发布至今，苹果靠卖 iPhone 一共获得了 5977 亿美元的收入，这还不包括被 iPhone 带动的 AppStore、平板、手表等其它业务的收入。今天 iPhone 和 Android 每个季度的销量都远远超过 Windows 手机＋PC 的全部销量。苹果和 Google 的市值也都远远超过微软。到了 2021 年 10 月，微软市值重回全球第一；靠着 Office、服务器软件和云计算这些企业服务，微软依然很赚钱。</p>
+<p>微软希望能够做出操作系统的大统一，可市场的反馈却表明，它始终未能革自己的命。凡是不能正常运行传统 x86 软件的 Windows 系统，在市场上总是注定要失败的。用户可能会三五年换一部手机，但三五年换一台电脑的恐怕不多。</p>
+<p>无论如何，微软在移动方面基本上再起不能了。</p>
+<h2 id="结尾">结尾</h2>
+<p>永远太远，我们都承诺不起。沧海桑田，一切都不是曾经。</p>
+<p>Windows 10 Mobile、Windows Phone 、Nokia &amp; Lumia，感谢你们曾经来过！</p>
+<p>Windows 10 X、Surface Pro X、Surface Duo、Surface Neo，未来可期！</p>
+<hr>
+<p>2022 年时我无意翻出老旧手机，在上网查询相关资料时偶然间看到这个系统，在好奇心驱动下进行了解。后将其介绍给友人，不想这也勾起了他的好奇，甚至还去购买了一台（当然，是二手市场上）进行研究（不过我更相信那是用于怀念用的）。在当时我与他都希望能收集资料编个什么东西来“缅怀”下这个超前的系统（虽然更多是用于自己看和装 X），于是整合此文。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org">R҉anm⌬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org/posts/4068197923/">https://blog.sakurink.eu.org/posts/4068197923/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.sakurink.eu.org" target="_blank">雨梦清欢</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><a class="post-meta__tags" href="/tags/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</a></div><div class="post-share"><div class="social-share" data-image="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/1670947396/" title="Clash 删库停更事件"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/7.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Clash 删库停更事件</div></div><div class="info-2"><div class="info-item-1">此事件比较魔幻，网络上众说纷纭，具体如何不易得知，在此仅记录些我获知的内容</div></div></div></a><a class="pagination-related" href="/posts/1817611129/" title="Stable Diffusion 是如何生成图像的"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Stable Diffusion 是如何生成图像的</div></div><div class="info-2"><div class="info-item-1">Stable Diffusion 模型是由 Stability AI、LAION 等公司共同开发的生成式模型，可以用于文生图、图生图、图像重绘等。使用者可以通过提示词，基于扩散模型的架构，通过逐步去噪声的方式，将随机噪声转化为清晰图像。得益于其开放性和灵活性，户能够在本地部署运行它；在爱好者和社区的支持下，它的生态发展良好、部署成本逐渐降低。 AUTOMATIC1111 的 stable-diffusion-webui 项目是一个基于 Stable Diffusion 模型的图形化界面，它的出现大大降低了 SD 的使用难度。 早期的 AI 绘图不够成熟，而其算法在经过了不断优化后，到了近...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/3287931156/" title="虚拟机 Ubuntu 安装与配置"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/9.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-15</div><div class="info-item-2">虚拟机 Ubuntu 安装与配置</div></div><div class="info-2"><div class="info-item-1">本文以 Ubuntu20.04 为例 实力作死，把 Ubuntu 虚拟机玩坏了，反正没什么重要东西在里面，遂决定重装当做复习。  省略步骤  虚拟机/实体设备的准备【本文采用 VMware 虚拟机】 对应系统镜像的下载 虚拟机磁盘创建与镜像挂载 或 储存介质与物理机开机启动  系统安装 由于该版本在虚拟机中有时出现分辨率不适配的问题，安装过程中窗口显示不全，可使用Ctrl+Alt+T打开终端输入命令： 1xrandr -s 1280x800 然后按 Enter，暂时改变虚拟机的显示分辨率。 挂载磁盘后启动，等待安装程序加载与检查。 将语言、键盘设置为中文，然后一路 Continue。在安...</div></div></div></a><a class="pagination-related" href="/posts/3827418539/" title="Windows 实用小技巧"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/5.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-10</div><div class="info-item-2">Windows 实用小技巧</div></div><div class="info-2"><div class="info-item-1">文件正在被使用 结束进程 使用Ctrl+Shift+Esc打开任务管理器。在顶部找到性能选项卡并选择，在该页面下方点击打开资源监视器按钮。  之后找到那个提示被占用的文件（夹），复制它的路径（可以通过右键属性-&gt;常规选项卡，找到位置一项，将后面的路径地址复制记录下来，并添加\文件（夹）名称）。也可以在文件资源管理器中找到这个文件，点击上方地址栏并复制其路径；如果是文件则还需手动在路径后面添加文件名称。  例如，如果你提示被占用的文件夹是位于C:\Users\admin\Desktop目录下，名称为demo，则你应记录下的地址为C:\Users\admin\Desktop\demo；...</div></div></div></a><a class="pagination-related" href="/posts/3161555917/" title="VMware 通过宿主机代理连接网络"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/2.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-21</div><div class="info-item-2">VMware 通过宿主机代理连接网络</div></div><div class="info-2"><div class="info-item-1">因为测试和学习研究的需要，我使用了 VMware 软件创建与使用虚拟机。 上回安装完 Ubuntu 之后一直苦于代理工具配置不好，忽然想起可以让虚拟机通过本机代理上网…… 现在部分开发学习环境可以放心挪到虚拟机里了。  本文所介绍仅供技术学习使用，不得利用本文内容进行违反法律、道德的行为，否则后果自负  准备工作 本文写作时的配置环境为：  物理机 Windows 系统 VMware Workstation V2-RayN（安装在物理机系统上）  为行文方便，本文可能使用到的例子如下：  虚拟网络名称 -&gt; VMnet8 虚拟网络中主机的地址 -&gt; 192.168.200.1...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">R҉anm⌬</div><div class="author-info-description">雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://sakurink.eu.org/" target="_blank" title=""><i class="fas fa-feather-alt"></i></a><a class="social-icon" href="https://blog.sakurink.eu.org/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">站点速度较慢，请等待全部加载完成后再进行操作，体验更佳。如果发现页面加载故障，请善用刷新。本站所有内容仅供参考，请谨慎使用，不得将其用于违规行为，否则后果自负。【当前域名请使用"https://"访问，否则大概率要被重置连接】</div></div><div class="card-widget card-ctools" id="card-ctools"><div class="item-headline"><i class="fas fa-tools"></i><span>控制器</span></div><div class="item-content"><span class="button-bfblue" onclick="javascript:location.reload()">刷新页面</span><br> <span class="button-bfblue" onclick="javascript:location.replace(location.href);">强制刷新</span><br> <!--<span class="button-bfblue" onclick="toggleWinbox()">切换背景</span><br>--> <span class="button-bfblue" onclick="openPanel()">控制面板</span></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A9%E6%9C%9F%E5%BE%AE%E8%BD%AF%E6%8E%A2%E7%B4%A2%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8E%86%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">早期微软探索移动平台的历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%A2%A6%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="toc-number">1.1.</span> <span class="toc-text">移动设备梦的开始</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Mobile"><span class="toc-number">1.2.</span> <span class="toc-text">Windows Mobile</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A6%E5%B1%8F%EF%BC%9F"><span class="toc-number">1.2.1.</span> <span class="toc-text">触屏？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BB%B6%E8%BF%9F%E7%9A%84%E8%A7%89%E6%82%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">延迟的觉悟</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E5%AE%88%E7%9A%84%E7%BB%93%E6%9E%9C"><span class="toc-number">1.3.</span> <span class="toc-text">保守的结果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%E2%80%94%E2%80%94Windows-Phone"><span class="toc-number">2.</span> <span class="toc-text">全新的开始——Windows Phone</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E9%80%94%E5%A4%A7%E5%A5%BD%E7%9A%84-WP7"><span class="toc-number">2.1.</span> <span class="toc-text">前途大好的 WP7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%83%A8%E4%B8%8D%E5%BF%8D%E7%9D%B9%E7%9A%84%E5%86%B3%E7%AD%96"><span class="toc-number">2.2.</span> <span class="toc-text">惨不忍睹的决策</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8E-NOKIA-%E5%90%88%E4%BD%9C%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="toc-number">2.3.</span> <span class="toc-text">与 NOKIA 合作的开始</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WP7-%E8%AE%BE%E8%AE%A1%E5%9B%A2%E9%98%9F%E7%9A%84%E6%98%8F%E6%8B%9B"><span class="toc-number">2.4.</span> <span class="toc-text">WP7 设计团队的昏招</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows-Phone-8%EF%BC%8C%E7%94%9F%E6%AD%BB%E6%94%B8%E5%85%B3%E7%9A%84%E5%86%B3%E5%AE%9A"><span class="toc-number">3.</span> <span class="toc-text">Windows Phone 8，生死攸关的决定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WP7-%E4%B8%8D%E8%83%BD%E5%8D%87%E7%BA%A7-WP8%EF%BC%9F%EF%BC%81"><span class="toc-number">3.1.</span> <span class="toc-text">WP7 不能升级 WP8？！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%B1%80%E7%9A%84%E5%8F%98%E6%8D%A2"><span class="toc-number">3.2.</span> <span class="toc-text">时局的变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API-%E5%8D%87%E7%BA%A7%EF%BC%8C%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E8%AF%B7%E9%87%8D%E6%9D%A5"><span class="toc-number">3.3.</span> <span class="toc-text">API 升级，软件更新请重来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%81%B6%E6%80%A7%E5%BE%AA%E7%8E%AF"><span class="toc-number">3.4.</span> <span class="toc-text">恶性循环</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A7%97%E5%A7%97%E6%9D%A5%E8%BF%9F%E7%9A%84-Windows-10-Mobile"><span class="toc-number">4.</span> <span class="toc-text">姗姗来迟的 Windows 10 Mobile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%97%E8%88%B0%E6%9C%BA%E7%9A%84%E9%95%BF%E6%9C%9F%E7%BC%BA%E5%A4%B1"><span class="toc-number">4.1.</span> <span class="toc-text">旗舰机的长期缺失</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WP10-%E5%85%A8%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-number">4.2.</span> <span class="toc-text">WP10 全新的功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E6%B3%95%E6%8C%BD%E5%9B%9E%E7%9A%84%E8%BF%87%E5%A4%B1"><span class="toc-number">4.3.</span> <span class="toc-text">无法挽回的过失</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%93%E6%85%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E9%80%9F%E5%BA%A6"><span class="toc-number">4.4.</span> <span class="toc-text">缓慢的更新速度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8A%E5%A4%A9%E5%BE%AE%E8%BD%AF%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%B8%82%E5%9C%BA"><span class="toc-number">5.</span> <span class="toc-text">今天微软的移动市场</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-number">6.</span> <span class="toc-text">结尾</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">导航</div><div class="footer-flex-content"><a href="/about/" target="_blank" title="关于我">关于我</a><a href="/essay/" target="_blank" title="即刻短文">即刻短文</a><a href="/message/" target="_blank" title="留言板">留言板</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">服务</div><div class="footer-flex-content"><a href="/sub/" target="_blank" title="RSS 订阅">RSS 订阅</a><a href="/sitemap.xml" target="_blank" title="站点地图">站点地图</a><a href="https://music.lolic.dpdns.org/" target="_blank" title="音乐-测试版">音乐-测试版</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">协议</div><div class="footer-flex-content"><a href="/license/" target="_blank" title="隐私与免责">隐私与免责</a><a href="/cookies/" target="_blank" title="Cookies">Cookies</a><a href="/cc/" target="_blank" title="版权协议">版权协议</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">工具</div><div class="footer-flex-content"><a href="https://excalidraw.lolic.dpdns.org/" target="_blank" title="白板">白板</a><a href="https://nav.lolic.dpdns.org/" target="_blank" title="工具导航">工具导航</a><a href="https://tool.lolic.dpdns.org/" target="_blank" title="实验室">实验室</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">信息</div><div class="footer-flex-content"><div> <div id="ghbdages"> <a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""> <img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""> </a> <a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题为Butterfly" title=""> <img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""> </a> <a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""> <img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""> </a> <a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Gtihub托管" title=""> <img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""> </a> <a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站除特殊说明外采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""> <img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""> </a> </div> </div></div></div></div></div><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"> <div id="workboard" style="padding-bottom:40px"></div> </div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="settingContainer"><div class="sphide" id="settingMask"></div><div class="sphide" id="settingPanel"><div id="settingTopBar"><div class="settingTopBarLeft"><button class="hide" id="settingBackToMain2"><i class="fas fa-chevron-left"></i>返回</button><h3 class="sp-title">控制面板</h3></div><div class="settingTopBarRight"><button class="settingPanelClose" id="settingPanelClose" onclick="closePanel()">✖</button></div></div><div id="settingMain"><!-- Tabs 中的 id 与 Items 中 id 的 "-Content" 之前的部分保持一致方可完成绑定--><div class="fade fade-in" id="settingTabs"><button id="settings-general"><i class="fas fa-layer-group"></i>通用</button><button id="settings-fonts"><i class="fas fa-font"></i>字体</button><button id="settings-background"><i class="far fa-image"></i>背景</button><button id="settings-test"><i class="fas fa-code"></i>测试</button><button id="settings-about"><i class="far fa-star"></i>关于</button><button id="settings-info"><i class="fas fa-circle-info"></i>系统</button></div><div class="hide fade fade-out" id="settingItems"><div id="settings-general-Content"><h3>主题</h3><div class="settingSwitchCheckBox"><div class="settingSwitchCheckBoxMain"><div class="content-text">Aplayer开关</div><input id="aplayerOnOff" onclick="aplayerState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">帧率检测</div><input id="fpsDisplay" onclick="fpsState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">背景流星（夜间模式）</div><input id="universeEffect" onclick="universeState()" type="checkbox"/></div><!--<div class="settingSwitchCheckBoxMain">
+ <div class="content-text">背景透明</div>
+ <input type="checkbox" id="contentInnerTransOnOff" onclick="contentInnerTransState()">
+ </div>--><div class="settingSwitchCheckBoxMain"><div class="content-text">顶部显隐（首页）</div><input id="indexImgDisplay" onclick="indexImgState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">测试按钮【供调试使用】</div><input id="variable1" onclick="switchState1()" type="checkbox"/></div></div><hr/><!--<div class="slider-container">
+ <div class="value-display" id="valueDisplay"></div>
+ <input type="range" id="opacityRange" min="0" max="100" value="95">
+ </div>
+ <div class="slider-container">
+ <div class="value-display" id="valueDisplayStButtons"></div>
+ <input type="range" id="opacityRangeStButtons" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台透明度：<span id="settingBgOp"></span></div><input id="settingBgOpRange" value="95" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">控制台按钮透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台遮罩透明度：<span id="settingBgMaskOp"></span></div><input id="settingBgMaskOpRange" value="30" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">背景遮罩透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="80">
+ </div>--><hr/><div class="settingRadioGroup"><div class="settingRadioGroupMain"><div class="content-text">春节灯笼（PC）</div><div class="settingRadioGroupOption"><input id="lanternState1" onclick="removeLantern()" value="close" name="lanternDisplay" type="radio"/><label for="lanternState1">关</label><input id="lanternState2" onclick="lanternLeft()" value="left" name="lanternDisplay" type="radio"/><label for="lanternState2">左</label><input id="lanternState3" onclick="lanternRight()" value="right" name="lanternDisplay" type="radio"/><label for="lanternState3">右</label></div></div><div class="settingRadioGroupMain"><div class="content-text">内容区域背景</div><div class="settingRadioGroupOption"><input id="contentInnerBgOpState1" onclick="contentInnerBgOp0()" value="op0" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState1">透明</label><input id="contentInnerBgOpState2" onclick="contentInnerBgOp85()" value="op85" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState2">85%</label><input id="contentInnerBgOpState3" onclick="contentInnerBgOp100()" value="op100" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState3">不透明</label></div></div><div class="settingRadioGroupMain"><div class="content-text">aplayer 外观</div><div class="settingRadioGroupOption"><input id="aplayerSkinStyle1" onclick="aplayerSkinStyle1()" value="skin1" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle1">样式1</label><input id="aplayerSkinStyle2" onclick="aplayerSkinStyle2()" value="skin2" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle2">样式2</label></div></div><div class="settingRadioGroupMain"><div class="content-text">测试 Radio【供调试使用】</div><div class="settingRadioGroupOption"><input id="radio2-name1" onclick="radio2Func1()" value="11111" name="drone2" type="radio"/><label for="radio2-name1">Huey-2</label><input id="radio2-name2" onclick="radio2Func2()" value="22222" name="drone2" type="radio"/><label for="radio2-name2">Dewey-2</label><input id="radio2-name3" onclick="radio2Func3()" value="33333" name="drone2" type="radio"/><label for="radio2-name3">Louie-2</label></div></div></div><hr/><h3>清理</h3><div><button id="resetSwitches">还原所有设置开关</button><br/><button id="resetRangeBar">还原所有范围控件</button><button id="resetRangeBar-settingBgOpRange">还原Bg范围控件</button><button id="resetRangeBar-settingBgMaskOpRange">还原控制台遮罩范围控件</button><br/><button id="resetRadio">还原 Radio</button><button id="resetRadio-aplayerSkinStyleDisplay">还原 aplayer 外观</button><button id="resetRadio-drone2">还原 Radio 测2</button></div><hr/><h3>控制</h3><div><button id="clearSessionStorage" style="display: none">清除 SessionStorage</button><button id="clearLocalStorage" style="display: none">清除 LocalStorage（重置设置）</button><button id="clearCookies">清除 Cookies</button><button id="clearServiceWorkers" style="display: none">清除 Service Workers 缓存</button><button id="clearCaches">清除缓存</button><br/><button onclick="javascript:location.reload()">刷新页面</button><button onclick="javascript:location.replace(location.href);">强制刷新</button><br/><button style="display: none" onclick="closePanel()">关闭控制台</button></div></div><div id="settings-fonts-Content"><p><button id="resetFont" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认字体</button></p><h3>字体</h3><div class="settingFontSwitchStyle"><button onclick="setFont('LXGW Wenkai Screen')" style="font-family:'LXGW Wenkai Screen'!important">霞鹜文楷</button><button onclick="setFont('Source Han Serif SC Medium')" style="font-family:'Source Han Serif SC Medium'!important">思源宋体</button><button onclick="setFont('Source Han Sans CN Medium')" style="font-family:'Source Han Sans CN Medium'!important">思源黑体500</button><button onclick="setFont('Source Han Sans CN Normal')" style="font-family:'Source Han Sans CN Normal'!important">思源黑体400</button><button onclick="setFont('JiangChengYuanTi')" style="font-family:'JiangChengYuanTi'!important">江城圆体400</button><button onclick="setFont('main')" style="font-family:-apple-system, IBM Plex Mono, monospace, '微软雅黑', sans-serif;!important">系统默认</button></div></div><div id="settings-background-Content"><div id="article-container"><p><button id="resetBg" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认背景</button></p><h3 id="图片（宽屏）"><a class="headerlink" title="图片（宽屏）" href="#图片（宽屏）"></a>图片（宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（移动端）"><a class="headerlink" title="图片（移动端）" href="#图片（移动端）"></a>图片（移动端）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（随机-宽屏）"><a class="headerlink" title="图片（随机-宽屏）" href="#图片（随机-宽屏）"></a>图片（随机-宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://bing.img.run/1920x1080.php)')" style="background-image: url(https://bing.img.run/1920x1080.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://wp.upx8.com/api.php)')" style="background-image: url(https://wp.upx8.com/api.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://unsplash.it/1280/720?random)')" style="background-image: url(https://unsplash.it/1280/720?random)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.loliapi.com/acg/)')" style="background-image: url(https://www.loliapi.com/acg/)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://api.vvhan.com/api/wallpaper/acg)')" style="background-image: url(https://api.vvhan.com/api/wallpaper/acg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.dmoe.cc/random.php)')" style="background-image: url(https://www.dmoe.cc/random.php)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="渐变色"><a class="headerlink" title="渐变色" href="#渐变色"></a>渐变色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')" style="background: linear-gradient(to right, #eecda3, #ef629f)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)')" style="background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #30cfd0 0%, #330867 100%)')" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)')" style="background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #EAECC6, #2BC0E4)')" style="background: linear-gradient(to right, #EAECC6, #2BC0E4)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)')" style="background: linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="纯色"><a class="headerlink" title="纯色" href="#纯色"></a>纯色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('#eef7f2')" style="background: #eef7f2" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#7D9D9C')" style="background: #7D9D9C" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#C7EDCC')" style="background: #C7EDCC" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#E3DCCF')" style="background: #E3DCCF" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#0F69B8')" style="background: #0F69B8" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#F0AABE')" style="background: #F0AABE" rel="noopener external nofollow" href="javascript:;"></a></div></div></div><div id="settings-test-Content"><h2>什么是Lorem Ipsum?</h2><p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</p><h2>字母测试</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo elit, posuere ac vestibulum at, hendrerit sed lectus. Aliquam hendrerit faucibus odio sed dignissim. Morbi nec nisl non mi tincidunt faucibus id vitae lectus. Etiam scelerisque nisl velit, sed euismod risus congue nec. Quisque hendrerit tortor eu arcu posuere, eu mattis purus egestas. Nulla tincidunt aliquet magna ac scelerisque. Suspendisse sed orci iaculis, elementum elit in, laoreet mi. Praesent mauris lectus, ultricies nec quam sed, pretium tristique diam. Aenean vitae vulputate dui, et elementum erat. Donec eros dui, porta et ipsum id, mattis dapibus turpis. Praesent vel nisi vitae mi faucibus sagittis id eu tortor. Nam dignissim dolor nec odio fringilla vulputate. Morbi vehicula elit at bibendum finibus. Nullam at enim diam. In consectetur urna sit amet ipsum euismod suscipit. Donec nec finibus eros.</p></div><div id="settings-about-Content"><div style="display: flex; justify-content: center; align-items: center; text-align: center;"><div class="highlighter-green" style="display: inline-block;color: white; font-weight: bold; font-style: italic; text-shadow: 1px 1px 5px black;"><b>Sakurink Control Panel</b></div></div><br/><div>Dev version</div></div><div id="settings-info-Content"><h3>部分属性检测</h3><style type="text/css">.hasSupportCheck .hasSupport {
+  display: none;
+  }
+  .hasSupportCheck .hasNonsupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasSupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasNonsupport {
+  display: none;
+  }</style><div class="hasSupportCheck"><div class="hasSupportCheckFlag"></div><p><b>:has() CSS -></b><span class="hasSupport">支持</span><span class="hasNonsupport">不支持，尝试使用兼容方案（效果可能不佳）</span></p></div><br/><h3>系统信息</h3><p><b>UserAgent-></b><span id="userAgent"></span></p><p><b>Language-></b><span id="language"></span></p><p><b>Platform-></b><span id="platform"></span></p><p><b>MaxTouchPoints-></b><span id="maxTouchPoints"></span></p><!-- <p><b>Referrer-></b><span id="referrer"></span></p>--><p><b>Browser-></b><span id="browserName"></span></p><p><b>OSName-></b><span id="osName"></span></p><br/><h3>Chromium</h3><p><b>UserAgentData.brands-></b><span id="userAgentDataBrands"></span></p><p><b>UserAgentData.mobile-></b><span id="userAgentDataMobile"></span></p><p><b>UserAgentData.Platform-></b><span id="userAgentDataPlatform"></span></p></div></div><hr/><div class="fade fade-in" id="settingWidget"><div class="sp-cal-card"><div class="sp-cal-header"><div><i class="fas fa-calendar-alt"></i><span id="sp-cal-monthYear"></span></div><button class="sp-cal-button" id="sp-cal-prevMonth">上个月</button><button class="sp-cal-button" id="sp-cal-nextMonth">下个月</button><button class="sp-cal-button" id="sp-cal-today">回到今日</button></div><div class="sp-calendar" id="sp-cal-calendar"><div class="sp-cal-days-of-week"><div class="sp-cal-day">一</div><div class="sp-cal-day">二</div><div class="sp-cal-day">三</div><div class="sp-cal-day">四</div><div class="sp-cal-day">五</div><div class="sp-cal-day">六</div><div class="sp-cal-day">日</div></div></div></div></div></div><div id="settingBottomBar"><button id="settingScrollToTop"><i class="fas fa-arrow-up"></i>返回顶部</button><button onclick="clearLocalStorage()"><i class="fas fa-arrows-rotate"></i>还原设置</button><button id="settingFullScreen"><i class="fas fa-expand"></i>全屏</button><button id="menu-darkmode"><i class="fas fa-moon"></i>昼夜切换</button></div></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@latest/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://npm.elemecdn.com/katex@latest/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"reaction":false,"search":false}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://apivc-waline.sakurink.eu.org',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.min.css')
+        .then(() => import('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.umd.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !true) {
+    if (true) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script defer src="/js/reurl.js"></script><script defer data-pjax src="/js/sakurink.js"></script><canvas id="universe"></canvas><script defer data-pjax src="/js/universe.js"></script><div th:fragment="lantern" id="lantern" style="display: none;"><div class="lantern-box-1"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">节</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div><div class="lantern-box-2"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">春</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div></div> 
+<script defer src="/js/consolex.js"></script><meting-js class="aplayerBgMusic" server="netease" type="playlist" id="8735348027" fixed="true" mini="true" volume="0.2" listFolded="true" preload="none" autoplay="false" muted></meting-js><link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css" /><script defer src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script><script defer src="/js/Meting-sr.min.js"></script><script async src="/js/runtime.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://npm.elemecdn.com/pjax@latest/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.3"></script></div></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

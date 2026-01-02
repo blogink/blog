@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>雨梦清欢</title>
+    <link>https://blog.sakurink.eu.org/</link>
+    
+    <image>
+      <url>https://blog.sakurink.eu.org/icon.png</url>
+      <title>雨梦清欢</title>
+      <link>https://blog.sakurink.eu.org/</link>
+    </image>
+    
+    <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</description>
+    <pubDate>Thu, 09 Oct 2025 13:20:19 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>告别繁琐：一键批量更新所有本地 Git 仓库</title>
+      <link>https://blog.sakurink.eu.org/posts/3883439974/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3883439974/</guid>
+      <pubDate>Thu, 09 Oct 2025 13:20:19 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/">命令</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/">代码</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3883439974/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>一图一言生手办：Nano-banana 上手体验</title>
+      <link>https://blog.sakurink.eu.org/posts/2945624148/</link>
+      <guid>https://blog.sakurink.eu.org/posts/2945624148/</guid>
+      <pubDate>Fri, 05 Sep 2025 09:15:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/">AI 绘图</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/2945624148/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>可高度自定义的开源输入法：Rime 配置与使用</title>
+      <link>https://blog.sakurink.eu.org/posts/1790572592/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1790572592/</guid>
+      <pubDate>Tue, 12 Aug 2025 06:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1790572592/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>灵活的 AI 工作流：ComfyUI 上手使用</title>
+      <link>https://blog.sakurink.eu.org/posts/2709533729/</link>
+      <guid>https://blog.sakurink.eu.org/posts/2709533729/</guid>
+      <pubDate>Wed, 06 Aug 2025 12:40:45 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-%E7%BB%98%E5%9B%BE/">AI 绘图</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/2709533729/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>算术课后</title>
+      <link>https://blog.sakurink.eu.org/posts/1726040825/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1726040825/</guid>
+      <pubDate>Wed, 16 Jul 2025 12:24:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1726040825/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>使用 Kali 进行简单网络攻击实战</title>
+      <link>https://blog.sakurink.eu.org/posts/876737918/</link>
+      <guid>https://blog.sakurink.eu.org/posts/876737918/</guid>
+      <pubDate>Sun, 13 Jul 2025 13:08:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Linux/">Linux</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/876737918/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>NvidiaApp 如何回退到 GFE</title>
+      <link>https://blog.sakurink.eu.org/posts/2807863529/</link>
+      <guid>https://blog.sakurink.eu.org/posts/2807863529/</guid>
+      <pubDate>Fri, 11 Jul 2025 11:41:03 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/">代码</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/2807863529/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Git 如何实现匿名提交</title>
+      <link>https://blog.sakurink.eu.org/posts/3659036632/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3659036632/</guid>
+      <pubDate>Tue, 08 Jul 2025 11:38:35 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0/">摘录笔记</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/git/">git</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/">命令</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3659036632/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何从 Hexo 迁移到 Typecho</title>
+      <link>https://blog.sakurink.eu.org/posts/1183868867/</link>
+      <guid>https://blog.sakurink.eu.org/posts/1183868867/</guid>
+      <pubDate>Sun, 06 Jul 2025 11:28:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Hexo/">Hexo</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/">代码</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%8A%98%E8%85%BE/">折腾</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/1183868867/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Excalidraw 开源白板工具部署</title>
+      <link>https://blog.sakurink.eu.org/posts/460603327/</link>
+      <guid>https://blog.sakurink.eu.org/posts/460603327/</guid>
+      <pubDate>Fri, 04 Jul 2025 09:08:36 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Cloudflare/">Cloudflare</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/460603327/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

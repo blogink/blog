@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>互联网的自留地 | 雨梦清欢</title><meta name="author" content="R҉anm⌬"><meta name="copyright" content="R҉anm⌬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="搭建此博客的历程及思考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="互联网的自留地">
+<meta property="og:url" content="https://blog.sakurink.eu.org/posts/3294504097/index.html">
+<meta property="og:site_name" content="雨梦清欢">
+<meta property="og:description" content="搭建此博客的历程及思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg">
+<meta property="article:published_time" content="2022-07-09T04:37:22.000Z">
+<meta property="article:modified_time" content="2024-11-08T07:14:34.000Z">
+<meta property="article:author" content="R҉anm⌬">
+<meta property="article:tag" content="雨梦清欢,Sakurink,个人主页,主页,博客,Blog,记录,分享,心得,日志,网络,代码,网站,科技">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "互联网的自留地",
+  "url": "https://blog.sakurink.eu.org/posts/3294504097/",
+  "image": "//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg",
+  "datePublished": "2022-07-09T04:37:22.000Z",
+  "dateModified": "2024-11-08T07:14:34.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "R҉anm⌬",
+      "url": "https://blog.sakurink.eu.org"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.sakurink.eu.org/posts/3294504097/index.html"><link rel="preconnect" href="https://npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@latest/css/all.min.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://npm.elemecdn.com/@egjs/infinitegrid@latest/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '互联网的自留地',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="robots" content="noarchive"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="referrer" content="no-referrer-when-downgrade" /><noscript>
+  <strong>
+    本站需要启用JavaScript才能运行
+  </strong>
+</noscript>
+<!-- JefCounts 统计代码 -->
+<script>
+(function() {
+    var script = document.createElement('script');
+    script.src = 'https://tj.lolic.dpdns.org/assets/js/analytics.js';
+    script.defer = true;
+    script.setAttribute('data-site-key', 'f6f1efe881864731');
+    script.setAttribute('data-endpoint', 'https://tj.lolic.dpdns.org/api/track.php');
+    document.head.appendChild(script);
+})();
+</script>
+<!-- JefCounts 统计代码结束 -->
+<!-- MS Clarify 统计代码 -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ud49s1v4vh");
+</script>
+<!-- MS Clarify 统计代码结束 -->
+<link rel="stylesheet" href="/css/sakurink.css"/><link rel="stylesheet" href="/css/consolex.css"/><link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/JiangChengYuanTi-400W/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Normal/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSansCN-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="https://cdncf-assets.sakurink.eu.org/libs/fonts/SourceHanSerifSC-Medium/result.css" media="only x" onload="this.onload=null;this.media='all'" /><link rel="stylesheet" href="/css/lanterns.css" media="only x" onload="this.onload=null;this.media='all'"><link rel="stylesheet" href="/css/runtime.css"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="雨梦清欢" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="雨梦清欢" type="application/rss+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/css/pace1.css"/><script src="https://npm.elemecdn.com/pace-js@latest/pace.min.js"></script><div class="bg-animation" id="web_bg" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/background_img.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">雨梦清欢</span></a><a class="nav-page-title" href="/"><span class="site-name">互联网的自留地</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/friends/"><i class="fa-fw fas fa-user-group"></i><span> 友链</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-chalkboard"></i><span> 留言</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-circle-info"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 【我】</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fas fa-cloud-upload"></i><span> 更新</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">互联网的自留地</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-09T04:37:22.000Z" title="发表于 2022-07-09 12:37:22">2022-07-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-08T07:14:34.000Z" title="更新于 2024-11-08 15:14:34">2024-11-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A/">网站公告</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>（原本的两篇写得过于水，现在已将其合并且加以重制）</p>
+<p><strong>—历程—</strong></p>
+<p>大抵是几年前，本人有写日记的习惯，无论大小事，皆以笔记录。见到些不错的文字，也会记录下来，以备再看。接连下来，对写作十分反感的我，竟在一年内断续写了几十篇……最后，那个本子就“已经记不清是什么时侯失掉了”。</p>
+<p>实在是遗憾！虽然写的净是些拙劣的文字，但看看当时写下极其幼稚的玩意，也未尝不是一种乐趣——虽然有不少文字我再看时有种想把它撕掉的感觉。总之，在那之后我就一直想弄个可以随时看到、记录方便的工具。以当时我的认知与水平，不可能考虑“网站”这种东西。说来那时我对网站的认知极其浅薄，例如后来才知道网站运营者不只有公司，个人也可以。</p>
+<p>信息碎片化时代的到来，静下心写点东西、阅读东西已经可称为“不易”了（虽然我也没好到哪去）。虽有 wx、某博等随时随地表达观点的平台，可惜推送不能尽人意、自定义程度不足、内容限制较多（包括但不限于字数）——但毕竟是偏重社交属性的，这些情况是可以理解的。不过，起码单从作个人经验记录这个目的来看，显得不大方便了。</p>
+<p>让我想想……大约是疫情那段时间，偶然间发现曾经存在度盘里的资源消失了。虽然是些“古早”时期的照片，而且本地也有备份，实在找不来的也只是些无关紧要的内容。不过这个事情动摇了我对公共平台的信任。虽然商业公司对产品作出限制无可厚非，但心中总归还是没底。</p>
+<p>之前接收资料，我会直接转存到云盘中，因为想着随时可看；那次以后，这些东西无论大小与重要程度，我都往本地也丢一份，但这样又牺牲了一定的方便性。既然不放心，那为何不自给自足？就这样，我通过网上的教程，自己摸索着搭建了个一个个人云盘。现在看来，这是一个影响我至今的举动——建一个自己的网站。</p>
+<p>其实那个云盘是通过自己的闲置设备和内网穿透运行的，速度和稳定性差自然是不必说的。但就这样，我对 web 有了一定的认识，而不是停留在“搜索引擎”的使用。也由此，激发了我对软硬件、代码的兴趣。起步是比较困难的，因为没有经验；而“启动”之后，只要自己愿意开始，那么一切都容易被推进，无论成败。就这样，直到现在。</p>
+<p><strong>—用处—</strong></p>
+<p>十多年前，个人博客不可不谓“百花齐放”，更有不少知名博客，直至今日仍在更新。不过大家也都看到了，像网易博客、新浪博客等，关停的关停，没关的可能也说不准。</p>
+<p>想来也是，你看以前网民通过什么平台获取信息？论坛、博客等。而现在的，自然不必多讲。来源广泛，简洁快速，越来越碎片化了。也许正是微博、朋友圈、空间这些平台，论坛、博客逐渐“衰微”，不温不火。前些日子天涯社区关停，根本原因之一恐怕便是这，论坛、博客的时代似乎已经过去了。上个微博、空间或者朋友圈就能知道大事小事，没有太多的废话——这不比天天泡在论坛里来得高效？</p>
+<p>一个事件，一百来字，发在微博，图片视频，迅速传遍大街小巷。在一些社交平台上，你发出来的东西，至少还有一大堆人看得到，随手一个转发，马上就又传到了另一个圈子里——个人博客则难以做到。许多人喜欢刷社交平台，若没有自己喜欢的内容也会去随意看看，或是发表见解。因为他们知道，在这里更有可能快速地获得关注，哪怕只有一两个过客。</p>
+<p>或许正是如此，个人博客与社交平台相比，从某个角度来说，是“孤独”的。试想一下，假设你准备在社交平台上发东西，你发的目的是什么？大多时候总希望是有人来看的。人是社交动物，都喜欢聚在一起凑热闹，什么趣事、难过，往上面发送，便会有人过来回复、闲聊。</p>
+<p>从门槛上来说，社交平台比独立博客方便。会玩手机会上网的，摸索下就能解决社交平台账户问题。独立博客，选择主机、准备域名、研究绑定、学习建站、懂得运维什么的。但是相对与社交平台而言，独立博客显得更为高级。社交平台是大众化的，用户与用户之间大多一个样；独立博客则不然。你尽可以按照自己想象的样子，通过“折腾”让你的想法成为现实。而且，这样做还有一个好处，那就是自己可控的方面更多了。</p>
+<p>与微博的碎片化阅读相比，与微信相对封闭的生态相比，与软件首页推荐的广泛性相比，博客更表现为系统的思考，博客更适应搜索引擎，博客更体现良好的分类。在整个互联网上表现了更大的开放性。纵使我们所处的时代愈发快捷和浮躁，但总会有人想深入看一些东西，博客的优势便体现出来了。细致、系统的思考，绝非一百多字所能容纳的，也绝非随手一滑粗略翻看便能获取的。试想一下，你更愿意记录日常闲谈还是促膝长谈的内容？</p>
+<p>自己搭建博客，整个过程你会非常有成就感，因为这些东西都是用你的双手去创造的。就算没人看你的写的文章，你也不会太过于难过，因为对你而言，这些并不是无用的。你可以用来记录自己想记录的东西，不必过度迎合大众。即使没人理你，你一个人也会玩得开心。</p>
+<p>独立博客和网站是相同性质的东西，只要网站不死，博客怎么会死呢？除非未来科技发展到不需要浏览器、不需要网站了。不过到那时，博客早就“更新换代”去拥抱时代了，也不太可能消亡。</p>
+<p>如果博客只能是是服务他人、追求价值，那么我应该搭建的是知识库，而不是“博客”。而且，一个事物的“价值”也因人而异，哪怕是思考层面上的，若能引起共鸣或其他讨论，那么也是有价值的。因此，你在这里可以看到的并非全部是技术笔记类的文章。纯技术显得“死版”，纯生活容易写成短日记，不妨两相结合。创作者也是人，那讨论和分享的内容变得多元化，便是合理的（太水的我自己也不想看，因为它的价值太低了）。</p>
+<p><strong>—讨论与思考—</strong></p>
+<p>要提到“个人表达”、“观点碰撞”之类的话题，恐怕每个都可以单独编一篇文章出来，而且还很容易讨论到一些容易令人“上火”的东西。因此，在这里我们简要提一下。但相比于所谓“审查严格”、“社会”等等说法，我个人感觉这些还不是重点，最多只能算附带原因。</p>
+<p>现在愿意更新博客，或者说愿意静下心来思考某个观点的人，似乎不常见，即使可见也不是“主流”。不知何时起，网上正常讨论话题的场景愈发不常见。我倒是认为，这是人心浮躁导致的。由于个人站点对站长而言可控性更强，因此也成为了一个很好地表达自我的途径。但它，尤其是的新站点，流量是不高的，也就是说所谓“互动”没那么多。</p>
+<p>当然，也有人会想：</p>
+<blockquote>
+<p>“我写给自己看的东西轮得到别人评论？”</p>
+</blockquote>
+<p>如果真当只是写给自己看，那么建议层层设卡，要么就把评论区关了，或者干脆不要发表。每个人都不可避免存在认知盲区，在观点思考类的文章中更是如此。他人的评价或延续讨论，在此时可以成为作者自我反思的良好依据，甚至能给双方带来更有价值的东西。当然，如果是没有价值的讨论，例如上来就开骂、一捧一踩、恶意广告、已读乱回的，则只会浪费心情和时间。</p>
+<p>如果有发泄性质的文字，还请三思。如果把一个人及其周围的事物想象成一个地块，那么这个地块内总要有个类似“垃圾场”的地方，但请治理好它；如果这个“垃圾场”占据了这个地块的大部分区域，或是污水横流，那么肯定是不受欢迎的，也会污染这个地块的管理者自身（在互联网上偶遇自甘堕落者地块或公共“垃圾场”地块，形态复杂程度强如怪物，拼尽全力也无法战胜，故对此不作过多评价）。</p>
+<p>不过，为了尽量避免一些难以控制的情形，我已经尽量清理了本站中一些容易引发吵架的文字。</p>
+<p><strong>—GPT—</strong></p>
+<p>很显然，在没有 GPT 的时候，我只能凭借搜索引擎去学习去转化；现在有了GPT之后，一些困难的问题都很容易得到解答了。虽然现在有些问题我还是会询问 GPT，但我还是很感谢 GPT 之前的时候，它培养了我搜索和转化的能力。</p>
+<p>就像学习一样，如果是抱着求知的态度，那么学习者一般不会直接拿题目和参考答案学习，而是去教材中学习。基础是教材，而不是习题。我不大相信，拿着习题和答案推出来的知识点能比教材清晰。题目千变万化，而核心知识点却是不变的。拿着教材去研究解题，其中的思考历程远比拿着参考答案来得长，收获也更大。</p>
+<p>同样的，有问题就问 GPT 固然是方便的，但久而久之会让自己失去追求解答的耐心，甚至会被误导——万一这个参考答案错了呢？还是那样，习题千变万化，而知识点却是不变的。如果你使用过 GPT 之类的人工智能工具，你会发现一些复杂的代码需求它很难一次处理好，终究还是要自己去调整的；那么调整的方法何来？还是要自己去学习和转化。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org">R҉anm⌬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.sakurink.eu.org/posts/3294504097/">https://blog.sakurink.eu.org/posts/3294504097/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.sakurink.eu.org" target="_blank">雨梦清欢</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/8.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/butterfly-extsrc@latest/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/1334945293/" title="测试新编辑器"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/10.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">测试新编辑器</div></div><div class="info-2"><div class="info-item-1">原来那个编辑器固然轻巧，但功能较少，用着不如 TinyMCE 习惯。天晓得现在这个主题有什么我开发时留下的牛神鬼蛇的 bug，故发此贴测试编辑器。 </div></div></div></a><a class="pagination-related" href="/posts/876967294/" title="研究 Kali Linux 虚拟机"><img class="cover" src="//cdncf-assets.sakurink.eu.org/blogassets/img/randimg/2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">研究 Kali Linux 虚拟机</div></div><div class="info-2"><div class="info-item-1">先前见到网上很多人使用虚拟机，感到新奇，于是着手研究 VMware，虽然一直用着破解的…… 本人对 Kali 早有耳闻，被称为“kali 用得好，局子进的早”。它由 Offensive Security 公司——一家安在全领域知名的、值得信赖的公司开发维护，它甚至还有一些受人尊敬的认证，来对安全从业人员做资格认证。这个系统内置很多安全工具，而且是真的可以用的（你猜为什么有本段开头那句话 w(ﾟДﾟ)w），区别在于使用者。 使用它应该并不难，毕竟其官网下载类型有很多可选，具体请自行前往 www.kali.org 查看。由于其设计原因，而且本人弄系统不希望直接拿物理机系统“开刀”，自然下载虚...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">R҉anm⌬</div><div class="author-info-description">雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://sakurink.eu.org/" target="_blank" title=""><i class="fas fa-feather-alt"></i></a><a class="social-icon" href="https://blog.sakurink.eu.org/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">站点速度较慢，请等待全部加载完成后再进行操作，体验更佳。如果发现页面加载故障，请善用刷新。本站所有内容仅供参考，请谨慎使用，不得将其用于违规行为，否则后果自负。【当前域名请使用"https://"访问，否则大概率要被重置连接】</div></div><div class="card-widget card-ctools" id="card-ctools"><div class="item-headline"><i class="fas fa-tools"></i><span>控制器</span></div><div class="item-content"><span class="button-bfblue" onclick="javascript:location.reload()">刷新页面</span><br> <span class="button-bfblue" onclick="javascript:location.replace(location.href);">强制刷新</span><br> <!--<span class="button-bfblue" onclick="toggleWinbox()">切换背景</span><br>--> <span class="button-bfblue" onclick="openPanel()">控制面板</span></div></div><div class="sticky_layout"></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">导航</div><div class="footer-flex-content"><a href="/about/" target="_blank" title="关于我">关于我</a><a href="/essay/" target="_blank" title="即刻短文">即刻短文</a><a href="/message/" target="_blank" title="留言板">留言板</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">服务</div><div class="footer-flex-content"><a href="/sub/" target="_blank" title="RSS 订阅">RSS 订阅</a><a href="/sitemap.xml" target="_blank" title="站点地图">站点地图</a><a href="https://music.lolic.dpdns.org/" target="_blank" title="音乐-测试版">音乐-测试版</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">协议</div><div class="footer-flex-content"><a href="/license/" target="_blank" title="隐私与免责">隐私与免责</a><a href="/cookies/" target="_blank" title="Cookies">Cookies</a><a href="/cc/" target="_blank" title="版权协议">版权协议</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">工具</div><div class="footer-flex-content"><a href="https://excalidraw.lolic.dpdns.org/" target="_blank" title="白板">白板</a><a href="https://nav.lolic.dpdns.org/" target="_blank" title="工具导航">工具导航</a><a href="https://tool.lolic.dpdns.org/" target="_blank" title="实验室">实验室</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">信息</div><div class="footer-flex-content"><div> <div id="ghbdages"> <a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""> <img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""> </a> <a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题为Butterfly" title=""> <img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""> </a> <a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""> <img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""> </a> <a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Gtihub托管" title=""> <img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""> </a> <a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站除特殊说明外采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""> <img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""> </a> </div> </div></div></div></div></div><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"> <div id="workboard" style="padding-bottom:40px"></div> </div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="settingContainer"><div class="sphide" id="settingMask"></div><div class="sphide" id="settingPanel"><div id="settingTopBar"><div class="settingTopBarLeft"><button class="hide" id="settingBackToMain2"><i class="fas fa-chevron-left"></i>返回</button><h3 class="sp-title">控制面板</h3></div><div class="settingTopBarRight"><button class="settingPanelClose" id="settingPanelClose" onclick="closePanel()">✖</button></div></div><div id="settingMain"><!-- Tabs 中的 id 与 Items 中 id 的 "-Content" 之前的部分保持一致方可完成绑定--><div class="fade fade-in" id="settingTabs"><button id="settings-general"><i class="fas fa-layer-group"></i>通用</button><button id="settings-fonts"><i class="fas fa-font"></i>字体</button><button id="settings-background"><i class="far fa-image"></i>背景</button><button id="settings-test"><i class="fas fa-code"></i>测试</button><button id="settings-about"><i class="far fa-star"></i>关于</button><button id="settings-info"><i class="fas fa-circle-info"></i>系统</button></div><div class="hide fade fade-out" id="settingItems"><div id="settings-general-Content"><h3>主题</h3><div class="settingSwitchCheckBox"><div class="settingSwitchCheckBoxMain"><div class="content-text">Aplayer开关</div><input id="aplayerOnOff" onclick="aplayerState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">帧率检测</div><input id="fpsDisplay" onclick="fpsState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">背景流星（夜间模式）</div><input id="universeEffect" onclick="universeState()" type="checkbox"/></div><!--<div class="settingSwitchCheckBoxMain">
+ <div class="content-text">背景透明</div>
+ <input type="checkbox" id="contentInnerTransOnOff" onclick="contentInnerTransState()">
+ </div>--><div class="settingSwitchCheckBoxMain"><div class="content-text">顶部显隐（首页）</div><input id="indexImgDisplay" onclick="indexImgState()" type="checkbox"/></div><div class="settingSwitchCheckBoxMain"><div class="content-text">测试按钮【供调试使用】</div><input id="variable1" onclick="switchState1()" type="checkbox"/></div></div><hr/><!--<div class="slider-container">
+ <div class="value-display" id="valueDisplay"></div>
+ <input type="range" id="opacityRange" min="0" max="100" value="95">
+ </div>
+ <div class="slider-container">
+ <div class="value-display" id="valueDisplayStButtons"></div>
+ <input type="range" id="opacityRangeStButtons" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台透明度：<span id="settingBgOp"></span></div><input id="settingBgOpRange" value="95" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">控制台按钮透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="30">
+ </div>--><div class="slider-container"><div class="value-display">控制台遮罩透明度：<span id="settingBgMaskOp"></span></div><input id="settingBgMaskOpRange" value="30" max="100" min="0" type="range"/></div><!--<div class="slider-container">
+ <div class="value-display">背景遮罩透明度：<span id="settingBgOp"></span></div>
+ <input type="range" id="settingBgOpRange" min="0" max="100" value="80">
+ </div>--><hr/><div class="settingRadioGroup"><div class="settingRadioGroupMain"><div class="content-text">春节灯笼（PC）</div><div class="settingRadioGroupOption"><input id="lanternState1" onclick="removeLantern()" value="close" name="lanternDisplay" type="radio"/><label for="lanternState1">关</label><input id="lanternState2" onclick="lanternLeft()" value="left" name="lanternDisplay" type="radio"/><label for="lanternState2">左</label><input id="lanternState3" onclick="lanternRight()" value="right" name="lanternDisplay" type="radio"/><label for="lanternState3">右</label></div></div><div class="settingRadioGroupMain"><div class="content-text">内容区域背景</div><div class="settingRadioGroupOption"><input id="contentInnerBgOpState1" onclick="contentInnerBgOp0()" value="op0" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState1">透明</label><input id="contentInnerBgOpState2" onclick="contentInnerBgOp85()" value="op85" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState2">85%</label><input id="contentInnerBgOpState3" onclick="contentInnerBgOp100()" value="op100" name="contentInnerBgOpDisplay" type="radio"/><label for="contentInnerBgOpState3">不透明</label></div></div><div class="settingRadioGroupMain"><div class="content-text">aplayer 外观</div><div class="settingRadioGroupOption"><input id="aplayerSkinStyle1" onclick="aplayerSkinStyle1()" value="skin1" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle1">样式1</label><input id="aplayerSkinStyle2" onclick="aplayerSkinStyle2()" value="skin2" name="aplayerSkinStyleDisplay" type="radio"/><label for="aplayerSkinStyle2">样式2</label></div></div><div class="settingRadioGroupMain"><div class="content-text">测试 Radio【供调试使用】</div><div class="settingRadioGroupOption"><input id="radio2-name1" onclick="radio2Func1()" value="11111" name="drone2" type="radio"/><label for="radio2-name1">Huey-2</label><input id="radio2-name2" onclick="radio2Func2()" value="22222" name="drone2" type="radio"/><label for="radio2-name2">Dewey-2</label><input id="radio2-name3" onclick="radio2Func3()" value="33333" name="drone2" type="radio"/><label for="radio2-name3">Louie-2</label></div></div></div><hr/><h3>清理</h3><div><button id="resetSwitches">还原所有设置开关</button><br/><button id="resetRangeBar">还原所有范围控件</button><button id="resetRangeBar-settingBgOpRange">还原Bg范围控件</button><button id="resetRangeBar-settingBgMaskOpRange">还原控制台遮罩范围控件</button><br/><button id="resetRadio">还原 Radio</button><button id="resetRadio-aplayerSkinStyleDisplay">还原 aplayer 外观</button><button id="resetRadio-drone2">还原 Radio 测2</button></div><hr/><h3>控制</h3><div><button id="clearSessionStorage" style="display: none">清除 SessionStorage</button><button id="clearLocalStorage" style="display: none">清除 LocalStorage（重置设置）</button><button id="clearCookies">清除 Cookies</button><button id="clearServiceWorkers" style="display: none">清除 Service Workers 缓存</button><button id="clearCaches">清除缓存</button><br/><button onclick="javascript:location.reload()">刷新页面</button><button onclick="javascript:location.replace(location.href);">强制刷新</button><br/><button style="display: none" onclick="closePanel()">关闭控制台</button></div></div><div id="settings-fonts-Content"><p><button id="resetFont" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认字体</button></p><h3>字体</h3><div class="settingFontSwitchStyle"><button onclick="setFont('LXGW Wenkai Screen')" style="font-family:'LXGW Wenkai Screen'!important">霞鹜文楷</button><button onclick="setFont('Source Han Serif SC Medium')" style="font-family:'Source Han Serif SC Medium'!important">思源宋体</button><button onclick="setFont('Source Han Sans CN Medium')" style="font-family:'Source Han Sans CN Medium'!important">思源黑体500</button><button onclick="setFont('Source Han Sans CN Normal')" style="font-family:'Source Han Sans CN Normal'!important">思源黑体400</button><button onclick="setFont('JiangChengYuanTi')" style="font-family:'JiangChengYuanTi'!important">江城圆体400</button><button onclick="setFont('main')" style="font-family:-apple-system, IBM Plex Mono, monospace, '微软雅黑', sans-serif;!important">系统默认</button></div></div><div id="settings-background-Content"><div id="article-container"><p><button id="resetBg" style="display:flex;width:100%;align-items:center;justify-content:center;"><i class="fa-solid fa-arrows-rotate"></i>恢复默认背景</button></p><h3 id="图片（宽屏）"><a class="headerlink" title="图片（宽屏）" href="#图片（宽屏）"></a>图片（宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-pc-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202307/8fcf913bba1a703714e2dc7cd1bdba3e--2133436291.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202407/18eb61a58120b76130803b26246d83f7--208058497.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202408/4d78b8c4a3a3547c0e3b21b85401b687--1602406427.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)')" style="background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202405/4a913a3a8d36b0fd2dd28de7cb9f7c08--2822596592.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（移动端）"><a class="headerlink" title="图片（移动端）" href="#图片（移动端）"></a>图片（移动端）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-1.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-2.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-3.jpg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)')" style="background-image: url(https://cdncf-assets.sakurink.eu.org/blogassets/img/bg/bg-m-4.jpg)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="图片（随机-宽屏）"><a class="headerlink" title="图片（随机-宽屏）" href="#图片（随机-宽屏）"></a>图片（随机-宽屏）</h3><div class="bgbox"><a class="imgbox" onclick="changeBg('url(https://bing.img.run/1920x1080.php)')" style="background-image: url(https://bing.img.run/1920x1080.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://wp.upx8.com/api.php)')" style="background-image: url(https://wp.upx8.com/api.php)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://unsplash.it/1280/720?random)')" style="background-image: url(https://unsplash.it/1280/720?random)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.loliapi.com/acg/)')" style="background-image: url(https://www.loliapi.com/acg/)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://api.vvhan.com/api/wallpaper/acg)')" style="background-image: url(https://api.vvhan.com/api/wallpaper/acg)" rel="noopener external nofollow" href="javascript:;"></a><a class="imgbox" onclick="changeBg('url(https://www.dmoe.cc/random.php)')" style="background-image: url(https://www.dmoe.cc/random.php)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="渐变色"><a class="headerlink" title="渐变色" href="#渐变色"></a>渐变色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')" style="background: linear-gradient(to right, #eecda3, #ef629f)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)')" style="background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #30cfd0 0%, #330867 100%)')" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)')" style="background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(to right, #EAECC6, #2BC0E4)')" style="background: linear-gradient(to right, #EAECC6, #2BC0E4)" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)')" style="background: linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)" rel="noopener external nofollow" href="javascript:;"></a></div><h3 id="纯色"><a class="headerlink" title="纯色" href="#纯色"></a>纯色</h3><div class="bgbox"><a class="colorbox" onclick="changeBg('#eef7f2')" style="background: #eef7f2" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#7D9D9C')" style="background: #7D9D9C" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#C7EDCC')" style="background: #C7EDCC" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#E3DCCF')" style="background: #E3DCCF" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#0F69B8')" style="background: #0F69B8" rel="noopener external nofollow" href="javascript:;"></a><a class="colorbox" onclick="changeBg('#F0AABE')" style="background: #F0AABE" rel="noopener external nofollow" href="javascript:;"></a></div></div></div><div id="settings-test-Content"><h2>什么是Lorem Ipsum?</h2><p>Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</p><h2>字母测试</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo elit, posuere ac vestibulum at, hendrerit sed lectus. Aliquam hendrerit faucibus odio sed dignissim. Morbi nec nisl non mi tincidunt faucibus id vitae lectus. Etiam scelerisque nisl velit, sed euismod risus congue nec. Quisque hendrerit tortor eu arcu posuere, eu mattis purus egestas. Nulla tincidunt aliquet magna ac scelerisque. Suspendisse sed orci iaculis, elementum elit in, laoreet mi. Praesent mauris lectus, ultricies nec quam sed, pretium tristique diam. Aenean vitae vulputate dui, et elementum erat. Donec eros dui, porta et ipsum id, mattis dapibus turpis. Praesent vel nisi vitae mi faucibus sagittis id eu tortor. Nam dignissim dolor nec odio fringilla vulputate. Morbi vehicula elit at bibendum finibus. Nullam at enim diam. In consectetur urna sit amet ipsum euismod suscipit. Donec nec finibus eros.</p></div><div id="settings-about-Content"><div style="display: flex; justify-content: center; align-items: center; text-align: center;"><div class="highlighter-green" style="display: inline-block;color: white; font-weight: bold; font-style: italic; text-shadow: 1px 1px 5px black;"><b>Sakurink Control Panel</b></div></div><br/><div>Dev version</div></div><div id="settings-info-Content"><h3>部分属性检测</h3><style type="text/css">.hasSupportCheck .hasSupport {
+  display: none;
+  }
+  .hasSupportCheck .hasNonsupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasSupport {
+  display:inline;
+  }
+  .hasSupportCheck:has(.hasSupportCheckFlag) .hasNonsupport {
+  display: none;
+  }</style><div class="hasSupportCheck"><div class="hasSupportCheckFlag"></div><p><b>:has() CSS -></b><span class="hasSupport">支持</span><span class="hasNonsupport">不支持，尝试使用兼容方案（效果可能不佳）</span></p></div><br/><h3>系统信息</h3><p><b>UserAgent-></b><span id="userAgent"></span></p><p><b>Language-></b><span id="language"></span></p><p><b>Platform-></b><span id="platform"></span></p><p><b>MaxTouchPoints-></b><span id="maxTouchPoints"></span></p><!-- <p><b>Referrer-></b><span id="referrer"></span></p>--><p><b>Browser-></b><span id="browserName"></span></p><p><b>OSName-></b><span id="osName"></span></p><br/><h3>Chromium</h3><p><b>UserAgentData.brands-></b><span id="userAgentDataBrands"></span></p><p><b>UserAgentData.mobile-></b><span id="userAgentDataMobile"></span></p><p><b>UserAgentData.Platform-></b><span id="userAgentDataPlatform"></span></p></div></div><hr/><div class="fade fade-in" id="settingWidget"><div class="sp-cal-card"><div class="sp-cal-header"><div><i class="fas fa-calendar-alt"></i><span id="sp-cal-monthYear"></span></div><button class="sp-cal-button" id="sp-cal-prevMonth">上个月</button><button class="sp-cal-button" id="sp-cal-nextMonth">下个月</button><button class="sp-cal-button" id="sp-cal-today">回到今日</button></div><div class="sp-calendar" id="sp-cal-calendar"><div class="sp-cal-days-of-week"><div class="sp-cal-day">一</div><div class="sp-cal-day">二</div><div class="sp-cal-day">三</div><div class="sp-cal-day">四</div><div class="sp-cal-day">五</div><div class="sp-cal-day">六</div><div class="sp-cal-day">日</div></div></div></div></div></div><div id="settingBottomBar"><button id="settingScrollToTop"><i class="fas fa-arrow-up"></i>返回顶部</button><button onclick="clearLocalStorage()"><i class="fas fa-arrows-rotate"></i>还原设置</button><button id="settingFullScreen"><i class="fas fa-expand"></i>全屏</button><button id="menu-darkmode"><i class="fas fa-moon"></i>昼夜切换</button></div></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@latest/dist/fancybox/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@latest/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@latest/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://npm.elemecdn.com/katex@latest/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://npm.elemecdn.com/katex@latest/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"reaction":false,"search":false}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://apivc-waline.sakurink.eu.org',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.min.css')
+        .then(() => import('https://fastly.jsdelivr.net/npm/@waline/client@latest/dist/waline.umd.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !true) {
+    if (true) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script defer src="/js/reurl.js"></script><script defer data-pjax src="/js/sakurink.js"></script><canvas id="universe"></canvas><script defer data-pjax src="/js/universe.js"></script><div th:fragment="lantern" id="lantern" style="display: none;"><div class="lantern-box-1"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">节</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div><div class="lantern-box-2"><div class="lantern-main"><div class="lantern-lift"></div><div class="lantern-a"><div class="lantern-b"><div class="lantern-t">春</div></div></div><div class="lantern-spike lantern-spike-a"><div class="lantern-spike-c"></div><div class="lantern-spike-b"></div></div></div></div></div> 
+<script defer src="/js/consolex.js"></script><meting-js class="aplayerBgMusic" server="netease" type="playlist" id="8735348027" fixed="true" mini="true" volume="0.2" listFolded="true" preload="none" autoplay="false" muted></meting-js><link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css" /><script defer src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script><script defer src="/js/Meting-sr.min.js"></script><script async src="/js/runtime.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://npm.elemecdn.com/pjax@latest/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.3"></script></div></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
