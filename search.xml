@@ -31,32 +31,6 @@
     
     
     <entry>
-      <title>古神召唤之术：如何编写 Stable Diffusion 提示词</title>
-      <link href="/posts/1559614452/"/>
-      <url>/posts/1559614452/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="丹药是如何炼成的">丹药是如何炼成的</h3><p>比较常见的大模型是 Checkpoint 模型，也被称为检查点模型。它可以被理解为一个包含了训练过程中保存的状态的模型。这个状态包含了模型的参数和学习到的特征，使得模型能够在未来的某个时刻继续训练或进行推理，而不必重复已进行的训练过程。</p><p>模型在训练时会学习到大量的图像和相应的描述，从中提取出视觉特征和语言特征之间的关系。具体来说，在训练时，模型通过分析各种图像及其描述，学习到哪些词应该与哪些视觉元素相关。例如，“猫”通常与猫的图片关联。</p><p>生成时，当你输入一个提示词时，Stable Diffusion 会使用之前学习到的这些关联来生成相应的图像。模型会根据提示词推测出应有的画面元素，然后将这些元素结合起来，生成新的图像。</p><h3 id="你的咒语是怎样生效的">你的咒语是怎样生效的</h3><p>例如，输入提示词“蓝色的天空、花海、一个女孩”（实际输入时建议使用英语，除非你选择的大模型使用了汉语词汇训练）。随后模型会分析这个提示词，将其转换为文本向量。它会识别出“蓝色”、“天空”、“花”、“女孩”这些关键词。</p><p>Stable Diffusion 的大模型也被称为“检查点”，这就像是模型在不同训练阶段的快照。模型利用这些检查点中训练时学到的知识和特征，按照这些关键词进行处理。</p><p>模型首先会在一个叫做“潜在空间”的地方生成一个初步的图像表示。这是一个模糊的充满噪点的图像。接下来，模型会逐步对这个初步图像进行细化和优化。它会运用训练时学到的图像元素，把模糊的图像变得更加清晰和细致。</p><p>经过多次迭代和调整，模型最终生成出一幅清晰的图像，表现出用户输入的描述。</p><h3 id="丹药并非万能">丹药并非万能</h3><p>按照我的理解，SD 模型相当于一个带有参考答案的题库。官方模型是各种都涉及一些，但都比较“平均”。第三方开发者可以将这些模型作为底模，在此基础上微调，使得其具有不同的特征。当然，也可以自己从头开始训练，不过成本会更高。好比官方题库是所有科目都有，不同开发者提供的题库偏向可能不同，有的偏文、有的偏理，并非所有模型都是万能的。你非要拿动漫模型跑现实风格的图，达到预想效果有点难——让文科生做理科题，实在难为考生了。</p><p>模型中储存的不是可视的原图，而是将图像特征解析后的代码。SD 先通读试题（提示词），之后学习题库中的题目（调用模型），知道出现什么条件时就用什么方法往上靠（采样），形成思路并推演（扩散），最后完成题目（图像解码）。</p><p>当然，它终究和人类绘画不同。它不知道人体结构，不知道物理规则，不知道人的审美……毕竟它是靠纯“刷题”来学习的，而不是拿着“课本”学习；它只知道这个地方要这么画，但不知道为什么要这样画。好比看不懂数学题而用其答案，结果把符号认错，譬如 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo></mrow><annotation encoding="application/x-tex">\sum</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span></span></span></span> 写成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> ；SD 模型出图通常有些比较明显的特征，至少目前还是：</p><ul><li>画不好手（仅作为辅助判断，并非所有模型都画不好手，而且对人类而言，手的绘制也是绘画的难点之一）</li><li>不合逻辑的纹路（例如头发和衣带融合）</li><li>不合理的粘连（两个物体的边界诡异地融在一起）</li><li>……</li></ul><p>有些可以通过调参数缓解，而有些则难以避免。</p><h3 id="吟咏">吟咏</h3><p>在 SD 中，我们使用提示词（即 prompt）对 U-Net 引导，使其朝着我们的期望对图像引导降噪。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>制作启动盘并在VMware中测试</title>
-      <link href="/posts/1144558047/"/>
-      <url>/posts/1144558047/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!--参考资料：https://www.cnblogs.com/alittlemc/p/17027815.html-->]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>告别繁琐：一键批量更新所有本地 Git 仓库</title>
       <link href="/posts/3883439974/"/>
       <url>/posts/3883439974/</url>
