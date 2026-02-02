@@ -35,7 +35,7 @@ observer.observe(document, observerConfig); // 开始观察document节点的变�
 */
 
 
-/*进入离开页面时修改标题*/
+/*进入离开页面时修改标题
 var originTitle = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function () {
@@ -50,7 +50,7 @@ document.addEventListener('visibilitychange', function () {
             document.title = originTitle;
         }, 2000);
     }
-});
+});*/
 
 //window.addEventListener("pjax:complete",rightsideAddon);//后面几次，pjax加载
 ////window.addEventListener("DOMContentLoaded",rightsideAddon);//第一次
