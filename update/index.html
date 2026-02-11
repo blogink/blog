@@ -405,7 +405,7 @@ btf.addGlobalFn('pjaxSend', () => {
 
   const loadTwikoo = (el, path) => {
     if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
-    else btf.getScript('https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js').then(() => init(el, path))
+    else btf.getScript('https://registry.npmmirror.com/twikoo/latest/files/dist/twikoo.min.js').then(() => init(el, path))
   }
 
   if (isShuoshuo) {
