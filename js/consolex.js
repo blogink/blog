@@ -585,7 +585,7 @@ function functionState000() {
 
 // 调用 settingCheckboxBinding 函数。这里 initialState 值修改后没反应是正常的，大概率是没有清理 localstorage，导致记录的仍是修改前的状态。
 window.addEventListener("DOMContentLoaded",()=>{
-    settingCheckboxBinding('aplayerOnOff', 'ttttt', 'aplayerState', aplayerMain, removeAplayer);
+    settingCheckboxBinding('aplayerOnOff', 'fffff', 'aplayerState', aplayerMain, removeAplayer);
     settingCheckboxBinding('fpsDisplay', 'fffff', 'fpsState', FPSMain, removeFPS);
     settingCheckboxBinding('universeEffect', 'fffff', 'universeState', astralMain, removeAstral);
     settingCheckboxBinding('indexImgDisplay', 'ttttt', 'indexImgState', indexImgMain, removeIndexImg);
@@ -998,10 +998,10 @@ function contentInnerBgOp100() {
     // 更新或添加样式
     styleTag.innerHTML = `
         #body-wrap > #content-inner {
-            left: !important;
+            background-color: rgba(255,255,255,1) !important;
         }
         [data-theme="dark"] #body-wrap > #content-inner {
-            transform: !important
+            background-color: rgba(10,10,10,1) !important;
         }
     `;
 }
