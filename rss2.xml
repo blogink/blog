@@ -15,8 +15,39 @@
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</description>
-    <pubDate>Fri, 23 Jan 2026 12:21:13 GMT</pubDate>
+    <pubDate>Sat, 07 Mar 2026 10:00:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
+      <link>https://blog.sakurink.eu.org/posts/3062615309/</link>
+      <guid>https://blog.sakurink.eu.org/posts/3062615309/</guid>
+      <pubDate>Sat, 07 Mar 2026 10:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
+      
+      <category domain="https://blog.sakurink.eu.org/tags/AI-Agent/">AI Agent</category>
+      
+      
+      <comments>https://blog.sakurink.eu.org/posts/3062615309/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>轻巧的 Python 管理器：uv 的安装与配置</title>
@@ -254,35 +285,6 @@
       
       
       <comments>https://blog.sakurink.eu.org/posts/876737918/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>NvidiaApp 如何回退到 GFE</title>
-      <link>https://blog.sakurink.eu.org/posts/2807863529/</link>
-      <guid>https://blog.sakurink.eu.org/posts/2807863529/</guid>
-      <pubDate>Fri, 11 Jul 2025 11:41:03 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
-      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
-      
-      <category domain="https://blog.sakurink.eu.org/tags/%E4%BB%A3%E7%A0%81/">代码</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/2807863529/#disqus_thread</comments>
       
     </item>
     
