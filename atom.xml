@@ -1,249 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>雨梦清欢</title>
-  <icon>https://blog.sakurink.eu.org/icon.png</icon>
-  <subtitle>不受律束，笔随兴至</subtitle>
-  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
-  
-  <link href="https://blog.sakurink.eu.org/"/>
-  <updated>2026-04-09T13:00:00.000Z</updated>
-  <id>https://blog.sakurink.eu.org/</id>
-  
   <author>
     <name>R҉anhm⌬</name>
-    
   </author>
-  
   <generator uri="https://hexo.io/">Hexo</generator>
-  
+  <icon>https://blog.sakurink.eu.org/icon.png</icon>
+  <id>https://blog.sakurink.eu.org/</id>
+  <link href="https://blog.sakurink.eu.org/" rel="alternate"/>
+  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, R҉anhm⌬</rights>
+  <subtitle>不受律束，笔随兴至</subtitle>
+  <title>雨梦清欢</title>
+  <updated>2026-04-15T09:00:00.000Z</updated>
   <entry>
-    <title>当我减少阅读新闻之后</title>
-    <link href="https://blog.sakurink.eu.org/posts/3125066766/"/>
-    <id>https://blog.sakurink.eu.org/posts/3125066766/</id>
-    <published>2026-04-09T13:00:00.000Z</published>
-    <updated>2026-04-09T13:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="RSS" scheme="https://blog.sakurink.eu.org/tags/RSS/"/>
+    <category term="信息" scheme="https://blog.sakurink.eu.org/tags/%E4%BF%A1%E6%81%AF/"/>
+    <id>https://blog.sakurink.eu.org/posts/2805727908/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2805727908/"/>
+    <published>2026-04-15T09:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>如今各种平台的推荐功能和信息流已经很完善了，但我认为这]]>
+    </summary>
+    <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
+    <updated>2026-04-15T09:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    
-    
     <category term="阅读" scheme="https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/"/>
-    
     <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
-    
+    <id>https://blog.sakurink.eu.org/posts/3125066766/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3125066766/"/>
+    <published>2026-04-09T13:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet"]]>
+    </summary>
+    <title>当我减少阅读新闻之后</title>
+    <updated>2026-04-09T13:00:00.000Z</updated>
   </entry>
-  
   <entry>
-    <title>Hello, Codeberg</title>
-    <link href="https://blog.sakurink.eu.org/posts/2126873033/"/>
-    <id>https://blog.sakurink.eu.org/posts/2126873033/</id>
-    <published>2026-04-03T13:30:30.000Z</published>
-    <updated>2026-04-03T13:30:35.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
     <category term="Codeberg" scheme="https://blog.sakurink.eu.org/tags/Codeberg/"/>
-    
     <category term="Git" scheme="https://blog.sakurink.eu.org/tags/Git/"/>
-    
+    <id>https://blog.sakurink.eu.org/posts/2126873033/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2126873033/"/>
+    <published>2026-04-03T13:30:30.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet"]]>
+    </summary>
+    <title>Hello, Codeberg</title>
+    <updated>2026-04-03T13:30:35.000Z</updated>
   </entry>
-  
   <entry>
-    <title>TXT, MP4 and MP3</title>
-    <link href="https://blog.sakurink.eu.org/posts/3472109359/"/>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
     <id>https://blog.sakurink.eu.org/posts/3472109359/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3472109359/"/>
     <published>2026-04-01T13:30:30.000Z</published>
+    <summary>在钢铁丛林里寻得一方静谧之地，看看书籍，欣赏些长视频和音乐</summary>
+    <title>TXT, MP4 and MP3</title>
     <updated>2026-04-01T13:30:35.000Z</updated>
-    
-    
-    <summary type="html">在钢铁丛林里寻得一方静谧之地，看看书籍，欣赏些长视频和音乐</summary>
-    
-    
-    
-    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>利用 Serv00 搭建自己的域名邮箱</title>
-    <link href="https://blog.sakurink.eu.org/posts/2084688939/"/>
-    <id>https://blog.sakurink.eu.org/posts/2084688939/</id>
-    <published>2026-03-22T03:00:00.000Z</published>
-    <updated>2026-03-22T03:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
     <category term="Server" scheme="https://blog.sakurink.eu.org/tags/Server/"/>
-    
+    <id>https://blog.sakurink.eu.org/posts/2084688939/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2084688939/"/>
+    <published>2026-03-22T03:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet"]]>
+    </summary>
+    <title>利用 Serv00 搭建自己的域名邮箱</title>
+    <updated>2026-03-22T03:00:00.000Z</updated>
   </entry>
-  
   <entry>
-    <title>Between graphics and text</title>
-    <link href="https://blog.sakurink.eu.org/posts/275402414/"/>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
     <id>https://blog.sakurink.eu.org/posts/275402414/</id>
+    <link href="https://blog.sakurink.eu.org/posts/275402414/"/>
     <published>2026-03-21T12:30:30.000Z</published>
+    <summary>图形化与命令行、图片与纯文本解决方案</summary>
+    <title>Between graphics and text</title>
     <updated>2026-03-21T12:30:35.000Z</updated>
-    
-    
-    <summary type="html">图形化与命令行、图片与纯文本解决方案</summary>
-    
-    
-    
-    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>OpenClaw 十分火爆，但你真的需要它吗</title>
-    <link href="https://blog.sakurink.eu.org/posts/1816701443/"/>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="AI Agent" scheme="https://blog.sakurink.eu.org/tags/AI-Agent/"/>
     <id>https://blog.sakurink.eu.org/posts/1816701443/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1816701443/"/>
     <published>2026-03-17T14:30:30.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet"]]>
+    </summary>
+    <title>OpenClaw 十分火爆，但你真的需要它吗</title>
     <updated>2026-03-17T14:30:35.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    
-    
-    <category term="AI Agent" scheme="https://blog.sakurink.eu.org/tags/AI-Agent/"/>
-    
   </entry>
-  
   <entry>
-    <title>请问您今天要来点 FOSS 吗</title>
-    <link href="https://blog.sakurink.eu.org/posts/360390325/"/>
-    <id>https://blog.sakurink.eu.org/posts/360390325/</id>
-    <published>2026-03-10T14:30:30.000Z</published>
-    <updated>2026-03-10T14:30:35.000Z</updated>
-    
-    
-    <summary type="html">Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</summary>
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    
-    
     <category term="Linux" scheme="https://blog.sakurink.eu.org/tags/Linux/"/>
-    
+    <id>https://blog.sakurink.eu.org/posts/360390325/</id>
+    <link href="https://blog.sakurink.eu.org/posts/360390325/"/>
+    <published>2026-03-10T14:30:30.000Z</published>
+    <summary>Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</summary>
+    <title>请问您今天要来点 FOSS 吗</title>
+    <updated>2026-03-10T14:30:35.000Z</updated>
   </entry>
-  
   <entry>
-    <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
-    <link href="https://blog.sakurink.eu.org/posts/3062615309/"/>
-    <id>https://blog.sakurink.eu.org/posts/3062615309/</id>
-    <published>2026-03-07T10:00:00.000Z</published>
-    <updated>2026-03-07T10:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
     <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    
     <category term="Node.js" scheme="https://blog.sakurink.eu.org/tags/Node-js/"/>
-    
     <category term="AI Agent" scheme="https://blog.sakurink.eu.org/tags/AI-Agent/"/>
-    
+    <id>https://blog.sakurink.eu.org/posts/3062615309/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3062615309/"/>
+    <published>2026-03-07T10:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet"]]>
+    </summary>
+    <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
+    <updated>2026-03-07T10:00:00.000Z</updated>
   </entry>
-  
   <entry>
-    <title>浮生散笺 7EA02</title>
-    <link href="https://blog.sakurink.eu.org/posts/1016637738/"/>
-    <id>https://blog.sakurink.eu.org/posts/1016637738/</id>
-    <published>2026-02-28T14:30:30.000Z</published>
-    <updated>2026-02-28T14:30:35.000Z</updated>
-    
-    
-    <summary type="html">记录些最近的事情。</summary>
-    
-    
-    
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    
-    
+    <id>https://blog.sakurink.eu.org/posts/1016637738/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1016637738/"/>
+    <published>2026-02-28T14:30:30.000Z</published>
+    <summary>记录些最近的事情。</summary>
+    <title>浮生散笺 7EA02</title>
+    <updated>2026-02-28T14:30:35.000Z</updated>
   </entry>
-  
-  <entry>
-    <title>轻巧的 Python 管理器：uv 的安装与配置</title>
-    <link href="https://blog.sakurink.eu.org/posts/2159927641/"/>
-    <id>https://blog.sakurink.eu.org/posts/2159927641/</id>
-    <published>2026-01-23T12:20:01.000Z</published>
-    <updated>2026-01-23T12:21:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="命令" scheme="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-    <category term="Python" scheme="https://blog.sakurink.eu.org/tags/Python/"/>
-    
-  </entry>
-  
 </feed>

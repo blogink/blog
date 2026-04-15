@@ -1,272 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-  xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>雨梦清欢</title>
     <link>https://blog.sakurink.eu.org/</link>
-    
+    <description>不受律束，笔随兴至</description>
+    <language>zh-CN</language>
+    <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
+    <lastBuildDate>Wed, 15 Apr 2026 09:00:00 GMT</lastBuildDate>
+    <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
       <title>雨梦清欢</title>
       <link>https://blog.sakurink.eu.org/</link>
     </image>
-    
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
-    
-    <description>雨梦清欢 | 技术笔记、生活点滴、个人经验、日常随想。个人技术学习与思考分享，网站随缘更新。</description>
-    <pubDate>Thu, 09 Apr 2026 13:00:00 GMT</pubDate>
-    <generator>http://hexo.io/</generator>
-    
+    <item>
+      <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
+      <link>https://blog.sakurink.eu.org/posts/2805727908/</link>
+      <description>
+        <![CDATA[<p>如今各种平台的推荐功能和信息流已经很完善了，但我认为这]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/RSS/">RSS</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BF%A1%E6%81%AF/">信息</category>
+      <pubDate>Wed, 15 Apr 2026 09:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>当我减少阅读新闻之后</title>
       <link>https://blog.sakurink.eu.org/posts/3125066766/</link>
-      <guid>https://blog.sakurink.eu.org/posts/3125066766/</guid>
-      <pubDate>Thu, 09 Apr 2026 13:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
+      <description>
+        <![CDATA[<link rel="stylesheet"]]>
+      </description>
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/">阅读</category>
-      
       <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/3125066766/#disqus_thread</comments>
-      
+      <pubDate>Thu, 09 Apr 2026 13:00:00 GMT</pubDate>
     </item>
-    
     <item>
       <title>Hello, Codeberg</title>
       <link>https://blog.sakurink.eu.org/posts/2126873033/</link>
-      <guid>https://blog.sakurink.eu.org/posts/2126873033/</guid>
-      <pubDate>Fri, 03 Apr 2026 13:30:30 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
+      <description>
+        <![CDATA[<link rel="stylesheet"]]>
+      </description>
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/Codeberg/">Codeberg</category>
-      
       <category domain="https://blog.sakurink.eu.org/tags/Git/">Git</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/2126873033/#disqus_thread</comments>
-      
+      <pubDate>Fri, 03 Apr 2026 13:30:30 GMT</pubDate>
     </item>
-    
     <item>
       <title>TXT, MP4 and MP3</title>
       <link>https://blog.sakurink.eu.org/posts/3472109359/</link>
-      <guid>https://blog.sakurink.eu.org/posts/3472109359/</guid>
-      <pubDate>Wed, 01 Apr 2026 13:30:30 GMT</pubDate>
-      
       <description>在钢铁丛林里寻得一方静谧之地，看看书籍，欣赏些长视频和音乐</description>
-      
-      
-      
-      
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/3472109359/#disqus_thread</comments>
-      
+      <pubDate>Wed, 01 Apr 2026 13:30:30 GMT</pubDate>
     </item>
-    
     <item>
       <title>利用 Serv00 搭建自己的域名邮箱</title>
       <link>https://blog.sakurink.eu.org/posts/2084688939/</link>
-      <guid>https://blog.sakurink.eu.org/posts/2084688939/</guid>
-      <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
+      <description>
+        <![CDATA[<link rel="stylesheet"]]>
+      </description>
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/Server/">Server</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/2084688939/#disqus_thread</comments>
-      
+      <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
     </item>
-    
     <item>
       <title>Between graphics and text</title>
       <link>https://blog.sakurink.eu.org/posts/275402414/</link>
-      <guid>https://blog.sakurink.eu.org/posts/275402414/</guid>
-      <pubDate>Sat, 21 Mar 2026 12:30:30 GMT</pubDate>
-      
       <description>图形化与命令行、图片与纯文本解决方案</description>
-      
-      
-      
-      
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/275402414/#disqus_thread</comments>
-      
+      <pubDate>Sat, 21 Mar 2026 12:30:30 GMT</pubDate>
     </item>
-    
     <item>
       <title>OpenClaw 十分火爆，但你真的需要它吗</title>
       <link>https://blog.sakurink.eu.org/posts/1816701443/</link>
-      <guid>https://blog.sakurink.eu.org/posts/1816701443/</guid>
-      <pubDate>Tue, 17 Mar 2026 14:30:30 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
+      <description>
+        <![CDATA[<link rel="stylesheet"]]>
+      </description>
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/AI-Agent/">AI Agent</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/1816701443/#disqus_thread</comments>
-      
+      <pubDate>Tue, 17 Mar 2026 14:30:30 GMT</pubDate>
     </item>
-    
     <item>
       <title>请问您今天要来点 FOSS 吗</title>
       <link>https://blog.sakurink.eu.org/posts/360390325/</link>
-      <guid>https://blog.sakurink.eu.org/posts/360390325/</guid>
-      <pubDate>Tue, 10 Mar 2026 14:30:30 GMT</pubDate>
-      
       <description>Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</description>
-      
-      
-      
-      
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/Linux/">Linux</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/360390325/#disqus_thread</comments>
-      
+      <pubDate>Tue, 10 Mar 2026 14:30:30 GMT</pubDate>
     </item>
-    
     <item>
       <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
       <link>https://blog.sakurink.eu.org/posts/3062615309/</link>
-      <guid>https://blog.sakurink.eu.org/posts/3062615309/</guid>
-      <pubDate>Sat, 07 Mar 2026 10:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
+      <description>
+        <![CDATA[<link rel="stylesheet"]]>
+      </description>
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
       <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
-      
       <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
-      
       <category domain="https://blog.sakurink.eu.org/tags/AI-Agent/">AI Agent</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/3062615309/#disqus_thread</comments>
-      
+      <pubDate>Sat, 07 Mar 2026 10:00:00 GMT</pubDate>
     </item>
-    
     <item>
       <title>浮生散笺 7EA02</title>
       <link>https://blog.sakurink.eu.org/posts/1016637738/</link>
-      <guid>https://blog.sakurink.eu.org/posts/1016637738/</guid>
-      <pubDate>Sat, 28 Feb 2026 14:30:30 GMT</pubDate>
-      
       <description>记录些最近的事情。</description>
-      
-      
-      
-      
+      <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/1016637738/#disqus_thread</comments>
-      
+      <pubDate>Sat, 28 Feb 2026 14:30:30 GMT</pubDate>
     </item>
-    
-    <item>
-      <title>轻巧的 Python 管理器：uv 的安装与配置</title>
-      <link>https://blog.sakurink.eu.org/posts/2159927641/</link>
-      <guid>https://blog.sakurink.eu.org/posts/2159927641/</guid>
-      <pubDate>Fri, 23 Jan 2026 12:20:01 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;link rel=&quot;stylesheet&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      
-      
-      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%BD%E4%BB%A4/">命令</category>
-      
-      <category domain="https://blog.sakurink.eu.org/tags/Python/">Python</category>
-      
-      
-      <comments>https://blog.sakurink.eu.org/posts/2159927641/#disqus_thread</comments>
-      
-    </item>
-    
   </channel>
 </rss>
