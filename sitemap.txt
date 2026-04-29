@@ -1,3 +1,4 @@
+https://blog.sakurink.eu.org/update/index.html
 https://blog.sakurink.eu.org/posts/2805727908/
 https://blog.sakurink.eu.org/posts/3125066766/
 https://blog.sakurink.eu.org/posts/2126873033/
@@ -8,7 +9,6 @@ https://blog.sakurink.eu.org/posts/1816701443/
 https://blog.sakurink.eu.org/posts/3287931156/
 https://blog.sakurink.eu.org/posts/360390325/
 https://blog.sakurink.eu.org/posts/3062615309/
-https://blog.sakurink.eu.org/update/index.html
 https://blog.sakurink.eu.org/posts/3161555917/
 https://blog.sakurink.eu.org/posts/2159927641/
 https://blog.sakurink.eu.org/about/index.html
@@ -17,6 +17,7 @@ https://blog.sakurink.eu.org/posts/3883439974/
 https://blog.sakurink.eu.org/posts/2945624148/
 https://blog.sakurink.eu.org/posts/1790572592/
 https://blog.sakurink.eu.org/posts/2709533729/
+https://blog.sakurink.eu.org/posts/3058912286/
 https://blog.sakurink.eu.org/message/index.html
 https://blog.sakurink.eu.org/cookies/index.html
 https://blog.sakurink.eu.org/posts/876737918/
@@ -26,7 +27,6 @@ https://blog.sakurink.eu.org/posts/3659036632/
 https://blog.sakurink.eu.org/posts/1694841248/
 https://blog.sakurink.eu.org/posts/775200063/
 https://blog.sakurink.eu.org/posts/460603327/
-https://blog.sakurink.eu.org/posts/3058912286/
 https://blog.sakurink.eu.org/music/index.html
 https://blog.sakurink.eu.org/music/index-2.html
 https://blog.sakurink.eu.org/sub/index.html
@@ -136,6 +136,7 @@ https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/
 https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/
 https://blog.sakurink.eu.org/tags/RSS/
 https://blog.sakurink.eu.org/tags/%E4%BF%A1%E6%81%AF/
+https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/
 https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/
 https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/
 https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0/

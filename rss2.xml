@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Wed, 15 Apr 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 12:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,18 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>未渲染的列车</title>
+      <link>https://blog.sakurink.eu.org/posts/548472580/</link>
+      <description>
+        <![CDATA[<blockquote>
+<p>注：本文实际上“就是为了这点]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/">死亡</category>
+      <pubDate>Mon, 27 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
       <link>https://blog.sakurink.eu.org/posts/2805727908/</link>
@@ -30,13 +42,21 @@
       <title>当我减少阅读新闻之后</title>
       <link>https://blog.sakurink.eu.org/posts/3125066766/</link>
       <description>
-        <![CDATA[<link rel="stylesheet"]]>
+        <![CDATA[<p>先说结论：新闻泛用型较低，对策性一般，总的来说属于大杯]]>
       </description>
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/">阅读</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
       <pubDate>Thu, 09 Apr 2026 13:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>浮生散笺 7EA03</title>
+      <link>https://blog.sakurink.eu.org/posts/2801876105/</link>
+      <description>这是什么？更新一下。</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <pubDate>Mon, 06 Apr 2026 14:30:30 GMT</pubDate>
     </item>
     <item>
       <title>Hello, Codeberg</title>
@@ -96,27 +116,6 @@
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
       <category domain="https://blog.sakurink.eu.org/tags/Linux/">Linux</category>
       <pubDate>Tue, 10 Mar 2026 14:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
-      <link>https://blog.sakurink.eu.org/posts/3062615309/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet"]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
-      <category domain="https://blog.sakurink.eu.org/tags/AI-Agent/">AI Agent</category>
-      <pubDate>Sat, 07 Mar 2026 10:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>浮生散笺 7EA02</title>
-      <link>https://blog.sakurink.eu.org/posts/1016637738/</link>
-      <description>记录些最近的事情。</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      <pubDate>Sat, 28 Feb 2026 14:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>

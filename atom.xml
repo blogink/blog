@@ -11,7 +11,23 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-04-15T09:00:00.000Z</updated>
+  <updated>2026-04-27T12:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="死亡" scheme="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/"/>
+    <id>https://blog.sakurink.eu.org/posts/548472580/</id>
+    <link href="https://blog.sakurink.eu.org/posts/548472580/"/>
+    <published>2026-04-27T12:00:00.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>注：本文实际上“就是为了这点]]>
+    </summary>
+    <title>未渲染的列车</title>
+    <updated>2026-04-27T12:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -39,10 +55,22 @@
     <link href="https://blog.sakurink.eu.org/posts/3125066766/"/>
     <published>2026-04-09T13:00:00.000Z</published>
     <summary>
-      <![CDATA[<link rel="stylesheet"]]>
+      <![CDATA[<p>先说结论：新闻泛用型较低，对策性一般，总的来说属于大杯]]>
     </summary>
     <title>当我减少阅读新闻之后</title>
     <updated>2026-04-09T13:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <id>https://blog.sakurink.eu.org/posts/2801876105/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2801876105/"/>
+    <published>2026-04-06T14:30:30.000Z</published>
+    <summary>这是什么？更新一下。</summary>
+    <title>浮生散笺 7EA03</title>
+    <updated>2026-04-06T14:30:35.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -126,34 +154,5 @@
     <summary>Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</summary>
     <title>请问您今天要来点 FOSS 吗</title>
     <updated>2026-03-10T14:30:35.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    <category term="Node.js" scheme="https://blog.sakurink.eu.org/tags/Node-js/"/>
-    <category term="AI Agent" scheme="https://blog.sakurink.eu.org/tags/AI-Agent/"/>
-    <id>https://blog.sakurink.eu.org/posts/3062615309/</id>
-    <link href="https://blog.sakurink.eu.org/posts/3062615309/"/>
-    <published>2026-03-07T10:00:00.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet"]]>
-    </summary>
-    <title>真做事的智能体：本地 OpenClaw 部署流程教程</title>
-    <updated>2026-03-07T10:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    <id>https://blog.sakurink.eu.org/posts/1016637738/</id>
-    <link href="https://blog.sakurink.eu.org/posts/1016637738/"/>
-    <published>2026-02-28T14:30:30.000Z</published>
-    <summary>记录些最近的事情。</summary>
-    <title>浮生散笺 7EA02</title>
-    <updated>2026-02-28T14:30:35.000Z</updated>
   </entry>
 </feed>
