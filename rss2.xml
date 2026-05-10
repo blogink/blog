@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Mon, 27 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 12:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,28 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>你们两个，是同一个人吗</title>
+      <link>https://blog.sakurink.eu.org/posts/4002118284/</link>
+      <description>在游戏与影视的虚拟世界里，“同位体”早已不是陌生的设定。那么同位体角色是什么？为什么同样是同位体设计，有的能被市场和粉丝接受，有的却只能招致骂声？</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
+      <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>闭 mù 仪式</title>
+      <link>https://blog.sakurink.eu.org/posts/2290477339/</link>
+      <description>
+        <![CDATA[<p>今天，他死了。也许是昨天，我不知道。我收到一封没有署名]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/">死亡</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
+      <pubDate>Tue, 05 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>未渲染的列车</title>
       <link>https://blog.sakurink.eu.org/posts/548472580/</link>
@@ -24,6 +46,7 @@
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/">死亡</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
       <pubDate>Mon, 27 Apr 2026 12:00:00 GMT</pubDate>
     </item>
     <item>
@@ -96,26 +119,6 @@
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
       <pubDate>Sat, 21 Mar 2026 12:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>OpenClaw 十分火爆，但你真的需要它吗</title>
-      <link>https://blog.sakurink.eu.org/posts/1816701443/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet"]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      <category domain="https://blog.sakurink.eu.org/tags/AI-Agent/">AI Agent</category>
-      <pubDate>Tue, 17 Mar 2026 14:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>请问您今天要来点 FOSS 吗</title>
-      <link>https://blog.sakurink.eu.org/posts/360390325/</link>
-      <description>Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Linux/">Linux</category>
-      <pubDate>Tue, 10 Mar 2026 14:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>

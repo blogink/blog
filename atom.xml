@@ -11,13 +11,44 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-04-27T12:00:00.000Z</updated>
+  <updated>2026-05-09T12:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="游戏" scheme="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="Vor dem Ende" scheme="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/"/>
+    <id>https://blog.sakurink.eu.org/posts/4002118284/</id>
+    <link href="https://blog.sakurink.eu.org/posts/4002118284/"/>
+    <published>2026-05-09T12:00:00.000Z</published>
+    <summary>在游戏与影视的虚拟世界里，“同位体”早已不是陌生的设定。那么同位体角色是什么？为什么同样是同位体设计，有的能被市场和粉丝接受，有的却只能招致骂声？</summary>
+    <title>你们两个，是同一个人吗</title>
+    <updated>2026-05-09T12:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
     </author>
     <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
     <category term="死亡" scheme="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/"/>
+    <category term="Vor dem Ende" scheme="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/"/>
+    <id>https://blog.sakurink.eu.org/posts/2290477339/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2290477339/"/>
+    <published>2026-05-05T12:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>今天，他死了。也许是昨天，我不知道。我收到一封没有署名]]>
+    </summary>
+    <title>闭 mù 仪式</title>
+    <updated>2026-05-05T12:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="死亡" scheme="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/"/>
+    <category term="Vor dem Ende" scheme="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/"/>
     <id>https://blog.sakurink.eu.org/posts/548472580/</id>
     <link href="https://blog.sakurink.eu.org/posts/548472580/"/>
     <published>2026-04-27T12:00:00.000Z</published>
@@ -126,33 +157,5 @@
     <summary>图形化与命令行、图片与纯文本解决方案</summary>
     <title>Between graphics and text</title>
     <updated>2026-03-21T12:30:35.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    <category term="AI Agent" scheme="https://blog.sakurink.eu.org/tags/AI-Agent/"/>
-    <id>https://blog.sakurink.eu.org/posts/1816701443/</id>
-    <link href="https://blog.sakurink.eu.org/posts/1816701443/"/>
-    <published>2026-03-17T14:30:30.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet"]]>
-    </summary>
-    <title>OpenClaw 十分火爆，但你真的需要它吗</title>
-    <updated>2026-03-17T14:30:35.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    <category term="Linux" scheme="https://blog.sakurink.eu.org/tags/Linux/"/>
-    <id>https://blog.sakurink.eu.org/posts/360390325/</id>
-    <link href="https://blog.sakurink.eu.org/posts/360390325/"/>
-    <published>2026-03-10T14:30:30.000Z</published>
-    <summary>Linux 太好玩了（bushi），顺带聊些关于“Free software”的东西……</summary>
-    <title>请问您今天要来点 FOSS 吗</title>
-    <updated>2026-03-10T14:30:35.000Z</updated>
   </entry>
 </feed>
