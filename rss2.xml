@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sat, 09 May 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 05:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,18 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>移动端 Epic Games 如何领取游戏</title>
+      <link>https://blog.sakurink.eu.org/posts/1990629822/</link>
+      <description>
+        <![CDATA[<p>最近突然发现《Monument Valley Ⅲ》在]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Games/">Games</category>
+      <pubDate>Sat, 23 May 2026 05:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>你们两个，是同一个人吗</title>
       <link>https://blog.sakurink.eu.org/posts/4002118284/</link>
@@ -112,14 +124,6 @@
       <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
       <category domain="https://blog.sakurink.eu.org/tags/Server/">Server</category>
       <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Between graphics and text</title>
-      <link>https://blog.sakurink.eu.org/posts/275402414/</link>
-      <description>图形化与命令行、图片与纯文本解决方案</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      <pubDate>Sat, 21 Mar 2026 12:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>
