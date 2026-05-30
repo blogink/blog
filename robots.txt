@@ -63,5 +63,7 @@ Disallow: /lib/
 Disallow: /live2dw/
 Disallow: /artitalk/
 Disallow: /attach/
+Disallow: /essay/
+Disallow: /shuoshuo/
 
 Sitemap: https://blog.sakurink.eu.org/sitemap.xml

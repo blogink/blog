@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sat, 23 May 2026 05:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 07:30:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,18 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>李邕能鉴别出 AI 书法吗</title>
+      <link>https://blog.sakurink.eu.org/posts/2253432180/</link>
+      <description>
+        <![CDATA[<p>以前我的语文老师规定我们定期做文言文阅读题（试题自然是]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <pubDate>Sat, 30 May 2026 07:30:00 GMT</pubDate>
+    </item>
     <item>
       <title>移动端 Epic Games 如何领取游戏</title>
       <link>https://blog.sakurink.eu.org/posts/1990629822/</link>
@@ -113,17 +125,6 @@
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
       <pubDate>Wed, 01 Apr 2026 13:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>利用 Serv00 搭建自己的域名邮箱</title>
-      <link>https://blog.sakurink.eu.org/posts/2084688939/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet"]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Server/">Server</category>
-      <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
