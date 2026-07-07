@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sat, 30 May 2026 07:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 10:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,15 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>博客五周年记</title>
+      <link>https://blog.sakurink.eu.org/posts/2843923116/</link>
+      <description>感觉距离上一篇周年记也没过去多久啊……</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A/">网站公告</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%A8%E5%B9%B4%E8%AE%B0/">周年记</category>
+      <pubDate>Sun, 05 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>李邕能鉴别出 AI 书法吗</title>
       <link>https://blog.sakurink.eu.org/posts/2253432180/</link>
@@ -66,7 +75,6 @@
       </description>
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E6%AD%BB%E4%BA%A1/">死亡</category>
       <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
       <pubDate>Tue, 05 May 2026 12:00:00 GMT</pubDate>
     </item>
@@ -134,14 +142,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/Codeberg/">Codeberg</category>
       <category domain="https://blog.sakurink.eu.org/tags/Git/">Git</category>
       <pubDate>Fri, 03 Apr 2026 13:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>TXT, MP4 and MP3</title>
-      <link>https://blog.sakurink.eu.org/posts/3472109359/</link>
-      <description>在钢铁丛林里寻得一方静谧之地，看看书籍，欣赏些长视频和音乐</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      <pubDate>Wed, 01 Apr 2026 13:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>
