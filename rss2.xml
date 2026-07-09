@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sun, 05 Jul 2026 10:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 08:18:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/icon.png</url>
@@ -14,6 +14,19 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>浮生散笺 7EA 04</title>
+      <link>https://blog.sakurink.eu.org/posts/1350488371/</link>
+      <description>一个成败皆因开源的论坛，一个日渐封闭的开放系统，一种已然式微的精神</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/PHP/">PHP</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%92%E8%81%94%E7%BD%91/">互联网</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%BC%80%E5%8F%91/">开发</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Android/">Android</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Meme/">Meme</category>
+      <pubDate>Thu, 09 Jul 2026 08:18:00 GMT</pubDate>
+    </item>
     <item>
       <title>博客五周年记</title>
       <link>https://blog.sakurink.eu.org/posts/2843923116/</link>
@@ -130,18 +143,6 @@
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
       <pubDate>Mon, 06 Apr 2026 14:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>Hello, Codeberg</title>
-      <link>https://blog.sakurink.eu.org/posts/2126873033/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>我看这 GitHub 自从被微软收购后也是逐渐开始完蛋了。虽说“百足之虫，死而不僵”，亦或是“瘦死的骆驼比马大”，它的影响力仍然是不可忽视的（上网搜索 Git 托管平台清一色关联到]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Codeberg/">Codeberg</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Git/">Git</category>
-      <pubDate>Fri, 03 Apr 2026 13:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>
