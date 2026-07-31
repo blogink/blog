@@ -11,7 +11,24 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-07-22T12:30:00.000Z</updated>
+  <updated>2026-07-28T13:06:26.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="Human" scheme="https://blog.sakurink.eu.org/tags/Human/"/>
+    <category term="「我」" scheme="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/"/>
+    <category term="人与AI" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/"/>
+    <id>https://blog.sakurink.eu.org/posts/784047031/</id>
+    <link href="https://blog.sakurink.eu.org/posts/784047031/"/>
+    <published>2026-07-28T13:06:24.000Z</published>
+    <summary>
+      <![CDATA[<p>在《废墟图书馆》与《边狱公司》的世界观中，社会秩序由首脑、眼线和爪牙维持基础运转，其余的“巢”则由巨型企业管理。“食指”（The Index）是后巷中最强大的五个帮派组织“五指”（The Five]]>
+    </summary>
+    <title>如果现实中有“食指”，也许有不少人会排队加入？</title>
+    <updated>2026-07-28T13:06:26.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -24,7 +41,7 @@
     <link href="https://blog.sakurink.eu.org/posts/1515893910/"/>
     <published>2026-07-22T12:30:00.000Z</published>
     <summary>为什么二游几乎一定会有“键政”环节</summary>
-    <title>那些二次元游戏剧情中的“风味政治”</title>
+    <title>论二次元游戏剧情中的“风味政治”</title>
     <updated>2026-07-22T12:30:00.000Z</updated>
   </entry>
   <entry>
@@ -162,21 +179,5 @@
     </summary>
     <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
     <updated>2026-04-15T09:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    <category term="阅读" scheme="https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/"/>
-    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
-    <id>https://blog.sakurink.eu.org/posts/3125066766/</id>
-    <link href="https://blog.sakurink.eu.org/posts/3125066766/"/>
-    <published>2026-04-09T13:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>先说结论：新闻泛用型较低，对策性一般，总的来说属于大杯。新闻的优势区间主要集中在：1. 对新鲜事件及时反馈，帮助读者足不出户了解世事万物；2. 极佳的诱导作用，在编者想要获取大量关注时，可以通过特定词汇来起标题，吸引读者阅读兴趣。新闻的劣势区间主要集中在：1. 在大量事件对应的新闻并发时读者难以保持专注，利用错失焦虑（Fear of Missing Out）使得读者将大量时间放在阅读这些新闻上；2. 实用价值没那么高，许多所谓“新闻”仅仅只是热搜，而且还有挤占更应该关注的新闻的风险；3.]]>
-    </summary>
-    <title>当我减少阅读新闻之后</title>
-    <updated>2026-05-16T02:00:00.000Z</updated>
   </entry>
 </feed>

@@ -1,4 +1,6 @@
+https://blog.sakurink.eu.org/posts/784047031/
 https://blog.sakurink.eu.org/posts/1515893910/
+https://blog.sakurink.eu.org/posts/1477501590/
 https://blog.sakurink.eu.org/about/index.html
 https://blog.sakurink.eu.org/posts/1350488371/
 https://blog.sakurink.eu.org/posts/3062615309/
@@ -64,7 +66,6 @@ https://blog.sakurink.eu.org/posts/3029518241/
 https://blog.sakurink.eu.org/posts/1817611129/
 https://blog.sakurink.eu.org/posts/1628586937/
 https://blog.sakurink.eu.org/posts/1109049055/
-https://blog.sakurink.eu.org/posts/1477501590/
 https://blog.sakurink.eu.org/posts/2450481449/
 https://blog.sakurink.eu.org/posts/2127331844/
 https://blog.sakurink.eu.org/posts/3791443755/
@@ -152,6 +153,9 @@ https://blog.sakurink.eu.org/tags/%E5%BC%80%E5%8F%91/
 https://blog.sakurink.eu.org/tags/Android/
 https://blog.sakurink.eu.org/tags/Meme/
 https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/
+https://blog.sakurink.eu.org/tags/Human/
+https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/
+https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/
 https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/
 https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/
 https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0/
