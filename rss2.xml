@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>雨梦清欢</title>
+    <link>https://blog.sakurink.eu.org/</link>
+    <description>不受律束，笔随兴至</description>
+    <language>zh-CN</language>
+    <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
+    <lastBuildDate>Mon, 10 Aug 2026 13:30:30 GMT</lastBuildDate>
+    <generator>Hexo</generator>
+    <image>
+      <url>https://blog.sakurink.eu.org/icon.png</url>
+      <title>雨梦清欢</title>
+      <link>https://blog.sakurink.eu.org/</link>
+    </image>
+    <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>他不在他讲的那些句子里</title>
+      <link>https://blog.sakurink.eu.org/posts/796863537/</link>
+      <description>
+        <![CDATA[<p>我首次接触这类内容应该是从微信公众号开始。按照网友所言，这个地方只要耐心找总能找到可以与家族群里上了年纪的老人“魔法对轰”的内容。不过我很少会优先从这里寻找材料，至少目前我还是更倾向使用传统搜索引擎获取对我而言处于陌生地带的资料。</p>
+<p>让我回忆一下，这里的确有平常搜索引擎找不到的“邪修”知识，但我目前关注的几个公众号大多是从别处寻找至此的（它们的主力平台在这里），又或是为了登录个什么网站而关注的。真是因为看了有趣的内容而关注的，是很久之前了（那时我的主力确实都在微信上；顺带一提，那时优酷、爱奇艺等平台上的 Minecraft 内容还脍炙人口）。</p>
+<p>说回正题。在约]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
+      <pubDate>Mon, 10 Aug 2026 13:30:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>OpenCode 重新安装小记</title>
+      <link>https://blog.sakurink.eu.org/posts/3404561509/</link>
+      <description>
+        <![CDATA[<p>貌似从我安装完 CC Switch 之后的某日起，OpenCode 每次启动都会提示错误：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opencode 与你运行的 Windows 版本不兼容</span><br></pre></td></tr></table></figure>
+<p>CC Switch 查看到]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
+      <category domain="https://blog.sakurink.eu.org/tags/OpenCode/">OpenCode</category>
+      <pubDate>Wed, 05 Aug 2026 07:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>如果现实中有“食指”，也许有不少人会排队加入？</title>
+      <link>https://blog.sakurink.eu.org/posts/784047031/</link>
+      <description>
+        <![CDATA[<p>在《废墟图书馆》与《边狱公司》的世界观中，社会秩序由首脑、眼线和爪牙维持基础运转，其余的“巢”则由巨型企业管理。“食指”（The Index）[^1]是后巷中最强大的五个帮派组织“五指”（The Five]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Human/">Human</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
+      <pubDate>Tue, 28 Jul 2026 13:06:24 GMT</pubDate>
+    </item>
+    <item>
+      <title>论二次元游戏剧情中的宏大叙事</title>
+      <link>https://blog.sakurink.eu.org/posts/1515893910/</link>
+      <description>为什么二游触及宏大叙事时很容易垮掉，以及为什么二游几乎都会有“键政”环节</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/">二次元</category>
+      <pubDate>Wed, 22 Jul 2026 12:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>浮生散笺 7EA 04</title>
+      <link>https://blog.sakurink.eu.org/posts/1350488371/</link>
+      <description>一个成败皆因开源的论坛，一个日渐封闭的开放系统，一种已然式微的精神</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/PHP/">PHP</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%92%E8%81%94%E7%BD%91/">互联网</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%BC%80%E5%8F%91/">开发</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Android/">Android</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Meme/">Meme</category>
+      <pubDate>Thu, 09 Jul 2026 08:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>博客五周年记</title>
+      <link>https://blog.sakurink.eu.org/posts/2843923116/</link>
+      <description>感觉距离上一篇周年记也没过去多久啊……</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A/">网站公告</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%91%A8%E5%B9%B4%E8%AE%B0/">周年记</category>
+      <pubDate>Sun, 05 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>李邕能鉴别出 AI 书法吗</title>
+      <link>https://blog.sakurink.eu.org/posts/2253432180/</link>
+      <description>
+        <![CDATA[<p>以前我的语文老师要求我们定期做文言文阅读题（试题自然是用的订购的教辅材料）。里面有一篇如下：</p>
+<blockquote>
+<p>萧诚自矜札翰，李邕恒自言别书，二人俱在南中，萧有所书，将谓称意，以呈邕，邕辄不许。萧疾其掩己，遂假作古帖数幅，朝夕把玩，令其故暗，见者皆以为数百年书也。萧诣邕云：“有右军真迹，宝之已久，欲呈大匠。”李欣然愿见。萧故迟四旬日，未肯出也。后因论及，李故请见，曰：“许而不去，得非诳乎。”萧于是令家童归见取，不得，惊曰：”前某客来见之，当被窃去。”李诚以为信矣。萧良久曰：”吾置在某处，遂忘之。”遽令走出。既至，李寻绎久，不疑其诈，云是真物，平生未见。在坐者咸以为然]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <pubDate>Sat, 30 May 2026 07:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>移动端 Epic Games 如何领取游戏</title>
+      <link>https://blog.sakurink.eu.org/posts/1990629822/</link>
+      <description>
+        <![CDATA[<p>最近突然发现《Monument Valley Ⅲ》在 Epic 上限免了（只有移动端），于是领取之。</p>
+<p>虽然 Epic~~（不只有）~~客户端是真烂，但有时候送的游戏还不错，只能忍下来了。</p>
+<h2 id="客户端安装与登录">客户端安装与登录</h2>
+<p>使用不同的设备访问 <a href="https://store.epicgames.com/" rel="external nofollow noreferrer">Epic Games]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Games/">Games</category>
+      <pubDate>Sat, 23 May 2026 05:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>你们两个，是同一个人吗</title>
+      <link>https://blog.sakurink.eu.org/posts/4002118284/</link>
+      <description>在游戏与影视的虚拟世界里，“同位体”早已不是陌生的设定。那么同位体角色是什么？为什么同样是同位体设计，有的能被市场和粉丝接受，有的却只能招致骂声？</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
+      <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>闭 mù 仪式</title>
+      <link>https://blog.sakurink.eu.org/posts/2290477339/</link>
+      <description>有东西被加密了，请输入密码查看。</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
+      <pubDate>Tue, 05 May 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
