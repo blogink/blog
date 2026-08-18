@@ -10,7 +10,19 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-08-10T13:30:30.000Z</updated>
+  <updated>2026-08-18T13:50:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="抽象鬼畜" scheme="https://blog.sakurink.eu.org/categories/%E6%8A%BD%E8%B1%A1%E9%AC%BC%E7%95%9C/"/>
+    <id>https://blog.sakurink.eu.org/posts/1960436673/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1960436673/"/>
+    <published>2026-08-18T13:50:00.000Z</published>
+    <summary>先说结论：《牛来》影片本体非常烂，其 3D 建模粗糙程度可谓“灾难级”，配音和台词不知所云。因此，除非您真有闲情余钱，非要找点猎奇的东西体验不可，否则我绝对不建议您尝试观看这部影片。从影片本体的角度而言，我再怎么辩证也找不出可取之处，我不可能昧着良心硬说这是“良作”。这篇文章也不是影评——事实上，它的剧情和画面实在没什么可分析的。但是，影片之外的东西，倒是很有趣了……</summary>
+    <title>冥币驱逐劣币的猎奇之作——电影《牛来》杂谈</title>
+    <updated>2026-08-18T13:50:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -163,21 +175,5 @@
     </summary>
     <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
     <updated>2026-04-15T09:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    <category term="阅读" scheme="https://blog.sakurink.eu.org/tags/%E9%98%85%E8%AF%BB/"/>
-    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
-    <id>https://blog.sakurink.eu.org/posts/3125066766/</id>
-    <link href="https://blog.sakurink.eu.org/posts/3125066766/"/>
-    <published>2026-04-09T13:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>先说结论：新闻泛用型较低，对策性一般，总的来说属于大杯。新闻的优势区间主要集中在：1. 对新鲜事件及时反馈，帮助读者足不出户了解世事万物；2. 极佳的诱导作用，在编者想要获取大量关注时，可以通过特定词汇来起标题，吸引读者阅读兴趣。新闻的劣势区间主要集中在：1. 在大量事件对应的新闻并发时读者难以保持专注，利用错失焦虑（Fear of Missing]]>
-    </summary>
-    <title>当我减少阅读新闻之后</title>
-    <updated>2026-05-16T02:00:00.000Z</updated>
   </entry>
 </feed>
