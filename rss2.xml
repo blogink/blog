@@ -6,9 +6,22 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sat, 29 Aug 2026 08:15:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 12:18:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>在 Windows 下配置并运行 Llama.cpp</title>
+      <link>https://blog.sakurink.eu.org/posts/3945964249/</link>
+      <description>
+        <![CDATA[<p>据闻最近又有一个号称普通家用硬件就能跑的模型名为 Ornith，经过考查可以理解为基于 Qwen 二次开发的模型。</p>
+<p>有不少人称其为可达到 Claude Opus 4.8 级性能（跑分嘛，基本看看就行了），但我注意到它的部分版本可用更低配的硬件得到不错的响应速度，恰好我有些工作想使用 AI 辅助但尽可能注意隐私，遂尝试。</p>
+<p>顺便的，Ollama 基本是]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <pubDate>Mon, 24 Aug 2026 12:18:00 GMT</pubDate>
+    </item>
     <item>
       <title>冥币驱逐劣币的猎奇之作——电影《牛来》杂谈</title>
       <link>https://blog.sakurink.eu.org/posts/1960436673/</link>
@@ -120,17 +133,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
       <category domain="https://blog.sakurink.eu.org/tags/Games/">Games</category>
       <pubDate>Sat, 23 May 2026 05:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>你们两个，是同一个人吗</title>
-      <link>https://blog.sakurink.eu.org/posts/4002118284/</link>
-      <description>在游戏与影视的虚拟世界里，“同位体”早已不是陌生的设定。那么同位体角色是什么？为什么同样是同位体设计，有的能被市场和粉丝接受，有的却只能招致骂声？</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
-      <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
