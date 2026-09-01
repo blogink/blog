@@ -27,6 +27,22 @@
     <author>
       <name>R҉anhm⌬</name>
     </author>
+    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    <id>https://blog.sakurink.eu.org/posts/550432273/</id>
+    <link href="https://blog.sakurink.eu.org/posts/550432273/"/>
+    <published>2026-08-17T12:18:00.000Z</published>
+    <summary>
+      <![CDATA[<p>DeepSeek V4 Pro 0813 上线了，但 API 价格也上涨了。在接下来一段时间内，我如果想要使用原先的平价模型，可能得另寻高明了。</p>
+<p>不过，<a href="https://www.deepseek.com/harness/" rel="external nofollow noreferrer">DeepSeek Harness</a>]]>
+    </summary>
+    <title>DSH 初体验：DeepSeek 得到了自己的专武</title>
+    <updated>2026-08-30T12:18:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
     <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
     <category term="「我」" scheme="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/"/>
     <category term="人与AI" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/"/>
@@ -157,23 +173,5 @@
     <summary>在游戏与影视的虚拟世界里，“同位体”早已不是陌生的设定。那么同位体角色是什么？为什么同样是同位体设计，有的能被市场和粉丝接受，有的却只能招致骂声？</summary>
     <title>你们两个，是同一个人吗</title>
     <updated>2026-05-09T12:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
-    <category term="RSS" scheme="https://blog.sakurink.eu.org/tags/RSS/"/>
-    <category term="信息" scheme="https://blog.sakurink.eu.org/tags/%E4%BF%A1%E6%81%AF/"/>
-    <id>https://blog.sakurink.eu.org/posts/2805727908/</id>
-    <link href="https://blog.sakurink.eu.org/posts/2805727908/"/>
-    <published>2026-04-15T09:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>如今各种平台的推荐功能和信息流已经很完善了，但我认为这仍然是一种“被动”为主的接收信息方式。于是我整理了许多网站作为我的信息流来源。虽然它们不一定涵盖方方面面，但至少都是我自己选出来的，也算是有一定的主动性了。</p>
-<p>煮啵煮啵，你的平台推送确实很强，但逐个访问还是太吃操作了。有没有一种技术可以将这些网站的更新聚合起来、统一获取以供阅读，并且减少平台推荐算法的干扰？</p>
-<h2]]>
-    </summary>
-    <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
-    <updated>2026-04-15T09:00:00.000Z</updated>
   </entry>
 </feed>

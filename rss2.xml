@@ -18,6 +18,18 @@
       <pubDate>Tue, 18 Aug 2026 13:50:00 GMT</pubDate>
     </item>
     <item>
+      <title>DSH 初体验：DeepSeek 得到了自己的专武</title>
+      <link>https://blog.sakurink.eu.org/posts/550432273/</link>
+      <description>
+        <![CDATA[<p>DeepSeek V4 Pro 0813 上线了，但 API 价格也上涨了。在接下来一段时间内，我如果想要使用原先的平价模型，可能得另寻高明了。</p>
+<p>不过，<a href="https://www.deepseek.com/harness/" rel="external nofollow noreferrer">DeepSeek Harness</a>]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <pubDate>Mon, 17 Aug 2026 12:18:00 GMT</pubDate>
+    </item>
+    <item>
       <title>他不在他讲的那些句子里</title>
       <link>https://blog.sakurink.eu.org/posts/796863537/</link>
       <description>
@@ -119,20 +131,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
       <category domain="https://blog.sakurink.eu.org/tags/Vor-dem-Ende/">Vor dem Ende</category>
       <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>构建独属于自己的信息流：FreshRSS 上手体验</title>
-      <link>https://blog.sakurink.eu.org/posts/2805727908/</link>
-      <description>
-        <![CDATA[<p>如今各种平台的推荐功能和信息流已经很完善了，但我认为这仍然是一种“被动”为主的接收信息方式。于是我整理了许多网站作为我的信息流来源。虽然它们不一定涵盖方方面面，但至少都是我自己选出来的，也算是有一定的主动性了。</p>
-<p>煮啵煮啵，你的平台推送确实很强，但逐个访问还是太吃操作了。有没有一种技术可以将这些网站的更新聚合起来、统一获取以供阅读，并且减少平台推荐算法的干扰？</p>
-<h2]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
-      <category domain="https://blog.sakurink.eu.org/tags/RSS/">RSS</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E4%BF%A1%E6%81%AF/">信息</category>
-      <pubDate>Wed, 15 Apr 2026 09:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
