@@ -6,9 +6,24 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Tue, 01 Sep 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 08:45:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
+    <image>
+      <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
+      <title>雨梦清欢</title>
+      <link>https://blog.sakurink.eu.org/</link>
+    </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>浮生散笺 7EA 05</title>
+      <link>https://blog.sakurink.eu.org/posts/662299045/</link>
+      <description>夏天要结束了。她们只是虚拟的人物，故事也有个好结局，但我怎么感觉有一丝怅然……</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%A4%8F%E6%97%A5/">夏日</category>
+      <pubDate>Mon, 31 Aug 2026 08:18:00 GMT</pubDate>
+    </item>
     <item>
       <title>在 Windows 下配置并运行 Llama.cpp</title>
       <link>https://blog.sakurink.eu.org/posts/3945964249/</link>
@@ -119,21 +134,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
       <pubDate>Sat, 30 May 2026 07:30:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>移动端 Epic Games 如何领取游戏</title>
-      <link>https://blog.sakurink.eu.org/posts/1990629822/</link>
-      <description>
-        <![CDATA[<p>最近突然发现《Monument Valley Ⅲ》在 Epic 上限免了（只有移动端），于是领取之。</p>
-<p>虽然 Epic~~（不只有）~~客户端是真烂，但有时候送的游戏还不错，只能忍下来了。</p>
-<h2 id="客户端安装与登录">客户端安装与登录</h2>
-<p>使用不同的设备访问 <a href="https://store.epicgames.com/"]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E7%A8%8B%E5%BA%8F/">程序</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Games/">Games</category>
-      <pubDate>Sat, 23 May 2026 05:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
