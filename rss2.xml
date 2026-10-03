@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>雨梦清欢</title>
+    <link>https://blog.sakurink.eu.org/</link>
+    <description>不受律束，笔随兴至</description>
+    <language>zh-CN</language>
+    <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
+    <lastBuildDate>Sun, 13 Sep 2026 08:45:00 GMT</lastBuildDate>
+    <generator>Hexo</generator>
+    <image>
+      <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
+      <title>雨梦清欢</title>
+      <link>https://blog.sakurink.eu.org/</link>
+    </image>
+    <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>浮生散笺 7EA 05</title>
+      <link>https://blog.sakurink.eu.org/posts/662299045/</link>
+      <description>夏天要结束了。她们只是虚拟的人物，故事也有个好结局，但我怎么感觉有一丝怅然……</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%A4%8F%E6%97%A5/">夏日</category>
+      <pubDate>Mon, 31 Aug 2026 08:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>在 Windows 下配置并运行 Llama.cpp</title>
+      <link>https://blog.sakurink.eu.org/posts/3945964249/</link>
+      <description>
+        <![CDATA[<p>据闻最近又有一个号称普通家用硬件就能跑的模型名为 Ornith，经过考查可以理解为基于 Qwen 二次开发的模型。</p>
+<p>有不少人称其为可达到 Claude Opus 4.8 级性能（跑分嘛，基本看看就行了），但我注意到它的部分版本可用更低配的硬件得到不错的响应速度，恰好我有些工作想使用 AI 辅助但尽可能注意隐私，遂尝试。</p>
+<p>顺便的，Ollama 基本是]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <category domain="https://blog.sakurink.eu.org/tags/LLM/">LLM</category>
+      <pubDate>Mon, 24 Aug 2026 12:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>冥币驱逐劣币的猎奇之作——电影《牛来》杂谈</title>
+      <link>https://blog.sakurink.eu.org/posts/1960436673/</link>
+      <description>先说结论：《牛来》影片本体非常烂，其 3D 建模粗糙程度可谓“灾难级”，配音和台词不知所云。因此，除非您真有闲情余钱，非要找点猎奇的东西体验不可，否则我绝对不建议您尝试观看这部影片。从影片本体的角度而言，我再怎么辩证也找不出可取之处，我不可能昧着良心硬说这是“良作”。这篇文章也不是影评——事实上，它的剧情和画面实在没什么可分析的。但是，影片之外的东西，倒是很有趣了……</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E6%8A%BD%E8%B1%A1%E9%AC%BC%E7%95%9C/">抽象鬼畜</category>
+      <pubDate>Tue, 18 Aug 2026 13:50:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DSH 初体验：DeepSeek 得到了自己的专武</title>
+      <link>https://blog.sakurink.eu.org/posts/550432273/</link>
+      <description>
+        <![CDATA[<p>DeepSeek V4 Pro 0813 上线了，但 API 价格也上涨了。在接下来一段时间内，我如果想要使用原先的平价模型，可能得另寻高明了。</p>
+<p>不过，<a href="https://www.deepseek.com/harness/" rel="external nofollow noreferrer">DeepSeek Harness</a>]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <pubDate>Mon, 17 Aug 2026 12:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>他不在他讲的那些句子里</title>
+      <link>https://blog.sakurink.eu.org/posts/796863537/</link>
+      <description>
+        <![CDATA[<p>我首次接触这类内容应该是从微信公众号开始。按照网友所言，这个地方只要耐心找总能找到可以与家族群里上了年纪的老人“魔法对轰”的内容。不过我很少会优先从这里寻找材料，至少目前我还是更倾向使用传统搜索引擎获取对我而言处于陌生地带的资料。</p>
+<p>让我回忆一下，这里的确有平常搜索引擎找不到的“邪修”知识，但我目前关注的几个公众号大多是从别处寻找至此的（它们的主力平台在这里），又或是为了登录个什]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
+      <pubDate>Mon, 10 Aug 2026 13:30:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>OpenCode 重新安装小记</title>
+      <link>https://blog.sakurink.eu.org/posts/3404561509/</link>
+      <description>
+        <![CDATA[<p>貌似从我安装完 CC Switch 之后的某日起，OpenCode 每次启动都会提示错误：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
+      <category domain="https://blog.sakurink.eu.org/tags/OpenCode/">OpenCode</category>
+      <pubDate>Wed, 05 Aug 2026 07:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>如果现实中有“食指”，也许有不少人会排队加入？</title>
+      <link>https://blog.sakurink.eu.org/posts/784047031/</link>
+      <description>
+        <![CDATA[<p>在《废墟图书馆》与《边狱公司》的世界观中，社会秩序由首脑、眼线和爪牙维持基础运转，其余的“巢”则由巨型企业管理。“食指”（The Index）[^1]是后巷中最强大的五个帮派组织“五指”（The Five]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Human/">Human</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
+      <pubDate>Tue, 28 Jul 2026 13:06:24 GMT</pubDate>
+    </item>
+    <item>
+      <title>论二次元游戏剧情中的宏大叙事</title>
+      <link>https://blog.sakurink.eu.org/posts/1515893910/</link>
+      <description>为什么二游触及宏大叙事时很容易垮掉，以及为什么二游几乎都会有“键政”环节</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/">二次元</category>
+      <pubDate>Wed, 22 Jul 2026 12:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>浮生散笺 7EA 04</title>
+      <link>https://blog.sakurink.eu.org/posts/1350488371/</link>
+      <description>一个成败皆因开源的论坛，一个日渐封闭的开放系统，一种已然式微的精神</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/PHP/">PHP</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%92%E8%81%94%E7%BD%91/">互联网</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E5%BC%80%E5%8F%91/">开发</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Android/">Android</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Meme/">Meme</category>
+      <pubDate>Thu, 09 Jul 2026 08:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>李邕能鉴别出 AI 书法吗</title>
+      <link>https://blog.sakurink.eu.org/posts/2253432180/</link>
+      <description>
+        <![CDATA[<p>以前我的语文老师要求我们定期做文言文阅读题（试题自然是用的订购的教辅材料）。里面有一篇如下：</p>
+<blockquote>
+<p>萧诚自矜札翰，李邕恒自言别书，二人俱在南中，萧有所书，将谓称意，以呈邕，邕辄不许。萧疾其掩己，遂假作古帖数幅，朝夕把玩，令其故暗，见者皆以为数百年书也。萧诣邕云：“有右军真迹，宝之已久，欲呈大匠。”李欣然愿见。萧故迟四旬日，未肯出也。后因论及，李故请见，曰：“]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
+      <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <pubDate>Sat, 30 May 2026 07:30:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
