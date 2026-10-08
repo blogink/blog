@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>R҉anhm⌬</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>https://blog.sakurink.eu.org/source/img/favicon.png</icon>
+  <id>https://blog.sakurink.eu.org/</id>
+  <link href="https://blog.sakurink.eu.org/" rel="alternate"/>
+  <link href="https://blog.sakurink.eu.org/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, R҉anhm⌬</rights>
+  <subtitle>不受律束，笔随兴至</subtitle>
+  <title>雨梦清欢</title>
+  <updated>2026-10-08T08:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <id>https://blog.sakurink.eu.org/posts/3587639825/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3587639825/"/>
+    <published>2026-10-08T08:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>也许大家见过那些基于共同兴趣（如绘画交流、游戏探讨、开源网站建设，也可能是特定亚文化爱好等）自发形成的小圈子或社群，其多基于 QQ]]>
+    </summary>
+    <title>为什么小圈子几乎都会走向独裁</title>
+    <updated>2026-10-08T08:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="Diary" scheme="https://blog.sakurink.eu.org/tags/Diary/"/>
+    <id>https://blog.sakurink.eu.org/posts/3195056159/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3195056159/"/>
+    <published>2026-10-07T14:00:00.000Z</published>
+    <summary>随意的片段</summary>
+    <title>浮生散笺 7EA 06</title>
+    <updated>2026-10-07T14:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="游戏" scheme="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="夏日" scheme="https://blog.sakurink.eu.org/tags/%E5%A4%8F%E6%97%A5/"/>
+    <id>https://blog.sakurink.eu.org/posts/662299045/</id>
+    <link href="https://blog.sakurink.eu.org/posts/662299045/"/>
+    <published>2026-08-31T08:18:00.000Z</published>
+    <summary>夏天要结束了。她们只是虚拟的人物，故事也有个好结局，但我怎么感觉有一丝怅然……</summary>
+    <title>浮生散笺 7EA 05</title>
+    <updated>2026-09-13T08:45:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    <category term="LLM" scheme="https://blog.sakurink.eu.org/tags/LLM/"/>
+    <id>https://blog.sakurink.eu.org/posts/3945964249/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3945964249/"/>
+    <published>2026-08-24T12:18:00.000Z</published>
+    <summary>
+      <![CDATA[<p>据闻最近又有一个号称普通家用硬件就能跑的模型名为 Ornith，经过考查可以理解为基于 Qwen 二次开发的模型。</p>
+<p>有不少人称其为可达到 Claude Opus 4.8 级性能（跑分嘛，基本看看就行了），但我注意到它的部分版本可用更低配的硬件得到不错的响应速度，恰好我有些工作想使用 AI 辅助但尽可能注意隐私，遂尝试。</p>
+<p>顺便的，Ollama 基本是]]>
+    </summary>
+    <title>在 Windows 下配置并运行 Llama.cpp</title>
+    <updated>2026-09-13T08:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="抽象鬼畜" scheme="https://blog.sakurink.eu.org/categories/%E6%8A%BD%E8%B1%A1%E9%AC%BC%E7%95%9C/"/>
+    <id>https://blog.sakurink.eu.org/posts/1960436673/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1960436673/"/>
+    <published>2026-08-18T13:50:00.000Z</published>
+    <summary>先说结论：《牛来》影片本体非常烂，其 3D 建模粗糙程度可谓“灾难级”，配音和台词不知所云。因此，除非您真有闲情余钱，非要找点猎奇的东西体验不可，否则我绝对不建议您尝试观看这部影片。从影片本体的角度而言，我再怎么辩证也找不出可取之处，我不可能昧着良心硬说这是“良作”。这篇文章也不是影评——事实上，它的剧情和画面实在没什么可分析的。但是，影片之外的东西，倒是很有趣了……</summary>
+    <title>冥币驱逐劣币的猎奇之作——电影《牛来》杂谈</title>
+    <updated>2026-08-29T08:15:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
+    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
+    <id>https://blog.sakurink.eu.org/posts/550432273/</id>
+    <link href="https://blog.sakurink.eu.org/posts/550432273/"/>
+    <published>2026-08-17T12:18:00.000Z</published>
+    <summary>
+      <![CDATA[<p>DeepSeek V4 Pro 0813 上线了，但 API 价格也上涨了。在接下来一段时间内，我如果想要使用原先的平价模型，可能得另寻高明了。</p>
+<p>不过，<a href="https://www.deepseek.com/harness/" rel="external nofollow noreferrer">DeepSeek Harness</a>]]>
+    </summary>
+    <title>DSH 初体验：DeepSeek 得到了自己的专武</title>
+    <updated>2026-09-29T12:25:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="「我」" scheme="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/"/>
+    <category term="人与AI" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/"/>
+    <id>https://blog.sakurink.eu.org/posts/796863537/</id>
+    <link href="https://blog.sakurink.eu.org/posts/796863537/"/>
+    <published>2026-08-10T13:30:30.000Z</published>
+    <summary>
+      <![CDATA[<p>我首次接触这类内容应该是从微信公众号开始。按照网友所言，这个地方只要耐心找总能找到可以与家族群里上了年纪的老人“魔法对轰”的内容。不过我很少会优先从这里寻找材料，至少目前我还是更倾向使用传统搜索引擎获取对我而言处于陌生地带的资料。</p>
+<p>让我回忆一下，这里的确有平常搜索引擎找不到的“邪修”知识，但我目前关注的几个公众号大多是从别处寻找至此的（它们的主力平台在这里），又或是为了登录个什]]>
+    </summary>
+    <title>他不在他讲的那些句子里</title>
+    <updated>2026-08-10T13:30:30.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="Node.js" scheme="https://blog.sakurink.eu.org/tags/Node-js/"/>
+    <category term="OpenCode" scheme="https://blog.sakurink.eu.org/tags/OpenCode/"/>
+    <id>https://blog.sakurink.eu.org/posts/3404561509/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3404561509/"/>
+    <published>2026-08-05T07:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>貌似从我安装完 CC Switch 之后的某日起，OpenCode 每次启动都会提示错误：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span]]>
+    </summary>
+    <title>OpenCode 重新安装小记</title>
+    <updated>2026-08-12T07:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="Human" scheme="https://blog.sakurink.eu.org/tags/Human/"/>
+    <category term="「我」" scheme="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/"/>
+    <category term="人与AI" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/"/>
+    <id>https://blog.sakurink.eu.org/posts/784047031/</id>
+    <link href="https://blog.sakurink.eu.org/posts/784047031/"/>
+    <published>2026-07-28T13:06:24.000Z</published>
+    <summary>
+      <![CDATA[<p>在《废墟图书馆》与《边狱公司》的世界观中，社会秩序由首脑、眼线和爪牙维持基础运转，其余的“巢”则由巨型企业管理。“食指”（The Index）[^1]是后巷中最强大的五个帮派组织“五指”（The Five]]>
+    </summary>
+    <title>如果现实中有“食指”，也许有不少人会排队加入？</title>
+    <updated>2026-07-28T13:06:26.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
+    <category term="游戏" scheme="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="二次元" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/"/>
+    <id>https://blog.sakurink.eu.org/posts/1515893910/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1515893910/"/>
+    <published>2026-07-22T12:30:00.000Z</published>
+    <summary>为什么二游触及宏大叙事时很容易垮掉，以及为什么二游几乎都会有“键政”环节</summary>
+    <title>论二次元游戏剧情中的宏大叙事</title>
+    <updated>2026-07-22T12:30:00.000Z</updated>
+  </entry>
+</feed>
