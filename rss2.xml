@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Thu, 08 Oct 2026 08:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 12:24:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
@@ -14,6 +14,19 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hexo 如何禁用 GitHub Pages 的 Jekyll 构建流程</title>
+      <link>https://blog.sakurink.eu.org/posts/3723256099/</link>
+      <description>
+        <![CDATA[<p>目前站点主力部署在 GitHub Pages 上，但最近站点更新推送出现了问题，翻看 Action 记录发现多日前就<code>pages build and deployment</code>了。</p>
+<p>虽然几个知名的 SSG 框架可以借助 GitHub Actions 自动部署节省时间（本地只需推送源码而非编译后的产物），但改动内容后我通常要本地预览一遍，因此我没有用]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/GitHub/">GitHub</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Hexo/">Hexo</category>
+      <pubDate>Fri, 09 Oct 2026 12:24:00 GMT</pubDate>
+    </item>
     <item>
       <title>为什么小圈子几乎都会走向独裁</title>
       <link>https://blog.sakurink.eu.org/posts/3587639825/</link>
@@ -115,17 +128,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
       <pubDate>Tue, 28 Jul 2026 13:06:24 GMT</pubDate>
-    </item>
-    <item>
-      <title>论二次元游戏剧情中的宏大叙事</title>
-      <link>https://blog.sakurink.eu.org/posts/1515893910/</link>
-      <description>为什么二游触及宏大叙事时很容易垮掉，以及为什么二游几乎都会有“键政”环节</description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/">绘览三千</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/">二次元</category>
-      <pubDate>Wed, 22 Jul 2026 12:30:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
