@@ -11,7 +11,25 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-10-09T12:24:00.000Z</updated>
+  <updated>2026-10-13T07:15:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="Cloudflare" scheme="https://blog.sakurink.eu.org/tags/Cloudflare/"/>
+    <category term="网盘" scheme="https://blog.sakurink.eu.org/tags/%E7%BD%91%E7%9B%98/"/>
+    <id>https://blog.sakurink.eu.org/posts/2166442228/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2166442228/"/>
+    <published>2026-10-13T07:15:00.000Z</published>
+    <summary>
+      <![CDATA[<p>前不久发现 OpenList 维护团队开发了 OpenList 的 Serverless 架构移植版本，这意味着可以通过 Cloudflare Workers、EdgeOne Makers 等边缘计算平台部署，而不必自备服务器。</p>
+<p>虽然 Cf 免费版有一定限制，但小文件传输和简单的文件浏览还是足够的。</p>
+<h2 id="Alist-与-OpenList">Alist 与]]>
+    </summary>
+    <title>自建网盘聚合工具：OpenList Worker 部署流程</title>
+    <updated>2026-10-13T07:15:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -149,22 +167,5 @@
     </summary>
     <title>OpenCode 重新安装小记</title>
     <updated>2026-08-12T07:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
-    <category term="Human" scheme="https://blog.sakurink.eu.org/tags/Human/"/>
-    <category term="「我」" scheme="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/"/>
-    <category term="人与AI" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/"/>
-    <id>https://blog.sakurink.eu.org/posts/784047031/</id>
-    <link href="https://blog.sakurink.eu.org/posts/784047031/"/>
-    <published>2026-07-28T13:06:24.000Z</published>
-    <summary>
-      <![CDATA[<p>在《废墟图书馆》与《边狱公司》的世界观中，社会秩序由首脑、眼线和爪牙维持基础运转，其余的“巢”则由巨型企业管理。“食指”（The Index）[^1]是后巷中最强大的五个帮派组织“五指”（The Five]]>
-    </summary>
-    <title>如果现实中有“食指”，也许有不少人会排队加入？</title>
-    <updated>2026-07-28T13:06:26.000Z</updated>
   </entry>
 </feed>
