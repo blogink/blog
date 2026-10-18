@@ -11,7 +11,24 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-10-13T07:15:00.000Z</updated>
+  <updated>2026-10-18T02:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
+    <category term="Node.js" scheme="https://blog.sakurink.eu.org/tags/Node-js/"/>
+    <category term="Serv00" scheme="https://blog.sakurink.eu.org/tags/Serv00/"/>
+    <id>https://blog.sakurink.eu.org/posts/1728069743/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1728069743/"/>
+    <published>2026-10-18T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p>
+<p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署（这应该是我在 Serv00 上运行的第一个非 PHP]]>
+    </summary>
+    <title>如何在 Serv00 上部署卫戍协议同人游戏</title>
+    <updated>2026-10-18T02:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -150,22 +167,5 @@
     </summary>
     <title>他不在他讲的那些句子里</title>
     <updated>2026-08-10T13:30:30.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    <category term="Node.js" scheme="https://blog.sakurink.eu.org/tags/Node-js/"/>
-    <category term="OpenCode" scheme="https://blog.sakurink.eu.org/tags/OpenCode/"/>
-    <id>https://blog.sakurink.eu.org/posts/3404561509/</id>
-    <link href="https://blog.sakurink.eu.org/posts/3404561509/"/>
-    <published>2026-08-05T07:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>貌似从我安装完 CC Switch 之后的某日起，OpenCode 每次启动都会提示错误：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span]]>
-    </summary>
-    <title>OpenCode 重新安装小记</title>
-    <updated>2026-08-12T07:00:00.000Z</updated>
   </entry>
 </feed>

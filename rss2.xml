@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Tue, 13 Oct 2026 07:15:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 02:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
@@ -14,6 +14,19 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>如何在 Serv00 上部署卫戍协议同人游戏</title>
+      <link>https://blog.sakurink.eu.org/posts/1728069743/</link>
+      <description>
+        <![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p>
+<p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署（这应该是我在 Serv00 上运行的第一个非 PHP]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Serv00/">Serv00</category>
+      <pubDate>Sun, 18 Oct 2026 02:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>自建网盘聚合工具：OpenList Worker 部署流程</title>
       <link>https://blog.sakurink.eu.org/posts/2166442228/</link>
@@ -116,19 +129,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
       <pubDate>Mon, 10 Aug 2026 13:30:30 GMT</pubDate>
-    </item>
-    <item>
-      <title>OpenCode 重新安装小记</title>
-      <link>https://blog.sakurink.eu.org/posts/3404561509/</link>
-      <description>
-        <![CDATA[<p>貌似从我安装完 CC Switch 之后的某日起，OpenCode 每次启动都会提示错误：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">经验记录</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
-      <category domain="https://blog.sakurink.eu.org/tags/OpenCode/">OpenCode</category>
-      <pubDate>Wed, 05 Aug 2026 07:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
