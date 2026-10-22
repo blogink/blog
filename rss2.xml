@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sun, 18 Oct 2026 02:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 12:42:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
@@ -14,6 +14,18 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>浮生散笺 7EA 07</title>
+      <link>https://blog.sakurink.eu.org/posts/3380052105/</link>
+      <description>这两天互联网不太平，算了安心打游戏吧……什么叫第三方启动器因某个小孩举报的“顺手”之举而“明哲保身”了？</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Node-js/">Node.js</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <category domain="https://blog.sakurink.eu.org/tags/Games/">Games</category>
+      <category domain="https://blog.sakurink.eu.org/tags/PHP/">PHP</category>
+      <pubDate>Thu, 22 Oct 2026 12:42:00 GMT</pubDate>
+    </item>
     <item>
       <title>如何在 Serv00 上部署卫戍协议同人游戏</title>
       <link>https://blog.sakurink.eu.org/posts/1728069743/</link>
@@ -116,19 +128,6 @@
       <category domain="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/">体验推荐</category>
       <category domain="https://blog.sakurink.eu.org/tags/AI/">AI</category>
       <pubDate>Mon, 17 Aug 2026 12:18:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>他不在他讲的那些句子里</title>
-      <link>https://blog.sakurink.eu.org/posts/796863537/</link>
-      <description>
-        <![CDATA[<p>我首次接触这类内容应该是从微信公众号开始。按照网友所言，这个地方只要耐心找总能找到可以与家族群里上了年纪的老人“魔法对轰”的内容。不过我很少会优先从这里寻找材料，至少目前我还是更倾向使用传统搜索引擎获取对我而言处于陌生地带的资料。</p>
-<p>让我回忆一下，这里的确有平常搜索引擎找不到的“邪修”知识，但我目前关注的几个公众号大多是从别处寻找至此的（它们的主力平台在这里），又或是为了登录个什]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E3%80%8C%E6%88%91%E3%80%8D/">「我」</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E4%BA%BA%E4%B8%8EAI/">人与AI</category>
-      <pubDate>Mon, 10 Aug 2026 13:30:30 GMT</pubDate>
     </item>
   </channel>
 </rss>
