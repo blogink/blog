@@ -11,7 +11,34 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-10-23T15:00:00.000Z</updated>
+  <updated>2026-10-28T09:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
+    <id>https://blog.sakurink.eu.org/posts/2543520797/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2543520797/"/>
+    <published>2026-10-28T09:00:00.000Z</published>
+    <summary>好的作品一定要让观众学到些什么吗？在讨论这个问题之前，先绕个弯：观点讨论里常冒出来的那句&quot;你有什么资格教我做事&quot;，到底在问什么？</summary>
+    <title>好作品必须有教育意义吗？Ⅰ</title>
+    <updated>2026-10-28T09:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
+    <category term="隐私" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%90%E7%A7%81/"/>
+    <id>https://blog.sakurink.eu.org/posts/1366080631/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1366080631/"/>
+    <published>2026-10-24T12:00:00.000Z</published>
+    <summary>现在上网该不该关心隐私？</summary>
+    <title>“这么在意隐私，是不是干了什么见不得人的事”</title>
+    <updated>2026-10-24T12:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -40,10 +67,10 @@
     <published>2026-10-18T02:00:00.000Z</published>
     <summary>
       <![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p>
-<p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署（这应该是我在 Serv00 上运行的第一个非 PHP]]>
+<p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署,当作练习（这应该是我在 Serv00 上运行的第一个非 PHP]]>
     </summary>
     <title>如何在 Serv00 上部署卫戍协议同人游戏</title>
-    <updated>2026-10-18T02:00:00.000Z</updated>
+    <updated>2026-10-25T14:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -138,33 +165,5 @@
     </summary>
     <title>在 Windows 下配置并运行 Llama.cpp</title>
     <updated>2026-09-13T08:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="抽象鬼畜" scheme="https://blog.sakurink.eu.org/categories/%E6%8A%BD%E8%B1%A1%E9%AC%BC%E7%95%9C/"/>
-    <id>https://blog.sakurink.eu.org/posts/1960436673/</id>
-    <link href="https://blog.sakurink.eu.org/posts/1960436673/"/>
-    <published>2026-08-18T13:50:00.000Z</published>
-    <summary>先说结论：《牛来》影片本体非常烂，其 3D 建模粗糙程度可谓“灾难级”，配音和台词不知所云。因此，除非您真有闲情余钱，非要找点猎奇的东西体验不可，否则我绝对不建议您尝试观看这部影片。从影片本体的角度而言，我再怎么辩证也找不出可取之处，我不可能昧着良心硬说这是“良作”。这篇文章也不是影评——事实上，它的剧情和画面实在没什么可分析的。但是，影片之外的东西，倒是很有趣了……</summary>
-    <title>冥币驱逐劣币的猎奇之作——电影《牛来》杂谈</title>
-    <updated>2026-08-29T08:15:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="体验推荐" scheme="https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/"/>
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    <id>https://blog.sakurink.eu.org/posts/550432273/</id>
-    <link href="https://blog.sakurink.eu.org/posts/550432273/"/>
-    <published>2026-08-17T12:18:00.000Z</published>
-    <summary>
-      <![CDATA[<p>DeepSeek V4 Pro 0813 上线了，但 API 价格也上涨了。在接下来一段时间内，我如果想要使用原先的平价模型，可能得另寻高明了。</p>
-<p>不过，<a href="https://www.deepseek.com/harness/" rel="external nofollow noreferrer">DeepSeek Harness</a>]]>
-    </summary>
-    <title>DSH 初体验：DeepSeek 得到了自己的专武</title>
-    <updated>2026-09-29T12:25:00.000Z</updated>
   </entry>
 </feed>
