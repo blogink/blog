@@ -11,7 +11,35 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-10-28T09:00:00.000Z</updated>
+  <updated>2026-10-30T05:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="绘览三千" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%98%E8%A7%88%E4%B8%89%E5%8D%83/"/>
+    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
+    <category term="游戏" scheme="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="二次元" scheme="https://blog.sakurink.eu.org/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/"/>
+    <id>https://blog.sakurink.eu.org/posts/2712698397/</id>
+    <link href="https://blog.sakurink.eu.org/posts/2712698397/"/>
+    <published>2026-10-30T05:00:00.000Z</published>
+    <summary>二游把故事装进游戏的壳里，大多活成了一只花瓶</summary>
+    <title>赛博花瓶</title>
+    <updated>2026-10-30T05:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
+    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
+    <id>https://blog.sakurink.eu.org/posts/3768335499/</id>
+    <link href="https://blog.sakurink.eu.org/posts/3768335499/"/>
+    <published>2026-10-29T12:00:00.000Z</published>
+    <summary>如果我从一部作品里读不出任何教育意义，它对我而言还算不算好作品？以及，非要给它安一个教育意义，会发生什么？</summary>
+    <title>好作品必须有教育意义吗？Ⅱ</title>
+    <updated>2026-10-29T12:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -133,37 +161,5 @@
     <summary>随意的片段</summary>
     <title>浮生散笺 7EA 06</title>
     <updated>2026-10-07T14:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="闲聊随写" scheme="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/"/>
-    <category term="游戏" scheme="https://blog.sakurink.eu.org/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="夏日" scheme="https://blog.sakurink.eu.org/tags/%E5%A4%8F%E6%97%A5/"/>
-    <id>https://blog.sakurink.eu.org/posts/662299045/</id>
-    <link href="https://blog.sakurink.eu.org/posts/662299045/"/>
-    <published>2026-08-31T08:18:00.000Z</published>
-    <summary>夏天要结束了。她们只是虚拟的人物，故事也有个好结局，但我怎么感觉有一丝怅然……</summary>
-    <title>浮生散笺 7EA 05</title>
-    <updated>2026-09-13T08:45:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="经验记录" scheme="https://blog.sakurink.eu.org/categories/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/"/>
-    <category term="AI" scheme="https://blog.sakurink.eu.org/tags/AI/"/>
-    <category term="LLM" scheme="https://blog.sakurink.eu.org/tags/LLM/"/>
-    <id>https://blog.sakurink.eu.org/posts/3945964249/</id>
-    <link href="https://blog.sakurink.eu.org/posts/3945964249/"/>
-    <published>2026-08-24T12:18:00.000Z</published>
-    <summary>
-      <![CDATA[<p>据闻最近又有一个号称普通家用硬件就能跑的模型名为 Ornith，经过考查可以理解为基于 Qwen 二次开发的模型。</p>
-<p>有不少人称其为可达到 Claude Opus 4.8 级性能（跑分嘛，基本看看就行了），但我注意到它的部分版本可用更低配的硬件得到不错的响应速度，恰好我有些工作想使用 AI 辅助但尽可能注意隐私，遂尝试。</p>
-<p>顺便的，Ollama 基本是]]>
-    </summary>
-    <title>在 Windows 下配置并运行 Llama.cpp</title>
-    <updated>2026-09-13T08:00:00.000Z</updated>
   </entry>
 </feed>
