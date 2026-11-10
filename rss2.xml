@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 10:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
@@ -15,9 +15,18 @@
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>好作品必须有教育意义吗？Ⅳ</title>
+      <link>https://blog.sakurink.eu.org/posts/244473255/</link>
+      <description>套公式可以节省考虑意外情况的精力，也是很容易无聊的，也是 AI 如鱼得水的。</description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E9%97%B2%E8%81%8A%E9%9A%8F%E5%86%99/">闲聊随写</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/">闪念</category>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>因为阳光太耀眼了</title>
       <link>https://blog.sakurink.eu.org/posts/274218671/</link>
-      <description>法庭没有删掉默尔索的任何一句真话，只是把它们重新排了一遍。《局外人》让我看到的，不是一个人因为撒谎而死，而是因为只会说准话而终于没有活路。没有表演悲伤、悔恨和人性，和别人不一样，这是他的“罪过”。他输掉的也许不是辩护，而是他始终没有学会用别人期待的方式说话。</description>
+      <description>法庭没有删掉默尔索任何一句真话，只是重新排了一遍。《局外人》让我看到的，不是一个人因为撒谎而死，而是因为只会说准话而终于没有活路。没有表演悲伤、悔恨和人性，和别人不一样，这是他的“罪过”。他始终没有学会用别人期待的方式说话。</description>
       <author>R҉anhm⌬</author>
       <category domain="https://blog.sakurink.eu.org/categories/%E5%BD%B1%E9%9F%B3%E6%96%87%E5%A8%B1/">影音文娱</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E5%8A%A0%E7%BC%AA/">加缪</category>
@@ -119,22 +128,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E6%95%99%E7%A8%8B/">教程</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1/">自建服务</category>
       <pubDate>Sun, 18 Oct 2026 02:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>自建网盘聚合工具：OpenList Worker 部署流程</title>
-      <link>https://blog.sakurink.eu.org/posts/2166442228/</link>
-      <description>
-        <![CDATA[<p>前不久发现 OpenList 维护团队开发了 OpenList 的 Serverless 架构移植版本，这意味着可以通过 Cloudflare Workers、EdgeOne Makers 等边缘计算平台部署，而不必自备服务器。</p>
-<p>虽然 Cf 免费版有一定限制，但小文件传输和简单的文件浏览还是足够的。</p>
-<h2 id="Alist-与-OpenList">Alist 与]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E8%BD%AF%E4%BB%B6%E7%BB%8F%E9%AA%8C/">软件经验</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Cloudflare/">Cloudflare</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1/">自建服务</category>
-      <category domain="https://blog.sakurink.eu.org/tags/OpenList/">OpenList</category>
-      <pubDate>Tue, 13 Oct 2026 07:15:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
