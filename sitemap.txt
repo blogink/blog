@@ -1,3 +1,4 @@
+https://blog.sakurink.eu.org/posts/1117794772/
 https://blog.sakurink.eu.org/update/index.html
 https://blog.sakurink.eu.org/posts/244473255/
 https://blog.sakurink.eu.org/posts/274218671/
@@ -219,6 +220,7 @@ https://blog.sakurink.eu.org/tags/Artitalk/
 https://blog.sakurink.eu.org/tags/Ubuntu/
 https://blog.sakurink.eu.org/tags/uv/
 https://blog.sakurink.eu.org/tags/%E5%88%B7%E6%9C%BA/
+https://blog.sakurink.eu.org/tags/%E8%A7%84%E5%88%99/
 https://blog.sakurink.eu.org/categories/%E4%BD%93%E9%AA%8C%E6%8E%A8%E8%8D%90/
 https://blog.sakurink.eu.org/categories/%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0/
 https://blog.sakurink.eu.org/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/

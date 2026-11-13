@@ -6,7 +6,7 @@
     <description>不受律束，笔随兴至</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, R҉anhm⌬</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 13:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://blog.sakurink.eu.org/source/img/favicon.png</url>
@@ -14,6 +14,19 @@
       <link>https://blog.sakurink.eu.org/</link>
     </image>
     <atom:link href="https://blog.sakurink.eu.org/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>判得不够，我觉得合适的就能补上吗</title>
+      <link>https://blog.sakurink.eu.org/posts/1117794772/</link>
+      <description>
+        <![CDATA[<p>作出处罚决定的人需要先找到事件中能被复核的损害，才能由事实判定谁造成的、损害有多大、该怎么判。不过这是非常理想的情况，现实中能够令人舒服地获知这些信息的情景少之又少。没有对应条文，或者证据凑不齐，真要处理也只能往别的条款上靠，或者干脆不罚。</p>
+<p>考虑到道德与法律共同作用于社会，有许多事情是道德上不好但距违法尚有距离的，例如插队、公共场合大声外放、各种用信息差赚钱等。法官等的是法定的]]>
+      </description>
+      <author>R҉anhm⌬</author>
+      <category domain="https://blog.sakurink.eu.org/categories/%E5%8D%B7%E5%BA%95%E9%9D%92%E9%94%8B/">卷底青锋</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E6%9D%82%E8%B0%88/">杂谈</category>
+      <category domain="https://blog.sakurink.eu.org/tags/%E8%A7%84%E5%88%99/">规则</category>
+      <pubDate>Thu, 12 Nov 2026 13:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>好作品必须有教育意义吗？Ⅳ</title>
       <link>https://blog.sakurink.eu.org/posts/244473255/</link>
@@ -114,20 +127,6 @@
       <category domain="https://blog.sakurink.eu.org/tags/%E6%9D%82%E8%B0%88/">杂谈</category>
       <category domain="https://blog.sakurink.eu.org/tags/%E6%B5%AE%E7%94%9F%E6%95%A3%E7%AC%BA/">浮生散笺</category>
       <pubDate>Thu, 22 Oct 2026 12:42:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>如何在 Serv00 上部署卫戍协议同人游戏</title>
-      <link>https://blog.sakurink.eu.org/posts/1728069743/</link>
-      <description>
-        <![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p>
-<p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署,当作练习（这应该是我在 Serv00 上运行的第一个非 PHP]]>
-      </description>
-      <author>R҉anhm⌬</author>
-      <category domain="https://blog.sakurink.eu.org/categories/%E8%BD%AF%E4%BB%B6%E7%BB%8F%E9%AA%8C/">软件经验</category>
-      <category domain="https://blog.sakurink.eu.org/tags/Serv00/">Serv00</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      <category domain="https://blog.sakurink.eu.org/tags/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1/">自建服务</category>
-      <pubDate>Sun, 18 Oct 2026 02:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
