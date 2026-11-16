@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MacBook Neo 简评：它应被以电脑要求吗</title>
+      <link href="/posts/3095881319/"/>
+      <url>/posts/3095881319/</url>
+      
+        <content type="html"><![CDATA[<p>先说结论：MacBook Neo 的泛用型较差，对策性尚可，总的来说属于大杯。优势区间主要集中在：1. 轻薄、屏幕与续航在这一档里表现不赖；2. 首发定价是全新 Mac 里最低的一档，叠加国补与教育优惠后还要再低一截；3. 无风扇与全域按压触控板，分别带来静音和一致的按压体验。劣势区间主要集中在：1. 统一内存焊死不可升级，多开标签页再导出视频时缺少缓冲；2. 多核与持续负载明显吃力，存储读取偏慢，单核只到 M1 的水平；3. 两个 USB-C 中有一个仅支持 USB 2.0 速率，扩展能力有限；4. 国内有一批报名、选课、考试流程限定桌面端，其中一些只支持 Windows 或指定浏览器，另有 SolidWorks 这类工科软件，官方系统要求里只列 Windows，Mac 上要跑得借虚拟机装一遍 Windows。</p><p>不过，在我原先准备吐槽它之前，我忽然意识到：我默认一台笔记本要当主力机，办事没有余量就是不合格。但如果它从一开始就没打算当主力机呢？</p><p>又或者——它一开始就没打算当电脑呢？</p><h2 id="干不了重活就是废物吗">干不了重活就是废物吗</h2><p>虽然用性能导向代替需求导向这种事已经被批评过很多次，但“几乎没有性能”仍是差评里很常见的说法。在我看来，它缺的不是跑轻活的能力，是没有为高负载工作留出余量。浏览网页、写文档、放视频都不卡，同时开十几个标签再导一段视频就卡住了。差评把后一半的结果，算成了前一半的问题。</p><p>但把“干不了重活”直接判成不合格，前提是一台电脑应当承担全部任务（甚至是本不该由它承担的任务）。这个前提我想先放一放。</p><p>说回机器，MacBook Neo 是今年 3 月发布的，是第一款把 A 系列芯片（A18 Pro，与 iPhone 16 Pro 同款）装进 Mac 的机器<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。大致浏览了评价，总结下来主要有两种：一边认可轻薄、屏幕与轻办公，另一边把“几乎没有性能”、稍大的任务就卡、macOS 与 Windows 的差异合起来，判为电子垃圾。至于舆论与销量为什么不匹配，已经有人写过<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>；我想问的是，它为什么在国内还占着一块地方。</p><p>既然价格压得这么低，配置又如此接近手机，这我高低得去看一眼。正好官方零售店摆了演示机。我在展台前没待多久，展机又不许装软件，能试的只有开网页、切文档、放视频；Codex 一类工具、高负载多开、视频导出、续航和兼容性，我无法验证。</p><p>先看机身：边角做了圆弧过渡，第一眼觉得精致。接口数下来只有三个，演示机上都在左侧，两个 USB-C 中有一个仅支持 USB 2 速率，另有一个 3.5 毫米耳机插孔<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>。这个价位了，触控板竟意外地不错，任意位置都能按下去（所谓全域按压）<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>。键盘没给我留下鲜明的印象，我平常对键盘要求不高，感知的只是没有不适应。屏幕部分的亮度、色准等，我没有相关的工具，无法验证质量，只能初步判断观感尚可。</p><p>我在展台上同时开了几个网页标签，又切文档、放视频，没有感到卡顿。也许是这几样恰好落在它的优势区间，重负载我没有第一手材料<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>。所以我只能说，这台机器在这几件轻任务上像一台正常电脑。它的受众如果只需要这些，确实够用了。</p><p>可这些工作对性能的需求，似乎平板和手机也能满足。毕竟曾经 Apple 称“你的下一台电脑何必是电脑”，iPad 配妙控键盘也能做类似的事情；再看配置，我更愿意相信 Apple 是照着平板做的 MacBook Neo——准确来说，是一台运行桌面操作系统、带实体键盘、比平板多一个 USB-C 接口的“大号平板”<sup class="footnote-ref"><a href="#fn3" id="fnref3:1">[3:1]</a></sup>。</p><h2 id="没有游戏机的地方，一台电脑要干两份活">没有游戏机的地方，一台电脑要干两份活</h2><p>到这里有人要说了：国外有游戏机，电脑很少被当作游戏设备，所以他们对这种配置和我们的“游戏本”之间的落差，感知不强。但我查到的数据并不支持这个说法。</p><p>美国的游戏消费里，手机是最大的单一平台，硬件占比不到一成，玩家也大多用移动设备玩<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>。不过，国外有主机分担 3A 与独占大作，高负载游戏不一定要由 PC 承担；笔记本弱一些也未必影响它的主要用途（我猜测国外买游戏本的，多少带点“富哥”意味）。</p><p>国内则不一样，“游戏机”的普及率很低，这个品类似乎自“游戏机禁令”之后就约等于“滚木”了。这导致办公和高负载游戏往往落在同一台 PC 上，对一段时间内只能保留一台电脑、还要兼顾携带的人来说，MacBook Neo 十分尴尬：它承担不了高负载游戏，也不兼容部分工作流程。</p><p>国内游戏产业的数字也大致如此，手游占去七成以上收入，主机只剩很小一块且还在下滑；客户端游戏是所有细分里增速最快的<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>。PC 作为游戏设备没有退场，回暖的正是对性能要求高的那一类。</p><p>顺带一提，我认为“游戏本”是一种畸形产物。论性能比不过相似配置的台式机；重量和续航摆在那，基本别想离电使用（例如 Alienware）；都兼顾了，价格就兼顾不了，这一点 ROG 用户应该最有发言权。但它恰好回应了这种一机多用的需求，所以在国内卖得好，尤其是大学新生。</p><p>Chromebook 这个品类在国内几乎不存在，学校机房与教师机默认 Windows，macOS 在其中算少见的了；2016 年阿里云联合惠普、英特尔做过 YunOS Book，后来又有主要在极客圈流传的 FydeOS（可以理解为国内版 ChromeOS），两次尝试都没形成广阔市场<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>。Googlebook 也不是它的同类：它在 2026 年秋开售，定价与内存起配都明显更高，Google 自己把它放在笔记本市场偏高端的一端<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup>，与 MacBook Neo 的价位和配置都不重叠。</p><p>在海外市场它可以作为 Chromebook 的替代品，但在国内没有对应品类，它就只能被看成最便宜的一台 Mac，被多数人以 Mac 的标准评价。</p><h2 id="老旧工作流程还需要一台电脑">老旧工作流程还需要一台电脑</h2><p>如前面所言，它的配置决定了它能做的事和手机差不多，多出来的只有那些没有移动端、或移动端适配不佳的产品与网页。“不需要一台电脑时它是可选的”，说的就是这个意思。但这个说法预设了桌面版更完整、移动版是删减版，实际上有失偏颇。放到国内，这类任务主要有两种。</p><p>一类是老旧的工作流程，大多集中在考试报名。例如，陕西省教育考试院的 NIT 报名公告指出“本网站暂不支持手机或 iPad 等移动电子设备报名”；《国际中文教师证书》的网考设备要求更直接，只支持 Windows，写明不支持在 MAC OS 与手机、平板上运行<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup>。这些流程并不吃性能，但限制了操作系统与指定浏览器。</p><p>另一类是只在手机、或者桌面端被主动收掉的服务。也不知从什么时候开始，有些主流应用把网页端改得乱七八糟，不少服务干脆只留手机端（搜索引擎污染、点一下就跳 APP、注册兜一圈回到手机验证码）。京东钱包的 PC 页面下线公告写着“请移步至「京东APP-我的-钱包-余额」”，理由里列“功能更全面”；中国移动江苏也把掌上营业厅的 WAP 版关掉了<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>。</p><p>有些流程甚至要两台设备搭着用：国家政务服务平台的电脑登录页要求“打开国家政务服务 APP 扫码登录”；兰州大学的 CET 报名要手机验证码加身份证实名两道<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>。扫脸、扫码、拍照上传和短信验证码依赖摄像头、生物识别与常在线，不是给桌面网页补一个按钮就能解决的。</p><p>所谓“只有电脑能做的事”，在国内主要是配合尚未搬走的旧流程，而不是更完整的桌面功能。</p><p>顺带一提，我认为网页端被做残多半不是技术原因。一个能用的网页要伺候好几种浏览器，还得兼容十年前的旧内核，但一个 APP 只要伺候应用商店。当然，也可能有省事（浏览器套壳客户端）或避免被竞争对手分走流量，特别是在现在 AI 发展、移动端大行其道的背景下，或者可能还有 APP 更容易收集权限的考虑——所以“移动端体验更好”这句话，翻过来可能是“移动端更好管”。此处不展开。</p><h2 id="用得少但不能没有">用得少但不能没有</h2><p>如今手机网民已经占到 99.6%，用笔记本上网的只有 31.2%<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup>。不是没有人有电脑，是上网这件事已经很少必须经过电脑。受限于物理条件，常规手机目前达不到常规电脑的性能释放，可这么高的释放不见得所有人都需要。对多数人来说，多一台电脑能增加的事因此有限：通讯、支付、娱乐和大部分办事流程，手机都办完了；办公那一块换到的也只是少几次缩放，不是新功能，我在手机上翻表格，缩放来缩放去总归不够舒服。</p><p>但日常需求消退，不等于所有人都不再需要电脑（准确来说是主动想要一台电脑）。开头我给出的评价是“对策性尚可”，指的就是这部分人。譬如中国药科大学的选课通知在“务必用电脑进行选课”之后还强调了“手机浏览器可能会出现无法退选等未知问题”<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup>。</p><p>选课、退课、补考报名，还有将来上班后领导发来的某些文件，都是低频、短时、不可缺的事，也不怎么产生性能需求，但手机处理起来就是不舒服，必须有一台电脑才能做得方便。对这部分人来说，他们本来不需要电脑，只是被要求使用它。借用电脑的风险不可控，但又不想在非重要的事物上开销过大，此时有一台相对廉价但能达成目的的产品就很好了。</p><p>虽然这里又有一些工作指定 Windows 及特定浏览器或兼容模式，前面列的考试与报名文件就是例子<sup class="footnote-ref"><a href="#fn10" id="fnref10:1">[10:1]</a></sup>（有些银行网站还在用老掉牙的 ActiveX 控件，这玩意现在的 Chromium 内核浏览器已经不认了）。工科那些软件更直接，SOLIDWORKS 的官方系统要求里只有 Windows<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup>。因此只有流程恰好是纯网页或纯文档时，这台机器才能承担这种被动需求；一旦涉及兼容模式或专用客户端，它同样被挡在外面。</p><p>但话说回来，拿它接不住的那一半去判它不合格，本来就不公平：它不是为那些场合造的。</p><p>买数位板时，因为只用于偶尔修图和记笔记，所以挑的是便宜那一档；至于 Wacom 这种专业的数位板，恕我直言，多付钱我也用不出区别。买这台机器的人面对的是类似处境，即被动需要某个形态，又不愿为用不到的性能付费。</p><p>允许我提出一个猜想：这类要求不会因为技术进步自己消失。写通知的人担心的不是谁手上多几台设备，是工作要留痕、老旧系统当年就是按 IE 的内核写的；只要它维持现状，“务必用电脑”就会接着下去，哪怕手机上其实办得成。技术解决的是能不能，流程决定的是允不允许，后者一向慢得多。</p><h2 id="卖得不错，谁需要它">卖得不错，谁需要它</h2><p>适用边界这么窄，销量却不错。Apple 不按机型披露销量，任何“卖了多少台”都不是官方数字；库克在 X 上说的是 Mac 的首发周首次购机用户创了纪录，没有点名它<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup>。IDC 的季度估算也能看出方向：按操作系统分，macOS 设备出货在涨，Windows 在跌<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>。</p><p>综合我的观察，选择它的一般有两种人：已有主力设备的人把它当第二台，被要求有电脑的人用它取得电脑形态。</p><p>虽然它一开始有价格优势，但只存在于一段时间里。2026 年 3 月国行首发 4599 元，国补把电脑纳入补贴之后到手还要再低一截，到 10 月前后已经涨至 5499 元<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup><sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup>。中间撞上存储设备大涨价：AI 训练与推理把 HBM 与服务器 DRAM 的订单变成刚性需求，挤掉消费级存储的产能，价格被动跟涨<sup class="footnote-ref"><a href="#fn20" id="fnref20">[20]</a></sup><sup class="footnote-ref"><a href="#fn21" id="fnref21">[21]</a></sup>。同价位的 Windows 本也在涨价<sup class="footnote-ref"><a href="#fn22" id="fnref22">[22]</a></sup><sup class="footnote-ref"><a href="#fn23" id="fnref23">[23]</a></sup>，4599 元这个数字才显得突出。</p><p>网上的解释多半落在“够用又便宜”上，可这个理由不能单独成立。x86 阵营同期也走低性能、低价的路线，Intel 一样把 Wildcat Lake 放在低价与低功耗上<sup class="footnote-ref"><a href="#fn24" id="fnref24">[24]</a></sup>；可落到整机却未必便宜。例如，联想 V14 Gen 7 在中国香港的起售价，比同渠道搭载旧款 Raptor Lake H 的机型还贵，基准测试里旧款 CPU 反而更强<sup class="footnote-ref"><a href="#fn25" id="fnref25">[25]</a></sup>。这个价来自厂商控制成本的方式，不来自处理器弱这个属性本身。</p><p>对买家来说，性能矮一截、价格也不算最低，可能都不是缺点。他们本来就没打算让它承担主力机的全部工作。有时候这还是好事：物理规则突破不了，厂家只好在别处省，比如把整机做轻（说不定还能便宜些）。</p><p>说实话，去线下店体验后，我发现它还真不错。我是一个有高负载任务需求的用户，所以我对电脑的性能有比较高的要求。但回想起通勤和上课的情景，以及手机操作不方便的时候（如打字记录、照片批注等）……常规游戏本的重量，用过的应该都清楚。但在这些场景下，我几乎不需要用手边的电脑处理什么重要的工作（大不了远程桌面），却要为了键盘和较大的屏幕付出不便携带的代价。我也大概理解那些认为轻薄本+台式机搭配的人是怎样的思路了——虽然受限于预算我暂时没法这么做。</p><p>为手机配键盘虽然可行，但兼具了屏幕小和设备多的缺点。这个时候我对性能的要求和手机差不多，但我需要一台有满足传统电脑定义的产品，同时我又不把它当普通电脑看待（虽然它和普通电脑比有点弱，但和平板电脑乃至手机相比又不错）。这样的场景，应该就是 MacBook Neo 补齐的空缺。</p><h2 id="同价位，为什么不买配置更高的">同价位，为什么不买配置更高的</h2><p>这个价位段当然还有配置更好的电脑，价钱说不定还低些。可我挑它的时候，算的不只是参数表。虽然我向来支持产品力优先于品牌力，但品牌、售后、整体做工这几样，最后都会被算进去。</p><p>参数对追求省心的人来说没那么重要，产品稳定、售后完善更要紧。以我过去主力使用 Apple 设备的经验来看，Apple 的售后服务整体体验是令我满意的（虽然卖的东西确实比较贵）。参数是可以算的，但售后就不一定了，所谓花小钱办大事可能就是这样的。这种产品应该是更需要品牌信任了，它本来能干的活就少，再在售后和兼容上出岔子，就真一无所有了。这一点上我认为 MKBHD 说得不错，即非数码爱好者很少会把参数翻来覆去比一遍<sup class="footnote-ref"><a href="#fn26" id="fnref26">[26]</a></sup>。</p><p>也因此，我观察到许多科技博主给“对系统和软件适配要求不高的人”推荐电脑，通常会推荐 Apple、联想、惠普等知名品牌的产品，而不是机械革命、雷神、火影等（虽然后者确实有些能以相对低价获得较好配置的产品；但如刚才所言，唯性能论是十分片面的）。不是后者不能买，但不懂的人买回去，不一定有能力或精力去面对那些本来加点钱就能绕开的风险。</p><h2 id="上网本死了，它为什么还活着">上网本死了，它为什么还活着</h2><p>如此低配的电脑，不免让人想起曾经的上网本。同样低性能、轻薄、面向轻任务和低价位，但后来没了。</p><p>华硕先推出 Eee PC，Intel 隔年给出 Atom 与 Netbook 平台<sup class="footnote-ref"><a href="#fn27" id="fnref27">[27]</a></sup>；那时候 iPhone 刚诞生没多久，微软的 Windows Mobile 还没入土。没过几年，平板电脑出货第一次超过上网本，之后销量与份额一路往下掉，华硕与宏碁先后停产。国内山寨机把价格杀到一千多元，销量却很低（数字是经销商的口径）<sup class="footnote-ref"><a href="#fn28" id="fnref28">[28]</a></sup>。</p><p>当年媒体分析给出的原因与前文的相近：平板电脑与智能手机把电脑的活拿走了。其余几条也眼熟：开机慢、屏幕小、续航短，普通笔记本价格下探抹平了价差，厂商则赚不到钱：定价本就薄，每台还要付一笔 Windows 授权费，索性退出低价段去找毛利。央广网 2013 年采访厂商公关负责人，得到的回复是“智能手机自身就可以上网，而且不需要网卡，而使用上网本还需要另外支付上网卡的费用”<sup class="footnote-ref"><a href="#fn29" id="fnref29">[29]</a></sup>，几乎就是“任务向移动端迁移”的早期版本。</p><p>现在这样一台配置堪比曾经上网本的电脑，又是怎样一番光景呢？Apple 2026 财年第三季度是这款机型开售后的首个完整财季，Mac 收入同比增长接近三成；第四季度仍保持两成以上的增长，服务收入创历史新高<sup class="footnote-ref"><a href="#fn30" id="fnref30">[30]</a></sup><sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>。电话会的官方口径是，入门级 MacBook Neo 与新款 MacBook Pro 吸引了大量首次购买 Mac 的用户，换机人数与新增用户人数均达历史新高<sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup>。</p><p>Counterpoint 在同期报告里指出：MacBook Neo 的低价“reduced average selling prices (ASPs)”，但新增的销量把营收推了上去，并“further expanded Apple’s installed base”<sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>。平均售价被拉低，换来首次购机用户与装机量，长期收入则落在服务端<sup class="footnote-ref"><a href="#fn31" id="fnref31:1">[31:1]</a></sup>。</p><p>涨价周期里还能守住入门价，多半靠的是复用 iPhone 的芯片与产线、提前锁定 DRAM 供应（Apple 的供应链和“清库存”方式实在令人叹为观止）；即便如此，10 月还是涨了价<sup class="footnote-ref"><a href="#fn18" id="fnref18:1">[18:1]</a></sup>。DigiTimes 给出的次年出货目标比首年翻了一倍，那是供应链目标，不是已实现销量<sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>；彭博记者称二代将在 2027 年上半年开售，Apple 从未官宣<sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup>。第一代 3 月才开售，首年不满一整年，所谓“翻倍”还有时间差。</p><p>和曾经的上网本比，差别主要在四处：</p><table><thead><tr><th>对比项</th><th>当年的上网本</th><th>今天的 MacBook Neo</th></tr></thead><tbody><tr><td>被期待的角色</td><td>家里唯一一台便宜电脑，要承担电脑的全部事，性能不足即致命</td><td>手机扛下日常，不被期待做全部事，性能不足从硬伤降为可取舍</td></tr><tr><td>卖出去的东西</td><td>“能上网”这个功能，被手机与平板直接吃掉</td><td>“有一台电脑”这个形态，制度性流程仍要求它<sup class="footnote-ref"><a href="#fn14" id="fnref14:1">[14:1]</a></sup></td></tr><tr><td>厂商收益</td><td>“Wintel”价格战，每台另有 Windows 授权费，硬件毛利见底</td><td>服务端收入与装机量托底，平均售价被拉低仍可扩大装机量<sup class="footnote-ref"><a href="#fn33" id="fnref33:1">[33:1]</a></sup></td></tr><tr><td>低价的结果</td><td>一千多元，月销不到两万台<sup class="footnote-ref"><a href="#fn28" id="fnref28:1">[28:1]</a></sup></td><td>四千元档起，补贴后更低，首个完整财季 Mac 收入涨了近三成<sup class="footnote-ref"><a href="#fn18" id="fnref18:2">[18:2]</a></sup><sup class="footnote-ref"><a href="#fn30" id="fnref30:1">[30:1]</a></sup></td></tr></tbody></table><p>当年媒体引述乔布斯批评上网本“不过是一个便宜的笔记本罢了”，随后 Apple 用 iPad 把它打死；如今 Apple 自己也做了一台低价、轻量、面向轻任务的笔记本<sup class="footnote-ref"><a href="#fn29" id="fnref29:1">[29:1]</a></sup>，我该说这是变了祖宗之法吗？（笑）</p><p>上网本未必错在产品，但它后来在性价比和定位上失去了竞争力。今天的低价电脑不必背这个前提，买它的人兜里已经有手机，桌上可能还有一台主机，它不一定是买家唯一的电子产品。</p><p>后来有更多厂商尝试类似定位的电脑。虽然我不是很看好 Windows on ARM 作主力机，但它已经走进了消费市场。高通骁龙 C 把手机核心搬进三百美元档的入门 Windows 笔记本，可无风扇、带 NPU，已有部分机型在海外开卖<sup class="footnote-ref"><a href="#fn36" id="fnref36">[36]</a></sup>。</p><p>同一形态换到 Windows 上，macOS 的兼容性短板就不存在了，MacBook Neo 在国内的位置会被模仿者挤窄。它与前面的 Wildcat Lake 不是同一条路线：一个是手机核心的跨平台移植，一个是 x86 低功耗入门核心。</p><p>国内另有一条相反的路。CES 2025 上，阿里云无影“魔方”用巴掌大的终端现场运行《黑神话：悟空》<sup class="footnote-ref"><a href="#fn37" id="fnref37">[37]</a></sup>；澎湃讨论 Chromebook 与云电脑的文章，也把低配终端的性能缺口指向云电脑。云电脑把算力搬走，让终端继续承担高负载场景；这台机器则直接把这些场景排除在自己的任务之外。</p><h2 id="它是一台电脑吗">它是一台电脑吗</h2><p>该不该拿电脑的标准来要求 MacBook Neo？这个问法预设了它是一台电脑。而“电脑”在多数人的设备分工里，指的是主力机：手机管即时，平板管刷视频，电脑管正经事，配置还得比手机高一截。屏幕、键盘、接口、续航都是笔记本的规格，处理器却来自手机。Apple 把手机的核心装进了笔记本的壳。这样看它确实不够格，8GB<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup>、三个接口、手机芯片，参数表上随便一台正常的轻薄本都能把它比下去。</p><p>回到开头的问题：它是按传统电脑的要求造出来的吗？它从一开始就没打算当主力机呢？我想，它按的是够用的第二台电脑做的。这种需求在国内也许更重要，因为高负载游戏与办公压在同一台机器上，还有一批流程只认 Windows；但在有主力电脑的情况下，或是没有 Windows 电脑的需求下，MacBook Neo 还是个不错的选择。</p><hr><h2 id="注释">注释</h2><blockquote><p>来源按文献性质分两级：**一级（原始文献）**指发文机构自身的公告、规格文档、财报、机构报告与当事人账号；**二级（转述文献）**指媒体报道、测评与二手整理。二级若转述自可核原件，注中将写明原发布方；未写明的只作信息来源线索，不作论据。</p></blockquote><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>Apple Newsroom《哈囉! MacBook Neo!》（2026-03-04 发布、2026-03-11 开售）：首款采用 A 系列（A18 Pro，iPhone 16 Pro 同款）而非 M 系列芯片的 Mac；13 英寸 Liquid Retina 显示屏、最高 500 尼特、最长 16 小时续航、macOS Tahoe。<a href="https://images.apple.com/hk/newsroom/2026/03/say-hello-to-macbook-neo" rel="external nofollow noreferrer">原文</a>。<strong>等级：一级（原始文献）·厂商公告。</strong> <a href="#fnref1" class="footnote-backref">↩︎</a></p></li><li id="fn2" class="footnote-item"><p>ZOL《为什么被喷成电子垃圾的 MacBook Neo 卖爆了？》（2026-05-07，腾讯新闻转载）：把“舆论发声群体与实际消费群体结构性错位”与同期存储涨价作为解释。<a href="https://news.qq.com/rain/a/20260507A00J9600" rel="external nofollow noreferrer">原文</a>。<strong>等级：二级（转述文献）·媒体评论。用途：只标明已有同题文章，不用其中数字作论据。</strong> <a href="#fnref2" class="footnote-backref">↩︎</a></p></li><li id="fn3" class="footnote-item"><p>Apple《MacBook Neo 技术规格》与《浏览 MacBook Neo》支持文档：充电与扩展为一个 USB 3（USB-C，最高 10Gb/s，可接一台最高 4K/60Hz 外接显示器）、一个 USB 2（USB-C，最高 480Mb/s）、3.5 毫米耳机插孔各一；支持文档写左侧端口为 USB 3、右侧端口为 USB 2。妙控键盘 78（ANSI）/79（ISO）键、低配无触控 ID；多点触控板；2408×1506、500 尼特、10 亿色；36.5 瓦时、1.23 千克、厚 1.27 厘米。<a href="https://www.apple.com.cn/macbook-neo/specs/" rel="external nofollow noreferrer">国行规格页</a>、<a href="https://support.apple.com/zh-cn/guide/macbook-neo/apd1628f4eb7/mac" rel="external nofollow noreferrer">支持文档</a>。<strong>等级：一级（原始文献）·厂商技术文档。文档中接口位置可能与实机不同，推测是样机差异。</strong> <a href="#fnref3" class="footnote-backref">↩︎</a> <a href="#fnref3:1" class="footnote-backref">↩︎</a> <a href="#fnref3:2" class="footnote-backref">↩︎</a></p></li><li id="fn4" class="footnote-item"><p>少数派《像孩子一样的 MacBook Neo》（个人实测）：触控板“拿掉了由振动马达带来的线性压感回馈，但苹果却通过机械结构实现了任意位置的全域按压”。<a href="https://sspai.com/post/110254" rel="external nofollow noreferrer">原文链接</a>。<strong>等级：二级（转述文献）·个人测评。结合佐证个人体验。</strong> <a href="#fnref4" class="footnote-backref">↩︎</a></p></li><li id="fn5" class="footnote-item"><p>Tom’s Guide 实测，经中文媒体转述：Geekbench 6 单核 3535、网页浏览续航 13 小时 28 分、SSD 读取 1585MB/s、屏幕实测 452 尼特；多核与持续负载明显吃力。<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8246af1922166152" rel="external nofollow noreferrer">转述页</a>。<strong>等级：二级（转述文献）·媒体转述第三方测评。原始测评未核。</strong> <a href="#fnref5" class="footnote-backref">↩︎</a></p></li><li id="fn6" class="footnote-item"><p>ESA / Circana / Sensor Tower（2026-02-11 发布、2026-03 修订）：2025 年美国游戏消费支出 608 亿美元，内容 524 亿、硬件 54 亿、配件 29 亿；手机游戏 267 亿美元；ESA《2025 Essential Facts》称 8 岁以上玩家中 82% 使用移动设备玩游戏。<a href="https://theesa.com/2025-u-s-consumer-spending-on-video-games-nears-pandemic-level-peak-at-60-7-billion-second-highest-on-record" rel="external nofollow noreferrer">官方新闻稿</a>。<strong>等级：一级（原始文献）·行业协会发布。</strong> <a href="#fnref6" class="footnote-backref">↩︎</a></p></li><li id="fn7" class="footnote-item"><p>中国音数协游戏工委 / 伽马数据《2026 年 1—6 月中国游戏产业报告》（2026-07-30 CDEC 发布），据新华社转述：上半年国内游戏市场实际销售收入 1884.5 亿元、同比 +12.17%；移动游戏 1352.1 亿元占 71.75%，客户端游戏 452.88 亿元占 24.03%、同比 +27.92%（增速最快），主机游戏 9.61 亿元、同比 −7.06%。<a href="https://www3.xinhuanet.com/tech/20260731/c5593cc57b18411ab328cd3ed98b554c/c.html" rel="external nofollow noreferrer">新华网</a>。<strong>等级：二级（转述文献）·权威媒体转述行业报告。原始报告数字只作量级参考。</strong> <a href="#fnref7" class="footnote-backref">↩︎</a></p></li><li id="fn8" class="footnote-item"><p>Chromebook 在国内：大陆正规渠道无国行销售、Google 服务不可直接访问、学校机房与教师机默认 Windows / macOS；国内近似尝试为 2016 年阿里云联合惠普、英特尔的 YunOS Book，以及只在极客圈流传的 FydeOS。<a href="https://www.tmtpost.com/4184100.html" rel="external nofollow noreferrer">钛媒体</a>、<a href="https://www.thepaper.cn/newsDetail_forward_30415655" rel="external nofollow noreferrer">澎湃</a>。<strong>等级：二级（转述文献）·媒体整理。</strong> <a href="#fnref8" class="footnote-backref">↩︎</a></p></li><li id="fn9" class="footnote-item"><p>Googlebook 时间线：2026-05-12 在 <em>The Android Show: I/O Edition</em> 发布，2026-10-04 美国开售；五款 Acer / ASUS / Dell / HP / Lenovo 机型定价 $899–$1299，16GB 内存起步，官方定位“the more premium end of the laptop market”，Chromebook 继续在售走低端。<a href="https://www.androidauthority.com/googlebook-launch-date-3700141/" rel="external nofollow noreferrer">Android Authority</a>、<a href="https://techvisor.pro/en/googlebook-prices-models-and-release-dates-for-google-laptops" rel="external nofollow noreferrer">techvisor 价格表</a>。<strong>等级：二级（转述文献）·媒体互证。中国大陆无国行。</strong> <a href="#fnref9" class="footnote-backref">↩︎</a></p></li><li id="fn10" class="footnote-item"><p>两份考试 / 报名文件。① 陕西省教育考试院 NIT 报名公告，2022 / 2025 / 2026 三版同句“本网站暂不支持手机或 iPad 等移动电子设备报名”，推荐 IE10 以上 / Firefox40 以上 / Safari 稳定版（<a href="https://m.xa.bendibao.com/edu/154489.shtm" rel="external nofollow noreferrer">2026 版</a>，媒体转载，原发布方为省教育考试院）；② 《国际中文教师证书》居家网考设备要求：“网考系统仅支持 Windows(7/10) 操作系统，不支持在 MAC OS 操作系统下运行，不建议使用 MAC 电脑……不支持在手机、平板(iPad)等移动设备上运行”（<a href="https://appfileoss-tw.100xuexi.com/Upload/XuexiWeb/Docs/2022/03/02/1442512218.pdf" rel="external nofollow noreferrer">PDF 原件</a>）。<strong>等级：一级（原始文献）·机构公告；①为媒体转载，原件未直接找到。</strong> <a href="#fnref10" class="footnote-backref">↩︎</a> <a href="#fnref10:1" class="footnote-backref">↩︎</a></p></li><li id="fn11" class="footnote-item"><p>官方关停 PC / 网页端、引导移动端的公告。京东钱包<a href="https://www.wangyin.com/m/index.htm" rel="external nofollow noreferrer">《PC 页面下线公告》</a>：“本页面服务已下线……请移步至「京东APP-我的-钱包-余额」”，并列出“功能更全面”；中国移动江苏<a href="https://10086.cn/aboutus/news/pannounce/js/index_250_514_detail_55963.html" rel="external nofollow noreferrer">《关于关停掌上营业厅(WAP版)服务的公告》</a>：2026-10-16 起关停手机浏览器访问版本、引导至中国移动 APP。<strong>等级：一级（原始文献）·企业公告。</strong> <a href="#fnref11" class="footnote-backref">↩︎</a></p></li><li id="fn12" class="footnote-item"><p>移动端独占能力的官方表述：<a href="https://login.gjzwfw.gov.cn/#dqjf" rel="external nofollow noreferrer">国家政务服务平台登录页</a>“打开国家政务服务 APP 扫码登录”；<a href="https://jwc.lzu.edu.cn/tongzhigonggao/kaoshizhongxin/2026/0911/336937.html" rel="external nofollow noreferrer">兰州大学教务处 CET 报名通知</a>（2026-09-11）“手机验证码登录报名平台”与“身份证实名验证”双重检测。<strong>等级：一级（原始文献）·官网页面与校方通知。</strong> <a href="#fnref12" class="footnote-backref">↩︎</a></p></li><li id="fn13" class="footnote-item"><p>CNNIC 第 57 次《中国互联网络发展状况统计报告》（2026-02-05 发布，数据截至 2025-12）：手机网民占 99.6%；使用台式电脑上网 32.5%、笔记本 31.2%、平板 31.6%。<a href="https://www.sgpjbg.com.cn/labelsyh/wangminguimozengchangqushi/1/6761840.html" rel="external nofollow noreferrer">三个皮匠报告整理</a>。<strong>等级：二级（转述文献）·二手整理。数据对照为本文所做，不是报告结论。</strong> <a href="#fnref13" class="footnote-backref">↩︎</a></p></li><li id="fn14" class="footnote-item"><p>四份高校教务处公告（均为 2026 年）。中国药科大学 2026-10-16 选课通知：“务必用电脑进行选课，浏览器推荐使用 windows 系统下的 360 安全浏览器的兼容模式。手机浏览器可能会出现无法退选等未知问题”（<a href="https://jwc.cpu.edu.cn/bc/d6/c851a244950/page.htm" rel="external nofollow noreferrer">原文</a>；同校 2026-03-11 公选课通知有同样表述<a href="https://jwc.cpu.edu.cn/8e/ae/c851a233134/page.htm" rel="external nofollow noreferrer">原文</a>）；沈阳药科大学 2026-01-28“报名时请使用电脑端登录，避免因移动端界面显示不全导致操作失误”（<a href="http://jwc.syphu.edu.cn/info/1148/6763.htm" rel="external nofollow noreferrer">原文</a>）；四川华新现代职业学院 2026-11-02“使用电脑浏览器，利用本人账号登录教务系统”（<a href="https://www.schxmvc.edu.cn/info/1179/45642.htm" rel="external nofollow noreferrer">原文</a>）。<strong>等级：一级（原始文献）·校方公告（.edu.cn 原件）。</strong> <a href="#fnref14" class="footnote-backref">↩︎</a> <a href="#fnref14:1" class="footnote-backref">↩︎</a></p></li><li id="fn15" class="footnote-item"><p>SOLIDWORKS 官方《System Requirements》：Operating Systems 表中 Client Products 只列 Windows 11 / Windows 10 64 位，macOS 一栏仅有 eDrawings for Mac（查看器，非建模客户端）；Hardware &amp; Hypervisors 表把 Parallels Desktop（Mac）列为受支持的虚拟环境，Notes 明确“Apple Mac machines running Windows using Boot Camp are not supported”。<a href="https://www.solidworks.com/support/system-requirements" rel="external nofollow noreferrer">官方系统要求页</a>、<a href="https://www.solidworks.com.cn/pages/services/SystemRequirements.html" rel="external nofollow noreferrer">中文页</a>、<a href="https://www.solidworks.com/sw/support/SystemRequirements.html?t=1328574278171" rel="external nofollow noreferrer">Notes 页</a>。<strong>等级：一级（原始文献）·厂商技术文档。结论：完整 SOLIDWORKS 在 macOS 上须经 Windows 虚拟机运行，Boot Camp 不在支持之列。</strong> <a href="#fnref15" class="footnote-backref">↩︎</a></p></li><li id="fn16" class="footnote-item"><p>库克 2026-03-20 在 X 的原文：“Mac just had its best launch week ever for first-time Mac customers. We love seeing the enthusiasm!” 他未点名 MacBook Neo；同期 03-04 预购、03-11 发售的还有 M5 MacBook Air 与 M5 Pro / Max MacBook Pro。<a href="https://www.ithome.com/0/931/193.htm" rel="external nofollow noreferrer">IT 之家转载</a>。<strong>机型同期发售部分为二级。</strong> <a href="#fnref16" class="footnote-backref">↩︎</a></p></li><li id="fn17" class="footnote-item"><p>IDC 2026 年第二季度：按操作系统分，macOS 设备出货同比 +17.4%、Windows 同比 −6.7%；苹果 Mac 出货约 670 万台、同比 +10.1%，同期全球 PC 出货 6820 万台、同比 −4.9%。<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8246af1922166152" rel="external nofollow noreferrer">中文媒体转述 IDC</a>。<strong>机构估算经媒体转述。非官方销量。</strong> <a href="#fnref17" class="footnote-backref">↩︎</a></p></li><li id="fn18" class="footnote-item"><p>价格时间线：国行 2026-03 首发 4599 元、教育优惠 3999 元，美国 $599（教育价 $499）；2026-06 美国涨 $100 至 $699；2026-10 前后国行涨至 5499 元。来源：<a href="https://images.apple.com/hk/newsroom/2026/03/say-hello-to-macbook-neo" rel="external nofollow noreferrer">Apple Newsroom 港版</a>（首发价）、<a href="https://www.macworld.com/article/1452930/guia-compra-mac.html" rel="external nofollow noreferrer">Macworld</a>（6 月涨价）、<a href="http://mp.weixin.qq.com/s?__biz=MzY4OTIxMTM2OQ==&amp;mid=2247484608&amp;idx=1&amp;sn=65cd5a702a1fd7ebd1bffdfad37b9b05" rel="external nofollow noreferrer">微信公号转述</a>（10 月国行调价）。<strong>等级：首发价为一级（厂商公告），两次调价为二级（媒体转述）。本文凡言“便宜”均指所标月份。</strong> <a href="#fnref18" class="footnote-backref">↩︎</a> <a href="#fnref18:1" class="footnote-backref">↩︎</a> <a href="#fnref18:2" class="footnote-backref">↩︎</a></p></li><li id="fn19" class="footnote-item"><p>2026 年国补：商务部等 5 部门 2025-12-31 发布、2026-01-01 起施行，个人消费者购买 1 级能效的电脑等 6 类家电，按扣除各环节优惠后最终售价的 15% 补贴，家电每件最高 1500 元、每人每类 1 件。<a href="https://www.ouhai.gov.cn/art/2026/1/5/art_1506433_59188765.html" rel="external nofollow noreferrer">通知全文（瓯海区政府网）</a>。<strong>等级：一级（原始文献）·政府部门文件，全文经区政府网转载。“约 3400 元”为本文按 3999×85% 计算，各地叠加规则有差异。</strong> <a href="#fnref19" class="footnote-backref">↩︎</a></p></li><li id="fn20" class="footnote-item"><p>AI 挤压存储产能、消费级存储跟涨的因果链。经济日报《看世界｜当 AI“吞噬”内存》：HBM 订单呈“类基础设施”刚性、先进封装产能不可逆锁定、云厂商长协提前锁量（<a href="https://www.jingjiribao.cn/static/detail.jsp?id=694349" rel="external nofollow noreferrer">原文</a>）；中国经济网 2026-02-04：单台 AI 服务器内存需求是普通服务器 8–10 倍、2025 年 AI 服务器已消耗全球 DRAM 月产能约 53%（<a href="https://www.ce.cn/cysc/newmain/yc/jsxw/202602/t20260204_2750067.shtml" rel="external nofollow noreferrer">原文</a>）。<strong>本文只把涨价写作上市时的环境与约束，不讨论产品低配的设计动因。</strong> <a href="#fnref20" class="footnote-backref">↩︎</a></p></li><li id="fn21" class="footnote-item"><p>涨价幅度与终端传导，两个口径须分开。2026 Q2 一般型 DRAM 合约价环比 +58%–63%、NAND Flash +70%–75%（<a href="http://m.ce.cn/bwzg/202608/t20260820_3158612.shtml" rel="external nofollow noreferrer">中国经济网 2026-08-20</a>，引“业内机构报告”，未点名）；2026 Q1 全球 DRAM 合约价环比 +93%–98%、存储成本占整机近 30%（<a href="https://dramx.com/News/Memory/20260126-39846.html" rel="external nofollow noreferrer">全球半导体观察 2026-01-26</a>）。<strong>Q1“全球 DRAM”与 Q2“一般型 DRAM”不同季度、不同口径，此处只并列。</strong> <a href="#fnref21" class="footnote-backref">↩︎</a></p></li><li id="fn22" class="footnote-item"><p>涨价周期里入门 Windows 本把内存起配提到 12GB；同期 16GB DDR5 价格从 2025-10 的 8.70 美元升至 2026-11 的 48 美元以上。<a href="https://feng.ifeng.com/c/8xvx5OynhI5" rel="external nofollow noreferrer">凤凰网 / 芯智讯</a>。<strong>属于转述，原始监测机构未点名。</strong> <a href="#fnref22" class="footnote-backref">↩︎</a></p></li><li id="fn23" class="footnote-item"><p>RTX 5060 游戏本的整机价签，随渠道与促销波动，不作精确比价。2025 年中：机械革命蛟龙 16 Pro（R9-7845HX / RTX 5060 / 16G+512G）2025-05-19 官微首发 6499 元、国补后 5199.2 元（<a href="https://www.vgover.com/zh-tw/news/161346" rel="external nofollow noreferrer">电玩帮</a>）；同期一线品牌 5060 机型国补后多在 6799–6960 元（<a href="http://mp.weixin.qq.com/s?__biz=MzI3OTcxMzQyNw==&amp;mid=2247494230&amp;idx=1&amp;sn=1c5ee199cb8e45e4dc3268afefa6270f" rel="external nofollow noreferrer">微信公号</a>）。2026 年秋：《消费者报道》走访广州线下卖场，华硕天选 6 Pro（RTX 5060）到手 11999 元、比一个月前贵 2000 多元，联想拯救者 Y9000P（RTX 5060）补贴后 15999 元，5000 元以下机型几乎绝迹，Omdia 调查称同类同比上涨 20%–40%（<a href="https://www.iimedia.cn/c400/113114.html" rel="external nofollow noreferrer">艾媒网</a>）。<strong>等级：二级（转述文献）·厂商官微与媒体报道。</strong> <a href="#fnref23" class="footnote-backref">↩︎</a></p></li><li id="fn24" class="footnote-item"><p>Intel Core Series 3“Wildcat Lake”：入门级移动处理器，接替 Alder Lake-N / Twin Lake，面向低价笔记本、迷你主机、NAS 与嵌入式；Intel 18A、2 个 Cougar Cove P 核＋4 个 Darkmont LP-E 核、Xe3 核显 2 个 Xe 核心、第五代 NPU 17–18 TOPS、基础 TDP 15W，70 余款 OEM 设计。<a href="https://www.guru3d.com/story/intel-wildcat-lake-reference-laptop-targets-entrylevel-segment-with-flexible-power-profiles/" rel="external nofollow noreferrer">Guru3D 参考设计</a>、<a href="https://www.hukeji.com/yidong/202601/105191.html" rel="external nofollow noreferrer">虎科技 CES 2026 报道</a>。<strong>Intel 官方规格页未直接引。发布日期有 CES 2026 与 04-16 两说，本文不写日期。</strong> <a href="#fnref24" class="footnote-backref">↩︎</a></p></li><li id="fn25" class="footnote-item"><p>联想 V14 Gen 7（Wildcat Lake 落地机型）2026-08-14 发布：14 英寸、8GB / 256GB 起、TN 屏、1.37 千克、47Wh，中国香港起售价 8848 港元（约合人民币 7600 元）；同渠道旧款 Raptor Lake H 机型约 699 美元（约 4720 元），且基准测试中旧款 CPU 性能更强。<a href="https://www.notebookcheck-cn.com/14-32-GB-17-Wildcat-Lake.1368314.0.html" rel="external nofollow noreferrer">Notebookcheck 中文</a>、<a href="https://m.zol.com.cn/article/12318854.html" rel="external nofollow noreferrer">ZOL</a>。<strong>中国大陆上市安排未公布，不得写成国行价；本条只证明“有了低性能低价处理器，不等于自然出现 4599 元的那台机器”。</strong> <a href="#fnref25" class="footnote-backref">↩︎</a></p></li><li id="fn26" class="footnote-item"><p>MKBHD《MacBook Neo 首发评测》，B 站版本（<a href="https://www.bilibili.com/video/BV1wUP6z2EZe" rel="external nofollow noreferrer">视频</a>，2:40 起）：“因为你是科技频道订阅者，这台电脑可能不适合你”。<strong>视频评测。</strong> <a href="#fnref26" class="footnote-backref">↩︎</a></p></li><li id="fn27" class="footnote-item"><p>上网本（Netbook）时间线：2007-10 华硕首款 Eee PC（7 英寸、Linux、Celeron、4GB 存储）；2008-03 Intel 发布 Atom 与 Netbook 平台；2012 年底华硕停产 Eee PC，华硕与宏碁自 2013-01-01 起停止生产。<a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000387753_L506C7ZP6V5VBM2AEX8DU" rel="external nofollow noreferrer">DigiTimes《Eee PC 發展》</a>、<a href="https://www.businessinsider.com/sayonara-netbooks-asus-and-the-rest-wont-make-any-more-in-2013-2013-1" rel="external nofollow noreferrer">Business Insider / Guardian 2013-01</a>、<a href="https://jl.cnr.cn/jjy/cc/201301/t20130109_511744781.shtml" rel="external nofollow noreferrer">央广网 2013-01</a>。<strong>媒体转述机构数据。</strong> <a href="#fnref27" class="footnote-backref">↩︎</a> <a href="#fnref27:1" class="footnote-backref">↩︎</a></p></li><li id="fn28" class="footnote-item"><p>国内山寨上网本：2009 年价格从 1700 元杀到 1599 元，2009 年 5 月月销量不到 2 万台；品牌机下探至 1800 元、运营商 3G 定制机带话费补贴。<a href="https://www.chinanews.com.cn/it/it-itxw/news/2009/06-08/1724207.shtml" rel="external nofollow noreferrer">中新网 2009-06-08</a>。<strong>媒体现场报道；数字为经销商口述，非统计发布。</strong> <a href="#fnref28" class="footnote-backref">↩︎</a> <a href="#fnref28:1" class="footnote-backref">↩︎</a></p></li><li id="fn29" class="footnote-item"><p>上网本衰退的原因与数据：2011 年销量同比 −32%、PC 市场份额由约 8% 降至 2%（<a href="http://dz.jjckb.cn/www/pages/webpage2009/html/2012-02/28/content_41270.htm?div=-1" rel="external nofollow noreferrer">经济参考报</a>，引 Canalys / 微软报告 / IDC）；开机慢、屏幕小、续航短，以及厂商公关负责人“智能手机自身就可以上网，而且不需要网卡，而使用上网本还需要另外支付上网卡的费用”（<a href="https://tech.cnr.cn/jdxw/201203/t20120331_509361837.shtml" rel="external nofollow noreferrer">央广网 2012-03</a>、<a href="https://jl.cnr.cn/jjy/cc/201301/t20130109_511744781.shtml" rel="external nofollow noreferrer">2013-01</a>）；$199 定价与每台约 30–50 美元 Windows 授权费使厂商无利可图（Business Insider / Guardian，见 <sup class="footnote-ref"><a href="#fn27" id="fnref27:1">[27:1]</a></sup>）。<strong>乔布斯“不过是一个便宜的笔记本罢了”见央广网转述，此处未核到原始发言场合，按媒体引述处理。</strong> <a href="#fnref29" class="footnote-backref">↩︎</a> <a href="#fnref29:1" class="footnote-backref">↩︎</a></p></li><li id="fn30" class="footnote-item"><p>Apple 2026 财年 Q3 财报（2026-07-30 发布，截至 2026-06-27）：营收 1094.17 亿美元、同比 +16.4%，Mac 收入 103.52 亿美元、同比 +28.7%，均创 6 月季度纪录。<a href="https://www.guancha.cn/economy/2026_07_31_825718.shtml" rel="external nofollow noreferrer">观察者网转述</a>。<strong>原始 10-Q 未核，Q3 是 MacBook Neo 开售后的首个完整财季。</strong> <a href="#fnref30" class="footnote-backref">↩︎</a> <a href="#fnref30:1" class="footnote-backref">↩︎</a></p></li><li id="fn31" class="footnote-item"><p>Apple 2026 财年 Q4 财报（2026-11-02 发布，截至 2026-09-26）：营收 1144.77 亿美元、同比 +11.7%，Mac 收入 107.92 亿美元、同比 +23.7%，服务收入 315.73 亿美元、同比 +9.8%，创历史新高。<a href="http://m.ce.cn/bwzg/202611/t20261104_3282812.shtml" rel="external nofollow noreferrer">中国经济网</a>、<a href="https://www.stcn.com/article/detail/4318967.html" rel="external nofollow noreferrer">证券时报</a>。<strong>财报数字经媒体转述，原始 10-K 未核。</strong> <a href="#fnref31" class="footnote-backref">↩︎</a> <a href="#fnref31:1" class="footnote-backref">↩︎</a></p></li><li id="fn32" class="footnote-item"><p>Apple 2026 财年 Q3 电话会：入门级 MacBook Neo 与新款 MacBook Pro 吸引大量首次购买 Mac 的用户，Mac 换机人数与新增用户人数均达历史新高；Apple 不公布分机型销量。<a href="https://www.guancha.cn/economy/2026_07_31_825718.shtml" rel="external nofollow noreferrer">观察者网转述</a>。<strong>电话会口径经媒体转述，原文未核。</strong> <a href="#fnref32" class="footnote-backref">↩︎</a></p></li><li id="fn33" class="footnote-item"><p>Counterpoint Research（2026-07-30）：Mac 营收同比 +29%，创 6 月季度纪录；报告原文称 MacBook Neo“expanded Apple’s market by offering a more attractive and affordable price point to students, first-time Mac buyers, and consumers who might have chosen a Windows PC”，并明确“Although the MacBook Neo’s lower price reduced average selling prices (ASPs), its additional volume … drove strong revenue growth and further expanded Apple’s installed base”。<a href="https://counterpointresearch.com/jp/insights/apple-q3-2026-earning-results-revenue-growth" rel="external nofollow noreferrer">机构原文</a>。<strong>研究机构公开报告。</strong> <a href="#fnref33" class="footnote-backref">↩︎</a> <a href="#fnref33:1" class="footnote-backref">↩︎</a></p></li><li id="fn34" class="footnote-item"><p>DigiTimes 2026-11-04：供应链消息称 Apple 向供应商更新出货预期，2026 年约 800 万台、2027 年目标 1600 万台。<a href="https://tw.news.yahoo.com/macbook-neo%E8%B3%A3%E7%BF%BB%E4%BA%86-2027%E5%B9%B4%E5%87%BA%E8%B2%A8%E6%8B%9A1600%E8%90%AC%E5%8F%B0-%E6%96%B0%E6%AC%BE%E8%A6%8F%E6%A0%BC%E6%9B%9D%E5%85%89-034500087.html" rel="external nofollow noreferrer">Yahoo 新闻</a>、<a href="https://www.heise.de/en/news/MacBook-Neo-New-model-coming-in-first-half-ambitious-sales-target-11517419.html" rel="external nofollow noreferrer">heise</a>。<strong>供应链消息，Apple 未确认，不可直接作为销量。第一代 03-11 才开售，2026 年只有约 10 个月，2027 年为完整 12 个月。</strong> <a href="#fnref34" class="footnote-backref">↩︎</a></p></li><li id="fn35" class="footnote-item"><p>彭博记者 Mark Gurman（2026-09）：第二代 MacBook Neo 在 2027 年上半年日程上，预计 A19 Pro、12GB 内存、新配色。<a href="https://www.heise.de/en/news/MacBook-Neo-New-model-coming-in-first-half-ambitious-sales-target-11517419.html" rel="external nofollow noreferrer">heise</a>。<strong>记者和相关媒体爆料，Apple 从未官宣二代。</strong> <a href="#fnref35" class="footnote-backref">↩︎</a></p></li><li id="fn36" class="footnote-item"><p>高通骁龙 C 平台：2026-05-28 Computex 前发布，面向约 $300 档入门 Windows 笔记本，采用手机 Kryo CPU 核心（1+3+4）、6nm、可无风扇、带 NPU；Acer / HP / Lenovo 跟进，Acer Aspire Go 15 于 2026-08-09 在海外发售。<a href="https://aiweekly.co/alerts/qualcomm-snapdragon-c-puts-npu-in-sub-300-windows-pcs" rel="external nofollow noreferrer">AI Weekly</a>。<strong>媒体整理，参数部分来自发布前爆料。</strong> <a href="#fnref36" class="footnote-backref">↩︎</a></p></li><li id="fn37" class="footnote-item"><p>云电脑：CES 2025 阿里云无影“魔方”以巴掌大终端现场运行《黑神话：悟空》。<a href="https://m.chinanews.com.cn/wap/detail/chs/sp/358342.shtml" rel="external nofollow noreferrer">中新网</a>、<a href="https://www.thepaper.cn/newsDetail_forward_30415655" rel="external nofollow noreferrer">澎湃《在北美大杀四方的 Chromebook，会被云电脑彻底杀死吗？》</a>。<strong>现场报道与评论。</strong> <a href="#fnref37" class="footnote-backref">↩︎</a></p></li><li id="fn38" class="footnote-item"><p>Macworld 购买指南（2026）：A18 Pro（6 核 CPU / 5 核 GPU）、8GB 统一内存不可升级、256GB / 512GB、1.23 千克，并判断其性能与 M1 相近。<a href="https://www.macworld.com/article/1452930/guia-compra-mac.html" rel="external nofollow noreferrer">Macworld</a>。<strong>测评媒体规格整理；接口与端口分工暂以 <sup class="footnote-ref"><a href="#fn3" id="fnref3:2">[3:2]</a></sup> 的厂商技术规格为准。</strong> <a href="#fnref38" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> 绘览三千 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电子产品 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>判得不够，我觉得合适的就能补上吗</title>
       <link href="/posts/1117794772/"/>
       <url>/posts/1117794772/</url>
@@ -124,9 +149,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -155,13 +180,13 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 游戏 </tag>
             
-            <tag> 二次元 </tag>
+            <tag> 闪念 </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> 二次元 </tag>
             
         </tags>
       
@@ -186,9 +211,9 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> 闪念 </tag>
             
             <tag> 教育 </tag>
             
@@ -215,9 +240,9 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> 闪念 </tag>
             
             <tag> 教育 </tag>
             
@@ -244,11 +269,11 @@
       
         <tags>
             
+            <tag> 杂谈 </tag>
+            
             <tag> 闪念 </tag>
             
             <tag> 隐私 </tag>
-            
-            <tag> 杂谈 </tag>
             
         </tags>
       
@@ -273,13 +298,13 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
-            
-            <tag> 游戏 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> PHP </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> 游戏 </tag>
+            
+            <tag> 闪念 </tag>
             
             <tag> 浮生散笺 </tag>
             
@@ -294,7 +319,7 @@
       <link href="/posts/1728069743/"/>
       <url>/posts/1728069743/</url>
       
-        <content type="html"><![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p><p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署,当作练习（这应该是我在 Serv00 上运行的第一个非 PHP 程序了）。</p><blockquote><p>以下为免责声明，摘录自项目仓库介绍文档</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">本项目是玩家自制的非官方同人作品，与上海鹰角网络科技有限公司（Hypergryph）、Yostar 及其关联方没有任何关系，未获其授权或认可。</span><br><span class="line">《明日方舟》及「卫戍协议」相关的名称、角色、美术、音乐、音效、文本与数据等素材，版权归原权利人所有。这些素材不适用本项目的 GPL-3.0 许可证；GPL 只覆盖本项目自己编写的代码。</span><br><span class="line">仅供学习交流与个人非商业使用。严禁任何形式的盈利，包括但不限于：售卖本项目或整合包、付费下载或付费分发、收费服务器或收费代开、广告 / 打赏 / 会员等变现方式，以及其他任何商业用途。</span><br></pre></td></tr></table></figure><p>本文提及该程序仅为案例分析、学习交流需要，与上述企业和项目原作及关联方无关。搭建完的实例也不建议公开宣传，也是对项目的保护。</p><h2 id="上传文件">上传文件</h2><p>访问 <a href="https://github.com/sganggs/Stronghold-Protocol/releases" rel="external nofollow noreferrer">Stronghold-Protocol</a> 仓库的 Release，下载最新发行版（整合包），截止本文完稿时最新版为 0.3.0。为了加快速度，我下载了 lite 版本。</p><p>接下来，登入 Serv00 的控制面板（面板具体地址在注册时的邮箱可以找到），此处以新版控制台（DevilWEB 2.1 为例）。点击左侧<code>Website list</code>选项卡-<code>Add new website</code>按钮，选择 Node.js 项目，并在下方<code>Basic configuration</code>处填写域名（如果是自定域名则需在 DNS 服务商如 Cloudflare 做好解析）；Runtime 部分，Node executable 的 Node.js 版本按文档说明建议设置为<code>22.Y.Z</code>或<code>24.Y.Z</code>。完成后点击界面右下角<code>Add new website</code>按钮创建网站。</p><p>随后，在左侧<code>Port reservation</code>选项卡点击<code>Reserve a new port</code>增加一个端口，端口号自定（后面要用），如果不可用会提示。</p><p>之后回到<code>Website list</code>选项卡，查看是否已创建刚才的 Node.js 站点；通过 FTP 登入，检查<code>/domains/【域名】/public_nodejs</code>是否存在。现在尝试访问该域名，理应看到 Serv00 的 Node.js 站点默认页面。</p><p>现在，通过 FTP 工具将<code>/domains/【域名】/public_nodejs</code>目录下的文件删除，并将前面下载的发行版压缩包上传至该目录，解压（可以通过左侧的<code>File manager</code>选项卡进入在线文件管理器，依次找到压缩包，可以在线解压）。解压后文件相对位置大致如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">└── /domains/【域名】/public_nodejs/</span><br><span class="line">    ├── data/</span><br><span class="line">    ├── docs/</span><br><span class="line">    ├── packs/</span><br><span class="line">    ├── plugins/</span><br><span class="line">    ├── public/</span><br><span class="line">    ├── schemas/</span><br><span class="line">    ├── scripts/</span><br><span class="line">    ├── server/</span><br><span class="line">    ├── shared/</span><br><span class="line">    ├── test/</span><br><span class="line">    ├── tools/</span><br><span class="line">    ├── CHANGELOG.md</span><br><span class="line">    ├── LICENSE</span><br><span class="line">    ├── app.js &lt;== 这个文件现在还没有</span><br><span class="line">    【省略】</span><br></pre></td></tr></table></figure><h2 id="初始化资源">初始化资源</h2><p>查阅 <a href="https://docs.serv00.com/Node.js/" rel="external nofollow noreferrer">Serv00 运行 Node.js 项目的文档</a>可知，我们需要用根目录的<code>app.js</code>文件协助启动程序，但是游戏的源码没有提供。我们将会在后面创建它。</p><p>注意到项目提供了启动脚本，那么我们先登入 SSH 尝试一下。Windows 11 自带了 SSH，我们打开 CMD 然后连接：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh 【用户名】@【面板地址】 -p 22</span><br></pre></td></tr></table></figure><p>其中，用户名是注册时和登入面板时填写的那个，面板地址即登入面板时的地址，这里每个人的可能都不同，需根据实际情况调整。首次登入会在本机创建一些凭证，然后要求输入密码（同面板登入密码），输入时不可见：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(【用户名】@【面板地址】) Password <span class="keyword">for</span> 【用户名】@【面板地址】:</span><br></pre></td></tr></table></figure><p>随后显示一些欢迎语句：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">FreeBSD 【系统版本】: 【登录时间】</span><br><span class="line">  ____                   ___   ___</span><br><span class="line"> / ___|  ___ _ ____   __/ _ \ / _ \  ___ ___  _ __ ___</span><br><span class="line"> \___ \ / _ \ &#x27;__\ \ / / | | | | | |/ __/ _ \| &#x27;_ ` _ \</span><br><span class="line">  ___) |  __/ |   \ V /| |_| | |_| | (_| (_) | | | | | |</span><br><span class="line"> |____/ \___|_|    \_/  \___/ \___(_)___\___/|_| |_| |_|</span><br><span class="line">  Revolutionary Free Hosting   ᴘᴏᴡᴇʀᴇᴅ ʙʏ hostᴜɴᴏ.com</span><br><span class="line"></span><br><span class="line"> =[ Basic account info ]=</span><br><span class="line">         Username: 【用户名】</span><br><span class="line">             Plan: FREE</span><br><span class="line">  Expiration date: 【到期时间】</span><br><span class="line"></span><br><span class="line"> =[ Limits ]=</span><br><span class="line">       Disk quota: [=====================================] 【磁盘用量】</span><br><span class="line">        Processes: [=====================================] 【进程数量】</span><br><span class="line">       RAM memory: [=====================================] 【运行内存占用】</span><br><span class="line">              CPU: [=====================================] 【CPU 占用】</span><br><span class="line">              PHP: 【一些 PHP 版本相关的内容】</span><br><span class="line"></span><br><span class="line"> =[ Support ]=</span><br><span class="line"> Looking for help? Documentation is available on https://docs.serv00.com/ - check it first.</span><br><span class="line"> Still have questions? Fast free support available on the forum: https://forum.serv00.com/</span><br><span class="line"></span><br><span class="line"> =[ Latest news ]=</span><br><span class="line"> 【Serv00 最近更新了什么】</span><br><span class="line"></span><br><span class="line">[【用户名】@【ssh】]:&lt;~&gt;$</span><br></pre></td></tr></table></figure><p>现在我们按照 Serv00 的文档说明，先执行命令初始化 Node.js 环境：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.npm-global</span><br><span class="line">npm config set prefix &#x27;~/.npm-global&#x27; </span><br><span class="line">echo &#x27;export PATH=~/.npm-global/bin:~/bin:$PATH &#x27; &gt;&gt; $HOME/.bash_profile &amp;&amp; source $HOME/.bash_profile</span><br></pre></td></tr></table></figure><p>然后 cd 进入<code>/domains/【域名】/public_nodejs</code>目录，安装一些依赖：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p>执行一些脚本（我这里 3000 被占用了，遂换端口）：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./scripts/start.sh --port 8180</span><br></pre></td></tr></table></figure><p>发现执行不了，那么再试试另一个方法：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash scripts/start.sh --port 8180</span><br></pre></td></tr></table></figure><p>如果单纯下载静态资源可以调用工具：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node tools/setup.mjs</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或加上参数 node tools/setup.mjs --<span class="built_in">local</span></span></span><br></pre></td></tr></table></figure><p>现在它在尝试下载资源（因为我下载的是精简版资源，好像速度还可以），完成后出现了可访问的链接，但我忽视了一个问题——</p><p>这些链接我现在没办法访问。</p><p>由于 Serv00 并不是可以直接用 IP 访问的服务器，而且关了 SSH 后进程也没了（为防止意外情况我现在没装 pm2），因此还是需要按 Serv00 提供的方法启动。顺带一提 Serv00 装的是 FreeBSD 系统。</p><h2 id="增加启动文件">增加启动文件</h2><p>经过检查，得到几个信息：</p><table><thead><tr><th>源码</th><th>要求</th></tr></thead><tbody><tr><td><code>package.json:23</code></td><td>根目录 <code>.js</code> 是 ESM，入口需要用 <code>import</code>（或动态 <code>import()</code>）</td></tr><tr><td><code>package.json:24</code>；<code>server/index.js:220</code></td><td>项目自身入口是 <code>server/index.js</code>，但它<strong>只在自己是进程入口时才自动监听</strong>，被 <code>app.js</code> 导入后不会自动启动</td></tr><tr><td><code>server/index.js:35;64-68;96</code>；<code>server/http/boot.js:87;89</code></td><td>项目提供了 API 启动方式，也就是说编写<code>app.js</code>只需转接，不需要重写逻辑</td></tr><tr><td><code>server/http/config.js:41</code></td><td>端口可由启动函数传入，但<code>opts.port</code> <strong>优先于</strong>环境变量 <code>PORT</code></td></tr></tbody></table><p>如此一来，<code>app.js</code>（通常情况下）只需要加入 require 与 listen 相关设置，在本项目中则是<code>加载模块</code>→<code>runMain(startServer)</code>。模板应用是 <code>http.createServer().listen()</code>，<br>本项目的 listen 已封装在 <code>startServer()</code> 内部（<code>server/index.js:96</code> 起），这意味着与其重写一遍不如转接项目提供的 API。这样既方便 Serv00 启动程序，又避免后续升级合并差异带来的不便。</p><blockquote><p>为了方便复盘，我将前几次的代码也记录在这里；只想看结果的请跳到后面</p></blockquote><h3 id="试试静态-import-导入">试试静态 import 导入</h3><p>由刚才的发现，我们自然地想到：</p><ul><li><code>app.js</code> 必须主动调用启动函数，而不是自己写 <code>listen()</code>。项目的监听行为在 <code>startServer()</code> 中，<code>app.js</code> 负责改变调用时机；</li><li><code>startServer</code> 与 <code>runMain</code> 都是现成导出，两个 <code>import</code> 就是模板里 <code>require</code> 的 ESM 对应物，<br><code>runMain(startServer)</code> 是模板里 <code>listen()</code> 的对应物；</li><li><code>boot.js</code> 开头的注释表明 <code>runMain</code> 附带的<br>进程级行为，正是 <code>npm start</code> 执行的同一段代码，只需一行即可让服务器上获得与本地完全一致的启动体验，因此我们选 <code>runMain(startServer)</code> 而非裸调 <code>startServer()</code>，；</li><li>端口交给环境变量，因为宿主面板会注入 <code>PORT</code>，<code>app.js</code> 不必关心端口（这条是我猜的）。</li></ul><p>所以我们可以编写这样的代码：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 转接 server/index.js 的启动流程。</span></span><br><span class="line"><span class="keyword">import</span> &#123; startServer &#125; <span class="keyword">from</span> <span class="string">&#x27;./server/index.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; runMain &#125; <span class="keyword">from</span> <span class="string">&#x27;./server/http/boot.js&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">runMain</span>(startServer);</span><br></pre></td></tr></table></figure><p>但非常可惜，上传后站点显示后端服务器连不上；本地测试发现 <code>node app.js</code> 正常启动且 <code>/healthz</code> 返回 200。</p><h3 id="那么固定端口试试">那么固定端口试试</h3><p>再次研究发现 Serv00 面板无法设置环境变量，之前猜想的依赖 <code>PORT</code>/<code>HOST</code> 注入机制不起作用（我印象中 Serv00 是可以设置变量的，但比较麻烦），综合考虑，决定将端口写进启动文件；而且 <code>startServer({ port: PORT })</code> 能覆盖环境变量，不改动既有代码；</p><p>由 <code>boot.js:87</code> 可知 <code>runMain</code> 的签名要求传启动函数而非启动结果；</p><p>端口值按 Serv00 实际设定情况调整（事后发现 Node.js 类型下这个常量根本不生效但无害；后来用 SSH 登入后使用 <code>sockstat</code> 确认没有进程占用目标端口）。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PORT</span> = <span class="number">8180</span>; <span class="comment">// 固定端口，实际应与前面在 Serv00 面板中设置的端口一致</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">runMain</span>(<span class="function">() =&gt;</span> <span class="title function_">startServer</span>(&#123; <span class="attr">port</span>: <span class="variable constant_">PORT</span> &#125;));</span><br></pre></td></tr></table></figure><p>这次总该成了吧……触发 500 了。</p><p>不应该啊……排查一下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">uname -a; whoami; node -v; npm -v # 检查环境版本</span><br><span class="line"></span><br><span class="line">ls -la /usr/home/【用户名】/domains/【域名】/public_nodejs # 目标文件都在</span><br><span class="line"></span><br><span class="line">ps aux | grep node # 无任何 node 进程</span><br><span class="line">sockstat -l | grep 8180 # 端口未被监听，好像程序没跑起来</span><br><span class="line">devil www list # 域名类型，Serv00 中这由 Phusion Passenger 管，不是 proxy</span><br><span class="line">curl -s -m 8 https://【域名】/healthz # 用来检测“健康”的，显然 500 是“不健康”的</span><br></pre></td></tr></table></figure><p>Serv00 会把应用的错误写入 <code>domains/&lt;DOMAIN&gt;/logs/error.log</code>。经过我的观察，访客每访问一次，日志中就有这样的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Error [ERR_REQUIRE_ASYNC_MODULE]: require() cannot be used on an ESM graph with top-level await.</span><br><span class="line">  From /usr/local/lib/ruby/gems/3.4/gems/passenger-6.1.3/src/helper-scripts/node-loader.js</span><br><span class="line">  Requiring /usr/home/【用户名】/domains/【域名】/public_nodejs/app.js</span><br></pre></td></tr></table></figure><h3 id="动态-import">动态 import</h3><p>检查 <code>error.log</code> 时注意到其中反复出现 <code>ERR_REQUIRE_ASYNC_MODULE</code>，并得知 Serv00 的 Node.js 类型页由 Phusion Passenger 框架的 <code>node-loader.js</code> 调用 <code>app.js</code> 处理。</p><p>Node 的规则是：<code>require()</code> 进入 ESM 时会同步求值入口及其全部静态 import 内容，其中任一模块含顶层 await（Top-Level Await，简称 TLA）即整体失败；而本项目 TLA 位于 <code>server/sim/simdata.js:509</code>，与 <code>server/sim/content/kits/index.js:172</code> 属既有代码，我不作修改。</p><p>这样一来，此时虽然 <code>Node.js≥22.12</code> 版本允许 <code>require()</code> 加载 ESM，但禁止其静态依赖含 TLA，故而报<br><code>ERR_REQUIRE_ASYNC_MODULE</code>，于是启动失败，Apache 报 500。测试了一下，找到对应的文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node --experimental-print-required-tla -e &quot;require(&#x27;./app.js&#x27;)&quot;</span><br></pre></td></tr></table></figure><p>然后搜索了许多文档还发现 Serv00 似乎不只是 Node.js 的环境由 Phusion Passenger 接管监听——总之不是走 proxy 的方案，因此 Node.js 类型是不需要端口环境变量的。</p><p>在麻烦 DeepSeek 和 Mimo 亲自登入 SSH 智斗了一段时间后，我得到了一个解决方法：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PORT</span> = <span class="number">8180</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span>(<span class="string">&#x27;./server/index.js&#x27;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="title function_">async</span> (&#123; startServer &#125;) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; runMain &#125; = <span class="keyword">await</span> <span class="keyword">import</span>(<span class="string">&#x27;./server/http/boot.js&#x27;</span>);</span><br><span class="line">    <span class="title function_">runMain</span>(<span class="function">() =&gt;</span> <span class="title function_">startServer</span>(&#123; <span class="attr">port</span>: <span class="variable constant_">PORT</span> &#125;));</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;[boot] failed to start&#x27;</span>, err);</span><br><span class="line">    process.<span class="title function_">exit</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure><p>思路大致如下：</p><ul><li><code>require()</code> 同步加载 <code>app.js</code> 时，同步求值路径上只有 <code>app.js</code> 自身；不再使用静态 <code>import</code>，改由动态 <code>import()</code> 异步拉起。由于动态导入不属于 <code>require()</code> 的同步图，因此避免了 TLA 限制，且启动流程不变；</li><li><code>process.exit(1)</code> 对齐 <code>runMain</code> 启动失败即退出码 1 的既有行为（<code>boot.js:99-101</code>），避免宿主侧出现进程活着但永远不响应的情况；</li><li>保留 <code>PORT</code>，将来改用 proxy 反代方式时它会恢复作用，方便日后兼容；</li></ul><p>这样一来也可以解释为什么 Serv00 在文档中要求有 <code>app.js</code> 了，因为 Phusion Passenger 此时做的就是 <code>require('./app.js')</code>，那么本地模拟一下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -e &quot;require(&#x27;./app.js&#x27;)&quot; # 正常启动</span><br><span class="line">node app.js # 直接启动也没有问题</span><br></pre></td></tr></table></figure><p>接下来把刚才那段 JavaScript 代码写入<code>app.js</code>，然后将其上传到站点文件根目录（<code>/domains/【域名】/public_nodejs/</code>）。不放心的话，做完这些后手动重启一下站点（见下节）。</p><h2 id="启动与更新">启动与更新</h2><p>通过这种方法部署的 Node.js 类型项目无需手动启动命令，首次 HTTP 访问即可拉起应用，较长时间闲置后冷启动速度约 8 秒；curl 检查域名也是通的，WebSocket 也正常跑起来了（测试时加了 <code>--http1.1</code> 参数才得到真实的 101 反馈）；用 <code>sockstat -l \| grep 8180</code> 再次确认该端口没有被监听而是被接管了。</p><p>那么我们在浏览器中进行一个域名的访问：</p><ul><li><code>https://game.example.com</code></li><li><code>https://game.example.com/healthz</code></li></ul><p>能够正常跑起来了，虽然速度有点慢（占用磁盘也有点大）。下次更新的话下载仓库中的 update 包，合并修改的文件 <strong>而不是替换整个文件夹</strong>，然后在 Serv00 面板中重启一下这个站点，或是用 SSH 通过 Serv00 的命令重启：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">devil www restart 【域名】</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>不久前在 QQ 群中了解到这个非官方的同人项目，大致是复刻了游戏《明日方舟》中的一个限时开放的玩法。</p><p>这个项目基于 Node.js 运行，想起 Serv00 支持 Node.js 运行环境，遂尝试部署，当作练习（这应该是我在 Serv00 上运行的第一个非 PHP 程序了）。</p><blockquote><p>以下为免责声明，摘录自项目仓库介绍文档</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">本项目是玩家自制的非官方同人作品，与上海鹰角网络科技有限公司（Hypergryph）、Yostar 及其关联方没有任何关系，未获其授权或认可。</span><br><span class="line">《明日方舟》及「卫戍协议」相关的名称、角色、美术、音乐、音效、文本与数据等素材，版权归原权利人所有。这些素材不适用本项目的 GPL-3.0 许可证；GPL 只覆盖本项目自己编写的代码。</span><br><span class="line">仅供学习交流与个人非商业使用。严禁任何形式的盈利，包括但不限于：售卖本项目或整合包、付费下载或付费分发、收费服务器或收费代开、广告 / 打赏 / 会员等变现方式，以及其他任何商业用途。</span><br></pre></td></tr></table></figure><p>本文提及该程序仅为案例分析、学习交流需要，与上述企业和项目原作及关联方无关。搭建完的实例也不建议公开宣传，也是对项目的保护。</p><h2 id="上传文件">上传文件</h2><p>访问 <a href="https://github.com/sganggs/Stronghold-Protocol/releases" rel="external nofollow noreferrer">Stronghold-Protocol</a> 仓库的 Release，下载最新发行版（整合包），截止本文完稿时最新版为 0.3.0。为了加快速度，我下载了 lite 版本。</p><p>接下来，登入 Serv00 的控制面板（面板具体地址在注册时的邮箱可以找到），此处以新版控制台（DevilWEB 2.1 为例）。点击左侧<code>Website list</code>选项卡-<code>Add new website</code>按钮，选择 Node.js 项目，并在下方<code>Basic configuration</code>处填写域名（如果是自定域名则需在 DNS 服务商如 Cloudflare 做好解析）；Runtime 部分，Node executable 的 Node.js 版本按文档说明建议设置为<code>22.Y.Z</code>或<code>24.Y.Z</code>。完成后点击界面右下角<code>Add new website</code>按钮创建网站。</p><p>随后，在左侧<code>Port reservation</code>选项卡点击<code>Reserve a new port</code>增加一个端口，端口号自定（后面要用），如果不可用会提示。</p><p>之后回到<code>Website list</code>选项卡，查看是否已创建刚才的 Node.js 站点；通过 FTP 登入，检查<code>/domains/【域名】/public_nodejs</code>是否存在。现在尝试访问该域名，理应看到 Serv00 的 Node.js 站点默认页面。</p><p>现在，通过 FTP 工具将<code>/domains/【域名】/public_nodejs</code>目录下的文件删除，并将前面下载的发行版压缩包上传至该目录，解压（可以通过左侧的<code>File manager</code>选项卡进入在线文件管理器，依次找到压缩包，可以在线解压）。解压后文件相对位置大致如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">└── /domains/【域名】/public_nodejs/</span><br><span class="line">    ├── data/</span><br><span class="line">    ├── docs/</span><br><span class="line">    ├── packs/</span><br><span class="line">    ├── plugins/</span><br><span class="line">    ├── public/</span><br><span class="line">    ├── schemas/</span><br><span class="line">    ├── scripts/</span><br><span class="line">    ├── server/</span><br><span class="line">    ├── shared/</span><br><span class="line">    ├── test/</span><br><span class="line">    ├── tools/</span><br><span class="line">    ├── CHANGELOG.md</span><br><span class="line">    ├── LICENSE</span><br><span class="line">    ├── app.js &lt;== 这个文件现在还没有</span><br><span class="line">    【省略】</span><br></pre></td></tr></table></figure><h2 id="初始化资源">初始化资源</h2><p>查阅 <a href="https://docs.serv00.com/Node.js/" rel="external nofollow noreferrer">Serv00 运行 Node.js 项目的文档</a>可知，我们需要用根目录的<code>app.js</code>文件协助启动程序，但是游戏的源码没有提供。我们将会在后面创建它。</p><p>注意到项目提供了启动脚本，那么我们先登入 SSH 尝试一下。Windows 11 自带了 SSH，我们打开 CMD 然后连接：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh 【用户名】@【面板地址】 -p 22</span><br></pre></td></tr></table></figure><p>其中，用户名是注册时和登入面板时填写的那个，面板地址即登入面板时的地址，这里每个人的可能都不同，需根据实际情况调整。首次登入会在本机创建一些凭证，然后要求输入密码（同面板登入密码），输入时不可见：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(【用户名】@【面板地址】) Password <span class="keyword">for</span> 【用户名】@【面板地址】:</span><br></pre></td></tr></table></figure><p>随后显示一些欢迎语句：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">FreeBSD 【系统版本】: 【登录时间】</span><br><span class="line">  ____                   ___   ___</span><br><span class="line"> / ___|  ___ _ ____   __/ _ \ / _ \  ___ ___  _ __ ___</span><br><span class="line"> \___ \ / _ \ &#x27;__\ \ / / | | | | | |/ __/ _ \| &#x27;_ ` _ \</span><br><span class="line">  ___) |  __/ |   \ V /| |_| | |_| | (_| (_) | | | | | |</span><br><span class="line"> |____/ \___|_|    \_/  \___/ \___(_)___\___/|_| |_| |_|</span><br><span class="line">  Revolutionary Free Hosting   ᴘᴏᴡᴇʀᴇᴅ ʙʏ hostᴜɴᴏ.com</span><br><span class="line"></span><br><span class="line"> =[ Basic account info ]=</span><br><span class="line">         Username: 【用户名】</span><br><span class="line">             Plan: FREE</span><br><span class="line">  Expiration date: 【到期时间】</span><br><span class="line"></span><br><span class="line"> =[ Limits ]=</span><br><span class="line">       Disk quota: [=====================================] 【磁盘用量】</span><br><span class="line">        Processes: [=====================================] 【进程数量】</span><br><span class="line">       RAM memory: [=====================================] 【运行内存占用】</span><br><span class="line">              CPU: [=====================================] 【CPU 占用】</span><br><span class="line">              PHP: 【一些 PHP 版本相关的内容】</span><br><span class="line"></span><br><span class="line"> =[ Support ]=</span><br><span class="line"> Looking for help? Documentation is available on https://docs.serv00.com/ - check it first.</span><br><span class="line"> Still have questions? Fast free support available on the forum: https://forum.serv00.com/</span><br><span class="line"></span><br><span class="line"> =[ Latest news ]=</span><br><span class="line"> 【Serv00 最近更新了什么】</span><br><span class="line"></span><br><span class="line">[【用户名】@【ssh】]:&lt;~&gt;$</span><br></pre></td></tr></table></figure><p>现在我们按照 Serv00 的文档说明，先执行命令初始化 Node.js 环境：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.npm-global</span><br><span class="line">npm config set prefix &#x27;~/.npm-global&#x27; </span><br><span class="line">echo &#x27;export PATH=~/.npm-global/bin:~/bin:$PATH &#x27; &gt;&gt; $HOME/.bash_profile &amp;&amp; source $HOME/.bash_profile</span><br></pre></td></tr></table></figure><p>然后 cd 进入<code>/domains/【域名】/public_nodejs</code>目录，安装一些依赖：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p>执行一些脚本（我这里 3000 被占用了，遂换端口）：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./scripts/start.sh --port 8180</span><br></pre></td></tr></table></figure><p>发现执行不了，那么再试试另一个方法：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash scripts/start.sh --port 8180</span><br></pre></td></tr></table></figure><p>如果单纯下载静态资源可以调用工具：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node tools/setup.mjs</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或加上参数 node tools/setup.mjs --<span class="built_in">local</span></span></span><br></pre></td></tr></table></figure><p>现在它在尝试下载资源（因为我下载的是精简版资源，好像速度还可以），完成后出现了可访问的链接，但我忽视了一个问题——</p><p>这些链接我现在没办法访问。</p><p>由于 Serv00 并不是可以直接用 IP 访问的服务器，而且关了 SSH 后进程也没了（为防止意外情况我现在没装 pm2），因此还是需要按 Serv00 提供的方法启动。顺带一提 Serv00 装的是 FreeBSD 系统。</p><h2 id="增加启动文件">增加启动文件</h2><p>经过检查，得到几个信息：</p><table><thead><tr><th>源码</th><th>要求</th></tr></thead><tbody><tr><td><code>package.json:23</code></td><td>根目录 <code>.js</code> 是 ESM，入口需要用 <code>import</code>（或动态 <code>import()</code>）</td></tr><tr><td><code>package.json:24</code>；<code>server/index.js:220</code></td><td>项目自身入口是 <code>server/index.js</code>，但它<strong>只在自己是进程入口时才自动监听</strong>，被 <code>app.js</code> 导入后不会自动启动</td></tr><tr><td><code>server/index.js:35;64-68;96</code>；<code>server/http/boot.js:87;89</code></td><td>项目提供了 API 启动方式，也就是说编写<code>app.js</code>只需转接，不需要重写逻辑</td></tr><tr><td><code>server/http/config.js:41</code></td><td>端口可由启动函数传入，但<code>opts.port</code> <strong>优先于</strong>环境变量 <code>PORT</code></td></tr></tbody></table><p>如此一来，<code>app.js</code>（通常情况下）只需要加入 require 与 listen 相关设置，在本项目中则是<code>加载模块</code>→<code>runMain(startServer)</code>。模板应用是 <code>http.createServer().listen()</code>，<br>本项目的 listen 已封装在 <code>startServer()</code> 内部（<code>server/index.js:96</code> 起），这意味着与其重写一遍不如转接项目提供的 API。这样既方便 Serv00 启动程序，又避免后续升级合并差异带来的不便。</p><blockquote><p>为了方便复盘，我将前几次的代码也记录在这里；只想看结果的请跳到后面</p></blockquote><h3 id="试试静态-import-导入">试试静态 import 导入</h3><p>由刚才的发现，我们自然地想到：</p><ul><li><code>app.js</code> 必须主动调用启动函数，而不是自己写 <code>listen()</code>。项目的监听行为在 <code>startServer()</code> 中，<code>app.js</code> 负责改变调用时机；</li><li><code>startServer</code> 与 <code>runMain</code> 都是现成导出，两个 <code>import</code> 就是模板里 <code>require</code> 的 ESM 对应物，<br><code>runMain(startServer)</code> 是模板里 <code>listen()</code> 的对应物；</li><li><code>boot.js</code> 开头的注释表明 <code>runMain</code> 附带的<br>进程级行为，正是 <code>npm start</code> 执行的同一段代码，只需一行即可让服务器上获得与本地完全一致的启动体验，因此我们选 <code>runMain(startServer)</code> 而非裸调 <code>startServer()</code>，；</li><li>端口交给环境变量，因为宿主面板会注入 <code>PORT</code>，<code>app.js</code> 不必关心端口（这条是我猜的）。</li></ul><p>所以我们可以编写这样的代码：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 转接 server/index.js 的启动流程。</span></span><br><span class="line"><span class="keyword">import</span> &#123; startServer &#125; <span class="keyword">from</span> <span class="string">&#x27;./server/index.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; runMain &#125; <span class="keyword">from</span> <span class="string">&#x27;./server/http/boot.js&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">runMain</span>(startServer);</span><br></pre></td></tr></table></figure><p>但非常可惜，上传后站点显示后端服务器连不上；本地测试发现 <code>node app.js</code> 正常启动且 <code>/healthz</code> 返回 200。</p><h3 id="那么固定端口试试">那么固定端口试试</h3><p>再次研究发现 Serv00 面板无法设置环境变量，之前猜想的依赖 <code>PORT</code>/<code>HOST</code> 注入机制不起作用（我印象中 Serv00 是可以设置变量的，但比较麻烦），综合考虑，决定将端口写进启动文件；而且 <code>startServer({ port: PORT })</code> 能覆盖环境变量，不改动既有代码；</p><p>由 <code>boot.js:87</code> 可知 <code>runMain</code> 的签名要求传启动函数而非启动结果；</p><p>端口值按 Serv00 实际设定情况调整（事后发现 Node.js 类型下这个常量根本不生效但无害；后来用 SSH 登入后使用 <code>sockstat</code> 确认没有进程占用目标端口）。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PORT</span> = <span class="number">8180</span>; <span class="comment">// 固定端口，实际应与前面在 Serv00 面板中设置的端口一致</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">runMain</span>(<span class="function">() =&gt;</span> <span class="title function_">startServer</span>(&#123; <span class="attr">port</span>: <span class="variable constant_">PORT</span> &#125;));</span><br></pre></td></tr></table></figure><p>这次总该成了吧……触发 500 了。</p><p>不应该啊……排查一下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">uname -a; whoami; node -v; npm -v # 检查环境版本</span><br><span class="line"></span><br><span class="line">ls -la /usr/home/【用户名】/domains/【域名】/public_nodejs # 目标文件都在</span><br><span class="line"></span><br><span class="line">ps aux | grep node # 无任何 node 进程</span><br><span class="line">sockstat -l | grep 8180 # 端口未被监听，好像程序没跑起来</span><br><span class="line">devil www list # 域名类型，Serv00 中这由 Phusion Passenger 管，不是 proxy</span><br><span class="line">curl -s -m 8 https://【域名】/healthz # 用来检测“健康”的，显然 500 是“不健康”的</span><br></pre></td></tr></table></figure><p>Serv00 会把应用的错误写入 <code>domains/&lt;DOMAIN&gt;/logs/error.log</code>。经过我的观察，访客每访问一次，日志中就有这样的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Error [ERR_REQUIRE_ASYNC_MODULE]: require() cannot be used on an ESM graph with top-level await.</span><br><span class="line">  From /usr/local/lib/ruby/gems/3.4/gems/passenger-6.1.3/src/helper-scripts/node-loader.js</span><br><span class="line">  Requiring /usr/home/【用户名】/domains/【域名】/public_nodejs/app.js</span><br></pre></td></tr></table></figure><h3 id="动态-import">动态 import</h3><p>检查 <code>error.log</code> 时注意到其中反复出现 <code>ERR_REQUIRE_ASYNC_MODULE</code>，并得知 Serv00 的 Node.js 类型页由 Phusion Passenger 框架的 <code>node-loader.js</code> 调用 <code>app.js</code> 处理。</p><p>Node 的规则是：<code>require()</code> 进入 ESM 时会同步求值入口及其全部静态 import 内容，其中任一模块含顶层 await（Top-Level Await，简称 TLA）即整体失败；而本项目 TLA 位于 <code>server/sim/simdata.js:509</code>，与 <code>server/sim/content/kits/index.js:172</code> 属既有代码，我不作修改。</p><p>这样一来，此时虽然 <code>Node.js≥22.12</code> 版本允许 <code>require()</code> 加载 ESM，但禁止其静态依赖含 TLA，故而报<br><code>ERR_REQUIRE_ASYNC_MODULE</code>，于是启动失败，Apache 报 500。测试了一下，找到对应的文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node --experimental-print-required-tla -e &quot;require(&#x27;./app.js&#x27;)&quot;</span><br></pre></td></tr></table></figure><p>然后搜索了许多文档还发现 Serv00 似乎不只是 Node.js 的环境由 Phusion Passenger 接管监听——总之不是走 proxy 的方案，因此 Node.js 类型是不需要端口环境变量的。</p><p>在麻烦 DeepSeek 和 Mimo 亲自登入 SSH 智斗了一段时间后，我得到了一个解决方法：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PORT</span> = <span class="number">8180</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span>(<span class="string">&#x27;./server/index.js&#x27;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="title function_">async</span> (&#123; startServer &#125;) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; runMain &#125; = <span class="keyword">await</span> <span class="keyword">import</span>(<span class="string">&#x27;./server/http/boot.js&#x27;</span>);</span><br><span class="line">    <span class="title function_">runMain</span>(<span class="function">() =&gt;</span> <span class="title function_">startServer</span>(&#123; <span class="attr">port</span>: <span class="variable constant_">PORT</span> &#125;));</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">catch</span>(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;[boot] failed to start&#x27;</span>, err);</span><br><span class="line">    process.<span class="title function_">exit</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure><p>思路大致如下：</p><ul><li><code>require()</code> 同步加载 <code>app.js</code> 时，同步求值路径上只有 <code>app.js</code> 自身；不再使用静态 <code>import</code>，改由动态 <code>import()</code> 异步拉起。由于动态导入不属于 <code>require()</code> 的同步图，因此避免了 TLA 限制，且启动流程不变；</li><li><code>process.exit(1)</code> 对齐 <code>runMain</code> 启动失败即退出码 1 的既有行为（<code>boot.js:99-101</code>），避免宿主侧出现进程活着但永远不响应的情况；</li><li>保留 <code>PORT</code>，将来改用 proxy 反代方式时它会恢复作用，方便日后兼容；</li></ul><p>这样一来也可以解释为什么 Serv00 在文档中要求有 <code>app.js</code> 了，因为 Phusion Passenger 此时做的就是 <code>require('./app.js')</code>，那么本地模拟一下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -e &quot;require(&#x27;./app.js&#x27;)&quot; # 正常启动</span><br><span class="line">node app.js # 直接启动也没有问题</span><br></pre></td></tr></table></figure><p>接下来把刚才那段 JavaScript 代码写入<code>app.js</code>，然后将其上传到站点文件根目录（<code>/domains/【域名】/public_nodejs/</code>）。不放心的话，做完这些后手动重启一下站点（见下节）。</p><h2 id="启动与更新">启动与更新</h2><p>通过这种方法部署的 Node.js 类型项目无需手动启动命令，首次 HTTP 访问即可拉起应用，较长时间闲置后冷启动速度约 8 秒；curl 检查域名也是通的，WebSocket 也正常跑起来了（测试时加了 <code>--http1.1</code> 参数才得到真实的 101 反馈）；用 <code>sockstat -l \| grep 8180</code> 再次确认该端口没有被监听而是被接管了。</p><p>那么我们在浏览器中进行一个域名的访问：</p><ul><li><code>https://game.example.com</code></li><li><code>https://game.example.com/healthz</code></li></ul><p>能够正常跑起来了，虽然速度有点慢（占用磁盘也有点大）。下次更新的话下载仓库中的 update 包，合并修改的文件 <strong>而不是替换整个文件夹</strong>，然后在 Serv00 面板中重启一下这个站点，或是用 SSH 通过 Serv00 的命令重启：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">devil www restart 【域名】</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -306,11 +331,11 @@
       
         <tags>
             
-            <tag> Serv00 </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 自建服务 </tag>
+            
+            <tag> Serv00 </tag>
             
         </tags>
       
@@ -323,7 +348,7 @@
       <link href="/posts/2166442228/"/>
       <url>/posts/2166442228/</url>
       
-        <content type="html"><![CDATA[<p>前不久发现 OpenList 维护团队开发了 OpenList 的 Serverless 架构移植版本，这意味着可以通过 Cloudflare Workers、EdgeOne Makers 等边缘计算平台部署，而不必自备服务器。</p><p>虽然 Cf 免费版有一定限制，但小文件传输和简单的文件浏览还是足够的。</p><h2 id="Alist-与-OpenList">Alist 与 OpenList</h2><p>OpenList 的前身是 Alist，这是一个开源的网盘聚合项目，可以自行设置并挂载第三方存储，聚合管理的同时还可以分享和下载文件。总而言之，这是一个功能丰富的实用程序，一度成为许多 NAS 系统的预装应用；你可能在许多资源分享站也见过类似的界面。</p><p>不过，它的 API 后端没有开源，也就是说所有通过 Token 挂载到 Alist 的第三方云盘账户的安全性基本靠 Xhofe 自觉。好在很长一段时间以来作者还算“老实”，项目也是勃勃生机、万物竞发的状态。</p><p>结果去年他把这个项目卖给第三方公司并退出大部分相关项目开发社群，而且好死不死这家公司（贵州不够科技有限公司）动机和前科都不干净。不久，官方文档也加入了各种商业化链接，仓库新提交的 PR 中也有疑似收集隐私的代码片段。收购时没有事先通知，还是被开发者发现后其才回复的。之前许多知名项目如 LNMP、Hutool 等，也是遭到了类似企业的类似“待遇”。</p><p>再加上 API 授权系统是闭源的……反正 Alist 是不干净了。</p><p>好在其是以 AGPL-3.0 license 开源的，社区也是迅速分支了最后一个“未受污染”的版本。在各种分支中，<a href="https://github.com/OpenListTeam/OpenList" rel="external nofollow noreferrer">OpenList</a> 这个分支是较为知名和完善的。</p><p>近两三个月，OpenListTeam 又开发了<a href="https://github.com/OpenListTeam/OpenList-Worker" rel="external nofollow noreferrer">OpenList Worker</a>，号称“无需自备服务器即可一键部署”。自从 Serv00 更新 TOS 后，我尝试寻找其他的替代品，但大多不达预期（主要是管理第三方存储的功能）。</p><p>基于 Go 的项目在 Worker 上不能直接运行，但基于 TypeScript 有机会实现。</p><h2 id="部署">部署</h2><p>参考 <a href="https://www.oplist.org/guide/installation/worker" rel="external nofollow noreferrer">OpenList Worker 文档</a>，为确保执行顺利，先在 GitHub 中将<a href="https://github.com/OpenListTeam/OpenList-Worker" rel="external nofollow noreferrer">OpenList-Worker</a> 仓库 fork 到自己的账户中。</p><p>之后登录 Cloudflare 控制台，依次找到<code>构建</code>-<code>计算</code>-<code>Workers 和 Pages</code>，点击<code> 创建应用程序</code>按钮，连接 GitHub 并选择 fork 的仓库，然后自定项目名称；构建命令这部分等待一下会自动读取并显示，没有则手动填写<code>pnpm run build</code>。</p><p><img src="https://files.seeusercontent.com/2026/10/13/5lsL/OpenList-deploy-and-manage-1.png" alt=""></p><p>（话说大改之后的控制台看着干练了一些；Pages 在创建应用程序窗口的下方，不过被归为旧版工作流了）</p><p>随后进入项目详情页，点击<code>设置</code>选项卡，配置变量。这部分需根据前面的文档按具体情况编写。如果和我一样使用 Cloudflare，则按照建议可以将<code>运行时变量和密钥</code>中<code>DB_FORMAT</code>的值改为<code>sql</code>，<code>DB_DRIVER</code>的值建议改为<code>d1</code>。另外还需创建<code>JWT_SECRET</code>变量，其值自行编写（可以去网上找个生成器随机生成）。</p><p>不需要提前创建 D1 数据库，OpenList 会自动完成这一步。</p><p><img src="https://files.seeusercontent.com/2026/10/13/6nAu/OpenList-deploy-and-manage-2.png" alt=""></p><p>使用 D1 SQLite 数据库的话，需要先回到 fork 的 GitHub 仓库中，编辑根目录下<code>wrangler.jsonc</code>文件，在下方找到这一段（不同版本可能有差异；为节省篇幅，此处有所省略）：</p><figure class="highlight jsonc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">// ===========================================================================</span></span><br><span class="line">  <span class="comment">// 存储绑定</span></span><br><span class="line">  <span class="comment">// ===========================================================================</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 A：KV（默认启用，免费额度大、最通用）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 B：D1（关系型，可与 Go 后端共享库；DB_FORMAT 建议改为 &quot;sql&quot;）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 C：Durable Objects（内置 SQLite，强一致；DB_FORMAT 建议改为 &quot;sql&quot;）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 D：Blob / MySQL</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>取消相应区域的注释（启用）：</p><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  // ▶ 方案 B：D1（关系型，可与 Go 后端共享库；DB_FORMAT 建议改为 &quot;sql&quot;）</span><br><span class="line">  //   控制台：Workers &amp; Pages → D1 → 创建数据库 → 绑定到 Worker，变量名填 DB</span><br><span class="line">  //   省略 database_id 时，wrangler &gt;= 4.45.0 会自动创建同名库并回写</span><br><span class="line">  //</span><br><span class="line"><span class="deletion">- // &quot;d1_databases&quot;: [</span></span><br><span class="line"><span class="deletion">- //   &#123; &quot;binding&quot;: &quot;DB&quot;, &quot;database_name&quot;: &quot;openlist&quot;, &quot;database_id&quot;: &quot;&quot; &#125;</span></span><br><span class="line"><span class="deletion">- // ],</span></span><br><span class="line"><span class="addition">+ &quot;d1_databases&quot;: [</span></span><br><span class="line"><span class="addition">+   &#123; &quot;binding&quot;: &quot;DB&quot;, &quot;database_name&quot;: &quot;openlist&quot;, &quot;database_id&quot;: &quot;&quot; &#125;</span></span><br><span class="line"><span class="addition">+ ],</span></span><br><span class="line">  //</span><br><span class="line">  // ▶ 方案 C：Durable Objects（内置 SQLite，强一致；DB_FORMAT 建议改为 &quot;sql&quot;）</span><br><span class="line">  //   注意：DO 需要 migrations，且删除成本高，适合单租户部署。</span><br><span class="line">  //</span><br></pre></td></tr></table></figure><p>完成后保存，触发自动部署，并确保前面的变量均有正确配置。如果有自己的域名，也可以在<code>域</code>选项卡添加（例如<code>https://drive.example.com</code>）。</p><h2 id="注册与添加">注册与添加</h2><p>现在访问刚才部署的实例，将会跳转到环境检测界面，若提示“环境就绪”则可继续安装。填写管理员名称和密码，以及站点名称。初始化完成后即可访问。</p><p><img src="https://files.seeusercontent.com/2026/10/13/4Hkn/OpenList-deploy-and-manage-3.png" alt=""></p><p>初次登录会提示<code>failed get storage: storage not found; please add a storage first</code>，点击“转到存储”或页脚的“管理”，进入后台设置，按照所需填写对应的参数。</p><p>可以整个账户挂载，也可以只挂载某个路径，这里操作可能各不相同（例如我的 WebDAV 挂载指定路径，需要直接将目标路径添加到<code>地址</code>中），此处按自己实际情况添加。完成后返回首页，观察添加的路径是否出现并正常访问。</p><p>用户权限部分需要在后台<code>用户</code>中设置，默认情况下管理员账户和<code>guest</code>均未配置权限，需要手动启用。</p><p>部署在 Cloudflare Worker 的实例受到 Cloudflare 对请求次数和文件大小的限制，因此大文件上传可能无法成功（个人感觉 Cloudflare 免费账户这个限制还是比较严格的，使用量大的话建议自备服务器部署 OpenList）。</p>]]></content>
+        <content type="html"><![CDATA[<p>前不久发现 OpenList 维护团队开发了 OpenList 的 Serverless 架构移植版本，这意味着可以通过 Cloudflare Workers、EdgeOne Makers 等边缘计算平台部署，而不必自备服务器。</p><p>虽然 Cf 免费版有一定限制，但小文件传输和简单的文件浏览还是足够的。</p><h2 id="Alist-与-OpenList">Alist 与 OpenList</h2><p>OpenList 的前身是 Alist，这是一个开源的网盘聚合项目，可以自行设置并挂载第三方存储，聚合管理的同时还可以分享和下载文件。总而言之，这是一个功能丰富的实用程序，一度成为许多 NAS 系统的预装应用；你可能在许多资源分享站也见过类似的界面。</p><p>不过，它的 API 后端没有开源，也就是说所有通过 Token 挂载到 Alist 的第三方云盘账户的安全性基本靠 Xhofe 自觉。好在很长一段时间以来作者还算“老实”，项目也是勃勃生机、万物竞发的状态。</p><p>结果去年他把这个项目卖给第三方公司并退出大部分相关项目开发社群，而且好死不死这家公司（贵州不够科技有限公司）动机和前科都不干净。不久，官方文档也加入了各种商业化链接，仓库新提交的 PR 中也有疑似收集隐私的代码片段。收购时没有事先通知，还是被开发者发现后其才回复的。之前许多知名项目如 LNMP、Hutool 等，也是遭到了类似企业的类似“待遇”。</p><p>再加上 API 授权系统是闭源的……反正 Alist 是不干净了。</p><p>好在其是以 AGPL-3.0 license 开源的，社区也是迅速分支了最后一个“未受污染”的版本。在各种分支中，<a href="https://github.com/OpenListTeam/OpenList" rel="external nofollow noreferrer">OpenList</a> 这个分支是较为知名和完善的。</p><p>近两三个月，OpenListTeam 又开发了<a href="https://github.com/OpenListTeam/OpenList-Worker" rel="external nofollow noreferrer">OpenList Worker</a>，号称“无需自备服务器即可一键部署”。自从 Serv00 更新 TOS 后，我尝试寻找其他的替代品，但大多不达预期（主要是管理第三方存储的功能）。</p><p>基于 Go 的项目在 Worker 上不能直接运行，但基于 TypeScript 有机会实现。</p><h2 id="部署">部署</h2><p>参考 <a href="https://www.oplist.org/guide/installation/worker" rel="external nofollow noreferrer">OpenList Worker 文档</a>，为确保执行顺利，先在 GitHub 中将<a href="https://github.com/OpenListTeam/OpenList-Worker" rel="external nofollow noreferrer">OpenList-Worker</a> 仓库 fork 到自己的账户中。</p><p>之后登录 Cloudflare 控制台，依次找到<code>构建</code>-<code>计算</code>-<code>Workers 和 Pages</code>，点击<code> 创建应用程序</code>按钮，连接 GitHub 并选择 fork 的仓库，然后自定项目名称；构建命令这部分等待一下会自动读取并显示，没有则手动填写<code>pnpm run build</code>。</p><p><img src="https://files.seeusercontent.com/2026/10/13/5lsL/OpenList-deploy-and-manage-1.png" alt=""></p><p>（话说大改之后的控制台看着干练了一些；Pages 在创建应用程序窗口的下方，不过被归为旧版工作流了）</p><p>随后进入项目详情页，点击<code>设置</code>选项卡，配置变量。这部分需根据前面的文档按具体情况编写。如果和我一样使用 Cloudflare，则按照建议可以将<code>运行时变量和密钥</code>中<code>DB_FORMAT</code>的值改为<code>sql</code>，<code>DB_DRIVER</code>的值建议改为<code>d1</code>。另外还需创建<code>JWT_SECRET</code>变量，其值自行编写（可以去网上找个生成器随机生成）。这部分也可以填入<code>.dev.vars.example</code>相应区域（Cloudflare 部署适用）。</p><p>不需要提前创建 D1 数据库，OpenList 会自动完成这一步。（但如果是已有的 D1 数据库，则下面填写时建议手动确认并填入<code>database_name</code>和<code>database_id</code>）</p><p><img src="https://files.seeusercontent.com/2026/10/13/6nAu/OpenList-deploy-and-manage-2.png" alt=""></p><p>使用 D1 SQLite 数据库的话，需要先回到 fork 的 GitHub 仓库中，编辑根目录下<code>wrangler.jsonc</code>文件，在下方找到这一段（不同版本可能有差异；为节省篇幅，此处有所省略）：</p><figure class="highlight jsonc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">// ===========================================================================</span></span><br><span class="line">  <span class="comment">// 存储绑定</span></span><br><span class="line">  <span class="comment">// ===========================================================================</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 A：KV（默认启用，免费额度大、最通用）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 B：D1（关系型，可与 Go 后端共享库；DB_FORMAT 建议改为 &quot;sql&quot;）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 C：Durable Objects（内置 SQLite，强一致；DB_FORMAT 建议改为 &quot;sql&quot;）</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">  <span class="comment">// ▶ 方案 D：Blob / MySQL</span></span><br><span class="line">  <span class="comment">//   【省略】</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>取消相应区域的注释（启用）：</p><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  // ▶ 方案 B：D1（关系型，可与 Go 后端共享库；DB_FORMAT 建议改为 &quot;sql&quot;）</span><br><span class="line">  //   控制台：Workers &amp; Pages → D1 → 创建数据库 → 绑定到 Worker，变量名填 DB</span><br><span class="line">  //   省略 database_id 时，wrangler &gt;= 4.45.0 会自动创建同名库并回写</span><br><span class="line">  //</span><br><span class="line"><span class="deletion">- // &quot;d1_databases&quot;: [</span></span><br><span class="line"><span class="deletion">- //   &#123; &quot;binding&quot;: &quot;DB&quot;, &quot;database_name&quot;: &quot;openlist&quot;, &quot;database_id&quot;: &quot;&quot; &#125;</span></span><br><span class="line"><span class="deletion">- // ],</span></span><br><span class="line"><span class="addition">+ &quot;d1_databases&quot;: [</span></span><br><span class="line"><span class="addition">+   &#123; &quot;binding&quot;: &quot;DB&quot;, &quot;database_name&quot;: &quot;openlist&quot;, &quot;database_id&quot;: &quot;&quot; &#125;</span></span><br><span class="line"><span class="addition">+ ],</span></span><br><span class="line">  //</span><br><span class="line">  // ▶ 方案 C：Durable Objects（内置 SQLite，强一致；DB_FORMAT 建议改为 &quot;sql&quot;）</span><br><span class="line">  //   注意：DO 需要 migrations，且删除成本高，适合单租户部署。</span><br><span class="line">  //</span><br></pre></td></tr></table></figure><p>完成后保存，触发自动部署，并确保前面的变量均有正确配置。如果有自己的域名，也可以在<code>域</code>选项卡添加（例如<code>https://drive.example.com</code>）。</p><p>按照 Cloudflare 的建议，这些变量可以在<code>wrangler.jsonc</code>编写。建议填写的参数都备份一下，避免 Git 合并时丢失。</p><h2 id="注册与添加">注册与添加</h2><p>现在访问刚才部署的实例，将会跳转到环境检测界面，若提示“环境就绪”则可继续安装。填写管理员名称和密码，以及站点名称。初始化完成后即可访问。</p><p><img src="https://files.seeusercontent.com/2026/10/13/4Hkn/OpenList-deploy-and-manage-3.png" alt=""></p><p>初次登录会提示<code>failed get storage: storage not found; please add a storage first</code>，点击“转到存储”或页脚的“管理”，进入后台设置，按照所需填写对应的参数。</p><p>可以整个账户挂载，也可以只挂载某个路径，这里操作可能各不相同（例如我的 WebDAV 挂载指定路径，需要直接将目标路径添加到<code>地址</code>中），此处按自己实际情况添加。完成后返回首页，观察添加的路径是否出现并正常访问。</p><p>用户权限部分需要在后台<code>用户</code>中设置，默认情况下管理员账户和<code>guest</code>均未配置权限，需要手动启用。</p><p>部署在 Cloudflare Worker 的实例受到 Cloudflare 对请求次数和文件大小的限制，因此大文件上传可能无法成功（个人感觉 Cloudflare 免费账户这个限制还是比较严格的，使用量大的话建议自备服务器部署 OpenList）。</p>]]></content>
       
       
       <categories>
@@ -335,9 +360,9 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Cloudflare </tag>
             
             <tag> 自建服务 </tag>
             
@@ -366,13 +391,13 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
+            <tag> GitHub </tag>
+            
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -397,9 +422,9 @@
       
         <tags>
             
-            <tag> 社区 </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> 社区 </tag>
             
         </tags>
       
@@ -424,9 +449,9 @@
       
         <tags>
             
-            <tag> 日记 </tag>
-            
             <tag> 浮生散笺 </tag>
+            
+            <tag> 日记 </tag>
             
         </tags>
       
@@ -451,9 +476,9 @@
       
         <tags>
             
-            <tag> 游戏 </tag>
-            
             <tag> 赏析 </tag>
+            
+            <tag> 游戏 </tag>
             
             <tag> 浮生散笺 </tag>
             
@@ -480,9 +505,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> llama.cpp </tag>
             
@@ -536,11 +561,11 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 评测 </tag>
             
             <tag> DeepSeek </tag>
+            
+            <tag> AI </tag>
             
         </tags>
       
@@ -565,11 +590,11 @@
       
         <tags>
             
-            <tag> 「我」 </tag>
+            <tag> 随笔 </tag>
             
             <tag> 人与AI </tag>
             
-            <tag> 随笔 </tag>
+            <tag> 「我」 </tag>
             
         </tags>
       
@@ -594,11 +619,11 @@
       
         <tags>
             
+            <tag> 开发工具 </tag>
+            
             <tag> 折腾 </tag>
             
             <tag> OpenCode </tag>
-            
-            <tag> 开发工具 </tag>
             
         </tags>
       
@@ -623,11 +648,11 @@
       
         <tags>
             
-            <tag> 「我」 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 人与AI </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> 「我」 </tag>
             
             <tag> 人类 </tag>
             
@@ -654,13 +679,13 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 游戏 </tag>
             
-            <tag> 二次元 </tag>
+            <tag> 闪念 </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> 二次元 </tag>
             
         </tags>
       
@@ -685,13 +710,13 @@
       
         <tags>
             
-            <tag> 互联网 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 社区 </tag>
             
-            <tag> 杂谈 </tag>
-            
             <tag> 浮生散笺 </tag>
+            
+            <tag> 互联网 </tag>
             
         </tags>
       
@@ -718,9 +743,9 @@
             
             <tag> AI </tag>
             
-            <tag> 闪念 </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> 闪念 </tag>
             
             <tag> 书法 </tag>
             
@@ -776,13 +801,13 @@
       
         <tags>
             
-            <tag> 闪念 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 游戏 </tag>
             
-            <tag> Vor dem Ende </tag>
+            <tag> 闪念 </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> Vor dem Ende </tag>
             
         </tags>
       
@@ -807,11 +832,11 @@
       
         <tags>
             
-            <tag> RSS </tag>
-            
             <tag> 评测 </tag>
             
             <tag> FreshRSS </tag>
+            
+            <tag> RSS </tag>
             
         </tags>
       
@@ -836,11 +861,11 @@
       
         <tags>
             
-            <tag> 阅读 </tag>
+            <tag> 杂谈 </tag>
             
             <tag> 闪念 </tag>
             
-            <tag> 杂谈 </tag>
+            <tag> 阅读 </tag>
             
         </tags>
       
@@ -865,11 +890,11 @@
       
         <tags>
             
-            <tag> Codeberg </tag>
-            
             <tag> Git </tag>
             
             <tag> 科普 </tag>
+            
+            <tag> Codeberg </tag>
             
         </tags>
       
@@ -919,11 +944,11 @@
       
         <tags>
             
-            <tag> Serv00 </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 自建服务 </tag>
+            
+            <tag> Serv00 </tag>
             
             <tag> 邮箱 </tag>
             
@@ -1004,9 +1029,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 开源 </tag>
             
@@ -1033,9 +1058,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> OpenClaw </tag>
             
@@ -1062,11 +1087,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> Python </tag>
             
             <tag> uv </tag>
             
@@ -1093,9 +1118,9 @@
       
         <tags>
             
-            <tag> 岁烬录 </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 岁烬录 </tag>
             
         </tags>
       
@@ -1120,9 +1145,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 开发工具 </tag>
             
@@ -1149,9 +1174,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 评测 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -1209,9 +1234,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -1240,9 +1265,9 @@
       
         <tags>
             
-            <tag> 折腾 </tag>
-            
             <tag> 网络与安全 </tag>
+            
+            <tag> 折腾 </tag>
             
             <tag> Kali </tag>
             
@@ -1298,9 +1323,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 摘录 </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -1325,11 +1350,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Typecho </tag>
             
@@ -1356,11 +1381,11 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> Meting </tag>
             
@@ -1387,11 +1412,11 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Cloudflare </tag>
             
             <tag> Excalidraw </tag>
             
@@ -1418,11 +1443,11 @@
       
         <tags>
             
-            <tag> AI </tag>
+            <tag> 教程 </tag>
             
             <tag> DeepSeek </tag>
             
-            <tag> 教程 </tag>
+            <tag> AI </tag>
             
         </tags>
       
@@ -1447,9 +1472,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -1478,9 +1503,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 开发工具 </tag>
             
@@ -1567,9 +1592,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -1598,9 +1623,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> AI </tag>
             
             <tag> AI绘图 </tag>
             
@@ -1658,11 +1683,11 @@
       
         <tags>
             
-            <tag> Electron </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> Electron </tag>
             
         </tags>
       
@@ -1687,11 +1712,11 @@
       
         <tags>
             
-            <tag> Electron </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> Electron </tag>
             
         </tags>
       
@@ -1716,11 +1741,11 @@
       
         <tags>
             
-            <tag> Electron </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> Electron </tag>
             
         </tags>
       
@@ -1733,12 +1758,12 @@
       <link href="/posts/2333218969/"/>
       <url>/posts/2333218969/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>更新</p></blockquote><p>纯内网情况下 Sunshine + Moonlight 串流方案也可以尝试，而且安全性更好（资源都走局域网传输）；若一定要非局域网使用，像是无界趣连（雷电模拟器安装时会带上，当然单独安装也是可以的）也都还行。</p><p>其实手机用 Steam Link 控制电脑上的 Steam 也可以实现相似的功能（有概率可以从 Steam 大屏模式的界面卡出去，直接使用 Windows 的桌面），而且也不一定要在局域网（连 zerotier 都可以不要了），缺点是 Steam 服务器的连接质量在国内比较堪忧。</p><hr><p>有时我需要使用电脑同时查看多个窗口，我会将其平铺在显示器中；窗口数一多，这就变得不太现实。我手头的设备不算少，我就想着能不能利用一下它们，给我的电脑扩展下屏幕。</p><p>虽说 Win10 自带一个投屏功能，但是对硬件和驱动有一定的要求（例如 Miracast 支持与否），而且延迟有点高，配置略微繁琐。其他有些软件，甚至还要把数据传到它的中转服务器再传回来，但我想这在内网中使用时应该不用这么麻烦。</p><p>Spacedesk 是一款允许你将电脑屏幕扩展到其他设备上的软件。它可以让你使用手机、平板或其他显示设备作为电脑的第二块屏幕，从而扩大工作区域。它支持有线和无线两种连接方式，在内网中也能使用；有线连接的体验更佳，操作更流畅。</p><h3 id="软件安装与设置">软件安装与设置</h3><p>前往 <a href="https://www.spacedesk.net/#download" rel="external nofollow noreferrer">Spacedesk 官网下载页面</a>，由于其服务器在国外，国内访问体验不佳，可自备加速工具（也可以花点时间等待微软商店<s>的土豆服务器</s>加载完成后搜索安装）。加载完后找到<code>SPACEDESK DRIVER SOFTWARE for Windows PRIMARY PC (server)</code>，根据自己的设备选择合适的版本。这里下载的是受控端软件。</p><p>将下载后的<code>.msi</code>文件双击打开，然后一路 next，安装路径建议不要设置在 C 盘（C 盘容量不缺的请随意）（这里更改安装位置后貌似不会自动创建文件夹，需要手动创建），剩下的默认就行，继续一路 next，等待安装完成。</p><p>受控端则是在官网继续往下，在<code>SPACEDESK VIEWER SOFTWARE FOR SECONDARY MACHINE (CLIENT)</code>选择适合自己设备的版本下载安装（除了 Win、iOS 端可以在应用市场找到，剩下的基本要魔法才能解决）。为求方便，接下来如有涉及到控制端的，将使用 iOS 版本作为演示。</p><p>之后打开软件，按照提示进行操作即可（但英语要好）。需要确保相应设备在同一网络下，如果控制端设备能够识别到受控电脑在内网中的 IP 地址并显示，则表明配置成功，之后点击连接即可。若开启软件并打开连接开关后仍无法无线连接，可在受控端软件左侧点击<code>Communication Interfaces</code>，确保<code>Local Area Network</code>是打钩的。</p><p>如果使用 USB 连接，还需要在受控电脑的软件中找到左侧找到<code>USB Cable Drive</code>字样，将对应选项点击后打钩，然后可以使用 USB 连接设备投屏。</p><h3 id="使用体验">使用体验</h3><p>我之前用过 Rustdesk、向日葵之类的软件，Rustdesk 好像对多点触控不太友好；向日葵免费版一言难尽；雷电模拟器自带一个远程控制工具（它这个也能控制电脑屏幕，不必启动模拟器本体），免费版用着还挺流畅的，但好像只能复制屏幕，免费版也从它的服务器走，突然花屏也是不可避免的。</p><p>体验了下 Spacedesk，效果还不错（免费版有限制）。<code>Win</code>+<code>P</code>也可以设置<code>复制</code>以外的选项；在<code>设置</code>-&gt;<code>系统</code>-&gt;<code>显示</code>中也可以调整显示器的位置，调整起来和真正的显示器比较接近。手头很多旧设备又重新有了用武之地了。</p><p>延迟方面，和雷电模拟器的远程控制比较相近，可能是内网的缘故，相同画质的情况下 Spacedesk 显得更流畅一点。而且如果控制端设备有触摸功能的话，操作起来更接近原生触控的效果（无论是动画还是拖动与滑动，对于多点触控也能很好地驾驭。大概类似于……学校的希沃白板那样）。虽然雷电的也可以做到，但新版本的控制端软件中我实在没有找到演示教程中的某些区域，然后就用不上了。</p><p>PC 端安装这个软件后，它没有直接的关闭按钮，若想完全退出，需要在软件中将服务关闭（那个按钮或者滑块选到<code>OFF</code>），然后点击右上角的叉才算退出软件。在扩展设备连接后，任务栏中就会有一个连接窗口，不能隐藏到右下角，这是美中不足的地方。总的来说，这个软件还是不错的。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>更新</p></blockquote><p>纯内网情况下 Sunshine + Moonlight 串流方案也可以尝试，而且安全性更好（资源都走局域网传输）；若一定要非局域网使用，像是无界趣连（雷电模拟器安装时会带上）、UU 远程等也都不错。</p><p>其实手机用 Steam Link 控制电脑上的 Steam 也可以实现相似的功能（有概率可以从 Steam 大屏模式的界面卡出去，直接使用 Windows 的桌面），而且也不一定要在局域网（连 zerotier 都可以不要了），缺点是 Steam 服务器的连接质量在国内比较堪忧。</p><hr><p>有时我需要使用电脑同时查看多个窗口，我会将其平铺在显示器中；窗口数一多，这就变得不太现实。我手头的设备不算少，我就想着能不能利用一下它们，给我的电脑扩展下屏幕。</p><p>虽说 Win10 自带一个投屏功能，但是对硬件和驱动有一定的要求（例如 Miracast 支持与否），而且延迟有点高，配置略微繁琐。其他有些软件，甚至还要把数据传到它的中转服务器再传回来，但我想这在内网中使用时应该不用这么麻烦。</p><p>Spacedesk 是一款允许你将电脑屏幕扩展到其他设备上的软件。它可以让你使用手机、平板或其他显示设备作为电脑的第二块屏幕，从而扩大工作区域。它支持有线和无线两种连接方式，在内网中也能使用；有线连接的体验更佳，操作更流畅。</p><h3 id="软件安装与设置">软件安装与设置</h3><p>前往 <a href="https://www.spacedesk.net/#download" rel="external nofollow noreferrer">Spacedesk 官网下载页面</a>，由于其服务器在国外，国内访问体验不佳，可自备加速工具（也可以花点时间等待微软商店<s>的土豆服务器</s>加载完成后搜索安装）。加载完后找到<code>SPACEDESK DRIVER SOFTWARE for Windows PRIMARY PC (server)</code>，根据自己的设备选择合适的版本。这里下载的是受控端软件。</p><p>将下载后的<code>.msi</code>文件双击打开，然后一路 next，安装路径建议不要设置在 C 盘（C 盘容量不缺的请随意）（这里更改安装位置后貌似不会自动创建文件夹，需要手动创建），剩下的默认就行，继续一路 next，等待安装完成。</p><p>受控端则是在官网继续往下，在<code>SPACEDESK VIEWER SOFTWARE FOR SECONDARY MACHINE (CLIENT)</code>选择适合自己设备的版本下载安装（除了 Win、iOS 端可以在应用市场找到，剩下的基本要魔法才能解决）。为求方便，接下来如有涉及到控制端的，将使用 iOS 版本作为演示。</p><p>之后打开软件，按照提示进行操作即可（但英语要好）。需要确保相应设备在同一网络下，如果控制端设备能够识别到受控电脑在内网中的 IP 地址并显示，则表明配置成功，之后点击连接即可。若开启软件并打开连接开关后仍无法无线连接，可在受控端软件左侧点击<code>Communication Interfaces</code>，确保<code>Local Area Network</code>是打钩的。</p><p>如果使用 USB 连接，还需要在受控电脑的软件中找到左侧找到<code>USB Cable Drive</code>字样，将对应选项点击后打钩，然后可以使用 USB 连接设备投屏。</p><h3 id="使用体验">使用体验</h3><p>我之前用过 Rustdesk、向日葵之类的软件，Rustdesk 好像对多点触控不太友好；向日葵免费版一言难尽；雷电模拟器自带一个远程控制工具（它这个也能控制电脑屏幕，不必启动模拟器本体），免费版用着还挺流畅的，但好像只能复制屏幕，免费版也从它的服务器走，突然花屏也是不可避免的。</p><p>体验了下 Spacedesk，效果还不错（免费版有限制）。<code>Win</code>+<code>P</code>也可以设置<code>复制</code>以外的选项；在<code>设置</code>-&gt;<code>系统</code>-&gt;<code>显示</code>中也可以调整显示器的位置，调整起来和真正的显示器比较接近。手头很多旧设备又重新有了用武之地了。</p><p>延迟方面，和雷电模拟器的远程控制比较相近，可能是内网的缘故，相同画质的情况下 Spacedesk 显得更流畅一点。而且如果控制端设备有触摸功能的话，操作起来更接近原生触控的效果（无论是动画还是拖动与滑动，对于多点触控也能很好地驾驭。大概类似于……学校的希沃白板那样）。虽然雷电的也可以做到，但新版本的控制端软件中我实在没有找到演示教程中的某些区域，然后就用不上了。</p><p>PC 端安装这个软件后，它没有直接的关闭按钮，若想完全退出，需要在软件中将服务关闭（那个按钮或者滑块选到<code>OFF</code>），然后点击右上角的叉才算退出软件。在扩展设备连接后，任务栏中就会有一个连接窗口，不能隐藏到右下角，这是美中不足的地方。总的来说，这个软件还是不错的。</p>]]></content>
       
       
       <categories>
           
-          <category> 软件经验 </category>
+          <category> 体验推荐 </category>
           
       </categories>
       
@@ -1776,9 +1801,9 @@
       
         <tags>
             
-            <tag> 虚拟机 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 虚拟机 </tag>
             
             <tag> VMware </tag>
             
@@ -1805,9 +1830,9 @@
       
         <tags>
             
-            <tag> 虚拟机 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 虚拟机 </tag>
             
             <tag> VMware </tag>
             
@@ -1834,9 +1859,9 @@
       
         <tags>
             
-            <tag> AI </tag>
-            
             <tag> 评测 </tag>
+            
+            <tag> AI </tag>
             
             <tag> PaintsUndo </tag>
             
@@ -1865,11 +1890,11 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Cloudflare </tag>
             
         </tags>
       
@@ -1894,11 +1919,11 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> 杂谈 </tag>
             
             <tag> GitCode </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -1923,11 +1948,11 @@
       
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> 摘录 </tag>
             
             <tag> JavaScript </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
@@ -1952,11 +1977,11 @@
       
         <tags>
             
-            <tag> Minecraft </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 自建服务 </tag>
+            
+            <tag> Minecraft </tag>
             
         </tags>
       
@@ -2039,11 +2064,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -2068,11 +2093,11 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Cloudflare </tag>
             
             <tag> New Bing </tag>
             
@@ -2101,9 +2126,9 @@
             
             <tag> AI </tag>
             
-            <tag> Sora </tag>
-            
             <tag> 科普 </tag>
+            
+            <tag> Sora </tag>
             
         </tags>
       
@@ -2128,9 +2153,9 @@
       
         <tags>
             
-            <tag> 虚拟机 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 虚拟机 </tag>
             
             <tag> Ubuntu </tag>
             
@@ -2157,9 +2182,9 @@
       
         <tags>
             
-            <tag> 生活 </tag>
-            
             <tag> 摘录 </tag>
+            
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -2184,11 +2209,11 @@
       
         <tags>
             
-            <tag> Node.js </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> Node.js </tag>
             
         </tags>
       
@@ -2213,11 +2238,11 @@
       
         <tags>
             
-            <tag> 域名 </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> 域名 </tag>
             
         </tags>
       
@@ -2242,11 +2267,11 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Vercel </tag>
             
             <tag> Artitalk </tag>
             
@@ -2273,11 +2298,11 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 开发工具 </tag>
+            
+            <tag> GitHub </tag>
             
             <tag> 2FA </tag>
             
@@ -2304,11 +2329,11 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Cloudflare </tag>
             
             <tag> jsDelivr </tag>
             
@@ -2323,7 +2348,7 @@
       <link href="/posts/1846056213/"/>
       <url>/posts/1846056213/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="抱歉，这个密码看着不太对，请再试试。"     data-whm="抱歉，这个密码看着不太对，请再试试。"     data-salt="ceaa688e660ed98cf122228d293c1f70d93dc67d0f9c3b23657d177375a4e26f"     data-nonce="20da52a1209d87d11f5d08b8"     data-kdf-iterations="250000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    dc2859968373d589c67f26e7e08aeabfd451d85bc54f0b02a3bf3ff55b2cc8a5ad33838a6bae16b51d1d233c148b61bb3b7cc4059d872845c43ffedd4cf863ae3bd11ae2c89f52981ba3bb88644e2674741fb8321777c385013a116c0ba5045a4f75f1c19098dc3ee9c7c92022c7b813071e727d158af96e11148201c7b3a64877435fc27049332f52434487ba9e4ab085845ee7d54d27897d0dcc3f5733d651f4c7e37f1a89d7142063343c3ffe27c4b4bcfe1064aad7bf8ea5cc4cb589b17d18e8450e69650be02bead38ea711bca13ed44c7ba67fba2a7cc5f4b2d71c3c38aad229a897e9c40a48efb56daa394d1586637f26abbc43ab6dbd2590872bffac3cea33b0d1252da77d0dae895afaed208f2165f2cc24525837dafacc7b0dd96c675e200fa531869ff81d44a1f0c50589011393470345037f62111c13585f6374d7db3cdcf006bc2f5dff5d865eb94480b6ad5b84a36b1087445a6eec94326ed4abe6f5cc0aabde514ab92137c1c2afecec786e76e24aa08825f5fd3f2ed9d7e46ecda529bd096750a8a4d3d3d2476153b603e75e8e26c37b0ce8c10ea928223c219d683d1da874deac6b651e73b9cf1c0b30365188de3e96c81b7ad35b9b9955a85a97b9d7f2b510e78e9e60022417df3caaaff9492ed69b55f5196562fe39620d6587984f0fbe7931a1a216ca80f615a0ba3de8a9efc74bf46e9df93ed04eaf0d02a0ae18dcc4e8e358f60583718d3b9e70456b0a9fc703ec79aefd3cc7e8d36355bdd415848bcb9be59776ddb8068298f2da3f929f59a412dec3ff7a75ebc4bf458c3ece7823171d9b7c708ebaf1d310ff139d19428b3de671d1edd9e2a56c03e8125463fcbad8fa296084ab0f07325668bb67c90c78e26c1ecc00981f92a2d092ec4a3ba258dbebfb953f37899aefdb726095ff3c1c08061bfeda3145ad6a656ecf7871ef2ace9bab98fa28c0dcd5f97369b75721a32bfb15c237ad715dfc412cd96501e856beb953b6a891c6fcb8711230139b980703d7de20e567d564cc1e72a81bdbf8be44e2a47ad936dacd3d900137923f4cb1ceb558ba7edf0cd847dc3650d561ff87e14e9af3cb74bea8519058afcb6ac6708426e06718d8a3213cbc503a4ffcdd5d8b7cab03450cfe2760218ad3b12a2277da8b406bc17ac38a4ef54271771b147d2e9f3837e3988d665ac4ae827b0405b80971a2e344860649b56c948b80ed8d1e218e6a01300cd34bb22f93a0ec7c0383e77bf82e2bf99e4f28a772b17d0db30277940b29df01a654f3bb9ac6fd4d5236ea268ecc921735f41ae8ea4db08c2e50ceb4872ed8925ab30253592c90484e266de6623be5c7c337baa85ce03589c88459161d52072de4ee59536d7771da297441b4ec378a8e9cb2738f93ea327f19eb4593a5c98e21c437252f3f7ff635fc389797eacf9fbcc904d7a490c27505e466adeaf1c4eaca204b98c3d0a2c078adae956f20de2da0c261e838f152fac62bc479ccffc66f9cfb29c0a2a2a106c570c308bd0954d14c5a9e7c83d20922670838b38024d4955a3d62e00dc88499eae325037a1659ef6dfe40309f73d2c29c6420624f36061ad7ee54b072cc97b5e7db05de9826f93f9ce1dd8e05d0d287df2ccb7ba767a958e7001e0768fc259c3143d95e85e68a2627fccef507f422f2c7994a0416c14f87fbcfbe8fe37675bde859a98af094ea4d3ec9409e828ce86752555ada5eafe46ff45fb8df73660300b6e8f9f02ebda431fc8250ea7c67bbe76c3b95721dfae3a3e6010ab7c3d5b10821d46eea96c74431050b2e5b27e92eb24acd932ff746635fcc6af5260bc7fc65e9e3f7e5be77618db17a32b7392b9b5eba465af0b232994fa5fbe6ea4d63383ef9800d6bceb9793ab3ee1924933475aec43bf08b8bc78cc081008c1b63badb8ab42d315c426be95e2ae35e692be0b035a0627e74e85385a556090d42f2d540dc4a334e69a3c0f68483668c47e08576606edbb8e8b89ec80805275fd9a6fb24842fb21816b40150c17343b8f53b18fcf6f599c3f83fb2c09da42efa2c2b252513568736160a0e89ed9333d5f7d282189a0720654c4a27c7eb93d375870522407eff8aaaca3e63782e86343b7981761cb885701285f3023baf48c0bbed14604d289fdec492fdbf5989091ffe616442d958fce179dd9902bf91ca06ffd8b571523f167a66c81f3c5f66e0cbb92d39f4a079fc8821ec9bba5504e8ffb7091eb72d37961e2d32b1d101a36be710b8d2d68e504aaf8fd366fc9e1b5369c482e5b5fe0944f4231c8b0447e2b2443a06e9e91f8a904af26b5246e4bbcfe9368c8cc5075bcbc4987d0ff3679f227cd509d1f458d788a80dab7c7f5cf61862e40aabf58e76fa3e5d45cd418c51e34cea70cc1bec15ab3cbe6f9c8a0eb442d22b3804977c20df6959255b4971e45795a91f206c75601bc13cab1c1f8e121675c200ab02fa3f9fd0b8727eee5658fa06d0f39eff287fa1ab53abb6e8b816fb2f9e1a6e8c770a61b465749142d8f0043b2d79db01bf9bae0947c81968b069cae5190f4cb1f9b2ef49e580a68d796929252e061dfa98cb09b70fca09e15e5ae9de5ad65ca6760ac8195bf9b82251674fa0e3fdb4a96dbdb4ce168d8b23340982b86f7b17d96bf65dcd98b1dc60ed35939311f48aaa56a05bb3c8d418becbe04bc395861e481ddbef675588814449fcbc367ca8bd2e990ce8dc384c3f8ad26d3595cd1a9ecd32b33e463bd0c14b053ad2571aec0f53fc536cbce9b52c2c104f995810dfadce68096316afd39a34ee9f201962e12b5d1233e2ab4b2237708380223c07284a0f3e4c88afcbaba6d9622a31d1da193c0e250cf660ea2469ea29d9d8c2c2af82bd4b7057562293bca79b6d9cfe3d986288a52a7fc74087dd75dd5738a8e5cbd0803f02eacdfac5426cc8983a29a76b23d2e5da155207bffdf6cb33f1252bf45a40896499d1c76122b35de39a9c681e7f430b132a635ad68ebc3f68486c0e2e100a9e2d93eaddbe15f38d1b5ae2fd63e6c11ad80e07cdab4288e339a27b9644e13cfdb7a011485febd5c77edce18c0d7493687036b1990070c0840b4adcb1187ce855b2a1ae4cdb07c7e89d54f475fd72ab8c3397e28c4f9c635a18d877ffe1a11a34003321d44a1790c4bff7ca9783c209dc94807a1a3f140d33286a624f1fea880daca9b79911a076ab34753eba2195e1661a5d4ac3e20176655f9fdd1dd39f552d582351505832eec576dfee34cad018e371e69df5f19b13c79d7e409808ba11122d2659f3776e4ceeb4dd05e44ed80530c590531c683d9226ab99d5bfc67b43da93d2bcad3c281864dda04064c9ea62a1047c45452a7ab6119ab127e9653eaca98fb3144b26ab1a4261595482b3ab501ac1a0ca41ffeec45bdcb50258e148df4d765e413fa92afb5264af529c4f4bbebd385dd8a8b5670338f1c5504f519efa82161e2dcfc1c2e1184c031c989796fdc959d57a0a98a9636f7d4f102d1616d1674fdaa62364cfd71279891334140799859bf28cb57ec434f45c4b23652d120bae03bc00a01d7b020c00dfeaea46cdf67bc8c68b2ed8d5416e9f84c10d2d72219dac94a79cbd18be5d135c42679c6881d3b6fab11b5a8199629d3da21762ae02457c4c857096c430c6d1a5d097708af1a1994eafdf3572c56d3c42e01657170ff4aee11a65bf0cbd8ac367ac544d3e881f5713874412b528e89a39b719d04ceee8599e42db97b1bfcdb2767aeed6d1d51797a149988235db6464217f0b4674bf311f2e44a47d59efe6d10af463859c809a372b6f5a17bdd2f68476720c7ffddba31f0465791a16fc2360c77e2735c75725f9e6968f3ad3437f69dddb388b4527c79d81e94610b6ffd707eb0207a5f9790d5dcebbf08bb954fe347935e0ec53cf515c4b65b75f28e702594469549908af8dfd17869dd16c38434c1d9a48857793067aa86b2add1c07de8dfa93436055a87c9ac44d6747067ae1d9d8cf8c110560704be4d83274b40a873e79c8e64aaa6ec0da7d15ae8c08468514e0b967ef01bc7d9a567a4c6b40b7d45378560f5ee8649f60ad8f7ea56c31965dd85cee968dc4ec535a234bfc40a4ed4e6b6cdfaa3d7df1cbbdfad9e738ebb5df609a498f5ec5f9d8d90a9453b1f6d13171894ab7c8c55fec2a1da686b20f4c9670db30142ddba9bf0f18af27ba2d9d93cf85735cbb1a9db36c4c74b15acd142b59af71285d54fc99019c3a46c0c432f50615c009c050c0985bb877462c75f78187c5eb9be6b82c1f35a8392b1c1e08ed00359db38fc7d3110d5abd6c17db00ca62a45327b0ff9689e127cdb35ffdcd11a93036ee0be093b2c9de9c0345ef24228b73ace21d5ed8a338a185f1e49c78ab45a4f76f93717bee5a6ebf1ec728c61fb7cc09abf6ee08efc4d2399732f93b089ab7b3511e9e080b16cb37d608b941c4f2b1c87d09cb108aa8050d39566e66c61793654fcd783aec83d423c98cf4deffeae72637d8f783f597f20b0b43ec471d486a12ca70218d0f876ee8b2c26bc666f75854ec6040bbfce2d89eda98357deb08644f24c94df8ca721dcdabf78eb4743c70930d191e624b955f9b3dbcb0b78582ef94234e078a53dc6eaa7bc5ccba17a6353569c89933e33df11ef9f952852f7150be9dd6ce64b5ff249d42a42973b6b1e1c3199d388fa8590d384015a0d9a444105e76491e5900da313f068fff9ef3bbd01cb977ef96e5ad93f6b437270b166220b1d54a6962c537d21e3a7cffa10723ff03c11d304d245e47c70f5c5f92ee6338a15d803912f2d1ef080c164d79008fb101e918565e0588fcc963f3caf2437970b94ef2a5ce5a76523e96621be1fb5ac5c57225b9d613e70a55a59fd8415f1b63f6823b403e8d2c7bcb28229631d716e8f842adf59235f5e5f32aca11c2e0b0004a70e447d66ad4011129b6f7e7b13a2924623c2ba4947ed6cfeacd0bb5dbec5d14f2dcbbd9db27b1a74c31813f0178634565de167f7fcfec076e378831d1e6f467e6d058ff91a9cba78bf943775971c82f8ce5e25fadf98edc3ebebaad0c6b9972b09055d9d357976a57affd6cfa11cd5fba98d3298a80f87296a7742ea7a6b454107f01b139417e8a105e759848ea4859d0ae72cde40556a6dabc566eab6cad6147f133a2778a5d59545ce61180b0e7e78f7f53e41a2c9551b447bd4a016d04afa33edf533b12552d86545db8ae2ab199a05e41d0cc9864ab0ae3f37a4f2245aa5053472848deda1d28d7aa731a5664d3f8e64e1aff9bb15e544767f8db1166a85303ecdb3b7293202180420a10473630cce7cdb39a18ac2f119d9407b7cb8474ee585799712d87a18cee8ee18663a6502c5a49dae099faf575bc6c07109126c7f62681668ffe44b41c86b6ca497b8e6ae04a993a0cf7e5afb4a207118974d8d3787b62ddf418c20afd4b6ca1aa859a342250dbfd4963e7e6fa9a6d458deb9690fa0930c7d4f050d17c128719da26ac53eec9be53b636b8ae0f7c8df4811a76f98c77f90285c1590dc637b67ef562c0500baed4ddeaddf0dfcb8207d6997b288be85e56e41d9c0b46826d706b726f0ac47723eed12ed5a08429619066dba42a57d1aab4a76a64293ce0cb10441bd9c4ea9b31be99f9255cacbeadd425a51e7788e775c928f9b5faa17a130c327a91b184264cfb7ba12a6e560a4a3c9c5f7fe2b9b11e663e50d7a28f6473427c67939dcf71983ee7a8888de9f041ff2945a069679b9107d2d29982a45f3ec037333ffe0f5f289a16a596011dd3ab9b890b0b0d1fc0f039eed38653a68f8aff7ed4cc8ef93c7e5e97fb854fdba40772b0882874dd6dc04c4a0684e7bb4d3a16294780e835a2dabed6b9adfa4721f23a32efde9484240381747daaedeef5648e53df4cf2aa177e25da815f64dd66cf41b7ebae0e9ec7f057bfff580c36b1f2c0d79f4ff23463fa464c389c6e718589175634dcce8e8054fb1dee232cda6871fff506f842d195a21ee92ff5d1a5fdc53b54e94d1e3e755d010a33faffe89323e55d485f8364d1aae247cf5899d5eace1497a5f71686933bde1ce95840e8fc2e7e52529193c0872e75427b7518bd278a3cbfb72aed6d3e15a9dc8e0a9bd1168732fbe8ad68c90cd41738ac36df2997250238a3492e40c0f4bcf716ad666205522f92f1a8310dcff26780dc12c0ce2757dfb73d4ea45031334f92b8590443392ef905c5f1f31f43cd3d65883d63fa9b39b301cb2ebb0218205f83350f1bdd8c76cfb57331079a663942a43c99339630dc6dedd65eba4a5962c64dd7e9d1d074ff76a857aae5c46784b668867cb62d887b1fbf1555d7841cb23ca23e1ced770b09c75d123b0d3c904e3cc22093616c65bdf5ed7fc8eff4a1525ed2  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.51dd9f3b98.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt"     data-hbe-format="4"     data-wpm="抱歉，这个密码看着不太对，请再试试。"     data-whm="抱歉，这个密码看着不太对，请再试试。"     data-salt="1f50d4c136255ec75a978ecda8670303d0e53f081b309a766522310c6220d69b"     data-nonce="5de198875912150d700161d7"     data-kdf-iterations="250000"     data-auto-save="false">  <script id="hbeData" type="hbeData">    528c3f2b4a9a03bf1ea67970400aa2e7ec93dd4b9d7ce7537a9820b5edb8d6a19859affedcba887cf01065fa3282d5593efe79ed68196f8b5514cc9d8945fc80f3e4bea06e49f8a3c042bc045fa65f06f4524bbd669a5eb2d520afe8f9766068282eec97768845d90d79bc6ce4a79b8852023b6aa1423fba5657e634ed83bb08d2f8a05de6c91ab25872ae3b19401966fa23331f74ee78244a5263a37badc33b2dcda873a3e65a9cbe09730b3c8022157caf2920c993a16f7a4378c7fdbcd6a915e5cdf3d4b7e1cf68d88f7e2e12fb193e0cc7625f69a878cb9f8f97692774a45fe1f7674c571956f9f62b020b1e26e62d8de9609915ac464c542d23c260636e4b018ab532fa088d7e154604ce8ba8a0f077f4ae856118ec15e59d94b99d77ba1678b7d2a8ee48b996c06c2e122804d07c8dd6ea5aa39e374591bd6896dd3c796be8aec1a8a12ec8bf94ebf424abcb702cd1a057e1968502f448aef676983c88a6432dcdca2442052529eec785f394d4d85a43f47288754863039e14772a7a52f18f830c10dfcbd188c192dff1fc19f274aec96d177bdd806f6281089481da6ddedb26d00cfa32803592a96dc8d753ca83e99d3e38977d21c7807e07e056b406ea54feb708523b6010ce5c262a440d9bff539946f9537ebeb18dbb85058d7dcf42eaf91e249206bccfc9eda7f04285aada86ebf526b42c361c3b820d48a2737746902b5acc3076f1e633c175af8c1a65adfa8e60dca79a30590b8a1c72e8447fe2600688b0d2cfc85c73f66c44a4f1bc27b0d9d802ecfb3224a12129ff17476f33e48f5c6bad256a772dd104d74dcf8dc5a4605ca44530deaca9bd8c4ef4fe0d90ea4576f5cd79a395216408fbb28496ff2eb0b8935f8937be352f28907e847c87e689ec3154242e3d2edae6e6f4802f806388e85e22c03431acc7fe2860b1c8e62930f2958a7ead98d26bebc3e0ce01dec818af17d484f44549fcad2d9259afc2e89ada9c1a7138a80663abc25be85d965290e17272c623ee6b9cba4e7443869f07a2a4582c5ff0e4d15a6a2ceb5965c1efb4d69f69840b6e693b92126d064093af150e1e4c64a3206841c52bbf3dbe96410cf160d7e9ec190ab197ba567aca52bb78ecab754861e6b027e86f7c66b36f5451329b9cf1cefd09a53fc3471ee0f9c4d8795f1ff45691cf44387af153c45c9ec223e9e500ef0900ad3d2cbf5d0a8f2489c92be6ffc3d37367cc30a338ae24add11224cac907517d06f4e71b412dfacd0462ca7bfe75ec1f0b5424886ccdc5bd5b599421612e1bd8bf9645f7ee056e37a8cca8bf46b405e41e413f23f8698399d04e565cd9db9f674907d95bdfcba73de1ba60a8275a13c134e14ca5240c21ef7872145d971da92cc299f0aca8a582c3d91266c082ee77052bfd98919f3ec28b9189bb45e4f20dcb57725a81013ba466c7a29f5b1ac4b383e08bfd0ab16f079c2f60d5e443e9bd7577665e3ac24bc8df30f136d528f42d1bf1f62ec949ec9285e8b3edb6c2b9647913f91c67964bb8fbe995ad1af5aa1f7a3a6ecb87ffb8255dc922233a7f130556267d1c70a6df29ede2f96b1a002323703c2ab704ff615d8ed60a8b5f411dea0686499395e93117ea0efcc52f65e2f6e6f009e359b28642149a96d9cf0775408546621f7844c214e18256096b0f696d490f9c8b0f0d92431ddcd69431912342992518e542e133bc6889dbf1dba84d118b1c3b570c87203daa9f60697d5e8f5b9ae8572f2935e9d883f04ab41712a935a50415a52b9f25bc81bdac41426f2df1cccc8d9d107998e71b983df4267b69443f9d4c2950b56b5bf0b2b2993a89765f3de729155fa8424d60e1ee6b0f3d43dc41a264489364bb76faa81eedf6b265d19d7dd487a8496841782b0e6e8de3994125466fefcc27e47f13df44f7747d195e44dddaa6771b6261ea139099fdd0c5303d12e29be9cfe2d7f8bcb13bb95305c9bd51543dc503c25deeda417f94688a9c5301d2124e090a59b172b2b754483c0c273117dde992c5f03509cd1bf00e3ef2b3494b346058b8c26b35e627ac945163f36fe4814ae59c317f13b0c9689d110109715b96ebbf625b9d27a518587f323cfb69c06fecb0de3ee56003234bde1848c7011a16b0dffbf71ba868d79d26cc1b3c544bb5b01507f685703e9ca41835561ad18f3002b281bb74d3b13248e999166f278e493f5bc930e79d124c07b0f7d148397b48a80abefc0b15de5ffd1cf489beee8e5f86d3f3451610ce40d6c6ad64c10a6863e64a59328a957a1f31ef70a12219a3e5a4dfc88e707b525f81911c044bd19b33471d1bb57b39c1621ed791e31e96ce82e64e66394050cdaa7c14d9155040ade0a25de72427fe0313ac173e67ad80c57b31f7be433508412062916feb2a433eba4408ef95a129aef8a9a7787536ad79f8dce3982eb32144c80431c350a7993c70da710c30046879c1c7be4839fb4f60d6813379c47afaf8e0a5b38241e6fea11dff194ab25470750bcf48428b85cd4b9055234e5ed194496b977f708eb8472d8a6df4feafb9b17b7d627653fa2a99a958db3372702ddae1784ddd4f59cca93d7ef769b610927944b0a86cf21f404b9bb30fe1091be9bb955af09332ee126164b0199d00b5f0b6998d0659e47094bd8f36fd93dd04fdaf311ee3eb392b345e03748e4e5a64d56b6bf8371646be545af4ba04d612799b21e723e9052dc0665695ef8bca463fbe831ea05f74764d3815b59525333750c605c0980394fc3b80ad749c5aae7e27268a46689a89494ce92c3ebacaa2e24e72c61ed323e73239434eb42d7c3583196c97f1fbb83cc66405e315611e432ae94df1bc13e201ac5a50462854c8ef4dfd4fce6f095d60ececba9606cd8d6c6ef861acd75af056876fd30fe0738726f1ec9bdabc09d294c9ae608db181ff7338aa958e2bdae257a449264578dea9e5c01a9d881962e048c252b4b76e4397d9bbbf9bf7c0cc400179fe004ec45260d8b03298f0d2aa61dd724e2ea21ef71388468c50582681457f93762f573d7fbec117f30c7485e2a066abf76ce607c8407ddd229cc6cc293f88c30355bb143cd221443c0d120dda4282d0e3002e16b158995f038020887ec6dd3f2399d38f2b8637b0a3cc8283894440399700461758bf56729bf0d331ac915deffbf0d631c360b79ae844369f06fcb804d47f4624724d9290fddcb80ca09724c3caa7c1017c0851478f6f5d7cf9049c79e29d3304b237199cda752f325e22979ee7a6a463a2f6af2cbe2a93f0effce47c1c0349f93e5184fac674c4d2e31f076826988afe087ff7d0295b1134c187d23e8003085ccf99dcd2fb1f030cc9700cf2ab449ad2afdb9846e959c0d1857a58612c9d65097a6cd79c00b1a5601eb8b87954449dd48a54971bc1b73e9546bff6a6de93332a79c0cd789503270b7e7716c2282160a9e751afe33e7d0e171f6886ed46c8fd75e583b828debc351d9fcab04b6be710bf90418b2de9a81ebe887c21fa24e4573379110e6106606a0360c2458efea87c1bfb3056e69b1f93f6f490aae89f2a120d7299f61dba7958e2532a1c9f9845ff950a0665fc900e1911150f616d239f6113ba25c13db4d8385a079df5f0e9fb70d367f4ee8d9dd0f362d63098e7dc959738075a114c0ebb86cbd5f2e1e608f4c2ba79b56f0de3bd30802d79ad982673b5605b91bda7a70e5371497be83605a0e0704c831f39241e3112ba72f9b9582c0458e0a37f4c27d25b5b82a61a37064fce4224e671a5df62cbbf272c433f6417ab2253f754078d958deabe03a2a645882845ebf807cce9cc5d3268eb98fe1337f7ba9bb6a00b77e4f3f925d514f0c59fa6fc2279260573ff52a752ab46cb3a4609dad86c8453bbe4f59e97e7d73a347f9338b281cebf4ce84dedc478d2f6bb3f1a68cd04c3536cddc1c072065bf8cd19c1f3323c88c151f1930c9856a8deab798a3a346a3f0e2ec6fe6e6d4e80d2afabddb2ef4abc67158771eb1761d9454f4c775392cfcd2ad7cea4afbaf8fd7bb032f59962044d27e0b0e677604b602792e8ee27ff9431067dcdf6789568dde87ad38491533fdad2ee27773fd272c5a5df64e24cf32f9e799b50cf3f63e87fc2659b2ede119100e1772f5540d8942e45f47202704350cbb69c49f455b97f7fdf8eba0e2cd5c55e42fc09cd9961a405ff5bc69ea752aaf42e576bdffc25c52df0e4471ad1c1024ee2e8fb1ec7539f43e602cbfd33d8a033f92af3812d9bfcbc156d063e131ed4ee1bce122465f914f236f21b6659e8a972183fa88fc343df4c9065fc3440b0889bf1b80b61611701584e49cc3e5c8c4371768d5c58276dae6d250743ae1ddc168233f09d9b756e9728a9a3b336af4eca6c1c37939f06f3a406d4625b3b5d67bee8b51c64062165df37fe8f657676283acad7c3367541854fbfa8bd7542d9a1a5cecc01dcf24b56fc08c095cd20a08e42ec1ab85d252a66c07484e953124510757fccca14b452eb9a8d354ae297d7979e1cb6a886795afc142cd48c2cc02712340154aadb5c90203606d0434141f3e243124101b9390fc95b60050de1e770fd5112d08c73f2102e94342f063b26b352b7fa380277f52a66236e2521615a0befb9f01f28e53712392226392c9ad06d16ba421603dbfe6a20ff73ea4fcc8a41f5b9f5e5132a1013ea229075a5bd1fa1f8636ce029729b9f65f114cff29c6856aa10920576848d735d4531e906d2d12da1c12aa0c533b1cd6f3bfad997e7b09f43e63d589689d2cfb590655beca736826f51b4d7d02aee95ae12692baf1afd66a4e70746803c5b3dee4299bfcf6f38fc3834a62e31eb95c17d9c601221ef71e115c16755d8829ceb2369a7cb943d7aa95992c1c90eec3fddb625db162da92ef6868abd45feed64ab0ccfff3813544380624376d1d3405c67df541d0d138766da47dd13ac49ee6d83cf0eaa2316f8d00e2fa52658d07bde43eebe5c30283a61ff5fa057b30eb0c9241952c67fdc600793a0c754696477d861daef146dbb2264e8e3fcbf7d99ec69d1730a1fc93bd21bd735579d38832d008227d1a27f5c6530f4c3c46bfb98e4177b6fb03f063f071968fd3b52c36ce9949a77b90d06d2a4c8166aab7788bfda6250c384ef75b45040230db3a457445567ae3600f2f26d5ccc927bb6d968741e0a86b4c66fa5f5d79390cd22c593ad26ba288822429ad194817ccb4f74765adb6cd19097e442d8829e77826234d760d7b57bc23a4f5e3b7cb6cae90b346b0261b03122c4d8592520a27e43418b5d3c1fdd0d999f0dd98c5f6b4fb90d0e3204f28c28bb952d0db9c6a7ddfba5aa64ee4b6290c8a213778b2b65c208c8d5d916c5204f2df326a03fd7f520cf1caa8c0e209b9feea99c9bcc0117a8718ad7b2e09aec2aaa992bc8946595507de1b1808d31d97e07cf95cc180ad17617eadfec2f0b8656b1d26519305d0bae46ced91f7591a00e18ef427d9f41c958d572891663f7ead32edf08c314e720141acc501b6240d0f004cfec0b34d10d74c7b7cbdc8c27d8b26c90d4116fdddba08faa3173d04e5d776dc68d28eb700e8743369d9317502710bf65841960b237c00812ec0bb6a6a0c69fbe7ab0046b34147521908f87a920bd0afa025a5f9c8886ad0783b0514e659c3ed5c0a08155731ca1f3e042cb273b2e5313da7edab09d2a0bba71fee9526b5b2d57d19b797834e6b607211b2a8f6b6eec010b5106b4ede111c8755882ef1f2ab7896386f091ce862b4e708c2ebe57c17d8825c9cae78e7eb216fe0556f9f0f15b279cb2251a7fc2b92b51690c607e5ebf95ccd0fd70625e2e3ca987bdd10fc8ead624d91b1a4ff4cc1f4f66a105b991ee7c1943180a07347d2b504e7f2fc648c6f844e3f7e1221f4de3b2a9ff8d1fe2aa5179adac66ff1f397c715650b64ab8b3f92edac44330979dfc322bd514f907af7ec29c8530a9515bdf01bf4cc6af6896b3ab36460e4e8b802e081b8cc371c6576514f9098a5ea840046c392cdcd50e86e656115542edaf9b3dcbf5609ae71a20fe8ff0f26de8d61e3cbd0148773368cf1621b6d05c3d00a4bfacdfd144e03d9c3578f631d5928ecd555386147182ca474ab4fe2dbe051aa06601b1c9a07a46679039f317b1efc6464739c231d842e94fde67de69bd7c8d36aad2dba79f86dd84e239e398cf9045b5461242a369e640e770ad83ed57d51f6f8336e0394e2f58e46f864463162e5d77a52822b383f31b2e435913ae1b6f3b948d037c69048586e64a25e736b63ef848ba21d0e264bb7823f443d1409e34d2cddc2380cf5418ee9aad1d2a47813d487d17f1298fa0ba65810fe68a8951cb6e848d03e4606051835f0f6f5de494a7b01d08ed32b02ff9  </script>  <div class="hbe hbe-content">    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">      <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>      </label>    </div>      <button class="hbe hbe-button" type="submit">Decrypt</button>      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>    </form>  </div></div><script data-pjax src="/lib/hbe.51dd9f3b98.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
@@ -2335,11 +2360,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -2364,13 +2389,13 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
-            <tag> Node.js </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Node.js </tag>
             
         </tags>
       
@@ -2395,13 +2420,13 @@
       
         <tags>
             
-            <tag> GitHub </tag>
-            
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
+            <tag> GitHub </tag>
+            
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -2484,13 +2509,13 @@
       
         <tags>
             
-            <tag> Vercel </tag>
-            
-            <tag> PHP </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Vercel </tag>
+            
+            <tag> PHP </tag>
             
         </tags>
       
@@ -2546,9 +2571,9 @@
             
             <tag> 折腾 </tag>
             
-            <tag> Android </tag>
-            
             <tag> 硬件外设 </tag>
+            
+            <tag> Android </tag>
             
         </tags>
       
@@ -2573,11 +2598,11 @@
       
         <tags>
             
-            <tag> Cloudflare </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 静态托管 </tag>
+            
+            <tag> Cloudflare </tag>
             
         </tags>
       
@@ -2602,11 +2627,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -2631,9 +2656,9 @@
       
         <tags>
             
-            <tag> 游戏 </tag>
-            
             <tag> 杂谈 </tag>
+            
+            <tag> 游戏 </tag>
             
         </tags>
       
@@ -2658,11 +2683,11 @@
       
         <tags>
             
-            <tag> Waline </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Waline </tag>
             
             <tag> Valine </tag>
             
@@ -2745,11 +2770,11 @@
             
             <tag> GitHub </tag>
             
+            <tag> 博客建站 </tag>
+            
             <tag> Hexo </tag>
             
             <tag> 折腾 </tag>
-            
-            <tag> 博客建站 </tag>
             
         </tags>
       
@@ -2774,11 +2799,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 教程 </tag>
             
             <tag> 博客建站 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Pjax </tag>
             
@@ -2832,11 +2857,11 @@
       
         <tags>
             
-            <tag> 周年记 </tag>
-            
             <tag> 杂谈 </tag>
             
             <tag> 博客 </tag>
+            
+            <tag> 周年记 </tag>
             
         </tags>
       
@@ -2874,9 +2899,9 @@
       
         <tags>
             
-            <tag> 转载 </tag>
-            
             <tag> 摘录 </tag>
+            
+            <tag> 转载 </tag>
             
         </tags>
       
