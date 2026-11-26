@@ -11,7 +11,24 @@
   <rights>All rights reserved 2026, R҉anhm⌬</rights>
   <subtitle>不受律束，笔随兴至</subtitle>
   <title>雨梦清欢</title>
-  <updated>2026-11-18T04:00:00.000Z</updated>
+  <updated>2026-11-26T09:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>R҉anhm⌬</name>
+    </author>
+    <category term="软件经验" scheme="https://blog.sakurink.eu.org/categories/%E8%BD%AF%E4%BB%B6%E7%BB%8F%E9%AA%8C/"/>
+    <category term="Rime" scheme="https://blog.sakurink.eu.org/tags/Rime/"/>
+    <category term="输入法" scheme="https://blog.sakurink.eu.org/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <id>https://blog.sakurink.eu.org/posts/1992297658/</id>
+    <link href="https://blog.sakurink.eu.org/posts/1992297658/"/>
+    <published>2026-11-25T13:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>先前配置完 Rime 后，我又注意到万象拼音有个小模型，可以优化同音字词输入的准确性。按照网上的教程配置后，以为差不多了。最近注意到万象的模型有了更新，于是下载并替换，意外地发现这个文件能直接被替换。</p>
+<p>此时我并没有退出 Rime 的进程。按照 Windows]]>
+    </summary>
+    <title>Rime 雾凇拼音挂载万象模型</title>
+    <updated>2026-11-26T09:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>R҉anhm⌬</name>
@@ -148,20 +165,5 @@
     <summary>好的作品一定要让观众学到些什么吗？在讨论这个问题之前，先绕个弯：观点讨论里常冒出来的那句&quot;你有什么资格教我做事&quot;，到底在问什么？</summary>
     <title>好作品必须有教育意义吗？Ⅰ</title>
     <updated>2026-10-28T09:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>R҉anhm⌬</name>
-    </author>
-    <category term="卷底青锋" scheme="https://blog.sakurink.eu.org/categories/%E5%8D%B7%E5%BA%95%E9%9D%92%E9%94%8B/"/>
-    <category term="杂谈" scheme="https://blog.sakurink.eu.org/tags/%E6%9D%82%E8%B0%88/"/>
-    <category term="闪念" scheme="https://blog.sakurink.eu.org/tags/%E9%97%AA%E5%BF%B5/"/>
-    <category term="隐私" scheme="https://blog.sakurink.eu.org/tags/%E9%9A%90%E7%A7%81/"/>
-    <id>https://blog.sakurink.eu.org/posts/1366080631/</id>
-    <link href="https://blog.sakurink.eu.org/posts/1366080631/"/>
-    <published>2026-10-24T12:00:00.000Z</published>
-    <summary>现在上网该不该关心隐私？</summary>
-    <title>“这么在意隐私，是不是干了什么见不得人的事”</title>
-    <updated>2026-10-24T12:00:00.000Z</updated>
   </entry>
 </feed>
